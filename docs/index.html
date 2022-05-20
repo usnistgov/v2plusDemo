@@ -9,43 +9,43 @@ HL7 - REFACTORED
 <base href="https://usnistgov.github.io/v2plusDemo/">
 
 <style type='text/css'>
-@import "/css/bootstrap.css";
-@import "/css/codemirror.css";
-@import "/css/hl7.css";
-@import "/css/fhir.css";
-<!-- @import "/css/bootstrap-fhir.css"; -->
-@import "/css/bootstrap-v2.css";
-@import "/css/project.css";
-@import "/css/pygments-manni.css";
-@import "/css/jquery-ui.css";
-@import "/css/modules.css";
-@import "/css/v2.css";
+@import "./css/bootstrap.css";
+@import "./css/codemirror.css";
+@import "./css/hl7.css";
+@import "./css/fhir.css";
+<!-- @import "./css/bootstrap-fhir.css"; -->
+@import "./css/bootstrap-v2.css";
+@import "./css/project.css";
+@import "./css/pygments-manni.css";
+@import "./css/jquery-ui.css";
+@import "./css/modules.css";
+@import "./css/v2.css";
 </style>
-<script src='/js/jquery.js'></script>
-<script src='/js/jquery-ui.min.js'></script>
-<script src='/js/bootstrap.min.js'></script>
-<script src='/js/respond.min.js'></script>
-<script src='/js/codemirror/codemirror.js'></script>
-<script src='/js/codemirror/mode/xml.js'></script>
-<script src='/js/v2.js'></script>
-<script src='/js/fhir-table-scripts.js' type='text/javascript'></script>
-<script src='/js/format_xml.js' type='text/javascript'></script>
-<link href='/images/hl7.ico' rel='shortcut icon'>
+<script src='./js/jquery.js'></script>
+<script src='./js/jquery-ui.min.js'></script>
+<script src='./js/bootstrap.min.js'></script>
+<script src='./js/respond.min.js'></script>
+<script src='./js/codemirror/codemirror.js'></script>
+<script src='./js/codemirror/mode/xml.js'></script>
+<script src='./js/v2.js'></script>
+<script src='./js/fhir-table-scripts.js' type='text/javascript'></script>
+<script src='./js/format_xml.js' type='text/javascript'></script>
+<link href='./images/hl7.ico' rel='shortcut icon'>
 </head>
 <body>
 <div class='segment' id='segment-header'>
 <div class='container'>
 <a href='http://www.hl7.org/hl7v2+' id='logo' no-external='true'></a>
 <div id='hl7-status'>
-<img alt='visit the hl7 website' height='50' id='v2-logo' src='/images/hl7-v2-logo.png'>
-<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='/images/hl7-v2plus.gif'>
+<img alt='visit the hl7 website' height='50' id='v2-logo' src='./images/hl7-v2-logo.png'>
+<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='./images/hl7-v2plus.gif'>
 <b>
 The Demo site for our new HL7 Version 2+ (plus) Standard
 </b>
 </div>
 <div id='hl7-nav'>
 <a href='http://www.hl7.org' id='hl7-logo' no-external='true'></a>
-<img alt='visit the hl7 website' src='/images/hl7-logo.png'>
+<img alt='visit the hl7 website' src='./images/hl7-logo.png'>
 </div>
 </div>
 </div>
@@ -60,33 +60,33 @@ The Demo site for our new HL7 Version 2+ (plus) Standard
 <span class='icon-bar'></span>
 </button>
 </div>
-<a class='navbar-brand hidden' href='/index.html'>
+<a class='navbar-brand hidden' href='./index.html'>
 FHIR
 </a>
 <div class='nav-collapse collapse navbar-inverse-collapse'>
 <ul class='nav navbar-nav'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
 <li>
-<a href='/domains.html'>
+<a href='./domains.html'>
 Domains
 </a>
 </li>
 <li>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Message Structures
 </a>
 </li>
 <li>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Segments
 </a>
 </li>
 <li>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Data Types
 </a>
 </li>
@@ -96,12 +96,12 @@ Data Type Flavors
 </a>
 </li>
 <li>
-<a href='/vocab.html'>
+<a href='./vocab.html'>
 Vocabulary
 </a>
 </li>
 <li>
-<a href='/domain/Control.html'>
+<a href='./domain/Control.html'>
 Control
 </a>
 </li>
@@ -111,7 +111,7 @@ Conformance
 </a>
 </li>
 <li>
-<a href='/domain/Control.html#Control-12'>
+<a href='./domain/Control.html#Control-12'>
 Encoding
 </a>
 </li>
@@ -121,7 +121,7 @@ Transport
 </a>
 </li>
 <li>
-<a href='/history.html'>
+<a href='./history.html'>
 v2.x
 </a>
 </li>
@@ -141,7 +141,7 @@ Draft Website - For Review Purposes Only
 <div class='container'>
 <ul class='breadcrumb'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
@@ -165,12 +165,12 @@ This is the working draft for what is preliminary called
 </div>
 <div id='diagram'>
 <p class='level-text'>
-<a href='/domain/Introduction.html'>
+<a href='./domain/Introduction.html'>
 <b>Introduction to the HL7 v2+ Standard</b>
 </a>
 </p>
 <p class='content'>
-<a href='/toc.html'>Table of Contents</a>
+<a href='./toc.html'>Table of Contents</a>
 </p>
 <p class='level-text'>
 <b>
@@ -181,12 +181,12 @@ Basic framework on which the specification is built.
 <div class='box_row box_more' id='foundation'>
 <div class='box' id=''>
 <p class='head'>
-<a href='/' style='background-image: url(&#39;images/foundation.png&#39;);'>
+<a href='./' style='background-image: url(&#39;images/foundation.png&#39;);'>
 Foundation
 </a>
 </p>
 <p class='content'>
-<span><a href='/domain/Control.html'>
+<span><a href='./domain/Control.html'>
 Control
 </a>
 (Messaging)</span>
@@ -194,20 +194,20 @@ Control
 </div>
 <div class='box' id='encoding'>
 <p class='head'>
-<a href='/domain/Control.html#Control-12' style='background-image: url(&#39;images/workflow.png&#39;);'>
+<a href='./domain/Control.html#Control-12' style='background-image: url(&#39;images/workflow.png&#39;);'>
 <span>Encoding</span>
 </a>
 </p>
 <p class='content'>
-<a href='/domain/Control.html#Control-5'>
+<a href='./domain/Control.html#Control-5'>
 Abstract Message Syntax (AMS)
 </a>
 <br>
-<a href='/domain/Control.html#Control-6'>
+<a href='./domain/Control.html#Control-6'>
 Encoding Rules 7 (ER)
 </a>
 <br>
-<a href='/xml-encoding-rules.html'>
+<a href='./xml-encoding-rules.html'>
 XML-Encoding (v2.x)ml
 </a>
 </p>
@@ -219,11 +219,11 @@ Transport
 </a>
 </p>
 <p class='content'>
-<a href='/lower-layer-protocol.html#Heading3'>
+<a href='./lower-layer-protocol.html#Heading3'>
 HLLP
 </a>
 <br>
-<a href='/lower-layer-protocol.html#Heading45'>
+<a href='./lower-layer-protocol.html#Heading45'>
 MLLP
 </a>
 <br>
@@ -259,16 +259,16 @@ Building Blocks
 </p>
 <div class='box box_row box_one' id='technical'>
 <p class='head'>
-<a href='/' style='background-image: url(&#39;images/index.png&#39;);'>
+<a href='./' style='background-image: url(&#39;images/index.png&#39;);'>
 <span>Technical</span>
 </a>
 </p>
 <p class='content'>
-<a href='/data-types.html'>Data Types</a>
+<a href='./data-types.html'>Data Types</a>
 &gt;
-<a href='/segment-definitions.html'>Segments</a>
+<a href='./segment-definitions.html'>Segments</a>
 &gt;
-<a href='/message-structures.html'>Message Structures</a>
+<a href='./message-structures.html'>Message Structures</a>
 </p>
 </div>
 <p class='level-text'>
@@ -278,112 +278,112 @@ Domains
 <div class='box_row box_more' id='domains'>
 <div class='box' id='administrative'>
 <p class='head'>
-<a href='/domains.html' style='background-image: url(&#39;images/secpriv.jpg&#39;&#39;);'>
+<a href='./domains.html' style='background-image: url(&#39;images/secpriv.jpg&#39;&#39;);'>
 Administrative
 </a>
 </p>
 <p class='content'>
-<a href='/domain/Master-Files.html'>
+<a href='./domain/Master-Files.html'>
 Master Files
 </a>
 <br>
-<a href='/domain/Query.html'>
+<a href='./domain/Query.html'>
 Queries
 </a>
 <br>
-<a href='/domain/Personnel-Management.html'>
+<a href='./domain/Personnel-Management.html'>
 Personnel Mngmt
 </a>
 <br>
-<a href='/domain/Application-Management.html'>
+<a href='./domain/Application-Management.html'>
 Appl Mngmt
 </a>
 </p>
 </div>
 <div class='box' id='patient'>
 <p class='head'>
-<a href='/domains.html' style='background-image: url(&#39;images/administration.jpg&#39;&#39;);'>
+<a href='./domains.html' style='background-image: url(&#39;images/administration.jpg&#39;&#39;);'>
 Patient
 </a>
 </p>
 <p class='content'>
-<a href='/domain/Patient-Administration.html'>
+<a href='./domain/Patient-Administration.html'>
 ADT
 </a>
 <br>
-<a href='/domain/Patient-Referral.html'>
+<a href='./domain/Patient-Referral.html'>
 Referral
 </a>
 <br>
-<a href='/domain/Scheduling.html'>
+<a href='./domain/Scheduling.html'>
 Scheduling
 </a>
 <br>
-<a href='/domain/Materials-Management.html'>
+<a href='./domain/Materials-Management.html'>
 Materials Mngmt
 </a>
 </p>
 </div>
 <div class='box' id='financial'>
 <p class='head'>
-<a href='/domains.html' style='background-image: url(&#39;images/financial.png&#39;);'>
+<a href='./domains.html' style='background-image: url(&#39;images/financial.png&#39;);'>
 Financial
 </a>
 </p>
 <p class='content'>
-<a href='/domain/Financial-Management.html'>
+<a href='./domain/Financial-Management.html'>
 Billing
 </a>
 <br>
-<a href='/domain/Claims-and-Reimbursement.html'>
+<a href='./domain/Claims-and-Reimbursement.html'>
 Claims &amp; Reimbursement
 </a>
 </p>
 </div>
 <div class='box' id='clinical'>
 <p class='head'>
-<a href='/domains.html' style='background-image: url(&#39;images/clinical.png&#39;);'>
+<a href='./domains.html' style='background-image: url(&#39;images/clinical.png&#39;);'>
 Clinical
 </a>
 </p>
 <p class='content'>
-<a href='/domain/Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion.html'>
+<a href='./domain/Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion.html'>
 General Orders
 </a>
 <br>
-<a href='/domain/Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion.html'>
+<a href='./domain/Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion.html'>
 Laboratory Orders
 </a>
 <br>
-<a href='/domain/Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion.html'>
+<a href='./domain/Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion.html'>
 Dietary Orders
 </a>
 <br>
-<a href='/domain/Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion.html'>
+<a href='./domain/Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion.html'>
 Supply
 </a>
 <br>
-<a href='/domain/Order-Entry-Pharmacy-Treatment-Vaccination.html'>
+<a href='./domain/Order-Entry-Pharmacy-Treatment-Vaccination.html'>
 Pharmacy/Treatment
 </a>
 <br>
-<a href='/domain/Clinical-Laboratory-Automation.html'>
+<a href='./domain/Clinical-Laboratory-Automation.html'>
 Lab Automation
 </a>
 </p>
 </div>
 <div class='box' id='medication'>
 <p class='head'>
-<a href='/domains.html' style='background-image: url(&#39;images/medication.png&#39;);'>
+<a href='./domains.html' style='background-image: url(&#39;images/medication.png&#39;);'>
 Medical
 </a>
 </p>
 <p class='content'>
-<a href='/domain/Patient-Care.html'>
+<a href='./domain/Patient-Care.html'>
 Patient Care
 </a>
 <br>
-<a href='/domain/Medical-Records-Information-Management-Document-Management-.html'>
+<a href='./domain/Medical-Records-Information-Management-Document-Management-.html'>
 Medical Record
 </a>
 </p>
@@ -471,7 +471,7 @@ Core Profiles
 <div class='box_row box_more' id='implementable-technology-specification'>
 <div class='box' id='datatype-flavors'>
 <p class='head'>
-<a href='/' style='background-image: url(&#39;images/index.png&#39;);'>
+<a href='./' style='background-image: url(&#39;images/index.png&#39;);'>
 Data Type Flavors
 </a>
 </p>
@@ -481,7 +481,7 @@ Data Type Flavors
 </div>
 <div class='box' id='ig-registry'>
 <p class='head'>
-<a href='/' style='background-image: url(&#39;images/index.png&#39;);'>
+<a href='./' style='background-image: url(&#39;images/index.png&#39;);'>
 Implementation Guide Registry
 </a>
 </p>
@@ -624,16 +624,16 @@ March 15, 2022
 </p>
 <p>
 <span style='color: #FFFF77'>Links:</span>
-<a href='/history.html' style='color: #b8dcf9'>
+<a href='./history.html' style='color: #b8dcf9'>
 Version History
 </a>
 |
 <a href='https://jira.hl7.org/projects/V2/issues' style='color: #b8dcf9' target='_blank'>
 Propose a change
-<img src='/images/external.png' style='text-align: baseline'>
+<img src='./images/external.png' style='text-align: baseline'>
 </a>
 |
-<a href='/license.html' rel='license' style='color: #b8dcf9'>
+<a href='./license.html' rel='license' style='color: #b8dcf9'>
 License
 <!-- %img{:alt => "CC0", :src => "images/cc0.png", :style => "border-style: none;"} -->
 </a>
