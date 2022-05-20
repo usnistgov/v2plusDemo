@@ -35,12 +35,12 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
 
     if (support.hexNumber &&
       ((ch == "0" && stream.match(/^[xX][0-9a-fA-F]+/))
-      || (ch == "x" || ch == "X") && stream.match(/^'[0-9a-fA-F]+'/))) {
+      || (ch == "x" || ch == "X") && stream.match(/^'[0-9a-fA-F]+'./))) {
       // hex
       // ref: http://dev.mysql.com/doc/refman/5.5/en/hexadecimal-literals.html
       return "number";
     } else if (support.binaryNumber &&
-      (((ch == "b" || ch == "B") && stream.match(/^'[01]+'/))
+      (((ch == "b" || ch == "B") && stream.match(/^'[01]+'./))
       || (ch == "0" && stream.match(/^b[01]+/)))) {
       // bitstring
       // ref: http://dev.mysql.com/doc/refman/5.5/en/bit-field-literals.html
@@ -65,7 +65,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
       // charset casting: _utf8'str', N'str', n'str'
       // ref: http://dev.mysql.com/doc/refman/5.5/en/string-literals.html
       return "keyword";
-    } else if (support.commentSlashSlash && ch == "/" && stream.eat("/")) {
+    } else if (support.commentSlashSlash && ch == "./" && stream.eat("./")) {
       // 1-line comment
       stream.skipToEnd();
       return "comment";
@@ -75,7 +75,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
       // ref: https://kb.askmonty.org/en/comment-syntax/
       stream.skipToEnd();
       return "comment";
-    } else if (ch == "/" && stream.eat("*")) {
+    } else if (ch == "./" && stream.eat("*")) {
       // multi-line comments
       // ref: https://kb.askmonty.org/en/comment-syntax/
       state.tokenize = tokenComment(1);
@@ -111,7 +111,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
       var word = stream.current().toLowerCase();
       // dates (standard SQL syntax)
       // ref: http://dev.mysql.com/doc/refman/5.5/en/date-and-time-literals.html
-      if (dateSQL.hasOwnProperty(word) && (stream.match(/^( )+'[^']*'/) || stream.match(/^( )+"[^"]*"/)))
+      if (dateSQL.hasOwnProperty(word) && (stream.match(/^( )+'[^']*'./) || stream.match(/^( )+"[^"]*"./)))
         return "number";
       if (atoms.hasOwnProperty(word)) return "atom";
       if (builtin.hasOwnProperty(word)) return "builtin";
@@ -139,7 +139,7 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
     return function(stream, state) {
       var m = stream.match(/^.*?(\/\*|\*\/)/)
       if (!m) stream.skipToEnd()
-      else if (m[1] == "/*") state.tokenize = tokenComment(depth + 1)
+      else if (m[1] == "./*") state.tokenize = tokenComment(depth + 1)
       else if (depth > 1) state.tokenize = tokenComment(depth - 1)
       else state.tokenize = tokenBase
       return "comment"
@@ -196,9 +196,9 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
       else return cx.indent + (closing ? 0 : config.indentUnit);
     },
 
-    blockCommentStart: "/*",
+    blockCommentStart: "./*",
     blockCommentEnd: "*/",
-    lineComment: support.commentSlashSlash ? "//" : support.commentHash ? "#" : "--",
+    lineComment: support.commentSlashSlash ? ".//" : support.commentHash ? "#" : "--",
     closeBrackets: "()[]{}''\"\"``"
   };
 });
@@ -241,10 +241,10 @@ CodeMirror.defineMode("sql", function(config, parserConfig) {
     }
 
     if (stream.eat("'")) {
-      stream.match(/^.*'/);
+      stream.match(/^.*'./);
       return "variable-2";
     } else if (stream.eat('"')) {
-      stream.match(/^.*"/);
+      stream.match(/^.*"./);
       return "variable-2";
     } else if (stream.eat("`")) {
       stream.match(/^.*`/);

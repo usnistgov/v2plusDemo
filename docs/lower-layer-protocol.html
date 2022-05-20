@@ -9,43 +9,43 @@ HL7 - REFACTORED
 <base href="https://usnistgov.github.io/v2plusDemo/">
 
 <style type='text/css'>
-@import "/css/bootstrap.css";
-@import "/css/codemirror.css";
-@import "/css/hl7.css";
-@import "/css/fhir.css";
-<!-- @import "/css/bootstrap-fhir.css"; -->
-@import "/css/bootstrap-v2.css";
-@import "/css/project.css";
-@import "/css/pygments-manni.css";
-@import "/css/jquery-ui.css";
-@import "/css/modules.css";
-@import "/css/v2.css";
+@import "./css/bootstrap.css";
+@import "./css/codemirror.css";
+@import "./css/hl7.css";
+@import "./css/fhir.css";
+<!-- @import "./css/bootstrap-fhir.css"; -->
+@import "./css/bootstrap-v2.css";
+@import "./css/project.css";
+@import "./css/pygments-manni.css";
+@import "./css/jquery-ui.css";
+@import "./css/modules.css";
+@import "./css/v2.css";
 </style>
-<script src='/js/jquery.js'></script>
-<script src='/js/jquery-ui.min.js'></script>
-<script src='/js/bootstrap.min.js'></script>
-<script src='/js/respond.min.js'></script>
-<script src='/js/codemirror/codemirror.js'></script>
-<script src='/js/codemirror/mode/xml.js'></script>
-<script src='/js/v2.js'></script>
-<script src='/js/fhir-table-scripts.js' type='text/javascript'></script>
-<script src='/js/format_xml.js' type='text/javascript'></script>
-<link href='/images/hl7.ico' rel='shortcut icon'>
+<script src='./js/jquery.js'></script>
+<script src='./js/jquery-ui.min.js'></script>
+<script src='./js/bootstrap.min.js'></script>
+<script src='./js/respond.min.js'></script>
+<script src='./js/codemirror/codemirror.js'></script>
+<script src='./js/codemirror/mode/xml.js'></script>
+<script src='./js/v2.js'></script>
+<script src='./js/fhir-table-scripts.js' type='text/javascript'></script>
+<script src='./js/format_xml.js' type='text/javascript'></script>
+<link href='./images/hl7.ico' rel='shortcut icon'>
 </head>
 <body>
 <div class='segment' id='segment-header'>
 <div class='container'>
 <a href='http://www.hl7.org/hl7v2+' id='logo' no-external='true'></a>
 <div id='hl7-status'>
-<img alt='visit the hl7 website' height='50' id='v2-logo' src='/images/hl7-v2-logo.png'>
-<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='/images/hl7-v2plus.gif'>
+<img alt='visit the hl7 website' height='50' id='v2-logo' src='./images/hl7-v2-logo.png'>
+<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='./images/hl7-v2plus.gif'>
 <b>
 The Demo site for our new HL7 Version 2+ (plus) Standard
 </b>
 </div>
 <div id='hl7-nav'>
 <a href='http://www.hl7.org' id='hl7-logo' no-external='true'></a>
-<img alt='visit the hl7 website' src='/images/hl7-logo.png'>
+<img alt='visit the hl7 website' src='./images/hl7-logo.png'>
 </div>
 </div>
 </div>
@@ -60,33 +60,33 @@ The Demo site for our new HL7 Version 2+ (plus) Standard
 <span class='icon-bar'></span>
 </button>
 </div>
-<a class='navbar-brand hidden' href='/index.html'>
+<a class='navbar-brand hidden' href='./index.html'>
 FHIR
 </a>
 <div class='nav-collapse collapse navbar-inverse-collapse'>
 <ul class='nav navbar-nav'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
 <li>
-<a href='/domains.html'>
+<a href='./domains.html'>
 Domains
 </a>
 </li>
 <li>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Message Structures
 </a>
 </li>
 <li>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Segments
 </a>
 </li>
 <li>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Data Types
 </a>
 </li>
@@ -96,12 +96,12 @@ Data Type Flavors
 </a>
 </li>
 <li>
-<a href='/vocab.html'>
+<a href='./vocab.html'>
 Vocabulary
 </a>
 </li>
 <li>
-<a href='/domain/Control.html'>
+<a href='./domain/Control.html'>
 Control
 </a>
 </li>
@@ -111,7 +111,7 @@ Conformance
 </a>
 </li>
 <li>
-<a href='/domain/Control.html#Control-12'>
+<a href='./domain/Control.html#Control-12'>
 Encoding
 </a>
 </li>
@@ -121,7 +121,7 @@ Transport
 </a>
 </li>
 <li>
-<a href='/history.html'>
+<a href='./history.html'>
 v2.x
 </a>
 </li>
@@ -141,7 +141,7 @@ Draft Website - For Review Purposes Only
 <div class='container'>
 <ul class='breadcrumb'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
@@ -154,266 +154,266 @@ Home
 </h1>
 <ul>
   <li>
-    <a href="/lower-layer-protocol.html#Heading2">1 INTRODUCTION</a>
+    <a href="./lower-layer-protocol.html#Heading2">1 INTRODUCTION</a>
   </li>
   <li>
-    <a href="/lower-layer-protocol.html#Heading3">2 HYBRID LOWER LAYER PROTOCOL</a>
+    <a href="./lower-layer-protocol.html#Heading3">2 HYBRID LOWER LAYER PROTOCOL</a>
   </li>
   <ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading4">2.1 Introduction</a>
+      <a href="./lower-layer-protocol.html#Heading4">2.1 Introduction</a>
     </li>
     <ul>
       <li>
-        <a href="/lower-layer-protocol.html#Heading5">2.1.1 Goals and Assumptions</a>
+        <a href="./lower-layer-protocol.html#Heading5">2.1.1 Goals and Assumptions</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading6">2.1.2 Notation Conventions</a>
+        <a href="./lower-layer-protocol.html#Heading6">2.1.2 Notation Conventions</a>
       </li>
     </ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading7">2.2 Blocks</a>
+      <a href="./lower-layer-protocol.html#Heading7">2.2 Blocks</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading8">2.3 Processing Rules</a>
+      <a href="./lower-layer-protocol.html#Heading8">2.3 Processing Rules</a>
     </li>
     <ul>
       <li>
-        <a href="/lower-layer-protocol.html#Heading9">2.3.1 Optional Connection and Disconnection</a>
+        <a href="./lower-layer-protocol.html#Heading9">2.3.1 Optional Connection and Disconnection</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading10">2.3.2 Initiating and Responding</a>
+        <a href="./lower-layer-protocol.html#Heading10">2.3.2 Initiating and Responding</a>
       </li>
     </ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading11">2.4 Carriage Return Stuffing</a>
+      <a href="./lower-layer-protocol.html#Heading11">2.4 Carriage Return Stuffing</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading12">2.5 Flow-Through Processing</a>
+      <a href="./lower-layer-protocol.html#Heading12">2.5 Flow-Through Processing</a>
     </li>
     <ul>
       <li>
-        <a href="/lower-layer-protocol.html#Heading13">2.5.1 Inititiating System Processing</a>
+        <a href="./lower-layer-protocol.html#Heading13">2.5.1 Inititiating System Processing</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading14">2.5.2 Responding System Processing</a>
+        <a href="./lower-layer-protocol.html#Heading14">2.5.2 Responding System Processing</a>
       </li>
     </ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading15">2.6 Implementation, System and Site-Specific Issues</a>
+      <a href="./lower-layer-protocol.html#Heading15">2.6 Implementation, System and Site-Specific Issues</a>
     </li>
     <ul>
       <li>
-        <a href="/lower-layer-protocol.html#Heading16">2.6.1 Connect Retries (For optional transient virtual circuits)</a>
+        <a href="./lower-layer-protocol.html#Heading16">2.6.1 Connect Retries (For optional transient virtual circuits)</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading17">2.6.2 Receive Timeout Errors</a>
+        <a href="./lower-layer-protocol.html#Heading17">2.6.2 Receive Timeout Errors</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading18">2.6.3 The Network Parameter Table (NPT)</a>
+        <a href="./lower-layer-protocol.html#Heading18">2.6.3 The Network Parameter Table (NPT)</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading19">2.6.4 Error Reporting and Logging</a>
+        <a href="./lower-layer-protocol.html#Heading19">2.6.4 Error Reporting and Logging</a>
       </li>
     </ul>
   </ul>
   <li>
-    <a href="/lower-layer-protocol.html#Heading20">3 X3.28 BASED DATA LINK PROTOCOL</a>
+    <a href="./lower-layer-protocol.html#Heading20">3 X3.28 BASED DATA LINK PROTOCOL</a>
   </li>
   <ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading21">3.1 Overview</a>
+      <a href="./lower-layer-protocol.html#Heading21">3.1 Overview</a>
     </li>
     <ul>
       <li>
-        <a href="/lower-layer-protocol.html#Heading22">3.1.1 Introduction</a>
+        <a href="./lower-layer-protocol.html#Heading22">3.1.1 Introduction</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading23">3.1.2 Requirements and Assumptions</a>
+        <a href="./lower-layer-protocol.html#Heading23">3.1.2 Requirements and Assumptions</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading24">3.1.3 Environment Model</a>
+        <a href="./lower-layer-protocol.html#Heading24">3.1.3 Environment Model</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading25">3.1.4 Communication Control Characters</a>
+        <a href="./lower-layer-protocol.html#Heading25">3.1.4 Communication Control Characters</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading26">3.1.5 Block Number</a>
+        <a href="./lower-layer-protocol.html#Heading26">3.1.5 Block Number</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading27">3.1.6 Text Length</a>
+        <a href="./lower-layer-protocol.html#Heading27">3.1.6 Text Length</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading28">3.1.7 Block Checking Characters</a>
+        <a href="./lower-layer-protocol.html#Heading28">3.1.7 Block Checking Characters</a>
       </li>
     </ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading29">3.2 Establishment of Master/Slave Relationship</a>
+      <a href="./lower-layer-protocol.html#Heading29">3.2 Establishment of Master/Slave Relationship</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading30">3.3 Message Transfer</a>
+      <a href="./lower-layer-protocol.html#Heading30">3.3 Message Transfer</a>
     </li>
     <ul>
       <li>
-        <a href="/lower-layer-protocol.html#Heading31">3.3.1 Transmission Blocks</a>
+        <a href="./lower-layer-protocol.html#Heading31">3.3.1 Transmission Blocks</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading32">3.3.2 Replies</a>
+        <a href="./lower-layer-protocol.html#Heading32">3.3.2 Replies</a>
       </li>
     </ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading33">3.4 Aborts and Interrupts</a>
+      <a href="./lower-layer-protocol.html#Heading33">3.4 Aborts and Interrupts</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading34">3.5 Block Abort</a>
+      <a href="./lower-layer-protocol.html#Heading34">3.5 Block Abort</a>
     </li>
     <ul>
       <li>
-        <a href="/lower-layer-protocol.html#Heading35">3.5.1 Sending Station Abort</a>
+        <a href="./lower-layer-protocol.html#Heading35">3.5.1 Sending Station Abort</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading36">3.5.2 Termination Interrupt</a>
+        <a href="./lower-layer-protocol.html#Heading36">3.5.2 Termination Interrupt</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading37">3.5.3 Reverse Interrupt</a>
+        <a href="./lower-layer-protocol.html#Heading37">3.5.3 Reverse Interrupt</a>
       </li>
     </ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading38">3.6 Block Headings and Acknowledgement Prefixes</a>
+      <a href="./lower-layer-protocol.html#Heading38">3.6 Block Headings and Acknowledgement Prefixes</a>
     </li>
     <ul>
       <li>
-        <a href="/lower-layer-protocol.html#Heading39">3.6.1 Headings</a>
+        <a href="./lower-layer-protocol.html#Heading39">3.6.1 Headings</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading40">3.6.2 Prefixes</a>
+        <a href="./lower-layer-protocol.html#Heading40">3.6.2 Prefixes</a>
       </li>
     </ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading41">3.7 Timers and Recovery Procedures</a>
+      <a href="./lower-layer-protocol.html#Heading41">3.7 Timers and Recovery Procedures</a>
     </li>
     <ul>
       <li>
-        <a href="/lower-layer-protocol.html#Heading42">3.7.1 Timers</a>
+        <a href="./lower-layer-protocol.html#Heading42">3.7.1 Timers</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading43">3.7.2 Recovery Procedures</a>
+        <a href="./lower-layer-protocol.html#Heading43">3.7.2 Recovery Procedures</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading44">3.7.3 Parameters and Defaults</a>
+        <a href="./lower-layer-protocol.html#Heading44">3.7.3 Parameters and Defaults</a>
       </li>
     </ul>
   </ul>
   <li>
-    <a href="/lower-layer-protocol.html#Heading45">4 MINIMAL LOWER LAYER PROTOCOL</a>
+    <a href="./lower-layer-protocol.html#Heading45">4 MINIMAL LOWER LAYER PROTOCOL</a>
   </li>
   <ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading46">4.1 Introduction</a>
+      <a href="./lower-layer-protocol.html#Heading46">4.1 Introduction</a>
     </li>
     <ul>
       <li>
-        <a href="/lower-layer-protocol.html#Heading47">4.1.1 Background</a>
+        <a href="./lower-layer-protocol.html#Heading47">4.1.1 Background</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading48">4.1.2 Goals and Assumptions</a>
+        <a href="./lower-layer-protocol.html#Heading48">4.1.2 Goals and Assumptions</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading49">4.1.3 Differences</a>
+        <a href="./lower-layer-protocol.html#Heading49">4.1.3 Differences</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading50">4.1.4 Notation Conventions</a>
+        <a href="./lower-layer-protocol.html#Heading50">4.1.4 Notation Conventions</a>
       </li>
     </ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading51">4.2 Block Format</a>
+      <a href="./lower-layer-protocol.html#Heading51">4.2 Block Format</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading52">4.3 Processing Rules</a>
+      <a href="./lower-layer-protocol.html#Heading52">4.3 Processing Rules</a>
     </li>
   </ul>
   <li>
-    <a href="/lower-layer-protocol.html#Heading53">5 HL7 SEQUENCE NUMBER PROTOCOL IMPLEMENTATION</a>
+    <a href="./lower-layer-protocol.html#Heading53">5 HL7 SEQUENCE NUMBER PROTOCOL IMPLEMENTATION</a>
   </li>
   <ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading54">5.1 Sequence Number Usage</a>
+      <a href="./lower-layer-protocol.html#Heading54">5.1 Sequence Number Usage</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading55">5.2 Sequence Number Description</a>
+      <a href="./lower-layer-protocol.html#Heading55">5.2 Sequence Number Description</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading56">5.3 State of the Receiving System</a>
+      <a href="./lower-layer-protocol.html#Heading56">5.3 State of the Receiving System</a>
     </li>
     <ul>
       <li>
-        <a href="/lower-layer-protocol.html#Heading57">5.3.1 Sequence Number Processing by the Receiving System</a>
+        <a href="./lower-layer-protocol.html#Heading57">5.3.1 Sequence Number Processing by the Receiving System</a>
       </li>
     </ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading58">5.4 Normal Operations</a>
+      <a href="./lower-layer-protocol.html#Heading58">5.4 Normal Operations</a>
     </li>
     <ul>
       <li>
-        <a href="/lower-layer-protocol.html#Heading59">5.4.1 The Message Sequence Number Sent Equals the Expected Sequence Number</a>
+        <a href="./lower-layer-protocol.html#Heading59">5.4.1 The Message Sequence Number Sent Equals the Expected Sequence Number</a>
       </li>
       <li>
-        <a href="/lower-layer-protocol.html#Heading60">5.4.2 The Message Sequence Number Sent does not Equal the Expected Sequence Number</a>
+        <a href="./lower-layer-protocol.html#Heading60">5.4.2 The Message Sequence Number Sent does not Equal the Expected Sequence Number</a>
       </li>
       <ul>
         <li>
-          <a href="/lower-layer-protocol.html#Heading61">5.4.2.0 The Message Sequence Number Sent Plus One is Equal to the Expected Sequence Number</a>
+          <a href="./lower-layer-protocol.html#Heading61">5.4.2.0 The Message Sequence Number Sent Plus One is Equal to the Expected Sequence Number</a>
         </li>
         <li>
-          <a href="/lower-layer-protocol.html#Heading62">5.4.2.1 The Message Sequence Number Sent is Greater Than the Expected Sequence Number</a>
+          <a href="./lower-layer-protocol.html#Heading62">5.4.2.1 The Message Sequence Number Sent is Greater Than the Expected Sequence Number</a>
         </li>
         <li>
-          <a href="/lower-layer-protocol.html#Heading63">5.4.2.2 Other Errors</a>
+          <a href="./lower-layer-protocol.html#Heading63">5.4.2.2 Other Errors</a>
         </li>
       </ul>
     </ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading64">5.5 Sequence Numbering Chart</a>
+      <a href="./lower-layer-protocol.html#Heading64">5.5 Sequence Numbering Chart</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading65">5.6 To Query for the ESN</a>
+      <a href="./lower-layer-protocol.html#Heading65">5.6 To Query for the ESN</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading66">5.7 To Synchronize the ESN</a>
+      <a href="./lower-layer-protocol.html#Heading66">5.7 To Synchronize the ESN</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading67">5.8 Overview of the Sequence Number Protocol</a>
+      <a href="./lower-layer-protocol.html#Heading67">5.8 Overview of the Sequence Number Protocol</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading68">5.9 Link Management Messages</a>
+      <a href="./lower-layer-protocol.html#Heading68">5.9 Link Management Messages</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading69">5.10 Responsibility for Initiating Synchronization</a>
+      <a href="./lower-layer-protocol.html#Heading69">5.10 Responsibility for Initiating Synchronization</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading70">5.11 Acknowledgment Codes</a>
+      <a href="./lower-layer-protocol.html#Heading70">5.11 Acknowledgment Codes</a>
     </li>
   </ul>
   <li>
-    <a href="/lower-layer-protocol.html#Heading71">6 PSEUDO CODE FOR HL7 TCP</a>
+    <a href="./lower-layer-protocol.html#Heading71">6 PSEUDO CODE FOR HL7 TCP</a>
   </li>
   <ul>
     <li>
-      <a href="/lower-layer-protocol.html#Heading72">6.1 Initiating Module</a>
+      <a href="./lower-layer-protocol.html#Heading72">6.1 Initiating Module</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading73">6.2 Accepting Modules</a>
+      <a href="./lower-layer-protocol.html#Heading73">6.2 Accepting Modules</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading74">6.3 Permanent Virtual Circuits</a>
+      <a href="./lower-layer-protocol.html#Heading74">6.3 Permanent Virtual Circuits</a>
     </li>
     <li>
-      <a href="/lower-layer-protocol.html#Heading75">6.4 Assumptions and Guidelines</a>
+      <a href="./lower-layer-protocol.html#Heading75">6.4 Assumptions and Guidelines</a>
     </li>
   </ul>
 </ul>
 <p>
-  <img src="/image0.jpg">
+  <img src="./image0.jpg">
 </p><a id="Heading2">
 <h1>
   1 INTRODUCTION
@@ -564,7 +564,7 @@ Home
 </h3></a> <a id="Heading24">
 <h3>
   3.1.3 Environment Model
-</h3><img src="/2">
+</h3><img src="./2">
 <p>
   Figure B-1.
 </p></a> <a id="Heading25">
@@ -2135,16 +2135,16 @@ March 14, 2022
 </p>
 <p>
 <span style='color: #FFFF77'>Links:</span>
-<a href='/history.html' style='color: #b8dcf9'>
+<a href='./history.html' style='color: #b8dcf9'>
 Version History
 </a>
 |
 <a href='https://jira.hl7.org/projects/V2/issues' style='color: #b8dcf9' target='_blank'>
 Propose a change
-<img src='/images/external.png' style='text-align: baseline'>
+<img src='./images/external.png' style='text-align: baseline'>
 </a>
 |
-<a href='/license.html' rel='license' style='color: #b8dcf9'>
+<a href='./license.html' rel='license' style='color: #b8dcf9'>
 License
 <!-- %img{:alt => "CC0", :src => "images/cc0.png", :style => "border-style: none;"} -->
 </a>

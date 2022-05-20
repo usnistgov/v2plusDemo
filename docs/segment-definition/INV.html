@@ -9,43 +9,43 @@ HL7 - REFACTORED
 <base href="https://usnistgov.github.io/v2plusDemo/">
 
 <style type='text/css'>
-@import "/css/bootstrap.css";
-@import "/css/codemirror.css";
-@import "/css/hl7.css";
-@import "/css/fhir.css";
-<!-- @import "/css/bootstrap-fhir.css"; -->
-@import "/css/bootstrap-v2.css";
-@import "/css/project.css";
-@import "/css/pygments-manni.css";
-@import "/css/jquery-ui.css";
-@import "/css/modules.css";
-@import "/css/v2.css";
+@import "./css/bootstrap.css";
+@import "./css/codemirror.css";
+@import "./css/hl7.css";
+@import "./css/fhir.css";
+<!-- @import "./css/bootstrap-fhir.css"; -->
+@import "./css/bootstrap-v2.css";
+@import "./css/project.css";
+@import "./css/pygments-manni.css";
+@import "./css/jquery-ui.css";
+@import "./css/modules.css";
+@import "./css/v2.css";
 </style>
-<script src='/js/jquery.js'></script>
-<script src='/js/jquery-ui.min.js'></script>
-<script src='/js/bootstrap.min.js'></script>
-<script src='/js/respond.min.js'></script>
-<script src='/js/codemirror/codemirror.js'></script>
-<script src='/js/codemirror/mode/xml.js'></script>
-<script src='/js/v2.js'></script>
-<script src='/js/fhir-table-scripts.js' type='text/javascript'></script>
-<script src='/js/format_xml.js' type='text/javascript'></script>
-<link href='/images/hl7.ico' rel='shortcut icon'>
+<script src='./js/jquery.js'></script>
+<script src='./js/jquery-ui.min.js'></script>
+<script src='./js/bootstrap.min.js'></script>
+<script src='./js/respond.min.js'></script>
+<script src='./js/codemirror/codemirror.js'></script>
+<script src='./js/codemirror/mode/xml.js'></script>
+<script src='./js/v2.js'></script>
+<script src='./js/fhir-table-scripts.js' type='text/javascript'></script>
+<script src='./js/format_xml.js' type='text/javascript'></script>
+<link href='./images/hl7.ico' rel='shortcut icon'>
 </head>
 <body>
 <div class='segment' id='segment-header'>
 <div class='container'>
 <a href='http://www.hl7.org/hl7v2+' id='logo' no-external='true'></a>
 <div id='hl7-status'>
-<img alt='visit the hl7 website' height='50' id='v2-logo' src='/images/hl7-v2-logo.png'>
-<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='/images/hl7-v2plus.gif'>
+<img alt='visit the hl7 website' height='50' id='v2-logo' src='./images/hl7-v2-logo.png'>
+<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='./images/hl7-v2plus.gif'>
 <b>
 The Demo site for our new HL7 Version 2+ (plus) Standard
 </b>
 </div>
 <div id='hl7-nav'>
 <a href='http://www.hl7.org' id='hl7-logo' no-external='true'></a>
-<img alt='visit the hl7 website' src='/images/hl7-logo.png'>
+<img alt='visit the hl7 website' src='./images/hl7-logo.png'>
 </div>
 </div>
 </div>
@@ -60,33 +60,33 @@ The Demo site for our new HL7 Version 2+ (plus) Standard
 <span class='icon-bar'></span>
 </button>
 </div>
-<a class='navbar-brand hidden' href='/index.html'>
+<a class='navbar-brand hidden' href='./index.html'>
 FHIR
 </a>
 <div class='nav-collapse collapse navbar-inverse-collapse'>
 <ul class='nav navbar-nav'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
 <li>
-<a href='/domains.html'>
+<a href='./domains.html'>
 Domains
 </a>
 </li>
 <li>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Message Structures
 </a>
 </li>
 <li>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Segments
 </a>
 </li>
 <li>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Data Types
 </a>
 </li>
@@ -96,12 +96,12 @@ Data Type Flavors
 </a>
 </li>
 <li>
-<a href='/vocab.html'>
+<a href='./vocab.html'>
 Vocabulary
 </a>
 </li>
 <li>
-<a href='/domain/Control.html'>
+<a href='./domain/Control.html'>
 Control
 </a>
 </li>
@@ -111,7 +111,7 @@ Conformance
 </a>
 </li>
 <li>
-<a href='/domain/Control.html#Control-12'>
+<a href='./domain/Control.html#Control-12'>
 Encoding
 </a>
 </li>
@@ -121,7 +121,7 @@ Transport
 </a>
 </li>
 <li>
-<a href='/history.html'>
+<a href='./history.html'>
 v2.x
 </a>
 </li>
@@ -141,7 +141,7 @@ Draft Website - For Review Purposes Only
 <div class='container'>
 <ul class='breadcrumb'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
@@ -748,38 +748,38 @@ HL7 Attribute Table - INV - Inventory Detail Segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -790,24 +790,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 INV
 </b>
@@ -815,14 +815,14 @@ INV
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Substance Identifier
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -831,7 +831,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0451-Substance-Identifier.html' title='Substance Identifier'>
+<a href='./vocab/0451-Substance-Identifier.html' title='Substance Identifier'>
 0451
 <span class='vocab-link-text'>Substance Identifier</span>
 </a>
@@ -860,14 +860,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 Substance Status
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -876,7 +876,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0383-Substance-Status.html' title='Substance Status(Required)'>
+<a href='./vocab/0383-Substance-Status.html' title='Substance Status(Required)'>
 0383(R)
 <span class='vocab-link-text'>Substance Status(Required)</span>
 </a>
@@ -905,14 +905,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 3
 </td>
 <td>
 Substance Type
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -921,7 +921,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0384-Substance-Type.html' title='Substance Type(Required)'>
+<a href='./vocab/0384-Substance-Type.html' title='Substance Type(Required)'>
 0384(R)
 <span class='vocab-link-text'>Substance Type(Required)</span>
 </a>
@@ -950,14 +950,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 4
 </td>
 <td>
 Inventory Container Identifier
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -966,7 +966,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0599-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0599-ERROR! Bad Data! FIXME.html'>
 0599
 <span class='vocab-link-text'></span>
 </a>
@@ -995,14 +995,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 5
 </td>
 <td>
 Container Carrier Identifier
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1011,7 +1011,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0600-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0600-ERROR! Bad Data! FIXME.html'>
 0600
 <span class='vocab-link-text'></span>
 </a>
@@ -1040,14 +1040,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 6
 </td>
 <td>
 Position on Carrier
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1056,7 +1056,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0601-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0601-ERROR! Bad Data! FIXME.html'>
 0601
 <span class='vocab-link-text'></span>
 </a>
@@ -1085,14 +1085,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 7
 </td>
 <td>
 Initial Quantity
 </td>
 <td class='centered'>
-<a href='/data-type/NM.html'>
+<a href='./data-type/NM.html'>
 NM
 </a>
 </td>
@@ -1101,7 +1101,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1130,14 +1130,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 8
 </td>
 <td>
 Current Quantity
 </td>
 <td class='centered'>
-<a href='/data-type/NM.html'>
+<a href='./data-type/NM.html'>
 NM
 </a>
 </td>
@@ -1146,7 +1146,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1175,14 +1175,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 9
 </td>
 <td>
 Available Quantity
 </td>
 <td class='centered'>
-<a href='/data-type/NM.html'>
+<a href='./data-type/NM.html'>
 NM
 </a>
 </td>
@@ -1191,7 +1191,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1220,14 +1220,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 10
 </td>
 <td>
 Consumption Quantity
 </td>
 <td class='centered'>
-<a href='/data-type/NM.html'>
+<a href='./data-type/NM.html'>
 NM
 </a>
 </td>
@@ -1236,7 +1236,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1265,14 +1265,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 11
 </td>
 <td>
 Quantity Units
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1281,7 +1281,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0602-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0602-ERROR! Bad Data! FIXME.html'>
 0602
 <span class='vocab-link-text'></span>
 </a>
@@ -1310,14 +1310,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 12
 </td>
 <td>
 Expiration Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -1326,7 +1326,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1355,14 +1355,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 13
 </td>
 <td>
 First Used Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -1371,7 +1371,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1400,7 +1400,7 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 14
 </td>
 <td>
@@ -1416,7 +1416,7 @@ W
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1445,14 +1445,14 @@ W
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 15
 </td>
 <td>
 Test/Fluid Identifier(s)
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1461,7 +1461,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0603-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0603-ERROR! Bad Data! FIXME.html'>
 0603
 <span class='vocab-link-text'></span>
 </a>
@@ -1490,14 +1490,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 16
 </td>
 <td>
 Manufacturer Lot Number
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -1506,7 +1506,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1535,14 +1535,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 17
 </td>
 <td>
 Manufacturer Identifier
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1551,7 +1551,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0385-Manufacturer-Identifier.html' title='Manufacturer Identifier'>
+<a href='./vocab/0385-Manufacturer-Identifier.html' title='Manufacturer Identifier'>
 0385
 <span class='vocab-link-text'>Manufacturer Identifier</span>
 </a>
@@ -1580,14 +1580,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 18
 </td>
 <td>
 Supplier Identifier
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1596,7 +1596,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0386-Supplier-Identifier.html' title='Supplier Identifier'>
+<a href='./vocab/0386-Supplier-Identifier.html' title='Supplier Identifier'>
 0386
 <span class='vocab-link-text'>Supplier Identifier</span>
 </a>
@@ -1625,14 +1625,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 19
 </td>
 <td>
 On Board Stability Time
 </td>
 <td class='centered'>
-<a href='/data-type/CQ.html'>
+<a href='./data-type/CQ.html'>
 CQ
 </a>
 </td>
@@ -1641,7 +1641,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1670,14 +1670,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 20
 </td>
 <td>
 Target Value
 </td>
 <td class='centered'>
-<a href='/data-type/CQ.html'>
+<a href='./data-type/CQ.html'>
 CQ
 </a>
 </td>
@@ -1686,7 +1686,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1715,14 +1715,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 21
 </td>
 <td>
 Equipment State Indicator Type Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1731,7 +1731,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0942-Equipment-State-Indicator-Type-Code.html' title='Equipment State Indicator Type Code(Required)'>
+<a href='./vocab/0942-Equipment-State-Indicator-Type-Code.html' title='Equipment State Indicator Type Code(Required)'>
 0942(R)
 <span class='vocab-link-text'>Equipment State Indicator Type Code(Required)</span>
 </a>
@@ -1760,14 +1760,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 22
 </td>
 <td>
 Equipment State Indicator Value
 </td>
 <td class='centered'>
-<a href='/data-type/CQ.html'>
+<a href='./data-type/CQ.html'>
 CQ
 </a>
 </td>
@@ -1776,7 +1776,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1807,112 +1807,112 @@ C
 </table>
 
 <h4 class='v2' id='INV-1'>
-INV-1: Substance Identifier (<a href='/data-type/CWE.html'>CWE</a>) 01372
+INV-1: Substance Identifier (<a href='./data-type/CWE.html'>CWE</a>) 01372
 </h4>
 <p class="v2 v2-normalindented">Definition:  Unique identifier for the substance that is in inventory.  This is a manufacturer-specific identifier. Refer to <a href="https://www.hl7.org/fhir/v2/0451/index.html">User-defined Table 0451 – Substance Identifier</a> in Chapter 2C, Code Tables, for suggested values.</p><p class="v2 v2-indent720">This field is conditional. It is optional in queries INR^U14 and required in all other messages. Absence of this field in a query means that the result shall be not filtered on inventory item ID.</p>
 
 <h4 class='v2' id='INV-2'>
-INV-2: Substance Status (<a href='/data-type/CWE.html'>CWE</a>) 01373
+INV-2: Substance Status (<a href='./data-type/CWE.html'>CWE</a>) 01373
 </h4>
 <p class="v2 v2-normalindented">Definition:  The status of the inventoried item.  The status indicates the current status of the substance.  Refer to<a href=""> </a><a href="https://www.hl7.org/fhir/v2/0383/index.html">HL7 Table 0383 – Substance Status</a> in Chapter 2C, Code Tables, for suggested values.</p><p class="v2 v2-indent720">This field is conditional. It is optional in queries INR^U14 and required in all other messages. Absence of this field in a query means that the result shall be not filtered on inventory item status.</p>
 
 <h4 class='v2' id='INV-3'>
-INV-3: Substance Type (<a href='/data-type/CWE.html'>CWE</a>) 01374
+INV-3: Substance Type (<a href='./data-type/CWE.html'>CWE</a>) 01374
 </h4>
 <p class="v2 v2-normalindented">Definition:  The type of substance.  Refer to <a href="https://www.hl7.org/fhir/v2/0384/index.html">HL7 Table 0384 – Substance Type</a> in chapter 2C for suggested values.</p>
 
 <h4 class='v2' id='INV-4'>
-INV-4: Inventory Container Identifier (<a href='/data-type/CWE.html'>CWE</a>) 01532
+INV-4: Inventory Container Identifier (<a href='./data-type/CWE.html'>CWE</a>) 01532
 </h4>
 <p class="v2 v2-normalindented">Definition:  Identifies the inventory container, e.g., unique identifier of a specific package instance of a specific substance. This is a manufacturer-specific identifier.Refer to Table 0599 - Inventory Container Identifier in Chapter 2C for valid values.</p>
 
 <h4 class='v2' id='INV-5'>
-INV-5: Container Carrier Identifier (<a href='/data-type/CWE.html'>CWE</a>) 01376
+INV-5: Container Carrier Identifier (<a href='./data-type/CWE.html'>CWE</a>) 01376
 </h4>
 <p class="v2 v2-normalindented">Definition:  This is the carrier used to transport the substance containers (e.g., a removable rotor with reagent bottles). Refer to Table 0600 - Container Carrier Identifier in Chapter 2C for valid values.</p>
 
 <h4 class='v2' id='INV-6'>
-INV-6: Position on Carrier (<a href='/data-type/CWE.html'>CWE</a>) 01377
+INV-6: Position on Carrier (<a href='./data-type/CWE.html'>CWE</a>) 01377
 </h4>
 <p class="v2 v2-normalindented">Definition:  Identifies the position (e.g., index) on the carrier. Refer to Table 0601 - Position on Carrier in Chapter 2C for valid values.</p>
 
 <h4 class='v2' id='INV-7'>
-INV-7: Initial Quantity (<a href='/data-type/NM.html'>NM</a>) 01378
+INV-7: Initial Quantity (<a href='./data-type/NM.html'>NM</a>) 01378
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field identifies the initial quantity of the substance in inventory.</p>
 
 <h4 class='v2' id='INV-8'>
-INV-8: Current Quantity (<a href='/data-type/NM.html'>NM</a>) 01379
+INV-8: Current Quantity (<a href='./data-type/NM.html'>NM</a>) 01379
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field is the current quantity, i.e., initial quantity minus what has been actually used.</p>
 
 <h4 class='v2' id='INV-9'>
-INV-9: Available Quantity (<a href='/data-type/NM.html'>NM</a>) 01380
+INV-9: Available Quantity (<a href='./data-type/NM.html'>NM</a>) 01380
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field is the available quantity of substance.   This is the current quantity minus any planned consumption (e.g., tests that are planned).</p>
 
 <h4 class='v2' id='INV-10'>
-INV-10: Consumption Quantity (<a href='/data-type/NM.html'>NM</a>) 01381
+INV-10: Consumption Quantity (<a href='./data-type/NM.html'>NM</a>) 01381
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field is the consumption that is used each time the equipment uses this substance.</p>
 
 <h4 class='v2' id='INV-11'>
-INV-11: Quantity Units (<a href='/data-type/CWE.html'>CWE</a>) 01382
+INV-11: Quantity Units (<a href='./data-type/CWE.html'>CWE</a>) 01382
 </h4>
 <p class="v2 v2-normalindented">Definition: This field is the units of measure of the available quantity.  If the units are ISO+ units, they should be recorded as single case abbreviations.  If the units are ANS+ or L (local), the units and the source code table must be recorded, except that in this case, component delimiters should be replaced by sub-component delimiters.  For example, &quot;l&quot; indicates liters, whereas pt&#38;&#38;ANS+ indicates pints (ANSI units).  The default unit is milliliters (ml), which should be assumed if no units are reported. Refer to Table 0602 - Quantity Units in Chapter 2C for valid values.</p>
 
 <h4 class='v2' id='INV-12'>
-INV-12: Expiration Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 01383
+INV-12: Expiration Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 01383
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field is the expiration date/time of the substance.</p>
 
 <h4 class='v2' id='INV-13'>
-INV-13: First Used Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 01384
+INV-13: First Used Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 01384
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field is the time and date when the substance was first used. This date and time can be necessary to determine the stability of the substance. The meaning of the &quot;first used&quot; element depends on the substance. In certain cases it means the time when the substance was put on board of the instrument or prepared (mixed), without actually using it in the analysis. </p>
 
 <h4 class='v2' id='INV-14'>
-INV-14: On Board Stability Duration (<a href='/data-type/.html'></a>) 01385
+INV-14: On Board Stability Duration (<a href='./data-type/.html'></a>) 01385
 </h4>
 <p class="v2 v2-normalindented"><strong>Attention: As of v2.5 this field was retained for backward compatibility only and withdrawn and removed as of v2.7.</strong>  The TQ data type was deprecated; see Chapter 2A, section 2.A.81.</p>
 
 <h4 class='v2' id='INV-15'>
-INV-15: Test/Fluid Identifier(s) (<a href='/data-type/CWE.html'>CWE</a>) 01386
+INV-15: Test/Fluid Identifier(s) (<a href='./data-type/CWE.html'>CWE</a>) 01386
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field is the list of tests and body fluids that relate or correspond  to this inventory item .  This is a repeating field. An empty field means that this inventory item is not test specific, i.e., it applies to all tests. Refer to Table 0603 - Test/Fluid Identifier(s) in Chapter 2C for valid values.</p>
 
 <h4 class='v2' id='INV-16'>
-INV-16: Manufacturer Lot Number (<a href='/data-type/ST.html'>ST</a>) 01387
+INV-16: Manufacturer Lot Number (<a href='./data-type/ST.html'>ST</a>) 01387
 </h4>
 <p class="v2 v2-normalindented">Definition: This field specifies the lot number assigned by the manufacturer during production of the substance.</p>
 
 <h4 class='v2' id='INV-17'>
-INV-17: Manufacturer Identifier (<a href='/data-type/CWE.html'>CWE</a>) 00286
+INV-17: Manufacturer Identifier (<a href='./data-type/CWE.html'>CWE</a>) 00286
 </h4>
 <p class="v2 v2-normalindented">Definition: This field identifies the manufacturer of this substance. Refer to <a href="https://www.hl7.org/fhir/v2/0385/index.html">User-defined Table 0385 – Manufacturer Identifier</a> in Chapter 2C, Code Tables, for suggested values. Relevant external code systems may be used, e.g., HIBCC Manufacturers Labeler ID Code (LIC), UPC, NDC, etc.</p>
 
 <h4 class='v2' id='INV-18'>
-INV-18: Supplier Identifier (<a href='/data-type/CWE.html'>CWE</a>) 01389
+INV-18: Supplier Identifier (<a href='./data-type/CWE.html'>CWE</a>) 01389
 </h4>
 <p class="v2 v2-normalindented">Definition: This field identifies the supplier of this substance. Refer to <a href="https://www.hl7.org/fhir/v2/0386/index.html">User-defined Table 0386 – Supplier Identifie</a><a href="r">r</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='INV-19'>
-INV-19: On Board Stability Time (<a href='/data-type/CQ.html'>CQ</a>) 01626
+INV-19: On Board Stability Time (<a href='./data-type/CQ.html'>CQ</a>) 01626
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field is the duration of time that the calibration/usability of the substance is stable. The duration is used to calculate the date/time when this calibration is no longer valid by adding this &quot;On board stability time&quot; (INV-19) to the &quot;First used date / time&quot; (INV-13).</p><p class="v2 v2-normalindented">The 1st component defines the time quantity and the 2nd component the time units (see <a href="https://www.hl7.org/fhir/v2/0255/index.html">HL7 Table 0255 – Duration Categories</a>). Recommended accuracy is &quot;minutes&quot;, &quot;hours&quot; and &quot;days&quot;.   </p>
 
 <h4 class='v2' id='INV-20'>
-INV-20: Target Value (<a href='/data-type/CQ.html'>CQ</a>) 01896
+INV-20: Target Value (<a href='./data-type/CQ.html'>CQ</a>) 01896
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field is the target analytical value for a particular test for a specific lot of a manufactured material. Target values for QC purposes are usually selected for their relevance to a reference (normal) range or to a clinically significant decision level.</p><p class="v2 v2-normalindented">The 1st component defines the value and the 2nd component the measurement units.</p>
 
 <h4 class='v2' id='INV-21'>
-INV-21: Equipment State Indicator Type Code (<a href='/data-type/CWE.html'>CWE</a>) 03488
+INV-21: Equipment State Indicator Type Code (<a href='./data-type/CWE.html'>CWE</a>) 03488
 </h4>
 <p class="v2 v2-indent2160">&#60;Alternate Identifier (ST)&#62; ^ &#60;Alternate Text (ST)&#62; ^ &#60;Name of Alternate Coding System (ID)&#62; ^ &#60;Coding System Version ID (ST)&#62; ^ &#60;Alternate Coding System Version ID (ST)&#62; ^ &#60;Original Text (ST)&#62; ^ &#60;Second Alternate Identifier (ST)&#62; ^ &#60;Second Alternate Text (ST)&#62; ^ &#60;Name of Second Alternate Coding System (ID)&#62; ^ &#60;Second Alternate Coding System Version ID (ST)&#62; ^ &#60;Coding System OID (ST)&#62; ^ &#60;Value Set OID (ST)&#62; ^ &#60;Value Set Version ID (DTM)&#62; ^ &#60;Alternate Coding System OID (ST)&#62; ^ &#60;Alternate Value Set OID (ST)&#62; ^ &#60;Alternate Value Set Version ID (DTM)&#62; ^ &#60;Second Alternate Coding System OID (ST)&#62; ^ &#60;Second Alternate Value Set OID (ST)&#62; ^ &#60;Second Alternate Value Set Version ID (DTM)&#62;</p><p class="v2 v2-indent720">Definition:  The type code of an equipment state indicator. Refer to HL7 Table 0942 – Equipment State Indicator Type Code in Chapter 2C, Code Tables, for suggested values.</p><p class="v2 v2-indent720">Due to its dynamic nature, an equipment state indicator is considered to be a [non-material] inventory item. Its value usually can be derived from the material inventory — in that way, a state indicator differs from static configuration parameters and master data stored on the equipment.</p><p class="v2 v2-indent720">This field is conditional. It is optional when INV-3 “Substance Type” is not populated and prohibited otherwise. </p>
 
 <h4 class='v2' id='INV-22'>
-INV-22: Equipment State Indicator Value (<a href='/data-type/CQ.html'>CQ</a>) 03489
+INV-22: Equipment State Indicator Value (<a href='./data-type/CQ.html'>CQ</a>) 03489
 </h4>
 <p class="v2 v2-indent720">Definition:  The numeric value of the equipment state indicator specified in INV-21. The 1st component defines the number and the 2nd component the units of measurement.</p><p class="v2 v2-indent720">This field is conditional. It is optional when INV-21 “Equipment State Indicator Type Code” is populated and prohibited otherwise. </p><p class="v2 v2-normalindented"></p>
 
@@ -1927,16 +1927,16 @@ March 23, 2022
 </p>
 <p>
 <span style='color: #FFFF77'>Links:</span>
-<a href='/history.html' style='color: #b8dcf9'>
+<a href='./history.html' style='color: #b8dcf9'>
 Version History
 </a>
 |
 <a href='https://jira.hl7.org/projects/V2/issues' style='color: #b8dcf9' target='_blank'>
 Propose a change
-<img src='/images/external.png' style='text-align: baseline'>
+<img src='./images/external.png' style='text-align: baseline'>
 </a>
 |
-<a href='/license.html' rel='license' style='color: #b8dcf9'>
+<a href='./license.html' rel='license' style='color: #b8dcf9'>
 License
 <!-- %img{:alt => "CC0", :src => "images/cc0.png", :style => "border-style: none;"} -->
 </a>

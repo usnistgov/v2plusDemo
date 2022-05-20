@@ -9,43 +9,43 @@ HL7 - REFACTORED
 <base href="https://usnistgov.github.io/v2plusDemo/">
 
 <style type='text/css'>
-@import "/css/bootstrap.css";
-@import "/css/codemirror.css";
-@import "/css/hl7.css";
-@import "/css/fhir.css";
-<!-- @import "/css/bootstrap-fhir.css"; -->
-@import "/css/bootstrap-v2.css";
-@import "/css/project.css";
-@import "/css/pygments-manni.css";
-@import "/css/jquery-ui.css";
-@import "/css/modules.css";
-@import "/css/v2.css";
+@import "./css/bootstrap.css";
+@import "./css/codemirror.css";
+@import "./css/hl7.css";
+@import "./css/fhir.css";
+<!-- @import "./css/bootstrap-fhir.css"; -->
+@import "./css/bootstrap-v2.css";
+@import "./css/project.css";
+@import "./css/pygments-manni.css";
+@import "./css/jquery-ui.css";
+@import "./css/modules.css";
+@import "./css/v2.css";
 </style>
-<script src='/js/jquery.js'></script>
-<script src='/js/jquery-ui.min.js'></script>
-<script src='/js/bootstrap.min.js'></script>
-<script src='/js/respond.min.js'></script>
-<script src='/js/codemirror/codemirror.js'></script>
-<script src='/js/codemirror/mode/xml.js'></script>
-<script src='/js/v2.js'></script>
-<script src='/js/fhir-table-scripts.js' type='text/javascript'></script>
-<script src='/js/format_xml.js' type='text/javascript'></script>
-<link href='/images/hl7.ico' rel='shortcut icon'>
+<script src='./js/jquery.js'></script>
+<script src='./js/jquery-ui.min.js'></script>
+<script src='./js/bootstrap.min.js'></script>
+<script src='./js/respond.min.js'></script>
+<script src='./js/codemirror/codemirror.js'></script>
+<script src='./js/codemirror/mode/xml.js'></script>
+<script src='./js/v2.js'></script>
+<script src='./js/fhir-table-scripts.js' type='text/javascript'></script>
+<script src='./js/format_xml.js' type='text/javascript'></script>
+<link href='./images/hl7.ico' rel='shortcut icon'>
 </head>
 <body>
 <div class='segment' id='segment-header'>
 <div class='container'>
 <a href='http://www.hl7.org/hl7v2+' id='logo' no-external='true'></a>
 <div id='hl7-status'>
-<img alt='visit the hl7 website' height='50' id='v2-logo' src='/images/hl7-v2-logo.png'>
-<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='/images/hl7-v2plus.gif'>
+<img alt='visit the hl7 website' height='50' id='v2-logo' src='./images/hl7-v2-logo.png'>
+<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='./images/hl7-v2plus.gif'>
 <b>
 The Demo site for our new HL7 Version 2+ (plus) Standard
 </b>
 </div>
 <div id='hl7-nav'>
 <a href='http://www.hl7.org' id='hl7-logo' no-external='true'></a>
-<img alt='visit the hl7 website' src='/images/hl7-logo.png'>
+<img alt='visit the hl7 website' src='./images/hl7-logo.png'>
 </div>
 </div>
 </div>
@@ -60,33 +60,33 @@ The Demo site for our new HL7 Version 2+ (plus) Standard
 <span class='icon-bar'></span>
 </button>
 </div>
-<a class='navbar-brand hidden' href='/index.html'>
+<a class='navbar-brand hidden' href='./index.html'>
 FHIR
 </a>
 <div class='nav-collapse collapse navbar-inverse-collapse'>
 <ul class='nav navbar-nav'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
 <li>
-<a href='/domains.html'>
+<a href='./domains.html'>
 Domains
 </a>
 </li>
 <li>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Message Structures
 </a>
 </li>
 <li>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Segments
 </a>
 </li>
 <li>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Data Types
 </a>
 </li>
@@ -96,12 +96,12 @@ Data Type Flavors
 </a>
 </li>
 <li>
-<a href='/vocab.html'>
+<a href='./vocab.html'>
 Vocabulary
 </a>
 </li>
 <li>
-<a href='/domain/Control.html'>
+<a href='./domain/Control.html'>
 Control
 </a>
 </li>
@@ -111,7 +111,7 @@ Conformance
 </a>
 </li>
 <li>
-<a href='/domain/Control.html#Control-12'>
+<a href='./domain/Control.html#Control-12'>
 Encoding
 </a>
 </li>
@@ -121,7 +121,7 @@ Transport
 </a>
 </li>
 <li>
-<a href='/history.html'>
+<a href='./history.html'>
 v2.x
 </a>
 </li>
@@ -141,7 +141,7 @@ Draft Website - For Review Purposes Only
 <div class='container'>
 <ul class='breadcrumb'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
@@ -164,38 +164,38 @@ HL7 Attribute Table - PV2 - Patient Visit - Additional Information Segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -206,24 +206,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 PV2
 </b>
@@ -231,14 +231,14 @@ PV2
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Prior Pending Location
 </td>
 <td class='centered'>
-<a href='/data-type/PL.html'>
+<a href='./data-type/PL.html'>
 PL
 </a>
 </td>
@@ -247,7 +247,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -276,14 +276,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 Accommodation Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -292,7 +292,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0129-Accommodation-Code.html' title='Accommodation Code'>
+<a href='./vocab/0129-Accommodation-Code.html' title='Accommodation Code'>
 0129
 <span class='vocab-link-text'>Accommodation Code</span>
 </a>
@@ -321,14 +321,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 3
 </td>
 <td>
 Admit Reason
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -337,7 +337,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -366,14 +366,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 4
 </td>
 <td>
 Transfer Reason
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -382,7 +382,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -411,14 +411,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 5
 </td>
 <td>
 Patient Valuables
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -427,7 +427,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -456,14 +456,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 6
 </td>
 <td>
 Patient Valuables Location
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -472,7 +472,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -501,14 +501,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 7
 </td>
 <td>
 Visit User Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -517,7 +517,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0130-Visit-User-Code.html' title='Visit User Code'>
+<a href='./vocab/0130-Visit-User-Code.html' title='Visit User Code'>
 0130
 <span class='vocab-link-text'>Visit User Code</span>
 </a>
@@ -546,14 +546,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 8
 </td>
 <td>
 Expected Admit Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -562,7 +562,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -591,14 +591,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 9
 </td>
 <td>
 Expected Discharge Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -607,7 +607,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -636,14 +636,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 10
 </td>
 <td>
 Estimated Length of Inpatient Stay
 </td>
 <td class='centered'>
-<a href='/data-type/NM.html'>
+<a href='./data-type/NM.html'>
 NM
 </a>
 </td>
@@ -652,7 +652,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -681,14 +681,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 11
 </td>
 <td>
 Actual Length of Inpatient Stay
 </td>
 <td class='centered'>
-<a href='/data-type/NM.html'>
+<a href='./data-type/NM.html'>
 NM
 </a>
 </td>
@@ -697,7 +697,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -726,14 +726,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 12
 </td>
 <td>
 Visit Description
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -742,7 +742,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -771,14 +771,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 13
 </td>
 <td>
 Referral Source Code
 </td>
 <td class='centered'>
-<a href='/data-type/XCN.html'>
+<a href='./data-type/XCN.html'>
 XCN
 </a>
 </td>
@@ -787,7 +787,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -816,14 +816,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 14
 </td>
 <td>
 Previous Service Date
 </td>
 <td class='centered'>
-<a href='/data-type/DT.html'>
+<a href='./data-type/DT.html'>
 DT
 </a>
 </td>
@@ -832,7 +832,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -861,14 +861,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 15
 </td>
 <td>
 Employment Illness Related Indicator
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -877,7 +877,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
+<a href='./vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
 0136(R)
 <span class='vocab-link-text'>Yes/no Indicator(Required)</span>
 </a>
@@ -906,14 +906,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 16
 </td>
 <td>
 Purge Status Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -922,7 +922,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0213-Purge-Status-Code.html' title='Purge Status Code'>
+<a href='./vocab/0213-Purge-Status-Code.html' title='Purge Status Code'>
 0213
 <span class='vocab-link-text'>Purge Status Code</span>
 </a>
@@ -951,14 +951,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 17
 </td>
 <td>
 Purge Status Date
 </td>
 <td class='centered'>
-<a href='/data-type/DT.html'>
+<a href='./data-type/DT.html'>
 DT
 </a>
 </td>
@@ -967,7 +967,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -996,14 +996,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 18
 </td>
 <td>
 Special Program Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1012,7 +1012,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0214-Special-Program-Code.html' title='Special Program Code'>
+<a href='./vocab/0214-Special-Program-Code.html' title='Special Program Code'>
 0214
 <span class='vocab-link-text'>Special Program Code</span>
 </a>
@@ -1041,14 +1041,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 19
 </td>
 <td>
 Retention Indicator
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -1057,7 +1057,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
+<a href='./vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
 0136(R)
 <span class='vocab-link-text'>Yes/no Indicator(Required)</span>
 </a>
@@ -1086,14 +1086,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 20
 </td>
 <td>
 Expected Number of Insurance Plans
 </td>
 <td class='centered'>
-<a href='/data-type/NM.html'>
+<a href='./data-type/NM.html'>
 NM
 </a>
 </td>
@@ -1102,7 +1102,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1131,14 +1131,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 21
 </td>
 <td>
 Visit Publicity Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1147,7 +1147,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0215-Publicity-Code.html' title='Publicity Code'>
+<a href='./vocab/0215-Publicity-Code.html' title='Publicity Code'>
 0215
 <span class='vocab-link-text'>Publicity Code</span>
 </a>
@@ -1176,14 +1176,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 22
 </td>
 <td>
 Visit Protection Indicator
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -1192,7 +1192,7 @@ B
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
+<a href='./vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
 0136(R)
 <span class='vocab-link-text'>Yes/no Indicator(Required)</span>
 </a>
@@ -1221,14 +1221,14 @@ B
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 23
 </td>
 <td>
 Clinic Organization Name
 </td>
 <td class='centered'>
-<a href='/data-type/XON.html'>
+<a href='./data-type/XON.html'>
 XON
 </a>
 </td>
@@ -1237,7 +1237,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1266,14 +1266,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 24
 </td>
 <td>
 Patient Status Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1282,7 +1282,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0216-Patient-Status-Code.html' title='Patient Status Code'>
+<a href='./vocab/0216-Patient-Status-Code.html' title='Patient Status Code'>
 0216
 <span class='vocab-link-text'>Patient Status Code</span>
 </a>
@@ -1311,14 +1311,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 25
 </td>
 <td>
 Visit Priority Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1327,7 +1327,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0217-Visit-Priority-Code.html' title='Visit Priority Code(Suggested)'>
+<a href='./vocab/0217-Visit-Priority-Code.html' title='Visit Priority Code(Suggested)'>
 0217(S)
 <span class='vocab-link-text'>Visit Priority Code(Suggested)</span>
 </a>
@@ -1356,14 +1356,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 26
 </td>
 <td>
 Previous Treatment Date
 </td>
 <td class='centered'>
-<a href='/data-type/DT.html'>
+<a href='./data-type/DT.html'>
 DT
 </a>
 </td>
@@ -1372,7 +1372,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1401,14 +1401,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 27
 </td>
 <td>
 Expected Discharge Disposition
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1417,7 +1417,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0112-Discharge-Disposition.html' title='Discharge Disposition'>
+<a href='./vocab/0112-Discharge-Disposition.html' title='Discharge Disposition'>
 0112
 <span class='vocab-link-text'>Discharge Disposition</span>
 </a>
@@ -1446,14 +1446,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 28
 </td>
 <td>
 Signature on File Date
 </td>
 <td class='centered'>
-<a href='/data-type/DT.html'>
+<a href='./data-type/DT.html'>
 DT
 </a>
 </td>
@@ -1462,7 +1462,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1491,14 +1491,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 29
 </td>
 <td>
 First Similar Illness Date
 </td>
 <td class='centered'>
-<a href='/data-type/DT.html'>
+<a href='./data-type/DT.html'>
 DT
 </a>
 </td>
@@ -1507,7 +1507,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1536,14 +1536,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 30
 </td>
 <td>
 Patient Charge Adjustment Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1552,7 +1552,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0218-Patient-Charge-Adjustment.html' title='Patient Charge Adjustment'>
+<a href='./vocab/0218-Patient-Charge-Adjustment.html' title='Patient Charge Adjustment'>
 0218
 <span class='vocab-link-text'>Patient Charge Adjustment</span>
 </a>
@@ -1581,14 +1581,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 31
 </td>
 <td>
 Recurring Service Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1597,7 +1597,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0219-Recurring-Service-Code.html' title='Recurring Service Code'>
+<a href='./vocab/0219-Recurring-Service-Code.html' title='Recurring Service Code'>
 0219
 <span class='vocab-link-text'>Recurring Service Code</span>
 </a>
@@ -1626,14 +1626,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 32
 </td>
 <td>
 Billing Media Code
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -1642,7 +1642,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
+<a href='./vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
 0136(R)
 <span class='vocab-link-text'>Yes/no Indicator(Required)</span>
 </a>
@@ -1671,14 +1671,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 33
 </td>
 <td>
 Expected Surgery Date and Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -1687,7 +1687,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -1716,14 +1716,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 34
 </td>
 <td>
 Military Partnership Code
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -1732,7 +1732,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
+<a href='./vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
 0136(R)
 <span class='vocab-link-text'>Yes/no Indicator(Required)</span>
 </a>
@@ -1761,14 +1761,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 35
 </td>
 <td>
 Military Non-Availability Code
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -1777,7 +1777,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
+<a href='./vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
 0136(R)
 <span class='vocab-link-text'>Yes/no Indicator(Required)</span>
 </a>
@@ -1806,14 +1806,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 36
 </td>
 <td>
 Newborn Baby Indicator
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -1822,7 +1822,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
+<a href='./vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
 0136(R)
 <span class='vocab-link-text'>Yes/no Indicator(Required)</span>
 </a>
@@ -1851,14 +1851,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 37
 </td>
 <td>
 Baby Detained Indicator
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -1867,7 +1867,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
+<a href='./vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
 0136(R)
 <span class='vocab-link-text'>Yes/no Indicator(Required)</span>
 </a>
@@ -1896,14 +1896,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 38
 </td>
 <td>
 Mode of Arrival Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1912,7 +1912,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0430-Mode-of-Arrival-Code.html' title='Mode of Arrival Code(Suggested)'>
+<a href='./vocab/0430-Mode-of-Arrival-Code.html' title='Mode of Arrival Code(Suggested)'>
 0430(S)
 <span class='vocab-link-text'>Mode of Arrival Code(Suggested)</span>
 </a>
@@ -1941,14 +1941,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 39
 </td>
 <td>
 Recreational Drug Use Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -1957,7 +1957,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0431-Recreational-Drug-Use-Code.html' title='Recreational Drug Use Code'>
+<a href='./vocab/0431-Recreational-Drug-Use-Code.html' title='Recreational Drug Use Code'>
 0431
 <span class='vocab-link-text'>Recreational Drug Use Code</span>
 </a>
@@ -1986,14 +1986,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 40
 </td>
 <td>
 Admission Level of Care Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -2002,7 +2002,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0432-Admission-Level-of-Care-Code.html' title='Admission Level of Care Code(Suggested)'>
+<a href='./vocab/0432-Admission-Level-of-Care-Code.html' title='Admission Level of Care Code(Suggested)'>
 0432(S)
 <span class='vocab-link-text'>Admission Level of Care Code(Suggested)</span>
 </a>
@@ -2031,14 +2031,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 41
 </td>
 <td>
 Precaution Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -2047,7 +2047,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0433-Precaution-Code.html' title='Precaution Code(Suggested)'>
+<a href='./vocab/0433-Precaution-Code.html' title='Precaution Code(Suggested)'>
 0433(S)
 <span class='vocab-link-text'>Precaution Code(Suggested)</span>
 </a>
@@ -2076,14 +2076,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 42
 </td>
 <td>
 Patient Condition Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -2092,7 +2092,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0434-Patient-Condition-Code.html' title='Patient Condition Code(Suggested)'>
+<a href='./vocab/0434-Patient-Condition-Code.html' title='Patient Condition Code(Suggested)'>
 0434(S)
 <span class='vocab-link-text'>Patient Condition Code(Suggested)</span>
 </a>
@@ -2121,14 +2121,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 43
 </td>
 <td>
 Living Will Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -2137,7 +2137,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0315-Living-Will-Code.html' title='Living Will Code(Suggested)'>
+<a href='./vocab/0315-Living-Will-Code.html' title='Living Will Code(Suggested)'>
 0315(S)
 <span class='vocab-link-text'>Living Will Code(Suggested)</span>
 </a>
@@ -2166,14 +2166,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 44
 </td>
 <td>
 Organ Donor Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -2182,7 +2182,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0316-Organ-Donor-Code.html' title='Organ Donor Code(Suggested)'>
+<a href='./vocab/0316-Organ-Donor-Code.html' title='Organ Donor Code(Suggested)'>
 0316(S)
 <span class='vocab-link-text'>Organ Donor Code(Suggested)</span>
 </a>
@@ -2211,14 +2211,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 45
 </td>
 <td>
 Advance Directive Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -2227,7 +2227,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0435-Advance-Directive-Code.html' title='Advance Directive Code'>
+<a href='./vocab/0435-Advance-Directive-Code.html' title='Advance Directive Code'>
 0435
 <span class='vocab-link-text'>Advance Directive Code</span>
 </a>
@@ -2256,14 +2256,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 46
 </td>
 <td>
 Patient Status Effective Date
 </td>
 <td class='centered'>
-<a href='/data-type/DT.html'>
+<a href='./data-type/DT.html'>
 DT
 </a>
 </td>
@@ -2272,7 +2272,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -2301,14 +2301,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 47
 </td>
 <td>
 Expected LOA Return Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -2317,7 +2317,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -2346,14 +2346,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 48
 </td>
 <td>
 Expected Pre-admission Testing Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -2362,7 +2362,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -2391,14 +2391,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 49
 </td>
 <td>
 Notify Clergy Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -2407,7 +2407,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0534-Notify-Clergy-Code.html' title='Notify Clergy Code(Suggested)'>
+<a href='./vocab/0534-Notify-Clergy-Code.html' title='Notify Clergy Code(Suggested)'>
 0534(S)
 <span class='vocab-link-text'>Notify Clergy Code(Suggested)</span>
 </a>
@@ -2436,14 +2436,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 50
 </td>
 <td>
 Advance Directive Last Verified Date
 </td>
 <td class='centered'>
-<a href='/data-type/DT.html'>
+<a href='./data-type/DT.html'>
 DT
 </a>
 </td>
@@ -2452,7 +2452,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -2483,254 +2483,254 @@ O
 </table>
 
 <h4 class='v2' id='PV2-1'>
-PV2-1: Prior Pending Location (<a href='/data-type/PL.html'>PL</a>) 00181
+PV2-1: Prior Pending Location (<a href='./data-type/PL.html'>PL</a>) 00181
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field is required for cancel pending transfer (A26) messages.  In all other events it is optional.</p>
 
 <h4 class='v2' id='PV2-2'>
-PV2-2: Accommodation Code (<a href='/data-type/CWE.html'>CWE</a>) 00182
+PV2-2: Accommodation Code (<a href='./data-type/CWE.html'>CWE</a>) 00182
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field indicates the specific patient accommodations for this visit.  Refer to <a href="https://www.hl7.org/fhir/v2/0129/index.html">User-defined Table 0129 - Accommodation Code</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='PV2-3'>
-PV2-3: Admit Reason (<a href='/data-type/CWE.html'>CWE</a>) 00183
+PV2-3: Admit Reason (<a href='./data-type/CWE.html'>CWE</a>) 00183
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the short description of the reason for patient admission.</p>
 
 <h4 class='v2' id='PV2-4'>
-PV2-4: Transfer Reason (<a href='/data-type/CWE.html'>CWE</a>) 00184
+PV2-4: Transfer Reason (<a href='./data-type/CWE.html'>CWE</a>) 00184
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the short description of the reason for a patient location change.</p>
 
 <h4 class='v2' id='PV2-5'>
-PV2-5: Patient Valuables (<a href='/data-type/ST.html'>ST</a>) 00185
+PV2-5: Patient Valuables (<a href='./data-type/ST.html'>ST</a>) 00185
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the short description of patient valuables checked in during admission.</p>
 
 <h4 class='v2' id='PV2-6'>
-PV2-6: Patient Valuables Location (<a href='/data-type/ST.html'>ST</a>) 00186
+PV2-6: Patient Valuables Location (<a href='./data-type/ST.html'>ST</a>) 00186
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field indicates the location of the patient&#39;s valuables.</p>
 
 <h4 class='v2' id='PV2-7'>
-PV2-7: Visit User Code (<a href='/data-type/CWE.html'>CWE</a>) 00187
+PV2-7: Visit User Code (<a href='./data-type/CWE.html'>CWE</a>) 00187
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field further categorizes a patient&#39;s visit with respect to an individual institution&#39;s needs, and is expected to be site-specific. Refer to <a href="https://www.hl7.org/fhir/v2/0130/index.html">User-defined Table 0130 - Visit User Code</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='PV2-8'>
-PV2-8: Expected Admit Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 00188
+PV2-8: Expected Admit Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 00188
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the date and time that the patient is expected to be admitted.  This field is also used to reflect the date/time of an outpatient/emergency patient registration.</p>
 
 <h4 class='v2' id='PV2-9'>
-PV2-9: Expected Discharge Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 00189
+PV2-9: Expected Discharge Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 00189
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the date and time that the patient is expected to be discharged.  This is a non-event related date used by ancillaries to determine more accurately the projected workloads.  This field is also used to reflect the anticipated discharge date/time of an outpatient/emergency patient, or an inpatient.</p>
 
 <h4 class='v2' id='PV2-10'>
-PV2-10: Estimated Length of Inpatient Stay (<a href='/data-type/NM.html'>NM</a>) 00711
+PV2-10: Estimated Length of Inpatient Stay (<a href='./data-type/NM.html'>NM</a>) 00711
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field specifies the estimated days of inpatient stays.</p>
 
 <h4 class='v2' id='PV2-11'>
-PV2-11: Actual Length of Inpatient Stay (<a href='/data-type/NM.html'>NM</a>) 00712
+PV2-11: Actual Length of Inpatient Stay (<a href='./data-type/NM.html'>NM</a>) 00712
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the actual days of inpatient stays.  The actual length of the inpatient stay may not be calculated from the admission and discharge dates because of possible leaves of absence.</p>
 
 <h4 class='v2' id='PV2-12'>
-PV2-12: Visit Description (<a href='/data-type/ST.html'>ST</a>) 00713
+PV2-12: Visit Description (<a href='./data-type/ST.html'>ST</a>) 00713
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains a brief user-defined description of the visit.</p>
 
 <h4 class='v2' id='PV2-13'>
-PV2-13: Referral Source Code (<a href='/data-type/XCN.html'>XCN</a>) 00714
+PV2-13: Referral Source Code (<a href='./data-type/XCN.html'>XCN</a>) 00714
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the name and the identification numbers of the person or organization that made the referral.  This person/organization is not the same as the referring doctor.  For example, Adam Everyman referred me to the Clinic (or to Dr. Everywoman at the Clinic).</p>
 
 <h4 class='v2' id='PV2-14'>
-PV2-14: Previous Service Date (<a href='/data-type/DT.html'>DT</a>) 00715
+PV2-14: Previous Service Date (<a href='./data-type/DT.html'>DT</a>) 00715
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the date of previous service for the same recurring condition. This may be a required field for billing certain illnesses (e.g., accident related) to a third party.</p>
 
 <h4 class='v2' id='PV2-15'>
-PV2-15: Employment Illness Related Indicator (<a href='/data-type/ID.html'>ID</a>) 00716
+PV2-15: Employment Illness Related Indicator (<a href='./data-type/ID.html'>ID</a>) 00716
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field specifies whether a patient&#39;s illness was job-related.  Refer to <a href="https://www.hl7.org/fhir/v2/0136/index.html">HL7 Table 0136 - Yes/No Indicator</a> in Chapter 2C, Code Tables, for valid values.</p><ul class="v2 v2-list v2-none-list v2-normallist" style="list-style: none"><li class="v2 v2-li"><p class="v2 v2-normallist">Y&#160;&#160;&#160;&#160;the patient&#39;s illness was job-related</p></li><li class="v2 v2-li"><p class="v2 v2-normallist">N&#160;&#160;&#160;&#160;the patient&#39;s illness was not job-related</p></li></ul>
 
 <h4 class='v2' id='PV2-16'>
-PV2-16: Purge Status Code (<a href='/data-type/CWE.html'>CWE</a>) 00717
+PV2-16: Purge Status Code (<a href='./data-type/CWE.html'>CWE</a>) 00717
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the purge status code for the account.  It is used by the application program to determine purge processing.  Refer to <a href="https://www.hl7.org/fhir/v2/0213/index.html">User-defined Table 0213 - Purge Status Code</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='PV2-17'>
-PV2-17: Purge Status Date (<a href='/data-type/DT.html'>DT</a>) 00718
+PV2-17: Purge Status Date (<a href='./data-type/DT.html'>DT</a>) 00718
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the date on which the data will be purged from the system.</p>
 
 <h4 class='v2' id='PV2-18'>
-PV2-18: Special Program Code (<a href='/data-type/CWE.html'>CWE</a>) 00719
+PV2-18: Special Program Code (<a href='./data-type/CWE.html'>CWE</a>) 00719
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field designates the specific health insurance program for a visit required for healthcare reimbursement.    Refer to <a href="https://www.hl7.org/fhir/v2/0214/index.html">User-defined Table 0214 - Special Program Codes</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='PV2-19'>
-PV2-19: Retention Indicator (<a href='/data-type/ID.html'>ID</a>) 00720
+PV2-19: Retention Indicator (<a href='./data-type/ID.html'>ID</a>) 00720
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field allows the user to control the financial and demographic purge processes at the visit.  It is used to preserve demographic and financial data on specific, high priority visits.  Refer to <a href="https://www.hl7.org/fhir/v2/0136/index.html">HL7 Table 0136 - Yes/No Indicator</a> for valid values.</p><ul class="v2 v2-list v2-none-list v2-normallist" style="list-style: none"><li class="v2 v2-li"><p class="v2 v2-normallist">Y&#160;&#160;&#160;&#160;retain data</p></li><li class="v2 v2-li"><p class="v2 v2-normallist">N&#160;&#160;&#160;&#160;normal purge processing</p></li></ul>
 
 <h4 class='v2' id='PV2-20'>
-PV2-20: Expected Number of Insurance Plans (<a href='/data-type/NM.html'>NM</a>) 00721
+PV2-20: Expected Number of Insurance Plans (<a href='./data-type/NM.html'>NM</a>) 00721
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the number of insurance plans that may provide coverage for this visit.</p>
 
 <h4 class='v2' id='PV2-21'>
-PV2-21: Visit Publicity Code (<a href='/data-type/CWE.html'>CWE</a>) 00722
+PV2-21: Visit Publicity Code (<a href='./data-type/CWE.html'>CWE</a>) 00722
 </h4>
-<p class="v2 v2-normalindented">Definition:  This field contains a user-defined code indicating what level of publicity is allowed for a specific visit.  Refer to <a href="https://www.hl7.org/fhir/v2/0215/index.html">User-defined Table 0215 - Publicity Code</a> in Chapter 2C, Code Tables, for suggested values.  Refer to <a href="/segment-definition/PD1.html#PD1-11">PD1-11 - Publicity Code</a> for the patient level publicity code.</p>
+<p class="v2 v2-normalindented">Definition:  This field contains a user-defined code indicating what level of publicity is allowed for a specific visit.  Refer to <a href="https://www.hl7.org/fhir/v2/0215/index.html">User-defined Table 0215 - Publicity Code</a> in Chapter 2C, Code Tables, for suggested values.  Refer to <a href="./segment-definition/PD1.html#PD1-11">PD1-11 - Publicity Code</a> for the patient level publicity code.</p>
 
 <h4 class='v2' id='PV2-22'>
-PV2-22: Visit Protection Indicator (<a href='/data-type/ID.html'>ID</a>) 00723
+PV2-22: Visit Protection Indicator (<a href='./data-type/ID.html'>ID</a>) 00723
 </h4>
-<p class="v2 v2-normalindented">Definition:   <strong>From v 2.6 onward, this field has been retained for backwards compatibility only.</strong>  Use the ARV segment instead.  This field identifies the person&#39;s protection that determines, in turn, whether access to information about this person should be kept from users who do not have adequate authority for a specific visit.  Refer to <a href="https://www.hl7.org/fhir/v2/0136/index.html">HL7 Table 0136 - Yes/No Indicator</a> in Chapter 2C, Code Tables, for valid values.</p><ul class="v2 v2-list v2-none-list v2-normallist" style="list-style: none"><li class="v2 v2-li"><p class="v2 v2-normallist">Y&#160;&#160;&#160;&#160;protect access to patient information</p></li><li class="v2 v2-li"><p class="v2 v2-normallist">N&#160;&#160;&#160;&#160;normal access</p></li></ul><p class="v2 v2-normalindented">Refer to <a href="/segment-definition/PD1.html#PD1-12">PD1-12 - Protection Indicator</a> for the patient level protection indicator.</p>
+<p class="v2 v2-normalindented">Definition:   <strong>From v 2.6 onward, this field has been retained for backwards compatibility only.</strong>  Use the ARV segment instead.  This field identifies the person&#39;s protection that determines, in turn, whether access to information about this person should be kept from users who do not have adequate authority for a specific visit.  Refer to <a href="https://www.hl7.org/fhir/v2/0136/index.html">HL7 Table 0136 - Yes/No Indicator</a> in Chapter 2C, Code Tables, for valid values.</p><ul class="v2 v2-list v2-none-list v2-normallist" style="list-style: none"><li class="v2 v2-li"><p class="v2 v2-normallist">Y&#160;&#160;&#160;&#160;protect access to patient information</p></li><li class="v2 v2-li"><p class="v2 v2-normallist">N&#160;&#160;&#160;&#160;normal access</p></li></ul><p class="v2 v2-normalindented">Refer to <a href="./segment-definition/PD1.html#PD1-12">PD1-12 - Protection Indicator</a> for the patient level protection indicator.</p>
 
 <h4 class='v2' id='PV2-23'>
-PV2-23: Clinic Organization Name (<a href='/data-type/XON.html'>XON</a>) 00724
+PV2-23: Clinic Organization Name (<a href='./data-type/XON.html'>XON</a>) 00724
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the organization name or sub-unit and identifier that is associated with the (visit) episode of care.  For example, the Allergy or Oncology Clinic within the healthcare facility might be named.</p>
 
 <h4 class='v2' id='PV2-24'>
-PV2-24: Patient Status Code (<a href='/data-type/CWE.html'>CWE</a>) 00725
+PV2-24: Patient Status Code (<a href='./data-type/CWE.html'>CWE</a>) 00725
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field indicates the status of the episode of care. Refer to <a href="https://www.hl7.org/fhir/v2/0216/index.html">User-defined Table 0216 - Patient Status</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='PV2-25'>
-PV2-25: Visit Priority Code (<a href='/data-type/CWE.html'>CWE</a>) 00726
+PV2-25: Visit Priority Code (<a href='./data-type/CWE.html'>CWE</a>) 00726
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the priority of the visit.  Refer to <a href="https://www.hl7.org/fhir/v2/0217/index.html">User-defined Table 0217 - Visit Priority Code</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='PV2-26'>
-PV2-26: Previous Treatment Date (<a href='/data-type/DT.html'>DT</a>) 00727
+PV2-26: Previous Treatment Date (<a href='./data-type/DT.html'>DT</a>) 00727
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the date that the patient last had treatment for any condition prior to this visit.  In the case of a prior hospital visit, it is likely to be the previous discharge date.</p>
 
 <h4 class='v2' id='PV2-27'>
-PV2-27: Expected Discharge Disposition (<a href='/data-type/CWE.html'>CWE</a>) 00728
+PV2-27: Expected Discharge Disposition (<a href='./data-type/CWE.html'>CWE</a>) 00728
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field describes what the patient&#39;s disposition is expected to be at the end of the visit.  Refer to <a href="https://www.hl7.org/fhir/v2/0112/index.html">User-defined Table 0112 - Discharge Disposition</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='PV2-28'>
-PV2-28: Signature on File Date (<a href='/data-type/DT.html'>DT</a>) 00729
+PV2-28: Signature on File Date (<a href='./data-type/DT.html'>DT</a>) 00729
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the date on which a signature was obtained for insurance billing purposes.</p>
 
 <h4 class='v2' id='PV2-29'>
-PV2-29: First Similar Illness Date (<a href='/data-type/DT.html'>DT</a>) 00730
+PV2-29: First Similar Illness Date (<a href='./data-type/DT.html'>DT</a>) 00730
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field is used to determine if the patient has a pre-existing condition.</p>
 
 <h4 class='v2' id='PV2-30'>
-PV2-30: Patient Charge Adjustment Code (<a href='/data-type/CWE.html'>CWE</a>) 00731
+PV2-30: Patient Charge Adjustment Code (<a href='./data-type/CWE.html'>CWE</a>) 00731
 </h4>
-<p class="v2 v2-normalindented">Definition:  This field contains a user-defined code that indicates which adjustments should be made to this patient&#39;s charges.  Refer to <a href="https://www.hl7.org/fhir/v2/0218/index.html">User-defined Table 0218 - Patient Charge Adjustment</a> in in chapter 2C, for suggested values.  This field is the same as <a href="/segment-definition/GT1.html#GT1-26">GT1-26 - Guarantor Charge Adjustment Code</a>.</p>
+<p class="v2 v2-normalindented">Definition:  This field contains a user-defined code that indicates which adjustments should be made to this patient&#39;s charges.  Refer to <a href="https://www.hl7.org/fhir/v2/0218/index.html">User-defined Table 0218 - Patient Charge Adjustment</a> in in chapter 2C, for suggested values.  This field is the same as <a href="./segment-definition/GT1.html#GT1-26">GT1-26 - Guarantor Charge Adjustment Code</a>.</p>
 
 <h4 class='v2' id='PV2-31'>
-PV2-31: Recurring Service Code (<a href='/data-type/CWE.html'>CWE</a>) 00732
+PV2-31: Recurring Service Code (<a href='./data-type/CWE.html'>CWE</a>) 00732
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field indicates whether the treatment is continuous.  Refer to <a href="https://www.hl7.org/fhir/v2/0219/index.html">User-defined Table 0219 - Recurring Service</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='PV2-32'>
-PV2-32: Billing Media Code (<a href='/data-type/ID.html'>ID</a>) 00733
+PV2-32: Billing Media Code (<a href='./data-type/ID.html'>ID</a>) 00733
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field indicates if the account is to be rejected from tape billing.  Refer to <a href="https://www.hl7.org/fhir/v2/0136/index.html">HL7 Table 0136 - Yes/No Indicator</a> in Chapter 2C, Code Tables, for valid values.</p><ul class="v2 v2-list v2-none-list v2-normallist" style="list-style: none"><li class="v2 v2-li"><p class="v2 v2-normallist">Y&#160;&#160;&#160;&#160;reject account from tape billing</p></li><li class="v2 v2-li"><p class="v2 v2-normallist">N&#160;&#160;&#160;&#160;normal processing</p></li></ul>
 
 <h4 class='v2' id='PV2-33'>
-PV2-33: Expected Surgery Date and Time (<a href='/data-type/DTM.html'>DTM</a>) 00734
+PV2-33: Expected Surgery Date and Time (<a href='./data-type/DTM.html'>DTM</a>) 00734
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the date and time on which the surgery is expected to occur.</p>
 
 <h4 class='v2' id='PV2-34'>
-PV2-34: Military Partnership Code (<a href='/data-type/ID.html'>ID</a>) 00735
+PV2-34: Military Partnership Code (<a href='./data-type/ID.html'>ID</a>) 00735
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field indicates that a military healthcare facility has contracted with a non-military healthcare facility for the use of its services.  Refer to <a href="https://www.hl7.org/fhir/v2/0136/index.html">HL7 Table 0136 - Yes/No Indicator</a> in Chapter 2C, Code Tables, for valid values.</p><ul class="v2 v2-list v2-none-list v2-normallist" style="list-style: none"><li class="v2 v2-li"><p class="v2 v2-normallist">Y&#160;&#160;&#160;&#160;contract(s) exist</p></li><li class="v2 v2-li"><p class="v2 v2-normallist">N&#160;&#160;&#160;&#160;no contract(s) exist</p></li></ul>
 
 <h4 class='v2' id='PV2-35'>
-PV2-35: Military Non-Availability Code (<a href='/data-type/ID.html'>ID</a>) 00736
+PV2-35: Military Non-Availability Code (<a href='./data-type/ID.html'>ID</a>) 00736
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field indicates whether a patient has permission to use a non-military healthcare facility for treatment.  Refer to <a href="https://www.hl7.org/fhir/v2/0136/index.html">HL7 Table 0136 - Yes/No Indicator</a> in Chapter 2C, Code Tables, for valid values.</p><ul class="v2 v2-list v2-none-list v2-normallist" style="list-style: none"><li class="v2 v2-li"><p class="v2 v2-normallist">Y&#160;&#160;&#160;&#160;the patient has permission to use a non-military healthcare facility</p></li><li class="v2 v2-li"><p class="v2 v2-normallist">N&#160;&#160;&#160;&#160;the patient does not have permissions to use a non-military healthcare facility</p></li></ul>
 
 <h4 class='v2' id='PV2-36'>
-PV2-36: Newborn Baby Indicator (<a href='/data-type/ID.html'>ID</a>) 00737
+PV2-36: Newborn Baby Indicator (<a href='./data-type/ID.html'>ID</a>) 00737
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field indicates whether the patient is a baby.  Refer to <a href="https://www.hl7.org/fhir/v2/0136/index.html">HL7 Table 0136 - Yes/No Indicator</a> in Chapter 2C, Code Tables, for valid values.</p><ul class="v2 v2-list v2-none-list v2-normallist" style="list-style: none"><li class="v2 v2-li"><p class="v2 v2-normallist">Y&#160;&#160;&#160;&#160;the patient is a baby</p></li><li class="v2 v2-li"><p class="v2 v2-normallist">N&#160;&#160;&#160;&#160;the patient is not a baby</p></li></ul>
 
 <h4 class='v2' id='PV2-37'>
-PV2-37: Baby Detained Indicator (<a href='/data-type/ID.html'>ID</a>) 00738
+PV2-37: Baby Detained Indicator (<a href='./data-type/ID.html'>ID</a>) 00738
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field indicates if the baby is detained after the mother&#39;s discharge.  Refer to <a href="https://www.hl7.org/fhir/v2/0136/index.html">HL7 Table 0136 - Yes/No Indicator</a> in Chapter 2C, Code Tables, for valid values.</p><ul class="v2 v2-list v2-none-list v2-normallist" style="list-style: none"><li class="v2 v2-li"><p class="v2 v2-normallist">Y&#160;&#160;&#160;&#160;the baby was detained</p></li><li class="v2 v2-li"><p class="v2 v2-normallist">N&#160;&#160;&#160;&#160;normal discharge of mother and baby</p></li></ul>
 
 <h4 class='v2' id='PV2-38'>
-PV2-38: Mode of Arrival Code (<a href='/data-type/CWE.html'>CWE</a>) 01543
+PV2-38: Mode of Arrival Code (<a href='./data-type/CWE.html'>CWE</a>) 01543
 </h4>
 <p class="v2 v2-normalindented">Definition:  Identifies how the patient was brought to the healthcare facility. Refer to <a href="https://www.hl7.org/fhir/v2/0430/index.html">User-defined Table 0430 - Mode of Arrival Code</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='PV2-39'>
-PV2-39: Recreational Drug Use Code (<a href='/data-type/CWE.html'>CWE</a>) 01544
+PV2-39: Recreational Drug Use Code (<a href='./data-type/CWE.html'>CWE</a>) 01544
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field indicates what recreational drugs the patient uses.  It is used for the purpose of room assignment.  Refer to <a href="https://www.hl7.org/fhir/v2/0431/index.html">User-defined Table 0431 - Recreational Drug Use Code</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='PV2-40'>
-PV2-40: Admission Level of Care Code (<a href='/data-type/CWE.html'>CWE</a>) 01545
+PV2-40: Admission Level of Care Code (<a href='./data-type/CWE.html'>CWE</a>) 01545
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field indicates the acuity level assigned to the patient at the time of admission.  Refer to <a href="https://www.hl7.org/fhir/v2/0432/index.html">User-defined Table 0432 - Admission Level of Care Code</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='PV2-41'>
-PV2-41: Precaution Code (<a href='/data-type/CWE.html'>CWE</a>) 01546
+PV2-41: Precaution Code (<a href='./data-type/CWE.html'>CWE</a>) 01546
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field indicates non-clinical precautions that need to be taken with the patient.  Refer to <a href="https://www.hl7.org/fhir/v2/0433/index.html">User-defined Table 0433 - Precaution Code</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='PV2-42'>
-PV2-42: Patient Condition Code (<a href='/data-type/CWE.html'>CWE</a>) 01547
+PV2-42: Patient Condition Code (<a href='./data-type/CWE.html'>CWE</a>) 01547
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field indicates the patient&#39;s current medical condition for the purpose of communicating to non-medical outside parties, e.g., family, employer, religious minister, media, etc.  Refer to <a href="https://www.hl7.org/fhir/v2/0434/index.html">User-defined Table 0434 - Patient Condition Code</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='PV2-43'>
-PV2-43: Living Will Code (<a href='/data-type/CWE.html'>CWE</a>) 00759
+PV2-43: Living Will Code (<a href='./data-type/CWE.html'>CWE</a>) 00759
 </h4>
-<p class="v2 v2-normalindented">Definition: This field indicates whether or not the patient has a living will and, if so, whether a copy of the living will is on file at the healthcare facility.  If the patient does not have a living will, the value of this field indicates whether the patient was provided information on living wills.  Refer to <a href="https://www.hl7.org/fhir/v2/0315/index.html">User-defined Table 0315 - Living Will Code</a> in Chapter 2C, Code Tables, for suggested values. See also <a href="/segment-definition/PD1.html#PD1-7">PD1-7 - Living Will</a>.</p>
+<p class="v2 v2-normalindented">Definition: This field indicates whether or not the patient has a living will and, if so, whether a copy of the living will is on file at the healthcare facility.  If the patient does not have a living will, the value of this field indicates whether the patient was provided information on living wills.  Refer to <a href="https://www.hl7.org/fhir/v2/0315/index.html">User-defined Table 0315 - Living Will Code</a> in Chapter 2C, Code Tables, for suggested values. See also <a href="./segment-definition/PD1.html#PD1-7">PD1-7 - Living Will</a>.</p>
 
 <h4 class='v2' id='PV2-44'>
-PV2-44: Organ Donor Code (<a href='/data-type/CWE.html'>CWE</a>) 00760
+PV2-44: Organ Donor Code (<a href='./data-type/CWE.html'>CWE</a>) 00760
 </h4>
-<p class="v2 v2-normalindented">Definition: This field indicates whether the patient wants to donate his/her organs and whether an organ donor card or similar documentation is on file with the healthcare organization.  Refer to <a href="https://www.hl7.org/fhir/v2/0316/index.html">User-defined Table 0316 - Organ Donor Code</a> in Chapter 2C, Code Tables, for suggested values. See also <a href="/segment-definition/PD1.html#PD1-8">PD1-8 - Organ Donor</a>.</p>
+<p class="v2 v2-normalindented">Definition: This field indicates whether the patient wants to donate his/her organs and whether an organ donor card or similar documentation is on file with the healthcare organization.  Refer to <a href="https://www.hl7.org/fhir/v2/0316/index.html">User-defined Table 0316 - Organ Donor Code</a> in Chapter 2C, Code Tables, for suggested values. See also <a href="./segment-definition/PD1.html#PD1-8">PD1-8 - Organ Donor</a>.</p>
 
 <h4 class='v2' id='PV2-45'>
-PV2-45: Advance Directive Code (<a href='/data-type/CWE.html'>CWE</a>) 01548
+PV2-45: Advance Directive Code (<a href='./data-type/CWE.html'>CWE</a>) 01548
 </h4>
-<p class="v2 v2-normalindented">Definition:  This field indicates the patient&#39;s instructions to the healthcare facility.  Refer to <a href="https://www.hl7.org/fhir/v2/0435/index.html">User-defined Table 0435 - Advance Directive Code</a> in Chapter 2C, Code Tables, for suggested values.  See also <a href="/segment-definition/PD1.html#PD1-15">PD1-15 - Advance Directive Code</a>. This field is required if <a href="/segment-definition/PV2.html#PV2-50">PV2-50 - Advance Directive Last Verified Date</a> is valued.</p><p class="v2 v2-normalindented"><strong>Note:</strong>  for details about specific consent refer to the Consent (CON) segment in chapter 9.</p>
+<p class="v2 v2-normalindented">Definition:  This field indicates the patient&#39;s instructions to the healthcare facility.  Refer to <a href="https://www.hl7.org/fhir/v2/0435/index.html">User-defined Table 0435 - Advance Directive Code</a> in Chapter 2C, Code Tables, for suggested values.  See also <a href="./segment-definition/PD1.html#PD1-15">PD1-15 - Advance Directive Code</a>. This field is required if <a href="./segment-definition/PV2.html#PV2-50">PV2-50 - Advance Directive Last Verified Date</a> is valued.</p><p class="v2 v2-normalindented"><strong>Note:</strong>  for details about specific consent refer to the Consent (CON) segment in chapter 9.</p>
 
 <h4 class='v2' id='PV2-46'>
-PV2-46: Patient Status Effective Date (<a href='/data-type/DT.html'>DT</a>) 01549
+PV2-46: Patient Status Effective Date (<a href='./data-type/DT.html'>DT</a>) 01549
 </h4>
-<p class="v2 v2-normalindented">Definition:  This field indicates the effective date for <a href="/segment-definition/PV2.html#PV2-24">PV2-24 - Patient Status</a>.</p>
+<p class="v2 v2-normalindented">Definition:  This field indicates the effective date for <a href="./segment-definition/PV2.html#PV2-24">PV2-24 - Patient Status</a>.</p>
 
 <h4 class='v2' id='PV2-47'>
-PV2-47: Expected LOA Return Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 01550
+PV2-47: Expected LOA Return Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 01550
 </h4>
-<p class="v2 v2-normalindented">Definition: This field is conditionally required for <a href="/composition/Patient-Administration.html#Patient-Administration-3-21">A21 - Patient goes on LOA</a>.  It may be populated in <a href="/composition/Patient-Administration.html#Patient-Administration-3-22">A22 - Patient returns from LOA</a> as well as in the <a href="/composition/Patient-Administration.html#Patient-Administration-3-53">A53 - Cancel LOA for a patient</a> and the <a href="/composition/Patient-Administration.html#Patient-Administration-3-54">A54 - Cancel patient returns from LOA</a> triggers.  This field contains the date/time that the patient is expected to return from LOA.</p>
+<p class="v2 v2-normalindented">Definition: This field is conditionally required for <a href="./composition/Patient-Administration.html#Patient-Administration-3-21">A21 - Patient goes on LOA</a>.  It may be populated in <a href="./composition/Patient-Administration.html#Patient-Administration-3-22">A22 - Patient returns from LOA</a> as well as in the <a href="./composition/Patient-Administration.html#Patient-Administration-3-53">A53 - Cancel LOA for a patient</a> and the <a href="./composition/Patient-Administration.html#Patient-Administration-3-54">A54 - Cancel patient returns from LOA</a> triggers.  This field contains the date/time that the patient is expected to return from LOA.</p>
 
 <h4 class='v2' id='PV2-48'>
-PV2-48: Expected Pre-admission Testing Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 01841
+PV2-48: Expected Pre-admission Testing Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 01841
 </h4>
 <p class="v2 v2-normalindented">Definition: This field contains the date/time that the patient is expected for pre-admission testing.</p>
 
 <h4 class='v2' id='PV2-49'>
-PV2-49: Notify Clergy Code (<a href='/data-type/CWE.html'>CWE</a>) 01842
+PV2-49: Notify Clergy Code (<a href='./data-type/CWE.html'>CWE</a>) 01842
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field allows the user to indicate whether the clergy should be notified.  Refer to <a href="https://www.hl7.org/fhir/v2/0534/index.html">User-defined Table 0534 - Notify Clergy Code</a> in Chapter 2C, Code Tables, for suggested values.</p>
 
 <h4 class='v2' id='PV2-50'>
-PV2-50: Advance Directive Last Verified Date (<a href='/data-type/DT.html'>DT</a>) 02141
+PV2-50: Advance Directive Last Verified Date (<a href='./data-type/DT.html'>DT</a>) 02141
 </h4>
-<p class="v2 v2-normalindented">Definition:  This field indicates the date that all the advance directives held in <a href="/segment-definition/PV2.html#PV2-45">PV2-45 - Advance Directive Code</a> were last verified.  When this field is valued, the field <a href="/segment-definition/PV2.html#PV2-45">PV2-45 - Advance Directive Code</a> is required.</p>
+<p class="v2 v2-normalindented">Definition:  This field indicates the date that all the advance directives held in <a href="./segment-definition/PV2.html#PV2-45">PV2-45 - Advance Directive Code</a> were last verified.  When this field is valued, the field <a href="./segment-definition/PV2.html#PV2-45">PV2-45 - Advance Directive Code</a> is required.</p>
 
 
 </div>
@@ -2743,16 +2743,16 @@ March 23, 2022
 </p>
 <p>
 <span style='color: #FFFF77'>Links:</span>
-<a href='/history.html' style='color: #b8dcf9'>
+<a href='./history.html' style='color: #b8dcf9'>
 Version History
 </a>
 |
 <a href='https://jira.hl7.org/projects/V2/issues' style='color: #b8dcf9' target='_blank'>
 Propose a change
-<img src='/images/external.png' style='text-align: baseline'>
+<img src='./images/external.png' style='text-align: baseline'>
 </a>
 |
-<a href='/license.html' rel='license' style='color: #b8dcf9'>
+<a href='./license.html' rel='license' style='color: #b8dcf9'>
 License
 <!-- %img{:alt => "CC0", :src => "images/cc0.png", :style => "border-style: none;"} -->
 </a>

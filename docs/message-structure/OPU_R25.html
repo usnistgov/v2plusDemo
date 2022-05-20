@@ -9,43 +9,43 @@ HL7 - REFACTORED
 <base href="https://usnistgov.github.io/v2plusDemo/">
 
 <style type='text/css'>
-@import "/css/bootstrap.css";
-@import "/css/codemirror.css";
-@import "/css/hl7.css";
-@import "/css/fhir.css";
-<!-- @import "/css/bootstrap-fhir.css"; -->
-@import "/css/bootstrap-v2.css";
-@import "/css/project.css";
-@import "/css/pygments-manni.css";
-@import "/css/jquery-ui.css";
-@import "/css/modules.css";
-@import "/css/v2.css";
+@import "./css/bootstrap.css";
+@import "./css/codemirror.css";
+@import "./css/hl7.css";
+@import "./css/fhir.css";
+<!-- @import "./css/bootstrap-fhir.css"; -->
+@import "./css/bootstrap-v2.css";
+@import "./css/project.css";
+@import "./css/pygments-manni.css";
+@import "./css/jquery-ui.css";
+@import "./css/modules.css";
+@import "./css/v2.css";
 </style>
-<script src='/js/jquery.js'></script>
-<script src='/js/jquery-ui.min.js'></script>
-<script src='/js/bootstrap.min.js'></script>
-<script src='/js/respond.min.js'></script>
-<script src='/js/codemirror/codemirror.js'></script>
-<script src='/js/codemirror/mode/xml.js'></script>
-<script src='/js/v2.js'></script>
-<script src='/js/fhir-table-scripts.js' type='text/javascript'></script>
-<script src='/js/format_xml.js' type='text/javascript'></script>
-<link href='/images/hl7.ico' rel='shortcut icon'>
+<script src='./js/jquery.js'></script>
+<script src='./js/jquery-ui.min.js'></script>
+<script src='./js/bootstrap.min.js'></script>
+<script src='./js/respond.min.js'></script>
+<script src='./js/codemirror/codemirror.js'></script>
+<script src='./js/codemirror/mode/xml.js'></script>
+<script src='./js/v2.js'></script>
+<script src='./js/fhir-table-scripts.js' type='text/javascript'></script>
+<script src='./js/format_xml.js' type='text/javascript'></script>
+<link href='./images/hl7.ico' rel='shortcut icon'>
 </head>
 <body>
 <div class='segment' id='segment-header'>
 <div class='container'>
 <a href='http://www.hl7.org/hl7v2+' id='logo' no-external='true'></a>
 <div id='hl7-status'>
-<img alt='visit the hl7 website' height='50' id='v2-logo' src='/images/hl7-v2-logo.png'>
-<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='/images/hl7-v2plus.gif'>
+<img alt='visit the hl7 website' height='50' id='v2-logo' src='./images/hl7-v2-logo.png'>
+<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='./images/hl7-v2plus.gif'>
 <b>
 The Demo site for our new HL7 Version 2+ (plus) Standard
 </b>
 </div>
 <div id='hl7-nav'>
 <a href='http://www.hl7.org' id='hl7-logo' no-external='true'></a>
-<img alt='visit the hl7 website' src='/images/hl7-logo.png'>
+<img alt='visit the hl7 website' src='./images/hl7-logo.png'>
 </div>
 </div>
 </div>
@@ -60,33 +60,33 @@ The Demo site for our new HL7 Version 2+ (plus) Standard
 <span class='icon-bar'></span>
 </button>
 </div>
-<a class='navbar-brand hidden' href='/index.html'>
+<a class='navbar-brand hidden' href='./index.html'>
 FHIR
 </a>
 <div class='nav-collapse collapse navbar-inverse-collapse'>
 <ul class='nav navbar-nav'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
 <li>
-<a href='/domains.html'>
+<a href='./domains.html'>
 Domains
 </a>
 </li>
 <li>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Message Structures
 </a>
 </li>
 <li>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Segments
 </a>
 </li>
 <li>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Data Types
 </a>
 </li>
@@ -96,12 +96,12 @@ Data Type Flavors
 </a>
 </li>
 <li>
-<a href='/vocab.html'>
+<a href='./vocab.html'>
 Vocabulary
 </a>
 </li>
 <li>
-<a href='/domain/Control.html'>
+<a href='./domain/Control.html'>
 Control
 </a>
 </li>
@@ -111,7 +111,7 @@ Conformance
 </a>
 </li>
 <li>
-<a href='/domain/Control.html#Control-12'>
+<a href='./domain/Control.html#Control-12'>
 Encoding
 </a>
 </li>
@@ -121,7 +121,7 @@ Transport
 </a>
 </li>
 <li>
-<a href='/history.html'>
+<a href='./history.html'>
 v2.x
 </a>
 </li>
@@ -141,7 +141,7 @@ Draft Website - For Review Purposes Only
 <div class='container'>
 <ul class='breadcrumb'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
@@ -161,29 +161,29 @@ HL7 MessageStructure Table - OPU_R25
 <tbody>
 <tr>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Segment
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Must Implement
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Status
 </a>
 </th>
 </tr>
 <tr>
 <td colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 OPU_R25
 </b>
@@ -191,9 +191,9 @@ OPU_R25
 </tr>
 <tr class='segment' id='opu_r25-1'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/MSH.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/MSH.html'>
 MSH
 </a>
 </td>
@@ -210,9 +210,9 @@ Yes
 
 <tr class='segment' id='opu_r25-2'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/ARV.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/ARV.html'>
 ARV
 </a>
 </td>
@@ -229,9 +229,9 @@ ARV
 
 <tr class='segment' id='opu_r25-3'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/SFT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/SFT.html'>
 SFT
 </a>
 </td>
@@ -248,9 +248,9 @@ SFT
 
 <tr class='segment' id='opu_r25-4'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/UAC.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/UAC.html'>
 UAC
 </a>
 </td>
@@ -267,9 +267,9 @@ UAC
 
 <tr class='segment' id='opu_r25-5'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -286,9 +286,9 @@ NTE
 
 <tr class='segment' id='opu_r25-6'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PV1.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PV1.html'>
 PV1
 </a>
 </td>
@@ -305,9 +305,9 @@ Yes
 
 <tr class='segment' id='opu_r25-7'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PV2.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PV2.html'>
 PV2
 </a>
 </td>
@@ -324,9 +324,9 @@ PV2
 
 <tr class='segment' id='opu_r25-8'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -343,8 +343,8 @@ PRT
 
 <tr class='segment segment_sequence' id='opu_r25-9'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 PATIENT_VISIT_OBSERVATION
 </b>
@@ -362,10 +362,10 @@ PATIENT_VISIT_OBSERVATION
 </tr>
 <tr class='segment' id='opu_r25-9-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBX.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBX.html'>
 OBX
 </a>
 </td>
@@ -382,10 +382,10 @@ Yes
 
 <tr class='segment' id='opu_r25-9-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -402,10 +402,10 @@ NTE
 
 <tr class='segment' id='opu_r25-9-3'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -423,8 +423,8 @@ PRT
 
 <tr class='segment segment_sequence' id='opu_r25-10'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 ACCESSION_DETAIL
 </b>
@@ -442,10 +442,10 @@ Yes
 </tr>
 <tr class='segment' id='opu_r25-10-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NK1.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NK1.html'>
 NK1
 </a>
 </td>
@@ -462,9 +462,9 @@ Yes
 
 <tr class='segment segment_sequence' id='opu_r25-10-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_blank.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 PATIENT
 </b>
@@ -482,11 +482,11 @@ PATIENT
 </tr>
 <tr class='segment' id='opu_r25-10-2-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PID.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PID.html'>
 PID
 </a>
 </td>
@@ -503,11 +503,11 @@ Yes
 
 <tr class='segment' id='opu_r25-10-2-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PD1.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PD1.html'>
 PD1
 </a>
 </td>
@@ -524,11 +524,11 @@ PD1
 
 <tr class='segment' id='opu_r25-10-2-3'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -545,11 +545,11 @@ PRT
 
 <tr class='segment' id='opu_r25-10-2-4'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OH1.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OH1.html'>
 OH1
 </a>
 </td>
@@ -566,11 +566,11 @@ OH1
 
 <tr class='segment' id='opu_r25-10-2-5'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OH2.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OH2.html'>
 OH2
 </a>
 </td>
@@ -587,11 +587,11 @@ OH2
 
 <tr class='segment' id='opu_r25-10-2-6'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OH3.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OH3.html'>
 OH3
 </a>
 </td>
@@ -608,11 +608,11 @@ OH3
 
 <tr class='segment' id='opu_r25-10-2-7'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OH4.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OH4.html'>
 OH4
 </a>
 </td>
@@ -629,11 +629,11 @@ OH4
 
 <tr class='segment' id='opu_r25-10-2-8'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/ARV.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/ARV.html'>
 ARV
 </a>
 </td>
@@ -650,10 +650,10 @@ B
 
 <tr class='segment segment_sequence' id='opu_r25-10-2-9'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 PATIENT_OBSERVATION
 </b>
@@ -671,12 +671,12 @@ PATIENT_OBSERVATION
 </tr>
 <tr class='segment' id='opu_r25-10-2-9-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBX.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBX.html'>
 OBX
 </a>
 </td>
@@ -693,12 +693,12 @@ Yes
 
 <tr class='segment' id='opu_r25-10-2-9-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -715,12 +715,12 @@ PRT
 
 <tr class='segment' id='opu_r25-10-2-9-3'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -739,9 +739,9 @@ NTE
 
 <tr class='segment segment_sequence' id='opu_r25-10-3'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_blank.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 SPECIMEN
 </b>
@@ -759,11 +759,11 @@ Yes
 </tr>
 <tr class='segment' id='opu_r25-10-3-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/SPM.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/SPM.html'>
 SPM
 </a>
 </td>
@@ -780,10 +780,10 @@ Yes
 
 <tr class='segment segment_sequence' id='opu_r25-10-3-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 SPECIMEN_OBSERVATION
 </b>
@@ -801,12 +801,12 @@ SPECIMEN_OBSERVATION
 </tr>
 <tr class='segment' id='opu_r25-10-3-2-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBX.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBX.html'>
 OBX
 </a>
 </td>
@@ -823,12 +823,12 @@ Yes
 
 <tr class='segment' id='opu_r25-10-3-2-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -845,12 +845,12 @@ PRT
 
 <tr class='segment' id='opu_r25-10-3-2-3'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -868,10 +868,10 @@ NTE
 
 <tr class='segment segment_sequence' id='opu_r25-10-3-3'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 CONTAINER
 </b>
@@ -889,12 +889,12 @@ CONTAINER
 </tr>
 <tr class='segment' id='opu_r25-10-3-3-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/SAC.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/SAC.html'>
 SAC
 </a>
 </td>
@@ -911,12 +911,12 @@ Yes
 
 <tr class='segment' id='opu_r25-10-3-3-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/INV.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/INV.html'>
 INV
 </a>
 </td>
@@ -934,10 +934,10 @@ INV
 
 <tr class='segment segment_sequence' id='opu_r25-10-3-4'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 ORDER
 </b>
@@ -955,12 +955,12 @@ Yes
 </tr>
 <tr class='segment' id='opu_r25-10-3-4-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBR.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBR.html'>
 OBR
 </a>
 </td>
@@ -977,12 +977,12 @@ Yes
 
 <tr class='segment' id='opu_r25-10-3-4-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -999,11 +999,11 @@ PRT
 
 <tr class='segment segment_sequence' id='opu_r25-10-3-4-3'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 COMMON_ORDER
 </b>
@@ -1021,13 +1021,13 @@ COMMON_ORDER
 </tr>
 <tr class='segment' id='opu_r25-10-3-4-3-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/ORC.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/ORC.html'>
 ORC
 </a>
 </td>
@@ -1044,13 +1044,13 @@ Yes
 
 <tr class='segment' id='opu_r25-10-3-4-3-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -1068,12 +1068,12 @@ PRT
 
 <tr class='segment' id='opu_r25-10-3-4-4'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -1090,12 +1090,12 @@ NTE
 
 <tr class='segment' id='opu_r25-10-3-4-5'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -1112,11 +1112,11 @@ Depracted
 
 <tr class='segment segment_sequence' id='opu_r25-10-3-4-6'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 TIMING_QTY
 </b>
@@ -1134,13 +1134,13 @@ TIMING_QTY
 </tr>
 <tr class='segment' id='opu_r25-10-3-4-6-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ1.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ1.html'>
 TQ1
 </a>
 </td>
@@ -1157,13 +1157,13 @@ Yes
 
 <tr class='segment' id='opu_r25-10-3-4-6-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ2.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ2.html'>
 TQ2
 </a>
 </td>
@@ -1181,11 +1181,11 @@ TQ2
 
 <tr class='segment segment_sequence' id='opu_r25-10-3-4-7'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 RESULT
 </b>
@@ -1203,13 +1203,13 @@ Yes
 </tr>
 <tr class='segment' id='opu_r25-10-3-4-7-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBX.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBX.html'>
 OBX
 </a>
 </td>
@@ -1226,13 +1226,13 @@ Yes
 
 <tr class='segment' id='opu_r25-10-3-4-7-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -1249,13 +1249,13 @@ PRT
 
 <tr class='segment' id='opu_r25-10-3-4-7-3'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -1288,16 +1288,16 @@ March 14, 2022
 </p>
 <p>
 <span style='color: #FFFF77'>Links:</span>
-<a href='/history.html' style='color: #b8dcf9'>
+<a href='./history.html' style='color: #b8dcf9'>
 Version History
 </a>
 |
 <a href='https://jira.hl7.org/projects/V2/issues' style='color: #b8dcf9' target='_blank'>
 Propose a change
-<img src='/images/external.png' style='text-align: baseline'>
+<img src='./images/external.png' style='text-align: baseline'>
 </a>
 |
-<a href='/license.html' rel='license' style='color: #b8dcf9'>
+<a href='./license.html' rel='license' style='color: #b8dcf9'>
 License
 <!-- %img{:alt => "CC0", :src => "images/cc0.png", :style => "border-style: none;"} -->
 </a>

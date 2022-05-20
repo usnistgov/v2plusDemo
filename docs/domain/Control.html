@@ -9,43 +9,43 @@ HL7 - REFACTORED
 <base href="https://usnistgov.github.io/v2plusDemo/">
 
 <style type='text/css'>
-@import "/css/bootstrap.css";
-@import "/css/codemirror.css";
-@import "/css/hl7.css";
-@import "/css/fhir.css";
-<!-- @import "/css/bootstrap-fhir.css"; -->
-@import "/css/bootstrap-v2.css";
-@import "/css/project.css";
-@import "/css/pygments-manni.css";
-@import "/css/jquery-ui.css";
-@import "/css/modules.css";
-@import "/css/v2.css";
+@import "./css/bootstrap.css";
+@import "./css/codemirror.css";
+@import "./css/hl7.css";
+@import "./css/fhir.css";
+<!-- @import "./css/bootstrap-fhir.css"; -->
+@import "./css/bootstrap-v2.css";
+@import "./css/project.css";
+@import "./css/pygments-manni.css";
+@import "./css/jquery-ui.css";
+@import "./css/modules.css";
+@import "./css/v2.css";
 </style>
-<script src='/js/jquery.js'></script>
-<script src='/js/jquery-ui.min.js'></script>
-<script src='/js/bootstrap.min.js'></script>
-<script src='/js/respond.min.js'></script>
-<script src='/js/codemirror/codemirror.js'></script>
-<script src='/js/codemirror/mode/xml.js'></script>
-<script src='/js/v2.js'></script>
-<script src='/js/fhir-table-scripts.js' type='text/javascript'></script>
-<script src='/js/format_xml.js' type='text/javascript'></script>
-<link href='/images/hl7.ico' rel='shortcut icon'>
+<script src='./js/jquery.js'></script>
+<script src='./js/jquery-ui.min.js'></script>
+<script src='./js/bootstrap.min.js'></script>
+<script src='./js/respond.min.js'></script>
+<script src='./js/codemirror/codemirror.js'></script>
+<script src='./js/codemirror/mode/xml.js'></script>
+<script src='./js/v2.js'></script>
+<script src='./js/fhir-table-scripts.js' type='text/javascript'></script>
+<script src='./js/format_xml.js' type='text/javascript'></script>
+<link href='./images/hl7.ico' rel='shortcut icon'>
 </head>
 <body>
 <div class='segment' id='segment-header'>
 <div class='container'>
 <a href='http://www.hl7.org/hl7v2+' id='logo' no-external='true'></a>
 <div id='hl7-status'>
-<img alt='visit the hl7 website' height='50' id='v2-logo' src='/images/hl7-v2-logo.png'>
-<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='/images/hl7-v2plus.gif'>
+<img alt='visit the hl7 website' height='50' id='v2-logo' src='./images/hl7-v2-logo.png'>
+<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='./images/hl7-v2plus.gif'>
 <b>
 The Demo site for our new HL7 Version 2+ (plus) Standard
 </b>
 </div>
 <div id='hl7-nav'>
 <a href='http://www.hl7.org' id='hl7-logo' no-external='true'></a>
-<img alt='visit the hl7 website' src='/images/hl7-logo.png'>
+<img alt='visit the hl7 website' src='./images/hl7-logo.png'>
 </div>
 </div>
 </div>
@@ -60,33 +60,33 @@ The Demo site for our new HL7 Version 2+ (plus) Standard
 <span class='icon-bar'></span>
 </button>
 </div>
-<a class='navbar-brand hidden' href='/index.html'>
+<a class='navbar-brand hidden' href='./index.html'>
 FHIR
 </a>
 <div class='nav-collapse collapse navbar-inverse-collapse'>
 <ul class='nav navbar-nav'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
 <li>
-<a href='/domains.html'>
+<a href='./domains.html'>
 Domains
 </a>
 </li>
 <li>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Message Structures
 </a>
 </li>
 <li>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Segments
 </a>
 </li>
 <li>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Data Types
 </a>
 </li>
@@ -96,12 +96,12 @@ Data Type Flavors
 </a>
 </li>
 <li>
-<a href='/vocab.html'>
+<a href='./vocab.html'>
 Vocabulary
 </a>
 </li>
 <li>
-<a href='/domain/Control.html'>
+<a href='./domain/Control.html'>
 Control
 </a>
 </li>
@@ -111,7 +111,7 @@ Conformance
 </a>
 </li>
 <li>
-<a href='/domain/Control.html#Control-12'>
+<a href='./domain/Control.html#Control-12'>
 Encoding
 </a>
 </li>
@@ -121,7 +121,7 @@ Transport
 </a>
 </li>
 <li>
-<a href='/history.html'>
+<a href='./history.html'>
 v2.x
 </a>
 </li>
@@ -141,7 +141,7 @@ Draft Website - For Review Purposes Only
 <div class='container'>
 <ul class='breadcrumb'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
@@ -10409,7 +10409,7 @@ Adding messages or message constituents
               <p class="v2 v2-normallistalpha v2-indent1728">New segments MAY be introduced to an existing message. In general these SHOULD be introduced at the end of a message or a segment group, but they MAY be introduced elsewhere within the message if the segment hierarchy makes this necessary. Unless needed as a technical correction or for regulatory reporting purposes, a new segment SHALL NOT be added to a deprecated message. As of v2.6 all new segments, except for those pertaining only to message transmission or control, SHALL include an Action Code field as the first or second field as appropriate.</p>
             </li>
             <li class="v2 v2-li">
-              <p class="v2 v2-normallistalpha v2-indent1728">Care must be taken when introducing a new segment if this results in a situation in which a named segment X appears in two individual or group locations. See section <a href="/composition/Control.html#Control-6">2.6</a>, "<a href="/composition/Control.html#Control-6">Message construction rules</a>".</p>
+              <p class="v2 v2-normallistalpha v2-indent1728">Care must be taken when introducing a new segment if this results in a situation in which a named segment X appears in two individual or group locations. See section <a href="./composition/Control.html#Control-6">2.6</a>, "<a href="./composition/Control.html#Control-6">Message construction rules</a>".</p>
             </li>
             <li class="v2 v2-li">
               <p class="v2 v2-normallistalpha v2-indent1728">New fields MAY be added at the end of a segment.  A field that changes the semantic meaning of a segment (e.g., an Acton Code, or Mood code) SHALL only be introduced in a pre-existing segment if the usage of the field is conditional on it not being used in messages with pre-existing trigger events.  This is to avoid the risk of reversing the intent of the segment as it is known to the recipient of an earlier version.  For example, if the Sender were to send the segment with a delete action code, the recipient would not understand that the information SHOULD be deleted.</p>
@@ -10674,10 +10674,10 @@ Message Processing Rules
 <p class="v2-normalindented">Certain variants exist and are documented elsewhere:</p>
 <ol class="v2-list v2-lower-alpha-list v2-normallistalpha" style="list-style: lower-alpha">
           <li class="v2 v2-li">
-            <p class="v2 v2-normallistalpha">an optional sequence number protocol. Refer to section <a href="/composition/Control.html#Control-10-1">2.10.1</a>, "<a href="/composition/Control.html#Control-10-1">Sequence number protocol</a>".</p>
+            <p class="v2 v2-normallistalpha">an optional sequence number protocol. Refer to section <a href="./composition/Control.html#Control-10-1">2.10.1</a>, "<a href="./composition/Control.html#Control-10-1">Sequence number protocol</a>".</p>
           </li>
           <li class="v2 v2-li">
-            <p class="v2 v2-normallistalpha">an optional protocol for continuing a very long message. Refer to section <a href="/composition/Control.html#Control-10-2">2.10.2</a>, "<a href="/composition/Control.html#Control-10-2">Continuation messages and segments</a>".</p>
+            <p class="v2 v2-normallistalpha">an optional protocol for continuing a very long message. Refer to section <a href="./composition/Control.html#Control-10-2">2.10.2</a>, "<a href="./composition/Control.html#Control-10-2">Continuation messages and segments</a>".</p>
           </li>
         </ol>
 <p class="v2-normalindented">Because the protocol describes an exchange of messages, it is described in terms of two entities, the initiating and responding systems. Each is both a sender and receiver of messages. The initiating system sends first and then receives, while the responding system receives and then sends.</p>
@@ -10850,7 +10850,7 @@ Message initiation
                 <p class="v2 v2-othertablebody">MSH-14-continuation pointer</p>
               </td>
               <td style="border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; width:69.04%; ">
-                <p class="v2 v2-othertablebody">Used in implementation of message continuation protocol. See Section <a href="/composition/Control.html#Control-10-2">2.10.2</a>, "<a href="/composition/Control.html#Control-10-2">Continuation messages and segments</a>". Also see chapter 5, "Queries".</p>
+                <p class="v2 v2-othertablebody">Used in implementation of message continuation protocol. See Section <a href="./composition/Control.html#Control-10-2">2.10.2</a>, "<a href="./composition/Control.html#Control-10-2">Continuation messages and segments</a>". Also see chapter 5, "Queries".</p>
               </td>
             </tr>
           </table>
@@ -10880,13 +10880,13 @@ Accept and validate the message in responding system
 <br class=""></br>
 <ol class="v2-list v2-lower-alpha-list v2-normallistalpha" style="list-style: lower-alpha">
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">the value in <a href="/segment-definition/MSH.html#MSH-9">MSH-9 Message Type</a> is one that is acceptable to the receiver.</p>
+                <p class="v2 v2-normallistalpha">the value in <a href="./segment-definition/MSH.html#MSH-9">MSH-9 Message Type</a> is one that is acceptable to the receiver.</p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">the value in <a href="/segment-definition/MSH.html#MSH-12">MSH-12 Version ID</a> is acceptable to the receiver.</p>
+                <p class="v2 v2-normallistalpha">the value in <a href="./segment-definition/MSH.html#MSH-12">MSH-12 Version ID</a> is acceptable to the receiver.</p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">the value in <a href="/segment-definition/MSH.html#MSH-11">MSH-11 Processing ID</a> is appropriate for the application process handling the message.</p>
+                <p class="v2 v2-normallistalpha">the value in <a href="./segment-definition/MSH.html#MSH-11">MSH-11 Processing ID</a> is appropriate for the application process handling the message.</p>
               </li>
             </ol>
 <p class="v2-normalindented">If any of these edits fail, the protocol software rejects the message. That is, it creates an ACK message with AR in MSA-1 Acknowledgment Code.</p>
@@ -10910,13 +10910,13 @@ Accept and validate/process the message in the receiving application
 <p class="v2-normalindented">Upon successful validation by the responding system, the message is passed to the receiving application, which performs one of these functions:</p>
 <ol class="v2-list v2-lower-alpha-list v2-normallistalpha" style="list-style: lower-alpha">
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">process the message successfully, generating the functional response message with a value of <strong>AA</strong> in  <a href="/segment-definition/MSA.html#MSA-1">MSA-1 Acknowledgment Code</a>. </p>
+                <p class="v2 v2-normallistalpha">process the message successfully, generating the functional response message with a value of <strong>AA</strong> in  <a href="./segment-definition/MSA.html#MSA-1">MSA-1 Acknowledgment Code</a>. </p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">send an error response, providing error information in functional segments to be included in the response message with a value of <strong>AE</strong> in<a href="/segment-definition/MSA.html#MSA-1"> MSA-1 Acknowledgment Code</a>. </p>
+                <p class="v2 v2-normallistalpha">send an error response, providing error information in functional segments to be included in the response message with a value of <strong>AE</strong> in<a href="./segment-definition/MSA.html#MSA-1"> MSA-1 Acknowledgment Code</a>. </p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">fail to process (reject) the message for reasons unrelated to its content or format (system down, internal error, etc.). For most such problems it is likely that the responding system will be able to accept the same message at a later time. The implementers must decide on an application-specific basis whether the message SHOULD be automatically sent again. The response message contains a value of <strong>AR</strong> in  <a href="/segment-definition/MSA.html#MSA-1">MSA-1 Acknowledgment Code</a>. </p>
+                <p class="v2 v2-normallistalpha">fail to process (reject) the message for reasons unrelated to its content or format (system down, internal error, etc.). For most such problems it is likely that the responding system will be able to accept the same message at a later time. The implementers must decide on an application-specific basis whether the message SHOULD be automatically sent again. The response message contains a value of <strong>AR</strong> in  <a href="./segment-definition/MSA.html#MSA-1">MSA-1 Acknowledgment Code</a>. </p>
               </li>
             </ol>
 <p class="v2-normalindented">The MSH segment in the response is constructed anew following the rules used to create the initial message described above. In particular, MSH-7 Date/Time of Message and MSH-10 Message Control ID refer to the response message; they are not echoes of the fields in the initial message. MSH-5 Receiving Application, MSH-6 Receiving Facility, and MSH-11 Processing ID contain codes that are copied from MSH-3 Sending Application, MSH-4 Sending Facility and MSH-11 Processing ID in the initiating message.</p>
@@ -10955,7 +10955,7 @@ Accept and validate/process the message in the receiving application
                   <p class="v2 v2-othertablebody">MSA-4-expected sequence number</p>
                 </td>
                 <td style="border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; width:64.71%; ">
-                  <p class="v2 v2-othertablebody">As described in Section <a href="/composition/Control.html#Control-10-1">2.10.1</a>, "<a href="/composition/Control.html#Control-10-1">Sequence number protocol</a>," (if the sequence number protocol is being used).</p>
+                  <p class="v2 v2-othertablebody">As described in Section <a href="./composition/Control.html#Control-10-1">2.10.1</a>, "<a href="./composition/Control.html#Control-10-1">Sequence number protocol</a>," (if the sequence number protocol is being used).</p>
                 </td>
               </tr>
               <tr>
@@ -10963,7 +10963,7 @@ Accept and validate/process the message in the receiving application
                   <p class="v2 v2-othertablebody">ERR segment fields</p>
                 </td>
                 <td style="border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; width:64.71%; ">
-                  <p class="v2 v2-othertablebody">Refer to section 2.14.5 <a href="/segment-definition/ERR.html">ERR - error segment</a>.</p>
+                  <p class="v2 v2-othertablebody">Refer to section 2.14.5 <a href="./segment-definition/ERR.html">ERR - error segment</a>.</p>
                 </td>
               </tr>
             </table>
@@ -12043,7 +12043,7 @@ Accept and validate the message in responding system
                 <p class="v2 v2-normallistalpha">the syntactical correctness of the message, if the design of the receiving system includes this type of validation at this phase</p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">the values of <a href="/segment-definition/MSH.html#MSH-9">MSH-9 Message Type</a>, <a href="/segment-definition/MSH.html#MSH-12">MSH-12 Version ID</a>, and <a href="/segment-definition/MSH.html#MSH-11">MSH-11 Processing ID</a>, if the design of the receiving system includes this type of validation at this phase</p>
+                <p class="v2 v2-normallistalpha">the values of <a href="./segment-definition/MSH.html#MSH-9">MSH-9 Message Type</a>, <a href="./segment-definition/MSH.html#MSH-12">MSH-12 Version ID</a>, and <a href="./segment-definition/MSH.html#MSH-11">MSH-11 Processing ID</a>, if the design of the receiving system includes this type of validation at this phase</p>
               </li>
             </ol>
 <p class="v2-normalindented">It then examines the Message Header segment (MSH) to determine whether or not the initiating system requires an accept acknowledgment.</p>
@@ -12058,13 +12058,13 @@ Transmit general acknowledgment message
 <p class="v2-normalindented">A general acknowledgment message is not always required by the initiating system, but if it is the responding system sends one of the following:</p>
 <ol class="v2-list v2-lower-alpha-list v2-normallistalpha" style="list-style: lower-alpha">
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">a commit accept (CA) in <a href="/segment-definition/MSA.html#MSA-1">MSA-1 Acknowledgment Code</a> if the message can be accepted for processing</p>
+                <p class="v2 v2-normallistalpha">a commit accept (CA) in <a href="./segment-definition/MSA.html#MSA-1">MSA-1 Acknowledgment Code</a> if the message can be accepted for processing</p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">a commit reject (CR) in <a href="/segment-definition/MSA.html#MSA-1">MSA-1 Acknowledgment Code</a> if the one of the values of <a href="/segment-definition/MSH.html#MSH-9">MSH-9 Message Type</a>, <a href="/segment-definition/MSH.html#MSH-12">MSH-12 Version ID</a> or <a href="/segment-definition/MSH.html#MSH-11">MSH-11 Processing ID</a> is not acceptable to the receiving application</p>
+                <p class="v2 v2-normallistalpha">a commit reject (CR) in <a href="./segment-definition/MSA.html#MSA-1">MSA-1 Acknowledgment Code</a> if the one of the values of <a href="./segment-definition/MSH.html#MSH-9">MSH-9 Message Type</a>, <a href="./segment-definition/MSH.html#MSH-12">MSH-12 Version ID</a> or <a href="./segment-definition/MSH.html#MSH-11">MSH-11 Processing ID</a> is not acceptable to the receiving application</p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">a commit error (CE) in  <a href="/segment-definition/MSA.html#MSA-1">MSA-1 Acknowledgment Code</a> if the message cannot be accepted for any other reason (e.g., sequence number error)</p>
+                <p class="v2 v2-normallistalpha">a commit error (CE) in  <a href="./segment-definition/MSA.html#MSA-1">MSA-1 Acknowledgment Code</a> if the message cannot be accepted for any other reason (e.g., sequence number error)</p>
               </li>
             </ol>
 
@@ -12111,7 +12111,7 @@ Transmit general acknowledgment message
                   <p class="v2 v2-othertablebody">MSA-4-expected sequence number</p>
                 </td>
                 <td style="border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; width:65.07%; ">
-                  <p class="v2 v2-othertablebody">As described in Section <a href="/composition/Control.html#Control-10-1">2.10.1</a>, "<a href="/composition/Control.html#Control-10-1">Sequence number protocol</a>" (if the sequence number protocol is being used).</p>
+                  <p class="v2 v2-othertablebody">As described in Section <a href="./composition/Control.html#Control-10-1">2.10.1</a>, "<a href="./composition/Control.html#Control-10-1">Sequence number protocol</a>" (if the sequence number protocol is being used).</p>
                 </td>
               </tr>
               <tr>
@@ -12119,7 +12119,7 @@ Transmit general acknowledgment message
                   <p class="v2 v2-othertablebody">ERR segment fields</p>
                 </td>
                 <td style="border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; width:65.07%; ">
-                  <p class="v2 v2-othertablebody">Refer to section 2.14.5 <a href="/segment-definition/ERR.html">ERR - error segment</a></p>
+                  <p class="v2 v2-othertablebody">Refer to section 2.14.5 <a href="./segment-definition/ERR.html">ERR - error segment</a></p>
                 </td>
               </tr>
             </table>
@@ -12159,7 +12159,7 @@ Transmit application acknowledgment
                   <p class="v2 v2-othertablebody">MSA-2-message control ID</p>
                 </td>
                 <td style="border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; width:70.66%; ">
-                  <p class="v2 v2-othertablebody">Identifies the initial message from the original initiating system as defined in Section <a href="/composition/Control.html#Control-9-1">2.9.1</a>, "<a href="/composition/Control.html#Control-9-1">Message initiation</a>".</p>
+                  <p class="v2 v2-othertablebody">Identifies the initial message from the original initiating system as defined in Section <a href="./composition/Control.html#Control-9-1">2.9.1</a>, "<a href="./composition/Control.html#Control-9-1">Message initiation</a>".</p>
                 </td>
               </tr>
               <tr>
@@ -12167,7 +12167,7 @@ Transmit application acknowledgment
                   <p class="v2 v2-othertablebody">MSA-1-acknowledgment code</p>
                 </td>
                 <td style="border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; width:70.66%; ">
-                  <p class="v2 v2-othertablebody">Uses the application (processing) acknowledgment codes as described in Section <a href="/composition/Control.html#Control-14-8-1">2.14.8.1</a>.</p>
+                  <p class="v2 v2-othertablebody">Uses the application (processing) acknowledgment codes as described in Section <a href="./composition/Control.html#Control-14-8-1">2.14.8.1</a>.</p>
                 </td>
               </tr>
               <tr>
@@ -12183,7 +12183,7 @@ Transmit application acknowledgment
                   <p class="v2 v2-othertablebody">ERR segment fields</p>
                 </td>
                 <td style="border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; width:70.66%; ">
-                  <p class="v2 v2-othertablebody">Refer to section <a href="/segment-definition/ERR.html">ERR - error segment</a></p>
+                  <p class="v2 v2-othertablebody">Refer to section <a href="./segment-definition/ERR.html">ERR - error segment</a></p>
                 </td>
               </tr>
             </table>
@@ -13636,7 +13636,7 @@ Sequence number protocol
 <p class="v2-normalindented">As it accepts each transaction, the receiving system securely stores the sequence number (which agrees with its expected sequence number), and then acknowledges the message by echoing the sequence number in MSA-4 Expected Sequence Number.</p>
 <ol class="v2-list v2-lower-alpha-list v2-normallistalpha" style="list-style: lower-alpha">
             <li class="v2 v2-li">
-              <p class="v2 v2-normallistalpha">error conditions (from point of view of initiating system). These are generated by the receiving system, by its comparison of the sequence number sent out (with the MSH in <a href="/segment-definition/MSH.html#MSH-13">MSH-13 Sequence Number</a>) with the expected sequence number (<a href="/segment-definition/MSA.html#MSA-4">MSA-4 Expected Sequence Number</a> received with the MSA).</p>
+              <p class="v2 v2-normallistalpha">error conditions (from point of view of initiating system). These are generated by the receiving system, by its comparison of the sequence number sent out (with the MSH in <a href="./segment-definition/MSH.html#MSH-13">MSH-13 Sequence Number</a>) with the expected sequence number (<a href="./segment-definition/MSA.html#MSA-4">MSA-4 Expected Sequence Number</a> received with the MSA).</p>
             </li>
             <li class="v2 v2-li">
               <p class="v2 v2-normallistnumbered">expected sequence number is one greater than current value. The previous acknowledgment was lost. That transaction was sent again. Correct by sending next transaction.</p>
@@ -13704,7 +13704,7 @@ Segment fragmentation/continuation using the ADD segment
                 <p class="v2 v2-normallistalpha">the following segment is the ADD segment. All characters after the ADD and field separator ("|") are logically part of the preceding segment. All succeeding consecutive ADD segments contribute characters to the ANY segment until a non ADD segment is found.</p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">an ADD segment with no field separator takes on special meaning. See Section <a href="/composition/Control.html#Control-10-2-3">2.10.2.3</a>, "<a href="/composition/Control.html#Control-10-2-3">Segment fragmentation across messages</a>".</p>
+                <p class="v2 v2-normallistalpha">an ADD segment with no field separator takes on special meaning. See Section <a href="./composition/Control.html#Control-10-2-3">2.10.2.3</a>, "<a href="./composition/Control.html#Control-10-2-3">Segment fragmentation across messages</a>".</p>
               </li>
             </ol>
 <p class="v2-normalindented">For example, segment "C" can be fragmented within an HL7 message as follows:</p>
@@ -13736,13 +13736,13 @@ Segment fragmentation/continuation using the DSC segment
                 <p class="v2 v2-normallistalpha">First, the logical message is broken after an arbitrary segment.</p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">Next, a DSC segment is sent. The <a href="/segment-definition/DSC.html#DSC-1">DSC-1 Continuation Pointer</a> field will contain a unique value that is used to match a subsequent message with this specific value.</p>
+                <p class="v2 v2-normallistalpha">Next, a DSC segment is sent. The <a href="./segment-definition/DSC.html#DSC-1">DSC-1 Continuation Pointer</a> field will contain a unique value that is used to match a subsequent message with this specific value.</p>
               </li>
               <li class="v2 v2-li">
                 <p class="v2 v2-normallistalpha">The DSC terminates the first fragment of the logical message.</p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">A subsequent message will contain in <a href="/segment-definition/MSH.html#MSH-14">MSH-14 Continuation Pointer</a>, a value that matches the value from DSC-1. (The presence of a value in MSH-14 indicates that the message is a fragment of an earlier message.). Each subsequent message will have its own unique value for <a href="/segment-definition/MSH.html#MSH-10">MSH-10 Message Control ID</a>. Coordination between <a href="/segment-definition/DSC.html#DSC-1">DSC-1 Continuation Pointer</a> and the subsequent message's <a href="/segment-definition/MSH.html#MSH-14">MSH-14 Continuation Pointer</a> is used to link the fragments in their proper order.</p>
+                <p class="v2 v2-normallistalpha">A subsequent message will contain in <a href="./segment-definition/MSH.html#MSH-14">MSH-14 Continuation Pointer</a>, a value that matches the value from DSC-1. (The presence of a value in MSH-14 indicates that the message is a fragment of an earlier message.). Each subsequent message will have its own unique value for <a href="./segment-definition/MSH.html#MSH-10">MSH-10 Message Control ID</a>. Coordination between <a href="./segment-definition/DSC.html#DSC-1">DSC-1 Continuation Pointer</a> and the subsequent message's <a href="./segment-definition/MSH.html#MSH-14">MSH-14 Continuation Pointer</a> is used to link the fragments in their proper order.</p>
               </li>
               <li class="v2 v2-li">
                 <p class="v2 v2-normallistalpha">The logical message is the concatenation of the contents of the first message (which while having no value in MSH-14, did end with DSC, and hence was actually a message fragment), plus all subsequent fragments (as identified by values in MSH-14).</p>
@@ -13810,7 +13810,7 @@ Segment fragmentation across messages
                 <p class="v2 v2-normallistalpha">the following segment is the ADD segment. It will contain no characters other than "ADD". (The lack of characters signals the receiver that ANY will be continued.)</p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">The second following segment will be the DSC, used as described above in Section <a href="/composition/Control.html#Control-10-2-1">2.10.2.1</a>, "<a href="/composition/Control.html#Control-10-2-2">Segment fragmentation/continuation using the DSC segment</a>".</p>
+                <p class="v2 v2-normallistalpha">The second following segment will be the DSC, used as described above in Section <a href="./composition/Control.html#Control-10-2-1">2.10.2.1</a>, "<a href="./composition/Control.html#Control-10-2-2">Segment fragmentation/continuation using the DSC segment</a>".</p>
               </li>
               <li class="v2 v2-li">
                 <p class="v2 v2-normallistalpha">The first segment of the following fragment will be an ADD segment. The characters of this ADD segment are logically part of the ANY segment of the previous fragment.</p>
@@ -14146,7 +14146,7 @@ HL7 batch file structure
                 <p class="v2 v2-normallistalpha">a batch containing zero HL7 messages MAY be sent to meet a requirement for periodic submission of batches when there are no messages to send.</p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">a batch containing zero negative acknowledgment messages MAY be sent to indicate that all the HL7 messages contained in the batch being acknowledged are implicitly acknowledged. See Section<a href="/composition/Control.html#Control-10-3-2">2.10.3.2</a>, "<a href="/composition/Control.html#Control-10-3-3">Acknowledging batches</a>."</p>
+                <p class="v2 v2-normallistalpha">a batch containing zero negative acknowledgment messages MAY be sent to indicate that all the HL7 messages contained in the batch being acknowledged are implicitly acknowledged. See Section<a href="./composition/Control.html#Control-10-3-2">2.10.3.2</a>, "<a href="./composition/Control.html#Control-10-3-3">Acknowledging batches</a>."</p>
               </li>
             </ol>
 <p class="v2-normalindented">To better understand, why security labels MAY be applicable to batch files, we provide the following use case:</p>
@@ -14170,16 +14170,16 @@ Related segments and data usage
 <p class="v2-normalindented">The following segments relate to the HL7 Batch Protocol:</p>
 <ul class="v2-list v2-disc-list v2-normallistbullets" style="list-style: disc">
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistbullets">BHS    Batch Header (See section <a href="/composition/Control.html#Control-14-2">2.14.2</a>)</p>
+                <p class="v2 v2-normallistbullets">BHS    Batch Header (See section <a href="./composition/Control.html#Control-14-2">2.14.2</a>)</p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistbullets">BTS    Batch Trailer (See section <a href="/composition/Control.html#Control-14-3">2.14.3</a>)</p>
+                <p class="v2 v2-normallistbullets">BTS    Batch Trailer (See section <a href="./composition/Control.html#Control-14-3">2.14.3</a>)</p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistbullets">FHS    File Header (See section <a href="/composition/Control.html#Control-14-6">2.14.6</a>)</p>
+                <p class="v2 v2-normallistbullets">FHS    File Header (See section <a href="./composition/Control.html#Control-14-6">2.14.6</a>)</p>
               </li>
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistbullets">FTS    File Trailer (See section <a href="/composition/Control.html#Control-14-7">2.14.7</a>)</p>
+                <p class="v2 v2-normallistbullets">FTS    File Trailer (See section <a href="./composition/Control.html#Control-14-7">2.14.7</a>)</p>
               </li>
             </ul>
 <p class="v2-normalindented">The BTS segment contains a field, BTS-3 Batch Totals, which MAY have one or more totals drawn from fields within the individual messages. The method for computing such totals will be determined on a site or application basis unless explicitly stated in a functional chapter.</p>
@@ -14334,7 +14334,7 @@ Batch message as a query response
 <br class=""></br>
 <ol class="v2-list v2-lower-alpha-list v2-normallistalpha" style="list-style: lower-alpha">
               <li class="v2 v2-li">
-                <p class="v2 v2-normallistalpha">the acknowledgment of a batch is described in this chapter (see Section <a href="/composition/Control.html#Control-10-3-2">2.10.3.2</a>, "<a href="/composition/Control.html#Control-10-3-3">Acknowledging batches</a>").</p>
+                <p class="v2 v2-normallistalpha">the acknowledgment of a batch is described in this chapter (see Section <a href="./composition/Control.html#Control-10-3-2">2.10.3.2</a>, "<a href="./composition/Control.html#Control-10-3-3">Acknowledging batches</a>").</p>
               </li>
             </ol>
 <div class='v2-composition-section-4-subsections'>
@@ -14817,7 +14817,7 @@ HL7 abstract message syntax example
             <tr>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.46%; ">
                 <p class="v2 v2-othertablebody">
-                  <a href="/segment-definition/MSH.html">MSH</a>
+                  <a href="./segment-definition/MSH.html">MSH</a>
                 </p>
               </td>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.61%; ">
@@ -14832,7 +14832,7 @@ HL7 abstract message syntax example
             </tr>
             <tr>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.46%; ">
-                <p class="v2 v2-othertablebody">[{<a href="/segment-definition/SFT.html">SFT</a>}]</p>
+                <p class="v2 v2-othertablebody">[{<a href="./segment-definition/SFT.html">SFT</a>}]</p>
               </td>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.61%; ">
                 <p class="v2 v2-othertablebody">Software Segment</p>
@@ -14900,7 +14900,7 @@ HL7 abstract message syntax example
             <tr>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; ">
                 <p class="v2 v2-othertablebody">
-                  <a href="/segment-definition/MSH.html">MSH</a>
+                  <a href="./segment-definition/MSH.html">MSH</a>
                 </p>
               </td>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; ">
@@ -14915,7 +14915,7 @@ HL7 abstract message syntax example
             </tr>
             <tr>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; ">
-                <p class="v2 v2-othertablebody">[{<a href="/segment-definition/SFT.html">SFT</a>}]</p>
+                <p class="v2 v2-othertablebody">[{<a href="./segment-definition/SFT.html">SFT</a>}]</p>
               </td>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; ">
                 <p class="v2 v2-othertablebody">Software Segment</p>
@@ -14944,7 +14944,7 @@ HL7 abstract message syntax example
             <tr>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; ">
                 <p class="v2 v2-othertablebody">
-                  <a href="/segment-definition/MSA.html">MSA</a>
+                  <a href="./segment-definition/MSA.html">MSA</a>
                 </p>
               </td>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; ">
@@ -14959,7 +14959,7 @@ HL7 abstract message syntax example
             </tr>
             <tr>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; ">
-                <p class="v2 v2-othertablebody">[{<a href="/segment-definition/ERR.html">ERR</a>}]</p>
+                <p class="v2 v2-othertablebody">[{<a href="./segment-definition/ERR.html">ERR</a>}]</p>
               </td>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; ">
                 <p class="v2 v2-othertablebody">Error Segment</p>
@@ -15104,7 +15104,7 @@ HL7 abstract message syntax example
             <tr>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:28.17%; ">
                 <p class="v2 v2-othertablebody">
-                  <a href="/segment-definition/MSH.html">MSH</a>
+                  <a href="./segment-definition/MSH.html">MSH</a>
                 </p>
               </td>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:37.56%; ">
@@ -15119,7 +15119,7 @@ HL7 abstract message syntax example
             </tr>
             <tr>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:28.17%; ">
-                <p class="v2 v2-othertablebody">[{<a href="/segment-definition/SFT.html">SFT</a>}]</p>
+                <p class="v2 v2-othertablebody">[{<a href="./segment-definition/SFT.html">SFT</a>}]</p>
               </td>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:37.56%; ">
                 <p class="v2 v2-othertablebody">Software Segment</p>
@@ -15148,7 +15148,7 @@ HL7 abstract message syntax example
             <tr>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:28.17%; ">
                 <p class="v2 v2-othertablebody">
-                  <a href="/segment-definition/MSA.html">MSA</a>
+                  <a href="./segment-definition/MSA.html">MSA</a>
                 </p>
               </td>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:37.56%; ">
@@ -15163,7 +15163,7 @@ HL7 abstract message syntax example
             </tr>
             <tr>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:28.17%; ">
-                <p class="v2 v2-othertablebody">[{<a href="/segment-definition/ERR.html">ERR</a>}]</p>
+                <p class="v2 v2-othertablebody">[{<a href="./segment-definition/ERR.html">ERR</a>}]</p>
               </td>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:37.56%; ">
                 <p class="v2 v2-othertablebody">Error Segment</p>
@@ -15301,7 +15301,7 @@ HL7 abstract message syntax example
             <tr>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.73%; ">
                 <p class="v2 v2-othertablebody">
-                  <a href="/segment-definition/MSH.html">MSH</a>
+                  <a href="./segment-definition/MSH.html">MSH</a>
                 </p>
               </td>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.97%; ">
@@ -15316,7 +15316,7 @@ HL7 abstract message syntax example
             </tr>
             <tr>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.73%; ">
-                <p class="v2 v2-othertablebody">[{<a href="/segment-definition/SFT.html">SFT</a>}]</p>
+                <p class="v2 v2-othertablebody">[{<a href="./segment-definition/SFT.html">SFT</a>}]</p>
               </td>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.97%; ">
                 <p class="v2 v2-othertablebody">Software Segment</p>
@@ -15345,7 +15345,7 @@ HL7 abstract message syntax example
             <tr>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.73%; ">
                 <p class="v2 v2-othertablebody">
-                  <a href="/segment-definition/MSA.html">MSA</a>
+                  <a href="./segment-definition/MSA.html">MSA</a>
                 </p>
               </td>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.97%; ">
@@ -15360,7 +15360,7 @@ HL7 abstract message syntax example
             </tr>
             <tr>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.73%; ">
-                <p class="v2 v2-othertablebody">[{<a href="/segment-definition/ERR.html">ERR</a>}]</p>
+                <p class="v2 v2-othertablebody">[{<a href="./segment-definition/ERR.html">ERR</a>}]</p>
               </td>
               <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.97%; ">
                 <p class="v2 v2-othertablebody">Error Segment</p>
@@ -16109,7 +16109,7 @@ Message Control Segments
             </td>
             <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.25%; ">
               <p class="v2 v2-othertablebody">
-                <a href="/composition/Control.html#Control-14-1">2.14.1</a>
+                <a href="./composition/Control.html#Control-14-1">2.14.1</a>
               </p>
             </td>
           </tr>
@@ -16122,7 +16122,7 @@ Message Control Segments
             </td>
             <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.25%; ">
               <p class="v2 v2-othertablebody">
-                <a href="/composition/Control.html#Control-14-2">2.14.2</a>
+                <a href="./composition/Control.html#Control-14-2">2.14.2</a>
               </p>
             </td>
           </tr>
@@ -16135,7 +16135,7 @@ Message Control Segments
             </td>
             <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.25%; ">
               <p class="v2 v2-othertablebody">
-                <a href="/composition/Control.html#Control-14-3">2.14.3</a>
+                <a href="./composition/Control.html#Control-14-3">2.14.3</a>
               </p>
             </td>
           </tr>
@@ -16148,7 +16148,7 @@ Message Control Segments
             </td>
             <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.25%; ">
               <p class="v2 v2-othertablebody">
-                <a href="/composition/Control.html#Control-14-4">2.14.4</a>
+                <a href="./composition/Control.html#Control-14-4">2.14.4</a>
               </p>
             </td>
           </tr>
@@ -16161,7 +16161,7 @@ Message Control Segments
             </td>
             <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.25%; ">
               <p class="v2 v2-othertablebody">
-                <a href="/composition/Control.html#Control-14-5">2.14.5</a>
+                <a href="./composition/Control.html#Control-14-5">2.14.5</a>
               </p>
             </td>
           </tr>
@@ -16174,7 +16174,7 @@ Message Control Segments
             </td>
             <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.25%; ">
               <p class="v2 v2-othertablebody">
-                <a href="/composition/Control.html#Control-14-6">2.14.6</a>
+                <a href="./composition/Control.html#Control-14-6">2.14.6</a>
               </p>
             </td>
           </tr>
@@ -16187,7 +16187,7 @@ Message Control Segments
             </td>
             <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.25%; ">
               <p class="v2 v2-othertablebody">
-                <a href="/composition/Control.html#Control-14-7">2.14.7</a>
+                <a href="./composition/Control.html#Control-14-7">2.14.7</a>
               </p>
             </td>
           </tr>
@@ -16200,7 +16200,7 @@ Message Control Segments
             </td>
             <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.25%; ">
               <p class="v2 v2-othertablebody">
-                <a href="/composition/Control.html#Control-14-8">2.14.8</a>
+                <a href="./composition/Control.html#Control-14-8">2.14.8</a>
               </p>
             </td>
           </tr>
@@ -16213,7 +16213,7 @@ Message Control Segments
             </td>
             <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.25%; ">
               <p class="v2 v2-othertablebody">
-                <a href="/composition/Control.html#Control-14-9">2.14.9</a>
+                <a href="./composition/Control.html#Control-14-9">2.14.9</a>
               </p>
             </td>
           </tr>
@@ -16248,7 +16248,7 @@ Message Control Segments
             </td>
             <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.25%; ">
               <p class="v2 v2-othertablebody">
-                <a href="/composition/Control.html#Control-14-10-5">2.14.10.5</a>
+                <a href="./composition/Control.html#Control-14-10-5">2.14.10.5</a>
               </p>
             </td>
           </tr>
@@ -16261,7 +16261,7 @@ Message Control Segments
             </td>
             <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.25%; ">
               <p class="v2 v2-othertablebody">
-                <a href="/composition/Control.html#Control-14-12">2.14.12</a>
+                <a href="./composition/Control.html#Control-14-12">2.14.12</a>
               </p>
             </td>
           </tr>
@@ -16274,7 +16274,7 @@ Message Control Segments
             </td>
             <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.25%; ">
               <p class="v2 v2-othertablebody">
-                <a href="/composition/Control.html#Control-14-13">2.14.13</a>
+                <a href="./composition/Control.html#Control-14-13">2.14.13</a>
               </p>
             </td>
           </tr>
@@ -16287,7 +16287,7 @@ Message Control Segments
             </td>
             <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.25%; ">
               <p class="v2 v2-othertablebody">
-                <a href="/composition/Control.html#Control-14-14">2.14.14</a>
+                <a href="./composition/Control.html#Control-14-14">2.14.14</a>
               </p>
             </td>
           </tr>
@@ -16300,7 +16300,7 @@ Message Control Segments
             </td>
             <td style="border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.25%; ">
               <p class="v2 v2-othertablebody">
-                <a href="/composition/Control.html#Control-14-15">2.14.15</a>
+                <a href="./composition/Control.html#Control-14-15">2.14.15</a>
               </p>
             </td>
           </tr>
@@ -16310,7 +16310,7 @@ Message Control Segments
 <h3>
 ADD - Addendum Segment
 </h3>
-<p class="v2 v2-normalindented">The ADD segment is used to define the continuation of the prior segment in a continuation message. See Section <a href="/composition/Control.html#Control-10-2">2.10.2</a>, &quot;<a href="/composition/Control.html#Control-10-2">Continuation messages and segments</a>,&quot; for details.</p><!-- Every td has class="hierarchy" ... this should be removed and replaced with css that automatically does this -->
+<p class="v2 v2-normalindented">The ADD segment is used to define the continuation of the prior segment in a continuation message. See Section <a href="./composition/Control.html#Control-10-2">2.10.2</a>, &quot;<a href="./composition/Control.html#Control-10-2">Continuation messages and segments</a>,&quot; for details.</p><!-- Every td has class="hierarchy" ... this should be removed and replaced with css that automatically does this -->
 <!-- Striping even/odd should not be done by applying .even and .odd classes but by css that covers the entire table -->
 <!-- css for table header row...style="vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px" -->
 <!-- %h3 -->
@@ -16322,38 +16322,38 @@ HL7 Attribute Table - ADD - addendum segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -16364,24 +16364,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 ADD
 </b>
@@ -16389,14 +16389,14 @@ ADD
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 1
 </td>
 <td>
 Addendum Continuation Pointer
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -16405,7 +16405,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -16436,7 +16436,7 @@ O
 </table>
 
 <h4 class='v2' id='ADD-1'>
-ADD-1: Addendum Continuation Pointer (<a href='/data-type/ST.html'>ST</a>) 00066
+ADD-1: Addendum Continuation Pointer (<a href='./data-type/ST.html'>ST</a>) 00066
 </h4>
 FIXME
 
@@ -16456,38 +16456,38 @@ HL7 Attribute Table - BHS - batch header segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -16498,24 +16498,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 BHS
 </b>
@@ -16523,14 +16523,14 @@ BHS
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Batch Field Separator
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -16539,7 +16539,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -16568,14 +16568,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 Batch Encoding Characters
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -16584,7 +16584,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -16613,14 +16613,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 3
 </td>
 <td>
 Batch Sending Application
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -16629,7 +16629,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -16658,14 +16658,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 4
 </td>
 <td>
 Batch Sending Facility
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -16674,7 +16674,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -16703,14 +16703,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 5
 </td>
 <td>
 Batch Receiving Application
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -16719,7 +16719,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -16748,14 +16748,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 6
 </td>
 <td>
 Batch Receiving Facility
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -16764,7 +16764,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -16793,14 +16793,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 7
 </td>
 <td>
 Batch Creation Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -16809,7 +16809,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -16838,14 +16838,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 8
 </td>
 <td>
 Batch Security
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -16854,7 +16854,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -16883,14 +16883,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 9
 </td>
 <td>
 Batch Name/ID/Type
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -16899,7 +16899,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -16928,14 +16928,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 10
 </td>
 <td>
 Batch Comment
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -16944,7 +16944,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -16973,14 +16973,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 11
 </td>
 <td>
 Batch Control ID
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -16989,7 +16989,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -17018,14 +17018,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 12
 </td>
 <td>
 Reference Batch Control ID
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -17034,7 +17034,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -17063,14 +17063,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 13
 </td>
 <td>
 Batch Sending Network Address
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -17079,7 +17079,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -17108,14 +17108,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 14
 </td>
 <td>
 Batch Receiving Network Address
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -17124,7 +17124,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -17153,14 +17153,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 15
 </td>
 <td>
 Security Classification Tag
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -17169,7 +17169,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0952-Confidentiality-Classification.html' title='Confidentiality Classification(Suggested)'>
+<a href='./vocab/0952-Confidentiality-Classification.html' title='Confidentiality Classification(Suggested)'>
 0952(S)
 <span class='vocab-link-text'>Confidentiality Classification(Suggested)</span>
 </a>
@@ -17198,14 +17198,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 16
 </td>
 <td>
 Security Handling Instructions
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -17214,7 +17214,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0953-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0953-ERROR! Bad Data! FIXME.html'>
 0953
 <span class='vocab-link-text'></span>
 </a>
@@ -17243,14 +17243,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 17
 </td>
 <td>
 Special Access Restriction Instructions
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -17259,7 +17259,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -17290,87 +17290,87 @@ C
 </table>
 
 <h4 class='v2' id='BHS-1'>
-BHS-1: Batch Field Separator (<a href='/data-type/ST.html'>ST</a>) 00081
+BHS-1: Batch Field Separator (<a href='./data-type/ST.html'>ST</a>) 00081
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-2'>
-BHS-2: Batch Encoding Characters (<a href='/data-type/ST.html'>ST</a>) 00082
+BHS-2: Batch Encoding Characters (<a href='./data-type/ST.html'>ST</a>) 00082
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-3'>
-BHS-3: Batch Sending Application (<a href='/data-type/HD.html'>HD</a>) 00083
+BHS-3: Batch Sending Application (<a href='./data-type/HD.html'>HD</a>) 00083
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-4'>
-BHS-4: Batch Sending Facility (<a href='/data-type/HD.html'>HD</a>) 00084
+BHS-4: Batch Sending Facility (<a href='./data-type/HD.html'>HD</a>) 00084
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-5'>
-BHS-5: Batch Receiving Application (<a href='/data-type/HD.html'>HD</a>) 00085
+BHS-5: Batch Receiving Application (<a href='./data-type/HD.html'>HD</a>) 00085
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-6'>
-BHS-6: Batch Receiving Facility (<a href='/data-type/HD.html'>HD</a>) 00086
+BHS-6: Batch Receiving Facility (<a href='./data-type/HD.html'>HD</a>) 00086
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-7'>
-BHS-7: Batch Creation Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 00087
+BHS-7: Batch Creation Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 00087
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-8'>
-BHS-8: Batch Security (<a href='/data-type/ST.html'>ST</a>) 00088
+BHS-8: Batch Security (<a href='./data-type/ST.html'>ST</a>) 00088
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-9'>
-BHS-9: Batch Name/ID/Type (<a href='/data-type/ST.html'>ST</a>) 00089
+BHS-9: Batch Name/ID/Type (<a href='./data-type/ST.html'>ST</a>) 00089
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-10'>
-BHS-10: Batch Comment (<a href='/data-type/ST.html'>ST</a>) 00090
+BHS-10: Batch Comment (<a href='./data-type/ST.html'>ST</a>) 00090
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-11'>
-BHS-11: Batch Control ID (<a href='/data-type/ST.html'>ST</a>) 00091
+BHS-11: Batch Control ID (<a href='./data-type/ST.html'>ST</a>) 00091
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-12'>
-BHS-12: Reference Batch Control ID (<a href='/data-type/ST.html'>ST</a>) 00092
+BHS-12: Reference Batch Control ID (<a href='./data-type/ST.html'>ST</a>) 00092
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-13'>
-BHS-13: Batch Sending Network Address (<a href='/data-type/HD.html'>HD</a>) 02271
+BHS-13: Batch Sending Network Address (<a href='./data-type/HD.html'>HD</a>) 02271
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-14'>
-BHS-14: Batch Receiving Network Address (<a href='/data-type/HD.html'>HD</a>) 02272
+BHS-14: Batch Receiving Network Address (<a href='./data-type/HD.html'>HD</a>) 02272
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-15'>
-BHS-15: Security Classification Tag (<a href='/data-type/CWE.html'>CWE</a>) 02429
+BHS-15: Security Classification Tag (<a href='./data-type/CWE.html'>CWE</a>) 02429
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-16'>
-BHS-16: Security Handling Instructions (<a href='/data-type/CWE.html'>CWE</a>) 02430
+BHS-16: Security Handling Instructions (<a href='./data-type/CWE.html'>CWE</a>) 02430
 </h4>
 FIXME
 
 <h4 class='v2' id='BHS-17'>
-BHS-17: Special Access Restriction Instructions (<a href='/data-type/ST.html'>ST</a>) 02431
+BHS-17: Special Access Restriction Instructions (<a href='./data-type/ST.html'>ST</a>) 02431
 </h4>
 FIXME
 
@@ -17390,38 +17390,38 @@ HL7 Attribute Table - BTS - batch trailer segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -17432,24 +17432,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 BTS
 </b>
@@ -17457,14 +17457,14 @@ BTS
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Batch Message Count
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -17473,7 +17473,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -17502,14 +17502,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 Batch Comment
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -17518,7 +17518,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -17547,14 +17547,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 3
 </td>
 <td>
 Batch Totals
 </td>
 <td class='centered'>
-<a href='/data-type/NM.html'>
+<a href='./data-type/NM.html'>
 NM
 </a>
 </td>
@@ -17563,7 +17563,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -17594,17 +17594,17 @@ O
 </table>
 
 <h4 class='v2' id='BTS-1'>
-BTS-1: Batch Message Count (<a href='/data-type/ST.html'>ST</a>) 00093
+BTS-1: Batch Message Count (<a href='./data-type/ST.html'>ST</a>) 00093
 </h4>
 FIXME
 
 <h4 class='v2' id='BTS-2'>
-BTS-2: Batch Comment (<a href='/data-type/ST.html'>ST</a>) 00090
+BTS-2: Batch Comment (<a href='./data-type/ST.html'>ST</a>) 00090
 </h4>
 FIXME
 
 <h4 class='v2' id='BTS-3'>
-BTS-3: Batch Totals (<a href='/data-type/NM.html'>NM</a>) 00095
+BTS-3: Batch Totals (<a href='./data-type/NM.html'>NM</a>) 00095
 </h4>
 FIXME
 
@@ -17624,38 +17624,38 @@ HL7 Attribute Table - DSC - continuation pointer segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -17666,24 +17666,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 DSC
 </b>
@@ -17691,14 +17691,14 @@ DSC
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Continuation Pointer
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -17707,7 +17707,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -17736,14 +17736,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 2
 </td>
 <td>
 Continuation Style
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -17752,7 +17752,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0398-Continuation-Style-Code.html' title='Continuation Style Code(Required)'>
+<a href='./vocab/0398-Continuation-Style-Code.html' title='Continuation Style Code(Required)'>
 0398(R)
 <span class='vocab-link-text'>Continuation Style Code(Required)</span>
 </a>
@@ -17783,12 +17783,12 @@ O
 </table>
 
 <h4 class='v2' id='DSC-1'>
-DSC-1: Continuation Pointer (<a href='/data-type/ST.html'>ST</a>) 00014
+DSC-1: Continuation Pointer (<a href='./data-type/ST.html'>ST</a>) 00014
 </h4>
 FIXME
 
 <h4 class='v2' id='DSC-2'>
-DSC-2: Continuation Style (<a href='/data-type/ID.html'>ID</a>) 01354
+DSC-2: Continuation Style (<a href='./data-type/ID.html'>ID</a>) 01354
 </h4>
 FIXME
 
@@ -17808,38 +17808,38 @@ HL7 Attribute Table - ERR - error segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -17850,24 +17850,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 ERR
 </b>
@@ -17875,7 +17875,7 @@ ERR
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
@@ -17891,7 +17891,7 @@ W
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -17920,14 +17920,14 @@ W
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 Error Location
 </td>
 <td class='centered'>
-<a href='/data-type/ERL.html'>
+<a href='./data-type/ERL.html'>
 ERL
 </a>
 </td>
@@ -17936,7 +17936,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -17965,14 +17965,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 3
 </td>
 <td>
 HL7 Error Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -17981,7 +17981,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0357-Message-Error-Condition-Codes.html' title='Message Error Condition Codes(Required)'>
+<a href='./vocab/0357-Message-Error-Condition-Codes.html' title='Message Error Condition Codes(Required)'>
 0357(R)
 <span class='vocab-link-text'>Message Error Condition Codes(Required)</span>
 </a>
@@ -18010,14 +18010,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 4
 </td>
 <td>
 Severity
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -18026,7 +18026,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0516-Error-Severity.html' title='Error Severity(Required)'>
+<a href='./vocab/0516-Error-Severity.html' title='Error Severity(Required)'>
 0516(R)
 <span class='vocab-link-text'>Error Severity(Required)</span>
 </a>
@@ -18055,14 +18055,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 5
 </td>
 <td>
 Application Error Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -18071,7 +18071,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0533-Application-Error-Code.html' title='Application Error Code'>
+<a href='./vocab/0533-Application-Error-Code.html' title='Application Error Code'>
 0533
 <span class='vocab-link-text'>Application Error Code</span>
 </a>
@@ -18100,14 +18100,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 6
 </td>
 <td>
 Application Error Parameter
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -18116,7 +18116,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -18145,14 +18145,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 7
 </td>
 <td>
 Diagnostic Information
 </td>
 <td class='centered'>
-<a href='/data-type/TX.html'>
+<a href='./data-type/TX.html'>
 TX
 </a>
 </td>
@@ -18161,7 +18161,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -18190,14 +18190,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 8
 </td>
 <td>
 User Message
 </td>
 <td class='centered'>
-<a href='/data-type/TX.html'>
+<a href='./data-type/TX.html'>
 TX
 </a>
 </td>
@@ -18206,7 +18206,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -18235,14 +18235,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 9
 </td>
 <td>
 Inform Person Indicator
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -18251,7 +18251,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0517-Inform-Person-Code.html' title='Inform Person Code(Suggested)'>
+<a href='./vocab/0517-Inform-Person-Code.html' title='Inform Person Code(Suggested)'>
 0517(S)
 <span class='vocab-link-text'>Inform Person Code(Suggested)</span>
 </a>
@@ -18280,14 +18280,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 10
 </td>
 <td>
 Override Type
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -18296,7 +18296,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0518-Override-Type.html' title='Override Type'>
+<a href='./vocab/0518-Override-Type.html' title='Override Type'>
 0518
 <span class='vocab-link-text'>Override Type</span>
 </a>
@@ -18325,14 +18325,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 11
 </td>
 <td>
 Override Reason Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -18341,7 +18341,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0519-Override-Reason.html' title='Override Reason'>
+<a href='./vocab/0519-Override-Reason.html' title='Override Reason'>
 0519
 <span class='vocab-link-text'>Override Reason</span>
 </a>
@@ -18370,14 +18370,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 12
 </td>
 <td>
 Help Desk Contact Point
 </td>
 <td class='centered'>
-<a href='/data-type/XTN.html'>
+<a href='./data-type/XTN.html'>
 XTN
 </a>
 </td>
@@ -18386,7 +18386,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -18417,62 +18417,62 @@ O
 </table>
 
 <h4 class='v2' id='ERR-1'>
-ERR-1: Error Code and Location (<a href='/data-type/.html'></a>) 00024
+ERR-1: Error Code and Location (<a href='./data-type/.html'></a>) 00024
 </h4>
 FIXME
 
 <h4 class='v2' id='ERR-2'>
-ERR-2: Error Location (<a href='/data-type/ERL.html'>ERL</a>) 01812
+ERR-2: Error Location (<a href='./data-type/ERL.html'>ERL</a>) 01812
 </h4>
 FIXME
 
 <h4 class='v2' id='ERR-3'>
-ERR-3: HL7 Error Code (<a href='/data-type/CWE.html'>CWE</a>) 01813
+ERR-3: HL7 Error Code (<a href='./data-type/CWE.html'>CWE</a>) 01813
 </h4>
 FIXME
 
 <h4 class='v2' id='ERR-4'>
-ERR-4: Severity (<a href='/data-type/ID.html'>ID</a>) 01814
+ERR-4: Severity (<a href='./data-type/ID.html'>ID</a>) 01814
 </h4>
 FIXME
 
 <h4 class='v2' id='ERR-5'>
-ERR-5: Application Error Code (<a href='/data-type/CWE.html'>CWE</a>) 01815
+ERR-5: Application Error Code (<a href='./data-type/CWE.html'>CWE</a>) 01815
 </h4>
 FIXME
 
 <h4 class='v2' id='ERR-6'>
-ERR-6: Application Error Parameter (<a href='/data-type/ST.html'>ST</a>) 01816
+ERR-6: Application Error Parameter (<a href='./data-type/ST.html'>ST</a>) 01816
 </h4>
 FIXME
 
 <h4 class='v2' id='ERR-7'>
-ERR-7: Diagnostic Information (<a href='/data-type/TX.html'>TX</a>) 01817
+ERR-7: Diagnostic Information (<a href='./data-type/TX.html'>TX</a>) 01817
 </h4>
 FIXME
 
 <h4 class='v2' id='ERR-8'>
-ERR-8: User Message (<a href='/data-type/TX.html'>TX</a>) 01818
+ERR-8: User Message (<a href='./data-type/TX.html'>TX</a>) 01818
 </h4>
 FIXME
 
 <h4 class='v2' id='ERR-9'>
-ERR-9: Inform Person Indicator (<a href='/data-type/CWE.html'>CWE</a>) 01819
+ERR-9: Inform Person Indicator (<a href='./data-type/CWE.html'>CWE</a>) 01819
 </h4>
 FIXME
 
 <h4 class='v2' id='ERR-10'>
-ERR-10: Override Type (<a href='/data-type/CWE.html'>CWE</a>) 01820
+ERR-10: Override Type (<a href='./data-type/CWE.html'>CWE</a>) 01820
 </h4>
 FIXME
 
 <h4 class='v2' id='ERR-11'>
-ERR-11: Override Reason Code (<a href='/data-type/CWE.html'>CWE</a>) 01821
+ERR-11: Override Reason Code (<a href='./data-type/CWE.html'>CWE</a>) 01821
 </h4>
 FIXME
 
 <h4 class='v2' id='ERR-12'>
-ERR-12: Help Desk Contact Point (<a href='/data-type/XTN.html'>XTN</a>) 01822
+ERR-12: Help Desk Contact Point (<a href='./data-type/XTN.html'>XTN</a>) 01822
 </h4>
 FIXME
 
@@ -18480,7 +18480,7 @@ FIXME
 <h3>
 FHS - File Header Segment
 </h3>
-<p class="v2 v2-normalindented">The FHS segment is used to head a file (group of batches) as defined in Section <a href="/composition/Control.html#Control-10-3">2.10.3</a>, &quot;<a href="/composition/Control.html#Control-10-3">HL7 batch protocol</a>&quot;.</p><!-- Every td has class="hierarchy" ... this should be removed and replaced with css that automatically does this -->
+<p class="v2 v2-normalindented">The FHS segment is used to head a file (group of batches) as defined in Section <a href="./composition/Control.html#Control-10-3">2.10.3</a>, &quot;<a href="./composition/Control.html#Control-10-3">HL7 batch protocol</a>&quot;.</p><!-- Every td has class="hierarchy" ... this should be removed and replaced with css that automatically does this -->
 <!-- Striping even/odd should not be done by applying .even and .odd classes but by css that covers the entire table -->
 <!-- css for table header row...style="vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px" -->
 <!-- %h3 -->
@@ -18492,38 +18492,38 @@ HL7 Attribute Table - FHS - file header segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -18534,24 +18534,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 FHS
 </b>
@@ -18559,14 +18559,14 @@ FHS
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 File Field Separator
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -18575,7 +18575,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -18604,14 +18604,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 File Encoding Characters
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -18620,7 +18620,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -18649,14 +18649,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 3
 </td>
 <td>
 File Sending Application
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -18665,7 +18665,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -18694,14 +18694,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 4
 </td>
 <td>
 File Sending Facility
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -18710,7 +18710,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -18739,14 +18739,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 5
 </td>
 <td>
 File Receiving Application
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -18755,7 +18755,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -18784,14 +18784,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 6
 </td>
 <td>
 File Receiving Facility
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -18800,7 +18800,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -18829,14 +18829,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 7
 </td>
 <td>
 File Creation Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -18845,7 +18845,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -18874,14 +18874,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 8
 </td>
 <td>
 File Security
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -18890,7 +18890,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -18919,14 +18919,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 9
 </td>
 <td>
 File Name/ID
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -18935,7 +18935,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -18964,14 +18964,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 10
 </td>
 <td>
 File Header Comment
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -18980,7 +18980,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -19009,14 +19009,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 11
 </td>
 <td>
 File Control ID
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -19025,7 +19025,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -19054,14 +19054,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 12
 </td>
 <td>
 Reference File Control ID
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -19070,7 +19070,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -19099,14 +19099,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 13
 </td>
 <td>
 File Sending Network Address
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -19115,7 +19115,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -19144,14 +19144,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 14
 </td>
 <td>
 File Receiving Network Address
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -19160,7 +19160,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -19189,14 +19189,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 15
 </td>
 <td>
 Security Classification Tag
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -19205,7 +19205,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0952-Confidentiality-Classification.html' title='Confidentiality Classification(Suggested)'>
+<a href='./vocab/0952-Confidentiality-Classification.html' title='Confidentiality Classification(Suggested)'>
 0952(S)
 <span class='vocab-link-text'>Confidentiality Classification(Suggested)</span>
 </a>
@@ -19234,14 +19234,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 16
 </td>
 <td>
 Security Handling Instructions
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -19250,7 +19250,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0953-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0953-ERROR! Bad Data! FIXME.html'>
 0953
 <span class='vocab-link-text'></span>
 </a>
@@ -19279,14 +19279,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 17
 </td>
 <td>
 Special Access Restriction Instructions
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -19295,7 +19295,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -19326,87 +19326,87 @@ C
 </table>
 
 <h4 class='v2' id='FHS-1'>
-FHS-1: File Field Separator (<a href='/data-type/ST.html'>ST</a>) 00067
+FHS-1: File Field Separator (<a href='./data-type/ST.html'>ST</a>) 00067
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-2'>
-FHS-2: File Encoding Characters (<a href='/data-type/ST.html'>ST</a>) 00068
+FHS-2: File Encoding Characters (<a href='./data-type/ST.html'>ST</a>) 00068
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-3'>
-FHS-3: File Sending Application (<a href='/data-type/HD.html'>HD</a>) 00069
+FHS-3: File Sending Application (<a href='./data-type/HD.html'>HD</a>) 00069
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-4'>
-FHS-4: File Sending Facility (<a href='/data-type/HD.html'>HD</a>) 00070
+FHS-4: File Sending Facility (<a href='./data-type/HD.html'>HD</a>) 00070
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-5'>
-FHS-5: File Receiving Application (<a href='/data-type/HD.html'>HD</a>) 00071
+FHS-5: File Receiving Application (<a href='./data-type/HD.html'>HD</a>) 00071
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-6'>
-FHS-6: File Receiving Facility (<a href='/data-type/HD.html'>HD</a>) 00072
+FHS-6: File Receiving Facility (<a href='./data-type/HD.html'>HD</a>) 00072
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-7'>
-FHS-7: File Creation Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 00073
+FHS-7: File Creation Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 00073
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-8'>
-FHS-8: File Security (<a href='/data-type/ST.html'>ST</a>) 00074
+FHS-8: File Security (<a href='./data-type/ST.html'>ST</a>) 00074
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-9'>
-FHS-9: File Name/ID (<a href='/data-type/ST.html'>ST</a>) 00075
+FHS-9: File Name/ID (<a href='./data-type/ST.html'>ST</a>) 00075
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-10'>
-FHS-10: File Header Comment (<a href='/data-type/ST.html'>ST</a>) 00076
+FHS-10: File Header Comment (<a href='./data-type/ST.html'>ST</a>) 00076
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-11'>
-FHS-11: File Control ID (<a href='/data-type/ST.html'>ST</a>) 00077
+FHS-11: File Control ID (<a href='./data-type/ST.html'>ST</a>) 00077
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-12'>
-FHS-12: Reference File Control ID (<a href='/data-type/ST.html'>ST</a>) 00078
+FHS-12: Reference File Control ID (<a href='./data-type/ST.html'>ST</a>) 00078
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-13'>
-FHS-13: File Sending Network Address (<a href='/data-type/HD.html'>HD</a>) 02269
+FHS-13: File Sending Network Address (<a href='./data-type/HD.html'>HD</a>) 02269
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-14'>
-FHS-14: File Receiving Network Address (<a href='/data-type/HD.html'>HD</a>) 02270
+FHS-14: File Receiving Network Address (<a href='./data-type/HD.html'>HD</a>) 02270
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-15'>
-FHS-15: Security Classification Tag (<a href='/data-type/CWE.html'>CWE</a>) 02429
+FHS-15: Security Classification Tag (<a href='./data-type/CWE.html'>CWE</a>) 02429
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-16'>
-FHS-16: Security Handling Instructions (<a href='/data-type/CWE.html'>CWE</a>) 02430
+FHS-16: Security Handling Instructions (<a href='./data-type/CWE.html'>CWE</a>) 02430
 </h4>
 FIXME
 
 <h4 class='v2' id='FHS-17'>
-FHS-17: Special Access Restriction Instructions (<a href='/data-type/ST.html'>ST</a>) 02431
+FHS-17: Special Access Restriction Instructions (<a href='./data-type/ST.html'>ST</a>) 02431
 </h4>
 FIXME
 
@@ -19426,38 +19426,38 @@ HL7 Attribute Table - FTS - file trailer segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -19468,24 +19468,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 FTS
 </b>
@@ -19493,14 +19493,14 @@ FTS
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 File Batch Count
 </td>
 <td class='centered'>
-<a href='/data-type/NM.html'>
+<a href='./data-type/NM.html'>
 NM
 </a>
 </td>
@@ -19509,7 +19509,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -19538,14 +19538,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 2
 </td>
 <td>
 File Trailer Comment
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -19554,7 +19554,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -19585,12 +19585,12 @@ O
 </table>
 
 <h4 class='v2' id='FTS-1'>
-FTS-1: File Batch Count (<a href='/data-type/NM.html'>NM</a>) 00079
+FTS-1: File Batch Count (<a href='./data-type/NM.html'>NM</a>) 00079
 </h4>
 FIXME
 
 <h4 class='v2' id='FTS-2'>
-FTS-2: File Trailer Comment (<a href='/data-type/ST.html'>ST</a>) 00080
+FTS-2: File Trailer Comment (<a href='./data-type/ST.html'>ST</a>) 00080
 </h4>
 FIXME
 
@@ -19610,38 +19610,38 @@ HL7 Attribute Table - MSA - message acknowledgment segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -19652,24 +19652,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 MSA
 </b>
@@ -19677,14 +19677,14 @@ MSA
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Acknowledgment Code
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -19693,7 +19693,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0008-Acknowledgment-code.html' title='Acknowledgment code(Required)'>
+<a href='./vocab/0008-Acknowledgment-code.html' title='Acknowledgment code(Required)'>
 0008(R)
 <span class='vocab-link-text'>Acknowledgment code(Required)</span>
 </a>
@@ -19722,14 +19722,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 Message Control ID
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -19738,7 +19738,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -19767,7 +19767,7 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 3
 </td>
 <td>
@@ -19783,7 +19783,7 @@ W
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -19812,14 +19812,14 @@ W
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 4
 </td>
 <td>
 Expected Sequence Number
 </td>
 <td class='centered'>
-<a href='/data-type/NM.html'>
+<a href='./data-type/NM.html'>
 NM
 </a>
 </td>
@@ -19828,7 +19828,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -19857,7 +19857,7 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 5
 </td>
 <td>
@@ -19873,7 +19873,7 @@ W
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -19902,7 +19902,7 @@ W
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 6
 </td>
 <td>
@@ -19918,7 +19918,7 @@ W
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -19947,14 +19947,14 @@ W
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 7
 </td>
 <td>
 Message Waiting Number
 </td>
 <td class='centered'>
-<a href='/data-type/NM.html'>
+<a href='./data-type/NM.html'>
 NM
 </a>
 </td>
@@ -19963,7 +19963,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -19992,14 +19992,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 8
 </td>
 <td>
 Message Waiting Priority
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -20008,7 +20008,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0520-Message-Waiting-Priority.html' title='Message Waiting Priority(Required)'>
+<a href='./vocab/0520-Message-Waiting-Priority.html' title='Message Waiting Priority(Required)'>
 0520(R)
 <span class='vocab-link-text'>Message Waiting Priority(Required)</span>
 </a>
@@ -20039,42 +20039,42 @@ O
 </table>
 
 <h4 class='v2' id='MSA-1'>
-MSA-1: Acknowledgment Code (<a href='/data-type/ID.html'>ID</a>) 00018
+MSA-1: Acknowledgment Code (<a href='./data-type/ID.html'>ID</a>) 00018
 </h4>
 FIXME
 
 <h4 class='v2' id='MSA-2'>
-MSA-2: Message Control ID (<a href='/data-type/ST.html'>ST</a>) 00010
+MSA-2: Message Control ID (<a href='./data-type/ST.html'>ST</a>) 00010
 </h4>
 FIXME
 
 <h4 class='v2' id='MSA-3'>
-MSA-3: Text Message (<a href='/data-type/.html'></a>) 00020
+MSA-3: Text Message (<a href='./data-type/.html'></a>) 00020
 </h4>
 FIXME
 
 <h4 class='v2' id='MSA-4'>
-MSA-4: Expected Sequence Number (<a href='/data-type/NM.html'>NM</a>) 00021
+MSA-4: Expected Sequence Number (<a href='./data-type/NM.html'>NM</a>) 00021
 </h4>
 FIXME
 
 <h4 class='v2' id='MSA-5'>
-MSA-5: Delayed Acknowledgment Type (<a href='/data-type/.html'></a>) 00022
+MSA-5: Delayed Acknowledgment Type (<a href='./data-type/.html'></a>) 00022
 </h4>
 FIXME
 
 <h4 class='v2' id='MSA-6'>
-MSA-6: Error Condition (<a href='/data-type/.html'></a>) 00023
+MSA-6: Error Condition (<a href='./data-type/.html'></a>) 00023
 </h4>
 FIXME
 
 <h4 class='v2' id='MSA-7'>
-MSA-7: Message Waiting Number (<a href='/data-type/NM.html'>NM</a>) 01827
+MSA-7: Message Waiting Number (<a href='./data-type/NM.html'>NM</a>) 01827
 </h4>
 FIXME
 
 <h4 class='v2' id='MSA-8'>
-MSA-8: Message Waiting Priority (<a href='/data-type/ID.html'>ID</a>) 01828
+MSA-8: Message Waiting Priority (<a href='./data-type/ID.html'>ID</a>) 01828
 </h4>
 FIXME
 
@@ -20094,38 +20094,38 @@ HL7 Attribute Table - MSH - message header segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -20136,24 +20136,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 MSH
 </b>
@@ -20161,14 +20161,14 @@ MSH
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Field Separator
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -20177,7 +20177,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -20206,14 +20206,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 Encoding Characters
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -20222,7 +20222,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -20251,14 +20251,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 3
 </td>
 <td>
 Sending Application
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -20267,7 +20267,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0361-Application.html' title='Application'>
+<a href='./vocab/0361-Application.html' title='Application'>
 0361
 <span class='vocab-link-text'>Application</span>
 </a>
@@ -20296,14 +20296,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 4
 </td>
 <td>
 Sending Facility
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -20312,7 +20312,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0362-Facility.html' title='Facility'>
+<a href='./vocab/0362-Facility.html' title='Facility'>
 0362
 <span class='vocab-link-text'>Facility</span>
 </a>
@@ -20341,14 +20341,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 5
 </td>
 <td>
 Receiving Application
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -20357,7 +20357,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0361-Application.html' title='Application'>
+<a href='./vocab/0361-Application.html' title='Application'>
 0361
 <span class='vocab-link-text'>Application</span>
 </a>
@@ -20386,14 +20386,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 6
 </td>
 <td>
 Receiving Facility
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -20402,7 +20402,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0362-Facility.html' title='Facility'>
+<a href='./vocab/0362-Facility.html' title='Facility'>
 0362
 <span class='vocab-link-text'>Facility</span>
 </a>
@@ -20431,14 +20431,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 7
 </td>
 <td>
 Date/Time of Message
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -20447,7 +20447,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -20476,14 +20476,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 8
 </td>
 <td>
 Security
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -20492,7 +20492,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -20521,14 +20521,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 9
 </td>
 <td>
 Message Type
 </td>
 <td class='centered'>
-<a href='/data-type/MSG.html'>
+<a href='./data-type/MSG.html'>
 MSG
 </a>
 </td>
@@ -20537,7 +20537,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -20566,14 +20566,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 10
 </td>
 <td>
 Message Control ID
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -20582,7 +20582,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -20611,14 +20611,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 11
 </td>
 <td>
 Processing ID
 </td>
 <td class='centered'>
-<a href='/data-type/PT.html'>
+<a href='./data-type/PT.html'>
 PT
 </a>
 </td>
@@ -20627,7 +20627,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -20656,14 +20656,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 12
 </td>
 <td>
 Version ID
 </td>
 <td class='centered'>
-<a href='/data-type/VID.html'>
+<a href='./data-type/VID.html'>
 VID
 </a>
 </td>
@@ -20672,7 +20672,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -20701,14 +20701,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 13
 </td>
 <td>
 Sequence Number
 </td>
 <td class='centered'>
-<a href='/data-type/NM.html'>
+<a href='./data-type/NM.html'>
 NM
 </a>
 </td>
@@ -20717,7 +20717,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -20746,14 +20746,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 14
 </td>
 <td>
 Continuation Pointer
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -20762,7 +20762,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -20791,14 +20791,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 15
 </td>
 <td>
 Accept Acknowledgment Type
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -20807,7 +20807,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0155-Accept/Application-Acknowledgment-Conditions.html' title='Accept/Application Acknowledgment Conditions(Required)'>
+<a href='./vocab/0155-Accept/Application-Acknowledgment-Conditions.html' title='Accept/Application Acknowledgment Conditions(Required)'>
 0155(R)
 <span class='vocab-link-text'>Accept/Application Acknowledgment Conditions(Required)</span>
 </a>
@@ -20836,14 +20836,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 16
 </td>
 <td>
 Application Acknowledgment Type
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -20852,7 +20852,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0155-Accept/Application-Acknowledgment-Conditions.html' title='Accept/Application Acknowledgment Conditions(Required)'>
+<a href='./vocab/0155-Accept/Application-Acknowledgment-Conditions.html' title='Accept/Application Acknowledgment Conditions(Required)'>
 0155(R)
 <span class='vocab-link-text'>Accept/Application Acknowledgment Conditions(Required)</span>
 </a>
@@ -20881,14 +20881,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 17
 </td>
 <td>
 Country Code
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -20897,7 +20897,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0399-Country-Code.html' title='Country Code(Suggested)'>
+<a href='./vocab/0399-Country-Code.html' title='Country Code(Suggested)'>
 0399(S)
 <span class='vocab-link-text'>Country Code(Suggested)</span>
 </a>
@@ -20926,14 +20926,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 18
 </td>
 <td>
 Character Set
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -20942,7 +20942,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0211-Alternate-Character-Sets.html' title='Alternate Character Sets(Required)'>
+<a href='./vocab/0211-Alternate-Character-Sets.html' title='Alternate Character Sets(Required)'>
 0211(R)
 <span class='vocab-link-text'>Alternate Character Sets(Required)</span>
 </a>
@@ -20971,14 +20971,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 19
 </td>
 <td>
 Principal Language Of Message
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -20987,7 +20987,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0609-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0609-ERROR! Bad Data! FIXME.html'>
 0609
 <span class='vocab-link-text'></span>
 </a>
@@ -21016,14 +21016,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 20
 </td>
 <td>
 Alternate Character Set Handling Scheme
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -21032,7 +21032,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0356-Alternate-Character-Set-Handling-Scheme.html' title='Alternate Character Set Handling Scheme(Required)'>
+<a href='./vocab/0356-Alternate-Character-Set-Handling-Scheme.html' title='Alternate Character Set Handling Scheme(Required)'>
 0356(R)
 <span class='vocab-link-text'>Alternate Character Set Handling Scheme(Required)</span>
 </a>
@@ -21061,14 +21061,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 21
 </td>
 <td>
 Message Profile Identifier
 </td>
 <td class='centered'>
-<a href='/data-type/EI.html'>
+<a href='./data-type/EI.html'>
 EI
 </a>
 </td>
@@ -21077,7 +21077,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -21106,14 +21106,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 22
 </td>
 <td>
 Sending Responsible Organization
 </td>
 <td class='centered'>
-<a href='/data-type/XON.html'>
+<a href='./data-type/XON.html'>
 XON
 </a>
 </td>
@@ -21122,7 +21122,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -21151,14 +21151,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 23
 </td>
 <td>
 Receiving Responsible Organization
 </td>
 <td class='centered'>
-<a href='/data-type/XON.html'>
+<a href='./data-type/XON.html'>
 XON
 </a>
 </td>
@@ -21167,7 +21167,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -21196,14 +21196,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 24
 </td>
 <td>
 Sending Network Address
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -21212,7 +21212,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -21241,14 +21241,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 25
 </td>
 <td>
 Receiving Network Address
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -21257,7 +21257,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -21286,14 +21286,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 26
 </td>
 <td>
 Security Classification Tag
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -21302,7 +21302,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0952-Confidentiality-Classification.html' title='Confidentiality Classification(Suggested)'>
+<a href='./vocab/0952-Confidentiality-Classification.html' title='Confidentiality Classification(Suggested)'>
 0952(S)
 <span class='vocab-link-text'>Confidentiality Classification(Suggested)</span>
 </a>
@@ -21331,14 +21331,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 27
 </td>
 <td>
 Security Handling Instructions
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -21347,7 +21347,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0953-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0953-ERROR! Bad Data! FIXME.html'>
 0953
 <span class='vocab-link-text'></span>
 </a>
@@ -21376,14 +21376,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 28
 </td>
 <td>
 Special Access Restriction Instructions
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -21392,7 +21392,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -21423,142 +21423,142 @@ O
 </table>
 
 <h4 class='v2' id='MSH-1'>
-MSH-1: Field Separator (<a href='/data-type/ST.html'>ST</a>) 00001
+MSH-1: Field Separator (<a href='./data-type/ST.html'>ST</a>) 00001
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-2'>
-MSH-2: Encoding Characters (<a href='/data-type/ST.html'>ST</a>) 00002
+MSH-2: Encoding Characters (<a href='./data-type/ST.html'>ST</a>) 00002
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-3'>
-MSH-3: Sending Application (<a href='/data-type/HD.html'>HD</a>) 00003
+MSH-3: Sending Application (<a href='./data-type/HD.html'>HD</a>) 00003
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-4'>
-MSH-4: Sending Facility (<a href='/data-type/HD.html'>HD</a>) 00004
+MSH-4: Sending Facility (<a href='./data-type/HD.html'>HD</a>) 00004
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-5'>
-MSH-5: Receiving Application (<a href='/data-type/HD.html'>HD</a>) 00005
+MSH-5: Receiving Application (<a href='./data-type/HD.html'>HD</a>) 00005
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-6'>
-MSH-6: Receiving Facility (<a href='/data-type/HD.html'>HD</a>) 00006
+MSH-6: Receiving Facility (<a href='./data-type/HD.html'>HD</a>) 00006
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-7'>
-MSH-7: Date/Time of Message (<a href='/data-type/DTM.html'>DTM</a>) 00007
+MSH-7: Date/Time of Message (<a href='./data-type/DTM.html'>DTM</a>) 00007
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-8'>
-MSH-8: Security (<a href='/data-type/ST.html'>ST</a>) 00008
+MSH-8: Security (<a href='./data-type/ST.html'>ST</a>) 00008
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-9'>
-MSH-9: Message Type (<a href='/data-type/MSG.html'>MSG</a>) 00009
+MSH-9: Message Type (<a href='./data-type/MSG.html'>MSG</a>) 00009
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-10'>
-MSH-10: Message Control ID (<a href='/data-type/ST.html'>ST</a>) 00010
+MSH-10: Message Control ID (<a href='./data-type/ST.html'>ST</a>) 00010
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-11'>
-MSH-11: Processing ID (<a href='/data-type/PT.html'>PT</a>) 00011
+MSH-11: Processing ID (<a href='./data-type/PT.html'>PT</a>) 00011
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-12'>
-MSH-12: Version ID (<a href='/data-type/VID.html'>VID</a>) 00012
+MSH-12: Version ID (<a href='./data-type/VID.html'>VID</a>) 00012
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-13'>
-MSH-13: Sequence Number (<a href='/data-type/NM.html'>NM</a>) 00013
+MSH-13: Sequence Number (<a href='./data-type/NM.html'>NM</a>) 00013
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-14'>
-MSH-14: Continuation Pointer (<a href='/data-type/ST.html'>ST</a>) 00014
+MSH-14: Continuation Pointer (<a href='./data-type/ST.html'>ST</a>) 00014
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-15'>
-MSH-15: Accept Acknowledgment Type (<a href='/data-type/ID.html'>ID</a>) 00015
+MSH-15: Accept Acknowledgment Type (<a href='./data-type/ID.html'>ID</a>) 00015
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-16'>
-MSH-16: Application Acknowledgment Type (<a href='/data-type/ID.html'>ID</a>) 00016
+MSH-16: Application Acknowledgment Type (<a href='./data-type/ID.html'>ID</a>) 00016
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-17'>
-MSH-17: Country Code (<a href='/data-type/ID.html'>ID</a>) 00017
+MSH-17: Country Code (<a href='./data-type/ID.html'>ID</a>) 00017
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-18'>
-MSH-18: Character Set (<a href='/data-type/ID.html'>ID</a>) 00692
+MSH-18: Character Set (<a href='./data-type/ID.html'>ID</a>) 00692
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-19'>
-MSH-19: Principal Language Of Message (<a href='/data-type/CWE.html'>CWE</a>) 00693
+MSH-19: Principal Language Of Message (<a href='./data-type/CWE.html'>CWE</a>) 00693
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-20'>
-MSH-20: Alternate Character Set Handling Scheme (<a href='/data-type/ID.html'>ID</a>) 01317
+MSH-20: Alternate Character Set Handling Scheme (<a href='./data-type/ID.html'>ID</a>) 01317
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-21'>
-MSH-21: Message Profile Identifier (<a href='/data-type/EI.html'>EI</a>) 01598
+MSH-21: Message Profile Identifier (<a href='./data-type/EI.html'>EI</a>) 01598
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-22'>
-MSH-22: Sending Responsible Organization (<a href='/data-type/XON.html'>XON</a>) 01823
+MSH-22: Sending Responsible Organization (<a href='./data-type/XON.html'>XON</a>) 01823
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-23'>
-MSH-23: Receiving Responsible Organization (<a href='/data-type/XON.html'>XON</a>) 01824
+MSH-23: Receiving Responsible Organization (<a href='./data-type/XON.html'>XON</a>) 01824
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-24'>
-MSH-24: Sending Network Address (<a href='/data-type/HD.html'>HD</a>) 01825
+MSH-24: Sending Network Address (<a href='./data-type/HD.html'>HD</a>) 01825
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-25'>
-MSH-25: Receiving Network Address (<a href='/data-type/HD.html'>HD</a>) 01826
+MSH-25: Receiving Network Address (<a href='./data-type/HD.html'>HD</a>) 01826
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-26'>
-MSH-26: Security Classification Tag (<a href='/data-type/CWE.html'>CWE</a>) 02429
+MSH-26: Security Classification Tag (<a href='./data-type/CWE.html'>CWE</a>) 02429
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-27'>
-MSH-27: Security Handling Instructions (<a href='/data-type/CWE.html'>CWE</a>) 02430
+MSH-27: Security Handling Instructions (<a href='./data-type/CWE.html'>CWE</a>) 02430
 </h4>
 FIXME
 
 <h4 class='v2' id='MSH-28'>
-MSH-28: Special Access Restriction Instructions (<a href='/data-type/ST.html'>ST</a>) 02431
+MSH-28: Special Access Restriction Instructions (<a href='./data-type/ST.html'>ST</a>) 02431
 </h4>
 FIXME
 
@@ -21566,7 +21566,7 @@ FIXME
 <h3>
 NTE - Notes And Comments Segment
 </h3>
-<p class="v2 v2-normalindented">The NTE segment is defined here for inclusion in messages defined in other chapters. It is commonly used for sending notes and comments.</p><p class="v2 v2-normalindented">The work groups define the meaning of the NTE segments within the context of the messages in their chapters. For each NTE, the description in the message attribute table SHOULD include an indication of the segment associated with the NTE, for example &quot;Notes and Comments for the PID&quot;.</p><p class="v2 v2-normalindented"></p><div class="v2-note"><p class="v2">NOTE: While sending of segments with no content has been historically used for display messages to indicate blank lines this is not best practice.  Senders SHOULD NOT send empty NTEs to indicate blank lines.  When blank lines are required senders SHOULD use the functionality of the FT datatype in section <a href="/composition/Control.html#Control-7-1">Formatting codes</a>.</p></div><br/><p class="v2 v2-normalindented"></p><!-- Every td has class="hierarchy" ... this should be removed and replaced with css that automatically does this -->
+<p class="v2 v2-normalindented">The NTE segment is defined here for inclusion in messages defined in other chapters. It is commonly used for sending notes and comments.</p><p class="v2 v2-normalindented">The work groups define the meaning of the NTE segments within the context of the messages in their chapters. For each NTE, the description in the message attribute table SHOULD include an indication of the segment associated with the NTE, for example &quot;Notes and Comments for the PID&quot;.</p><p class="v2 v2-normalindented"></p><div class="v2-note"><p class="v2">NOTE: While sending of segments with no content has been historically used for display messages to indicate blank lines this is not best practice.  Senders SHOULD NOT send empty NTEs to indicate blank lines.  When blank lines are required senders SHOULD use the functionality of the FT datatype in section <a href="./composition/Control.html#Control-7-1">Formatting codes</a>.</p></div><br/><p class="v2 v2-normalindented"></p><!-- Every td has class="hierarchy" ... this should be removed and replaced with css that automatically does this -->
 <!-- Striping even/odd should not be done by applying .even and .odd classes but by css that covers the entire table -->
 <!-- css for table header row...style="vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px" -->
 <!-- %h3 -->
@@ -21578,38 +21578,38 @@ HL7 Attribute Table - NTE - notes and comments segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -21620,24 +21620,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 NTE
 </b>
@@ -21645,14 +21645,14 @@ NTE
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Set ID - NTE
 </td>
 <td class='centered'>
-<a href='/data-type/SI.html'>
+<a href='./data-type/SI.html'>
 SI
 </a>
 </td>
@@ -21661,7 +21661,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -21690,14 +21690,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 Source of Comment
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -21706,7 +21706,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0105-Source-of-Comment.html' title='Source of Comment(Required)'>
+<a href='./vocab/0105-Source-of-Comment.html' title='Source of Comment(Required)'>
 0105(R)
 <span class='vocab-link-text'>Source of Comment(Required)</span>
 </a>
@@ -21735,14 +21735,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 3
 </td>
 <td>
 Comment
 </td>
 <td class='centered'>
-<a href='/data-type/FT.html'>
+<a href='./data-type/FT.html'>
 FT
 </a>
 </td>
@@ -21751,7 +21751,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -21780,14 +21780,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 4
 </td>
 <td>
 Comment Type
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -21796,7 +21796,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0364-Comment-Type.html' title='Comment Type(Suggested)'>
+<a href='./vocab/0364-Comment-Type.html' title='Comment Type(Suggested)'>
 0364(S)
 <span class='vocab-link-text'>Comment Type(Suggested)</span>
 </a>
@@ -21825,14 +21825,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 5
 </td>
 <td>
 Entered By
 </td>
 <td class='centered'>
-<a href='/data-type/XCN.html'>
+<a href='./data-type/XCN.html'>
 XCN
 </a>
 </td>
@@ -21841,7 +21841,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -21870,14 +21870,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 6
 </td>
 <td>
 Entered Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -21886,7 +21886,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -21915,14 +21915,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 7
 </td>
 <td>
 Effective Start Date
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -21931,7 +21931,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -21960,14 +21960,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 8
 </td>
 <td>
 Expiration Date
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -21976,7 +21976,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -22005,14 +22005,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 9
 </td>
 <td>
 Coded Comment
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -22021,7 +22021,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0611-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0611-ERROR! Bad Data! FIXME.html'>
 0611
 <span class='vocab-link-text'></span>
 </a>
@@ -22052,47 +22052,47 @@ O
 </table>
 
 <h4 class='v2' id='NTE-1'>
-NTE-1: Set ID - NTE (<a href='/data-type/SI.html'>SI</a>) 00096
+NTE-1: Set ID - NTE (<a href='./data-type/SI.html'>SI</a>) 00096
 </h4>
 FIXME
 
 <h4 class='v2' id='NTE-2'>
-NTE-2: Source of Comment (<a href='/data-type/ID.html'>ID</a>) 00097
+NTE-2: Source of Comment (<a href='./data-type/ID.html'>ID</a>) 00097
 </h4>
 FIXME
 
 <h4 class='v2' id='NTE-3'>
-NTE-3: Comment (<a href='/data-type/FT.html'>FT</a>) 00098
+NTE-3: Comment (<a href='./data-type/FT.html'>FT</a>) 00098
 </h4>
 FIXME
 
 <h4 class='v2' id='NTE-4'>
-NTE-4: Comment Type (<a href='/data-type/CWE.html'>CWE</a>) 01318
+NTE-4: Comment Type (<a href='./data-type/CWE.html'>CWE</a>) 01318
 </h4>
 FIXME
 
 <h4 class='v2' id='NTE-5'>
-NTE-5: Entered By (<a href='/data-type/XCN.html'>XCN</a>) 00224
+NTE-5: Entered By (<a href='./data-type/XCN.html'>XCN</a>) 00224
 </h4>
 FIXME
 
 <h4 class='v2' id='NTE-6'>
-NTE-6: Entered Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 00661
+NTE-6: Entered Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 00661
 </h4>
 FIXME
 
 <h4 class='v2' id='NTE-7'>
-NTE-7: Effective Start Date (<a href='/data-type/DTM.html'>DTM</a>) 01004
+NTE-7: Effective Start Date (<a href='./data-type/DTM.html'>DTM</a>) 01004
 </h4>
 FIXME
 
 <h4 class='v2' id='NTE-8'>
-NTE-8: Expiration Date (<a href='/data-type/DTM.html'>DTM</a>) 02185
+NTE-8: Expiration Date (<a href='./data-type/DTM.html'>DTM</a>) 02185
 </h4>
 FIXME
 
 <h4 class='v2' id='NTE-9'>
-NTE-9: Coded Comment (<a href='/data-type/CWE.html'>CWE</a>) 03495
+NTE-9: Coded Comment (<a href='./data-type/CWE.html'>CWE</a>) 03495
 </h4>
 FIXME
 
@@ -22112,38 +22112,38 @@ HL7 Attribute Table - OVR - override segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -22154,24 +22154,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 OVR
 </b>
@@ -22179,14 +22179,14 @@ OVR
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Business Rule Override Type
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -22195,7 +22195,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0518-Override-Type.html' title='Override Type'>
+<a href='./vocab/0518-Override-Type.html' title='Override Type'>
 0518
 <span class='vocab-link-text'>Override Type</span>
 </a>
@@ -22224,14 +22224,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 Business Rule Override Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -22240,7 +22240,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0521-Override-Code.html' title='Override Code'>
+<a href='./vocab/0521-Override-Code.html' title='Override Code'>
 0521
 <span class='vocab-link-text'>Override Code</span>
 </a>
@@ -22269,14 +22269,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 3
 </td>
 <td>
 Override Comments
 </td>
 <td class='centered'>
-<a href='/data-type/TX.html'>
+<a href='./data-type/TX.html'>
 TX
 </a>
 </td>
@@ -22285,7 +22285,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -22314,14 +22314,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 4
 </td>
 <td>
 Override Entered By
 </td>
 <td class='centered'>
-<a href='/data-type/XCN.html'>
+<a href='./data-type/XCN.html'>
 XCN
 </a>
 </td>
@@ -22330,7 +22330,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -22359,14 +22359,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 5
 </td>
 <td>
 Override Authorized By
 </td>
 <td class='centered'>
-<a href='/data-type/XCN.html'>
+<a href='./data-type/XCN.html'>
 XCN
 </a>
 </td>
@@ -22375,7 +22375,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -22406,27 +22406,27 @@ O
 </table>
 
 <h4 class='v2' id='OVR-1'>
-OVR-1: Business Rule Override Type (<a href='/data-type/CWE.html'>CWE</a>) 01829
+OVR-1: Business Rule Override Type (<a href='./data-type/CWE.html'>CWE</a>) 01829
 </h4>
 FIXME
 
 <h4 class='v2' id='OVR-2'>
-OVR-2: Business Rule Override Code (<a href='/data-type/CWE.html'>CWE</a>) 01830
+OVR-2: Business Rule Override Code (<a href='./data-type/CWE.html'>CWE</a>) 01830
 </h4>
 FIXME
 
 <h4 class='v2' id='OVR-3'>
-OVR-3: Override Comments (<a href='/data-type/TX.html'>TX</a>) 01831
+OVR-3: Override Comments (<a href='./data-type/TX.html'>TX</a>) 01831
 </h4>
 FIXME
 
 <h4 class='v2' id='OVR-4'>
-OVR-4: Override Entered By (<a href='/data-type/XCN.html'>XCN</a>) 01832
+OVR-4: Override Entered By (<a href='./data-type/XCN.html'>XCN</a>) 01832
 </h4>
 FIXME
 
 <h4 class='v2' id='OVR-5'>
-OVR-5: Override Authorized By (<a href='/data-type/XCN.html'>XCN</a>) 01833
+OVR-5: Override Authorized By (<a href='./data-type/XCN.html'>XCN</a>) 01833
 </h4>
 FIXME
 
@@ -22434,7 +22434,7 @@ FIXME
 <h3>
 SFT - Software Segment
 </h3>
-<p class="v2 v2-normalindented">Definition: This segment provides additional information about the software product(s) used as a Sending Application. The primary purpose of this segment is for diagnostic use. There MAY be additional uses per site-specific agreements.</p><p class="v2 v2-normalindented">Implementers are encouraged to use message profile identifiers (as found in <a href="/composition/Control.html#Control-14-9-21">2.14.9.21</a>, &quot;<a href="/segment-definition/MSH.html#MSH-21">MSH-21   Message Profile Identifier   (EI) 01598</a>&quot;) to control the behavior of the receiving application rather than relying on application or version information in the SFT segment. </p><p class="v2 v2-normalindented">For example, if software product A has versions 9 and 10 deployed in different Enterprise locations, the fact that they use different message types, segments, or fields SHOULD be reflected via their message profiles (see section 2B, &quot;Conformance Using Message Profiles&quot;).  If there is an upgrade from version 10 to 10.1, this would be reflected in the SFT segment, but changes to the message contents SHOULD be reflected via a new/different conformance profile.</p><p class="v2 v2-normalindented">Use Case: An external application has been customized to communicate with a centralized patient drug history system. However, due to certain, known characteristics of the external software package, the centralized system must modify its behavior in order to process transactions correctly. In one example, the external application could have multiple versions in production.  As such, the centralized application will need to know the name of the <strong>Software Vendor Organization</strong>, the <strong>Software Release Number</strong>, the <strong>Software Product Name</strong>, and the <strong>Software Binary ID</strong> so that it can correctly identify the software submitting the transaction and modify its behavior appropriately.</p><p class="v2 v2-normalindented">While preparing a transaction for submission to a centralized system the sending application specifies its <strong>Software Install Date</strong> and its configuration settings (<strong>Software Product Information</strong>).  While processing the transaction, the centralized system encounters an error.  Upon examination of the error, install date and configuration of the software that sent the message, helpdesk staff are able to determine the sending application has not been updated to reflect recent application changes.</p><p class="v2 v2-normalindented">Use Case: In circumstances where a message is manipulated or modified by multiple systems, a repetition of this segment MAY be appended by each system.</p><p class="v2 v2-normalindented">Example:</p><p class="v2 v2-example">MSH</p><p class="v2 v2-example">[{ SFT }]</p><p class="v2 v2-example">...</p><!-- Every td has class="hierarchy" ... this should be removed and replaced with css that automatically does this -->
+<p class="v2 v2-normalindented">Definition: This segment provides additional information about the software product(s) used as a Sending Application. The primary purpose of this segment is for diagnostic use. There MAY be additional uses per site-specific agreements.</p><p class="v2 v2-normalindented">Implementers are encouraged to use message profile identifiers (as found in <a href="./composition/Control.html#Control-14-9-21">2.14.9.21</a>, &quot;<a href="./segment-definition/MSH.html#MSH-21">MSH-21   Message Profile Identifier   (EI) 01598</a>&quot;) to control the behavior of the receiving application rather than relying on application or version information in the SFT segment. </p><p class="v2 v2-normalindented">For example, if software product A has versions 9 and 10 deployed in different Enterprise locations, the fact that they use different message types, segments, or fields SHOULD be reflected via their message profiles (see section 2B, &quot;Conformance Using Message Profiles&quot;).  If there is an upgrade from version 10 to 10.1, this would be reflected in the SFT segment, but changes to the message contents SHOULD be reflected via a new/different conformance profile.</p><p class="v2 v2-normalindented">Use Case: An external application has been customized to communicate with a centralized patient drug history system. However, due to certain, known characteristics of the external software package, the centralized system must modify its behavior in order to process transactions correctly. In one example, the external application could have multiple versions in production.  As such, the centralized application will need to know the name of the <strong>Software Vendor Organization</strong>, the <strong>Software Release Number</strong>, the <strong>Software Product Name</strong>, and the <strong>Software Binary ID</strong> so that it can correctly identify the software submitting the transaction and modify its behavior appropriately.</p><p class="v2 v2-normalindented">While preparing a transaction for submission to a centralized system the sending application specifies its <strong>Software Install Date</strong> and its configuration settings (<strong>Software Product Information</strong>).  While processing the transaction, the centralized system encounters an error.  Upon examination of the error, install date and configuration of the software that sent the message, helpdesk staff are able to determine the sending application has not been updated to reflect recent application changes.</p><p class="v2 v2-normalindented">Use Case: In circumstances where a message is manipulated or modified by multiple systems, a repetition of this segment MAY be appended by each system.</p><p class="v2 v2-normalindented">Example:</p><p class="v2 v2-example">MSH</p><p class="v2 v2-example">[{ SFT }]</p><p class="v2 v2-example">...</p><!-- Every td has class="hierarchy" ... this should be removed and replaced with css that automatically does this -->
 <!-- Striping even/odd should not be done by applying .even and .odd classes but by css that covers the entire table -->
 <!-- css for table header row...style="vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px" -->
 <!-- %h3 -->
@@ -22446,38 +22446,38 @@ HL7 Attribute Table - SFT - software segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -22488,24 +22488,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 SFT
 </b>
@@ -22513,14 +22513,14 @@ SFT
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Software Vendor Organization
 </td>
 <td class='centered'>
-<a href='/data-type/XON.html'>
+<a href='./data-type/XON.html'>
 XON
 </a>
 </td>
@@ -22529,7 +22529,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -22558,14 +22558,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 Software Certified Version or Release Number
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -22574,7 +22574,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -22603,14 +22603,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 3
 </td>
 <td>
 Software Product Name
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -22619,7 +22619,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -22648,14 +22648,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 4
 </td>
 <td>
 Software Binary ID
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -22664,7 +22664,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -22693,14 +22693,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 5
 </td>
 <td>
 Software Product Information
 </td>
 <td class='centered'>
-<a href='/data-type/TX.html'>
+<a href='./data-type/TX.html'>
 TX
 </a>
 </td>
@@ -22709,7 +22709,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -22738,14 +22738,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 6
 </td>
 <td>
 Software Install Date
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -22754,7 +22754,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -22785,32 +22785,32 @@ O
 </table>
 
 <h4 class='v2' id='SFT-1'>
-SFT-1: Software Vendor Organization (<a href='/data-type/XON.html'>XON</a>) 01834
+SFT-1: Software Vendor Organization (<a href='./data-type/XON.html'>XON</a>) 01834
 </h4>
 FIXME
 
 <h4 class='v2' id='SFT-2'>
-SFT-2: Software Certified Version or Release Number (<a href='/data-type/ST.html'>ST</a>) 01835
+SFT-2: Software Certified Version or Release Number (<a href='./data-type/ST.html'>ST</a>) 01835
 </h4>
 FIXME
 
 <h4 class='v2' id='SFT-3'>
-SFT-3: Software Product Name (<a href='/data-type/ST.html'>ST</a>) 01836
+SFT-3: Software Product Name (<a href='./data-type/ST.html'>ST</a>) 01836
 </h4>
 FIXME
 
 <h4 class='v2' id='SFT-4'>
-SFT-4: Software Binary ID (<a href='/data-type/ST.html'>ST</a>) 01837
+SFT-4: Software Binary ID (<a href='./data-type/ST.html'>ST</a>) 01837
 </h4>
 FIXME
 
 <h4 class='v2' id='SFT-5'>
-SFT-5: Software Product Information (<a href='/data-type/TX.html'>TX</a>) 01838
+SFT-5: Software Product Information (<a href='./data-type/TX.html'>TX</a>) 01838
 </h4>
 FIXME
 
 <h4 class='v2' id='SFT-6'>
-SFT-6: Software Install Date (<a href='/data-type/DTM.html'>DTM</a>) 01839
+SFT-6: Software Install Date (<a href='./data-type/DTM.html'>DTM</a>) 01839
 </h4>
 FIXME
 
@@ -22818,7 +22818,7 @@ FIXME
 <h3>
 SGH - Segment Group Header Segment
 </h3>
-<p class="v2 v2-normalindented">The SGH segment is only used to provide information about the instantiated message structure to indicate that a new segment group begins and subsequent segments SHOULD be interpreted accordingly. It does not contain any patient related data.</p><p class="v2 v2-normalindented">It is expected that each SGH will be accompanied by an SGT, as depicted below in the abstract message diagram: WRP: Widget Reports</p><table class="v2" style="width: 85%; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; "><colgroup><col span='1' style='width: 27.33%;'/><col span='1' style='width: 36.44%;'/><col span='1' style='width: 13.43%;'/><col span='1' style='width: 22.77%;'/></colgroup><tr class='v2-table-header'><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; background-color: #E6E6E6; width:27.33%; '><p class="v2 v2-othertableheader">Segments</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; background-color: #E6E6E6; width:36.44%; '><p class="v2 v2-othertableheader">Description</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; background-color: #E6E6E6; width:13.43%; '><p class="v2 v2-othertableheader">Status</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; background-color: #E6E6E6; width:22.77%; '><p class="v2 v2-othertableheader">Chapter</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody"><a href="/segment-definition/MSH.html">MSH</a></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Message Header</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">2</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">[{<a href="/segment-definition/SFT.html">SFT</a>}]</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Software Segment</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">2</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">[UAC]</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">User Authentication Credential</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">2</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody"><a href="/segment-definition/MSA.html">MSA</a></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Message Acknowledgment</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">2</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">[{<a href="/segment-definition/ERR.html">ERR</a>}]</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Error Segment</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">2</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">  {</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">---Widget begin</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody"></p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">[SGH]</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Segment Group Header</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">2</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">  WDN</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Widget Description</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">XX</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">   WPN</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Widget Portion</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">XX</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">[SGT}</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Segment Group Trailer</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">2</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">  }</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">---Widget end</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody"></p></td></tr></table><br/><p class="v2 v2-normalindented"></p><!-- Every td has class="hierarchy" ... this should be removed and replaced with css that automatically does this -->
+<p class="v2 v2-normalindented">The SGH segment is only used to provide information about the instantiated message structure to indicate that a new segment group begins and subsequent segments SHOULD be interpreted accordingly. It does not contain any patient related data.</p><p class="v2 v2-normalindented">It is expected that each SGH will be accompanied by an SGT, as depicted below in the abstract message diagram: WRP: Widget Reports</p><table class="v2" style="width: 85%; border-top: 1px solid black; border-left: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; "><colgroup><col span='1' style='width: 27.33%;'./><col span='1' style='width: 36.44%;'./><col span='1' style='width: 13.43%;'./><col span='1' style='width: 22.77%;'./></colgroup><tr class='v2-table-header'><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; background-color: #E6E6E6; width:27.33%; '><p class="v2 v2-othertableheader">Segments</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; background-color: #E6E6E6; width:36.44%; '><p class="v2 v2-othertableheader">Description</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; background-color: #E6E6E6; width:13.43%; '><p class="v2 v2-othertableheader">Status</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; background-color: #E6E6E6; width:22.77%; '><p class="v2 v2-othertableheader">Chapter</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody"><a href="./segment-definition/MSH.html">MSH</a></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Message Header</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">2</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">[{<a href="./segment-definition/SFT.html">SFT</a>}]</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Software Segment</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">2</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">[UAC]</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">User Authentication Credential</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">2</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody"><a href="./segment-definition/MSA.html">MSA</a></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Message Acknowledgment</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">2</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">[{<a href="./segment-definition/ERR.html">ERR</a>}]</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Error Segment</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">2</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">  {</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">---Widget begin</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody"></p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">[SGH]</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Segment Group Header</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">2</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">  WDN</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Widget Description</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">XX</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">   WPN</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Widget Portion</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">XX</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">[SGT}</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">Segment Group Trailer</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody">2</p></td></tr><tr><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:27.33%; '><p class="v2 v2-othertablebody">  }</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:36.44%; '><p class="v2 v2-othertablebody">---Widget end</p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:13.43%; '><p class="v2 v2-othertablebody"></p></td><td style='border-top: 1px solid black; border-bottom: 1px solid black; border-right: 1px solid black; border-left: 1px solid black; width:22.77%; '><p class="v2 v2-othertablebody"></p></td></tr></table><br/><p class="v2 v2-normalindented"></p><!-- Every td has class="hierarchy" ... this should be removed and replaced with css that automatically does this -->
 <!-- Striping even/odd should not be done by applying .even and .odd classes but by css that covers the entire table -->
 <!-- css for table header row...style="vertical-align: top; text-align : left; background-color: white; padding:0px 4px 0px 4px" -->
 <!-- %h3 -->
@@ -22830,38 +22830,38 @@ HL7 Attribute Table - SGH - segment group header segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -22872,24 +22872,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 SGH
 </b>
@@ -22897,14 +22897,14 @@ SGH
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Set ID – SGH
 </td>
 <td class='centered'>
-<a href='/data-type/SI.html'>
+<a href='./data-type/SI.html'>
 SI
 </a>
 </td>
@@ -22913,7 +22913,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -22942,14 +22942,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 2
 </td>
 <td>
 Segment Group Name
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -22958,7 +22958,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -22989,12 +22989,12 @@ O
 </table>
 <p class="v2"></p>
 <h4 class='v2' id='SGH-1'>
-SGH-1: Set ID – SGH (<a href='/data-type/SI.html'>SI</a>) 03389
+SGH-1: Set ID – SGH (<a href='./data-type/SI.html'>SI</a>) 03389
 </h4>
 FIXME
 
 <h4 class='v2' id='SGH-2'>
-SGH-2: Segment Group Name (<a href='/data-type/ST.html'>ST</a>) 03390
+SGH-2: Segment Group Name (<a href='./data-type/ST.html'>ST</a>) 03390
 </h4>
 FIXME
 
@@ -23014,38 +23014,38 @@ HL7 Attribute Table - SGT - segment group trailer segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -23056,24 +23056,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 SGT
 </b>
@@ -23081,14 +23081,14 @@ SGT
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Set ID – SGT
 </td>
 <td class='centered'>
-<a href='/data-type/SI.html'>
+<a href='./data-type/SI.html'>
 SI
 </a>
 </td>
@@ -23097,7 +23097,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -23126,14 +23126,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 2
 </td>
 <td>
 Segment Group Name
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -23142,7 +23142,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -23173,12 +23173,12 @@ O
 </table>
 
 <h4 class='v2' id='SGT-1'>
-SGT-1: Set ID – SGT (<a href='/data-type/SI.html'>SI</a>) 03394
+SGT-1: Set ID – SGT (<a href='./data-type/SI.html'>SI</a>) 03394
 </h4>
 FIXME
 
 <h4 class='v2' id='SGT-2'>
-SGT-2: Segment Group Name (<a href='/data-type/ST.html'>ST</a>) 03395
+SGT-2: Segment Group Name (<a href='./data-type/ST.html'>ST</a>) 03395
 </h4>
 FIXME
 
@@ -23198,38 +23198,38 @@ HL7 Attribute Table - UAC - user authentication credential segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -23240,24 +23240,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 UAC
 </b>
@@ -23265,14 +23265,14 @@ UAC
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 User Authentication Credential Type Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -23281,7 +23281,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0615-User-Authentication-Credential-Type-Code.html' title='User Authentication Credential Type Code(Required)'>
+<a href='./vocab/0615-User-Authentication-Credential-Type-Code.html' title='User Authentication Credential Type Code(Required)'>
 0615(R)
 <span class='vocab-link-text'>User Authentication Credential Type Code(Required)</span>
 </a>
@@ -23310,14 +23310,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 2
 </td>
 <td>
 User Authentication Credential
 </td>
 <td class='centered'>
-<a href='/data-type/ED.html'>
+<a href='./data-type/ED.html'>
 ED
 </a>
 </td>
@@ -23326,7 +23326,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -23357,12 +23357,12 @@ R
 </table>
 
 <h4 class='v2' id='UAC-1'>
-UAC-1: User Authentication Credential Type Code (<a href='/data-type/CWE.html'>CWE</a>) 02267
+UAC-1: User Authentication Credential Type Code (<a href='./data-type/CWE.html'>CWE</a>) 02267
 </h4>
 FIXME
 
 <h4 class='v2' id='UAC-2'>
-UAC-2: User Authentication Credential (<a href='/data-type/ED.html'>ED</a>) 02268
+UAC-2: User Authentication Credential (<a href='./data-type/ED.html'>ED</a>) 02268
 </h4>
 FIXME
 
@@ -23683,16 +23683,16 @@ March 14, 2022
 </p>
 <p>
 <span style='color: #FFFF77'>Links:</span>
-<a href='/history.html' style='color: #b8dcf9'>
+<a href='./history.html' style='color: #b8dcf9'>
 Version History
 </a>
 |
 <a href='https://jira.hl7.org/projects/V2/issues' style='color: #b8dcf9' target='_blank'>
 Propose a change
-<img src='/images/external.png' style='text-align: baseline'>
+<img src='./images/external.png' style='text-align: baseline'>
 </a>
 |
-<a href='/license.html' rel='license' style='color: #b8dcf9'>
+<a href='./license.html' rel='license' style='color: #b8dcf9'>
 License
 <!-- %img{:alt => "CC0", :src => "images/cc0.png", :style => "border-style: none;"} -->
 </a>

@@ -9,43 +9,43 @@ HL7 - REFACTORED
 <base href="https://usnistgov.github.io/v2plusDemo/">
 
 <style type='text/css'>
-@import "/css/bootstrap.css";
-@import "/css/codemirror.css";
-@import "/css/hl7.css";
-@import "/css/fhir.css";
-<!-- @import "/css/bootstrap-fhir.css"; -->
-@import "/css/bootstrap-v2.css";
-@import "/css/project.css";
-@import "/css/pygments-manni.css";
-@import "/css/jquery-ui.css";
-@import "/css/modules.css";
-@import "/css/v2.css";
+@import "./css/bootstrap.css";
+@import "./css/codemirror.css";
+@import "./css/hl7.css";
+@import "./css/fhir.css";
+<!-- @import "./css/bootstrap-fhir.css"; -->
+@import "./css/bootstrap-v2.css";
+@import "./css/project.css";
+@import "./css/pygments-manni.css";
+@import "./css/jquery-ui.css";
+@import "./css/modules.css";
+@import "./css/v2.css";
 </style>
-<script src='/js/jquery.js'></script>
-<script src='/js/jquery-ui.min.js'></script>
-<script src='/js/bootstrap.min.js'></script>
-<script src='/js/respond.min.js'></script>
-<script src='/js/codemirror/codemirror.js'></script>
-<script src='/js/codemirror/mode/xml.js'></script>
-<script src='/js/v2.js'></script>
-<script src='/js/fhir-table-scripts.js' type='text/javascript'></script>
-<script src='/js/format_xml.js' type='text/javascript'></script>
-<link href='/images/hl7.ico' rel='shortcut icon'>
+<script src='./js/jquery.js'></script>
+<script src='./js/jquery-ui.min.js'></script>
+<script src='./js/bootstrap.min.js'></script>
+<script src='./js/respond.min.js'></script>
+<script src='./js/codemirror/codemirror.js'></script>
+<script src='./js/codemirror/mode/xml.js'></script>
+<script src='./js/v2.js'></script>
+<script src='./js/fhir-table-scripts.js' type='text/javascript'></script>
+<script src='./js/format_xml.js' type='text/javascript'></script>
+<link href='./images/hl7.ico' rel='shortcut icon'>
 </head>
 <body>
 <div class='segment' id='segment-header'>
 <div class='container'>
 <a href='http://www.hl7.org/hl7v2+' id='logo' no-external='true'></a>
 <div id='hl7-status'>
-<img alt='visit the hl7 website' height='50' id='v2-logo' src='/images/hl7-v2-logo.png'>
-<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='/images/hl7-v2plus.gif'>
+<img alt='visit the hl7 website' height='50' id='v2-logo' src='./images/hl7-v2-logo.png'>
+<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='./images/hl7-v2plus.gif'>
 <b>
 The Demo site for our new HL7 Version 2+ (plus) Standard
 </b>
 </div>
 <div id='hl7-nav'>
 <a href='http://www.hl7.org' id='hl7-logo' no-external='true'></a>
-<img alt='visit the hl7 website' src='/images/hl7-logo.png'>
+<img alt='visit the hl7 website' src='./images/hl7-logo.png'>
 </div>
 </div>
 </div>
@@ -60,33 +60,33 @@ The Demo site for our new HL7 Version 2+ (plus) Standard
 <span class='icon-bar'></span>
 </button>
 </div>
-<a class='navbar-brand hidden' href='/index.html'>
+<a class='navbar-brand hidden' href='./index.html'>
 FHIR
 </a>
 <div class='nav-collapse collapse navbar-inverse-collapse'>
 <ul class='nav navbar-nav'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
 <li>
-<a href='/domains.html'>
+<a href='./domains.html'>
 Domains
 </a>
 </li>
 <li>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Message Structures
 </a>
 </li>
 <li>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Segments
 </a>
 </li>
 <li>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Data Types
 </a>
 </li>
@@ -96,12 +96,12 @@ Data Type Flavors
 </a>
 </li>
 <li>
-<a href='/vocab.html'>
+<a href='./vocab.html'>
 Vocabulary
 </a>
 </li>
 <li>
-<a href='/domain/Control.html'>
+<a href='./domain/Control.html'>
 Control
 </a>
 </li>
@@ -111,7 +111,7 @@ Conformance
 </a>
 </li>
 <li>
-<a href='/domain/Control.html#Control-12'>
+<a href='./domain/Control.html#Control-12'>
 Encoding
 </a>
 </li>
@@ -121,7 +121,7 @@ Transport
 </a>
 </li>
 <li>
-<a href='/history.html'>
+<a href='./history.html'>
 v2.x
 </a>
 </li>
@@ -141,7 +141,7 @@ Draft Website - For Review Purposes Only
 <div class='container'>
 <ul class='breadcrumb'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
@@ -164,38 +164,38 @@ HL7 Attribute Table - ROL - Role Segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -206,24 +206,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 ROL
 </b>
@@ -231,14 +231,14 @@ ROL
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Role Instance ID
 </td>
 <td class='centered'>
-<a href='/data-type/EI.html'>
+<a href='./data-type/EI.html'>
 EI
 </a>
 </td>
@@ -247,7 +247,7 @@ EI
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -276,14 +276,14 @@ EI
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 Action Code
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -292,7 +292,7 @@ ID
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0206-Segment-Action-Code.html' title='Segment Action Code(Required)'>
+<a href='./vocab/0206-Segment-Action-Code.html' title='Segment Action Code(Required)'>
 0206(R)
 <span class='vocab-link-text'>Segment Action Code(Required)</span>
 </a>
@@ -321,14 +321,14 @@ ID
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 3
 </td>
 <td>
 Role-ROL
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -337,7 +337,7 @@ CWE
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0443-Provider-Role.html' title='Provider Role'>
+<a href='./vocab/0443-Provider-Role.html' title='Provider Role'>
 0443
 <span class='vocab-link-text'>Provider Role</span>
 </a>
@@ -366,14 +366,14 @@ CWE
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 4
 </td>
 <td>
 Role Person
 </td>
 <td class='centered'>
-<a href='/data-type/XCN.html'>
+<a href='./data-type/XCN.html'>
 XCN
 </a>
 </td>
@@ -382,7 +382,7 @@ XCN
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -411,14 +411,14 @@ XCN
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 5
 </td>
 <td>
 Role Begin Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -427,7 +427,7 @@ DTM
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -456,14 +456,14 @@ DTM
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 6
 </td>
 <td>
 Role End Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -472,7 +472,7 @@ DTM
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -501,14 +501,14 @@ DTM
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 7
 </td>
 <td>
 Role Duration
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -517,7 +517,7 @@ CWE
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -546,14 +546,14 @@ CWE
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 8
 </td>
 <td>
 Role Action Reason
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -562,7 +562,7 @@ CWE
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -591,14 +591,14 @@ CWE
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 9
 </td>
 <td>
 Provider Type
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -607,7 +607,7 @@ CWE
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -636,14 +636,14 @@ CWE
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 10
 </td>
 <td>
 Organization Unit Type
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -652,7 +652,7 @@ CWE
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0406-Participant-Organization-Unit-Type.html' title='Participant Organization Unit Type'>
+<a href='./vocab/0406-Participant-Organization-Unit-Type.html' title='Participant Organization Unit Type'>
 0406
 <span class='vocab-link-text'>Participant Organization Unit Type</span>
 </a>
@@ -681,14 +681,14 @@ CWE
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 11
 </td>
 <td>
 Office/Home Address/Birthplace
 </td>
 <td class='centered'>
-<a href='/data-type/XAD.html'>
+<a href='./data-type/XAD.html'>
 XAD
 </a>
 </td>
@@ -697,7 +697,7 @@ XAD
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -726,14 +726,14 @@ XAD
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 12
 </td>
 <td>
 Phone
 </td>
 <td class='centered'>
-<a href='/data-type/XTN.html'>
+<a href='./data-type/XTN.html'>
 XTN
 </a>
 </td>
@@ -742,7 +742,7 @@ XTN
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -771,14 +771,14 @@ XTN
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 13
 </td>
 <td>
 Person's Location
 </td>
 <td class='centered'>
-<a href='/data-type/PL.html'>
+<a href='./data-type/PL.html'>
 PL
 </a>
 </td>
@@ -787,7 +787,7 @@ PL
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -816,14 +816,14 @@ PL
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 14
 </td>
 <td>
 Organization
 </td>
 <td class='centered'>
-<a href='/data-type/XON.html'>
+<a href='./data-type/XON.html'>
 XON
 </a>
 </td>
@@ -832,7 +832,7 @@ XON
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -863,72 +863,72 @@ XON
 </table>
 
 <h4 class='v2' id='ROL-1'>
-ROL-1: Role Instance ID (<a href='/data-type/EI.html'>EI</a>) 01206
+ROL-1: Role Instance ID (<a href='./data-type/EI.html'>EI</a>) 01206
 </h4>
 
 
 <h4 class='v2' id='ROL-2'>
-ROL-2: Action Code (<a href='/data-type/ID.html'>ID</a>) 00816
+ROL-2: Action Code (<a href='./data-type/ID.html'>ID</a>) 00816
 </h4>
 
 
 <h4 class='v2' id='ROL-3'>
-ROL-3: Role-ROL (<a href='/data-type/CWE.html'>CWE</a>) 01197
+ROL-3: Role-ROL (<a href='./data-type/CWE.html'>CWE</a>) 01197
 </h4>
 
 
 <h4 class='v2' id='ROL-4'>
-ROL-4: Role Person (<a href='/data-type/XCN.html'>XCN</a>) 01198
+ROL-4: Role Person (<a href='./data-type/XCN.html'>XCN</a>) 01198
 </h4>
 
 
 <h4 class='v2' id='ROL-5'>
-ROL-5: Role Begin Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 01199
+ROL-5: Role Begin Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 01199
 </h4>
 
 
 <h4 class='v2' id='ROL-6'>
-ROL-6: Role End Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 01200
+ROL-6: Role End Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 01200
 </h4>
 
 
 <h4 class='v2' id='ROL-7'>
-ROL-7: Role Duration (<a href='/data-type/CWE.html'>CWE</a>) 01201
+ROL-7: Role Duration (<a href='./data-type/CWE.html'>CWE</a>) 01201
 </h4>
 
 
 <h4 class='v2' id='ROL-8'>
-ROL-8: Role Action Reason (<a href='/data-type/CWE.html'>CWE</a>) 01205
+ROL-8: Role Action Reason (<a href='./data-type/CWE.html'>CWE</a>) 01205
 </h4>
 
 
 <h4 class='v2' id='ROL-9'>
-ROL-9: Provider Type (<a href='/data-type/CWE.html'>CWE</a>) 01510
+ROL-9: Provider Type (<a href='./data-type/CWE.html'>CWE</a>) 01510
 </h4>
 
 
 <h4 class='v2' id='ROL-10'>
-ROL-10: Organization Unit Type (<a href='/data-type/CWE.html'>CWE</a>) 01461
+ROL-10: Organization Unit Type (<a href='./data-type/CWE.html'>CWE</a>) 01461
 </h4>
 
 
 <h4 class='v2' id='ROL-11'>
-ROL-11: Office/Home Address/Birthplace (<a href='/data-type/XAD.html'>XAD</a>) 00679
+ROL-11: Office/Home Address/Birthplace (<a href='./data-type/XAD.html'>XAD</a>) 00679
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the office, and home address and/or place of birth of the staff person.  This is a repeating field.  The address type identifies the usage.</p>
 
 <h4 class='v2' id='ROL-12'>
-ROL-12: Phone (<a href='/data-type/XTN.html'>XTN</a>) 00678
+ROL-12: Phone (<a href='./data-type/XTN.html'>XTN</a>) 00678
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field contains the staff person&#39;s phone number.  This is a repeating field with a component for indicating which phone number is which. </p>
 
 <h4 class='v2' id='ROL-13'>
-ROL-13: Person's Location (<a href='/data-type/PL.html'>PL</a>) 02183
+ROL-13: Person's Location (<a href='./data-type/PL.html'>PL</a>) 02183
 </h4>
 
 
 <h4 class='v2' id='ROL-14'>
-ROL-14: Organization (<a href='/data-type/XON.html'>XON</a>) 02377
+ROL-14: Organization (<a href='./data-type/XON.html'>XON</a>) 02377
 </h4>
 
 
@@ -943,16 +943,16 @@ March 23, 2022
 </p>
 <p>
 <span style='color: #FFFF77'>Links:</span>
-<a href='/history.html' style='color: #b8dcf9'>
+<a href='./history.html' style='color: #b8dcf9'>
 Version History
 </a>
 |
 <a href='https://jira.hl7.org/projects/V2/issues' style='color: #b8dcf9' target='_blank'>
 Propose a change
-<img src='/images/external.png' style='text-align: baseline'>
+<img src='./images/external.png' style='text-align: baseline'>
 </a>
 |
-<a href='/license.html' rel='license' style='color: #b8dcf9'>
+<a href='./license.html' rel='license' style='color: #b8dcf9'>
 License
 <!-- %img{:alt => "CC0", :src => "images/cc0.png", :style => "border-style: none;"} -->
 </a>

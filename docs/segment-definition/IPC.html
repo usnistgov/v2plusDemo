@@ -9,43 +9,43 @@ HL7 - REFACTORED
 <base href="https://usnistgov.github.io/v2plusDemo/">
 
 <style type='text/css'>
-@import "/css/bootstrap.css";
-@import "/css/codemirror.css";
-@import "/css/hl7.css";
-@import "/css/fhir.css";
-<!-- @import "/css/bootstrap-fhir.css"; -->
-@import "/css/bootstrap-v2.css";
-@import "/css/project.css";
-@import "/css/pygments-manni.css";
-@import "/css/jquery-ui.css";
-@import "/css/modules.css";
-@import "/css/v2.css";
+@import "./css/bootstrap.css";
+@import "./css/codemirror.css";
+@import "./css/hl7.css";
+@import "./css/fhir.css";
+<!-- @import "./css/bootstrap-fhir.css"; -->
+@import "./css/bootstrap-v2.css";
+@import "./css/project.css";
+@import "./css/pygments-manni.css";
+@import "./css/jquery-ui.css";
+@import "./css/modules.css";
+@import "./css/v2.css";
 </style>
-<script src='/js/jquery.js'></script>
-<script src='/js/jquery-ui.min.js'></script>
-<script src='/js/bootstrap.min.js'></script>
-<script src='/js/respond.min.js'></script>
-<script src='/js/codemirror/codemirror.js'></script>
-<script src='/js/codemirror/mode/xml.js'></script>
-<script src='/js/v2.js'></script>
-<script src='/js/fhir-table-scripts.js' type='text/javascript'></script>
-<script src='/js/format_xml.js' type='text/javascript'></script>
-<link href='/images/hl7.ico' rel='shortcut icon'>
+<script src='./js/jquery.js'></script>
+<script src='./js/jquery-ui.min.js'></script>
+<script src='./js/bootstrap.min.js'></script>
+<script src='./js/respond.min.js'></script>
+<script src='./js/codemirror/codemirror.js'></script>
+<script src='./js/codemirror/mode/xml.js'></script>
+<script src='./js/v2.js'></script>
+<script src='./js/fhir-table-scripts.js' type='text/javascript'></script>
+<script src='./js/format_xml.js' type='text/javascript'></script>
+<link href='./images/hl7.ico' rel='shortcut icon'>
 </head>
 <body>
 <div class='segment' id='segment-header'>
 <div class='container'>
 <a href='http://www.hl7.org/hl7v2+' id='logo' no-external='true'></a>
 <div id='hl7-status'>
-<img alt='visit the hl7 website' height='50' id='v2-logo' src='/images/hl7-v2-logo.png'>
-<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='/images/hl7-v2plus.gif'>
+<img alt='visit the hl7 website' height='50' id='v2-logo' src='./images/hl7-v2-logo.png'>
+<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='./images/hl7-v2plus.gif'>
 <b>
 The Demo site for our new HL7 Version 2+ (plus) Standard
 </b>
 </div>
 <div id='hl7-nav'>
 <a href='http://www.hl7.org' id='hl7-logo' no-external='true'></a>
-<img alt='visit the hl7 website' src='/images/hl7-logo.png'>
+<img alt='visit the hl7 website' src='./images/hl7-logo.png'>
 </div>
 </div>
 </div>
@@ -60,33 +60,33 @@ The Demo site for our new HL7 Version 2+ (plus) Standard
 <span class='icon-bar'></span>
 </button>
 </div>
-<a class='navbar-brand hidden' href='/index.html'>
+<a class='navbar-brand hidden' href='./index.html'>
 FHIR
 </a>
 <div class='nav-collapse collapse navbar-inverse-collapse'>
 <ul class='nav navbar-nav'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
 <li>
-<a href='/domains.html'>
+<a href='./domains.html'>
 Domains
 </a>
 </li>
 <li>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Message Structures
 </a>
 </li>
 <li>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Segments
 </a>
 </li>
 <li>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Data Types
 </a>
 </li>
@@ -96,12 +96,12 @@ Data Type Flavors
 </a>
 </li>
 <li>
-<a href='/vocab.html'>
+<a href='./vocab.html'>
 Vocabulary
 </a>
 </li>
 <li>
-<a href='/domain/Control.html'>
+<a href='./domain/Control.html'>
 Control
 </a>
 </li>
@@ -111,7 +111,7 @@ Conformance
 </a>
 </li>
 <li>
-<a href='/domain/Control.html#Control-12'>
+<a href='./domain/Control.html#Control-12'>
 Encoding
 </a>
 </li>
@@ -121,7 +121,7 @@ Transport
 </a>
 </li>
 <li>
-<a href='/history.html'>
+<a href='./history.html'>
 v2.x
 </a>
 </li>
@@ -141,7 +141,7 @@ Draft Website - For Review Purposes Only
 <div class='container'>
 <ul class='breadcrumb'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
@@ -164,38 +164,38 @@ HL7 Attribute Table - IPC - Imaging Procedure Control Segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -206,24 +206,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 IPC
 </b>
@@ -231,14 +231,14 @@ IPC
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Accession Identifier
 </td>
 <td class='centered'>
-<a href='/data-type/EI.html'>
+<a href='./data-type/EI.html'>
 EI
 </a>
 </td>
@@ -247,7 +247,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -276,14 +276,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 Requested Procedure ID
 </td>
 <td class='centered'>
-<a href='/data-type/EI.html'>
+<a href='./data-type/EI.html'>
 EI
 </a>
 </td>
@@ -292,7 +292,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -321,14 +321,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 3
 </td>
 <td>
 Study Instance UID
 </td>
 <td class='centered'>
-<a href='/data-type/EI.html'>
+<a href='./data-type/EI.html'>
 EI
 </a>
 </td>
@@ -337,7 +337,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -366,14 +366,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 4
 </td>
 <td>
 Scheduled Procedure Step ID
 </td>
 <td class='centered'>
-<a href='/data-type/EI.html'>
+<a href='./data-type/EI.html'>
 EI
 </a>
 </td>
@@ -382,7 +382,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -411,14 +411,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 5
 </td>
 <td>
 Modality
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -427,7 +427,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0604-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0604-ERROR! Bad Data! FIXME.html'>
 0604
 <span class='vocab-link-text'></span>
 </a>
@@ -456,14 +456,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 6
 </td>
 <td>
 Protocol Code
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -472,7 +472,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0605-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0605-ERROR! Bad Data! FIXME.html'>
 0605
 <span class='vocab-link-text'></span>
 </a>
@@ -501,14 +501,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 7
 </td>
 <td>
 Scheduled Station Name
 </td>
 <td class='centered'>
-<a href='/data-type/EI.html'>
+<a href='./data-type/EI.html'>
 EI
 </a>
 </td>
@@ -517,7 +517,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -546,14 +546,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 8
 </td>
 <td>
 Scheduled Procedure Step Location
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -562,7 +562,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0606-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0606-ERROR! Bad Data! FIXME.html'>
 0606
 <span class='vocab-link-text'></span>
 </a>
@@ -591,14 +591,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 9
 </td>
 <td>
 Scheduled Station AE Title
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -607,7 +607,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -636,14 +636,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 10
 </td>
 <td>
 Action Code
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -652,7 +652,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0206-Segment-Action-Code.html' title='Segment Action Code(Required)'>
+<a href='./vocab/0206-Segment-Action-Code.html' title='Segment Action Code(Required)'>
 0206(R)
 <span class='vocab-link-text'>Segment Action Code(Required)</span>
 </a>
@@ -683,9 +683,9 @@ O
 </table>
 
 <h4 class='v2' id='IPC-1'>
-IPC-1: Accession Identifier (<a href='/data-type/EI.html'>EI</a>) 01330
+IPC-1: Accession Identifier (<a href='./data-type/EI.html'>EI</a>) 01330
 </h4>
-<p class="v2 v2-normalindented">Definition:  A workflow-management IDIS generated number that identifies the Filler Order for an Imaging Service (Imaging Service Request).   This identifier corresponds one-to-one to the Order Filler number but is used in internal tracking of the work by the IDIS and in communication between IDIS within the department. It also has specific requirements to assure its compatibility with DICOM. It is a case of the Entity Identifier data type (section 2.A.28).  Its first component is a string that identifies the Imaging Service Request.  A limit of sixteen (16) characters is required to allow compatibility with DICOM. See DICOM Standard Part 3 for further details on DICOM Attribute (0008,0050) that conveys information identical to the component one of this field.</p><p class="v2 v2-normalindented">An IDIS that performs functions of the workflow management for a department may accept a single Placer Order that gives rise to one or more Filler Orders-Imaging Service Requests. For example, an IDIS may receive an order for an X-ray examination of the patient daily at 8 am for the next three days. For the purposes of fulfilling the Placer Order, it will identify each of the daily exams either as a separate Filler Order or parts of a single Filler Order. Correspondingly, it will assign one or more Filler Order numbers associated with the order. For each of the Filler Order numbers, it will assign a unique Accession Number. </p><p class="v2 v2-normalindented">Each of the Imaging Service Requests may contain one or more Requested Procedures that it will identify with the Requested Procedure ID. The Requested Procedure is the most granular unit of work that may lead to the creation of the procedure report. Each procedure report contributes to the results for the order. In the example mentioned above, each of the daily examinations will require a separate diagnostic report, hence each of them will be treated as a separate Requested Procedure. Depending on the treatment of the order by the IDIS, it will either link all Requested Procedures to a single Filler Order-Imaging Service Request, or link each Requested Procedure to its own Imaging Service Request. Exact type of requested procedure is conveyed by the coded values in <a href="/segment-definition/OBR.html#OBR-44">OBR-44 Procedure Code</a> and <a href="/segment-definition/OBR.html#OBR-45">OBR-45 Procedure Code modifier</a> for each procedure. Note that in case of multiple Requested Procedures corresponding to one order, each procedure may have different code.</p><p class="v2 v2-normalindented">To support communication with the instances of equipment in a department (acquisition modalities), IDIS will also generate the Study Instance UID, a globally unique identifier for each Requested Procedure. This identifier will be used by acquisition modalities to identify all generated images and other DICOM objects related to this Requested Procedure. Note that, unlike the Study Instance UID, the Requested Procedure ID must only be unique within the scope of the encompassing Imaging Service Request identified by an Accession Number. </p><p class="v2 v2-normalindented">Each of the Requested Procedures may be further broken down by the IDIS into the Scheduled Procedure Steps based on the timing and equipment requirements. Each step is identified with the Scheduled Procedure Step ID. A single Procedure Step may only be performed on a single type and instance of the equipment. Thus, while the Requested Procedure may identify multi-modality examination (such as ones common in Nuclear Medicine), a single Procedure Step shall correspond to the operations performed on a single modality.</p><p class="v2 v2-normalindented">The example of the hierarchy of Imaging Service Request, Requested Procedure and Scheduled Procedure Step is depicted in a figure 4-6. Identifiers of the entities are represented by the field names stated in square brackets. </p><p class="v2 v2-othertablecaption">Figure 4-6.  Hierarchy of Imaging Service Request, Requested Procedure and Scheduled Procedure Step</p><div class="v2-image"><img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAABYYAAAWGCAYAAAFMEUHiAAFjPElEQVR4nOzd
+<p class="v2 v2-normalindented">Definition:  A workflow-management IDIS generated number that identifies the Filler Order for an Imaging Service (Imaging Service Request).   This identifier corresponds one-to-one to the Order Filler number but is used in internal tracking of the work by the IDIS and in communication between IDIS within the department. It also has specific requirements to assure its compatibility with DICOM. It is a case of the Entity Identifier data type (section 2.A.28).  Its first component is a string that identifies the Imaging Service Request.  A limit of sixteen (16) characters is required to allow compatibility with DICOM. See DICOM Standard Part 3 for further details on DICOM Attribute (0008,0050) that conveys information identical to the component one of this field.</p><p class="v2 v2-normalindented">An IDIS that performs functions of the workflow management for a department may accept a single Placer Order that gives rise to one or more Filler Orders-Imaging Service Requests. For example, an IDIS may receive an order for an X-ray examination of the patient daily at 8 am for the next three days. For the purposes of fulfilling the Placer Order, it will identify each of the daily exams either as a separate Filler Order or parts of a single Filler Order. Correspondingly, it will assign one or more Filler Order numbers associated with the order. For each of the Filler Order numbers, it will assign a unique Accession Number. </p><p class="v2 v2-normalindented">Each of the Imaging Service Requests may contain one or more Requested Procedures that it will identify with the Requested Procedure ID. The Requested Procedure is the most granular unit of work that may lead to the creation of the procedure report. Each procedure report contributes to the results for the order. In the example mentioned above, each of the daily examinations will require a separate diagnostic report, hence each of them will be treated as a separate Requested Procedure. Depending on the treatment of the order by the IDIS, it will either link all Requested Procedures to a single Filler Order-Imaging Service Request, or link each Requested Procedure to its own Imaging Service Request. Exact type of requested procedure is conveyed by the coded values in <a href="./segment-definition/OBR.html#OBR-44">OBR-44 Procedure Code</a> and <a href="./segment-definition/OBR.html#OBR-45">OBR-45 Procedure Code modifier</a> for each procedure. Note that in case of multiple Requested Procedures corresponding to one order, each procedure may have different code.</p><p class="v2 v2-normalindented">To support communication with the instances of equipment in a department (acquisition modalities), IDIS will also generate the Study Instance UID, a globally unique identifier for each Requested Procedure. This identifier will be used by acquisition modalities to identify all generated images and other DICOM objects related to this Requested Procedure. Note that, unlike the Study Instance UID, the Requested Procedure ID must only be unique within the scope of the encompassing Imaging Service Request identified by an Accession Number. </p><p class="v2 v2-normalindented">Each of the Requested Procedures may be further broken down by the IDIS into the Scheduled Procedure Steps based on the timing and equipment requirements. Each step is identified with the Scheduled Procedure Step ID. A single Procedure Step may only be performed on a single type and instance of the equipment. Thus, while the Requested Procedure may identify multi-modality examination (such as ones common in Nuclear Medicine), a single Procedure Step shall correspond to the operations performed on a single modality.</p><p class="v2 v2-normalindented">The example of the hierarchy of Imaging Service Request, Requested Procedure and Scheduled Procedure Step is depicted in a figure 4-6. Identifiers of the entities are represented by the field names stated in square brackets. </p><p class="v2 v2-othertablecaption">Figure 4-6.  Hierarchy of Imaging Service Request, Requested Procedure and Scheduled Procedure Step</p><div class="v2-image"><img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAABYYAAAWGCAYAAAFMEUHiAAFjPElEQVR4nOzd
 C1xX9f3H8fdPBRNtQUvbsBZ2kQpsgk5tE7RwF6EWlWlbQf8trZWtvFSILkXL
 FK28rFZe2pbWKu1iLbE2KQUrTYVKrLRMK3VLt6QlVKD+/uec34Xfj4uioofD
 eT194O92Lt9z+Prx/Tu/7++cNl6DAAdrY3cDgKNFJ4bj0YnheHRiOB6dGI5H
@@ -2711,47 +2711,47 @@ RU5ErkJggg==
 " /></div><p class="v2 v2-normalindented">The full hierarchy constitutes the context that will be shared between all IDIS within a department in a course of order fulfillment.</p><p class="v2 v2-normalindented">Each OMI message shall convey information about Requested Procedure(s) pertaining to one order. A pair of Segments ORC/OBR shall correspond to each requested procedure. If the Requested Procedure is comprised of multiple Procedure Steps, multiple IPC segments shall be included for each ORC/OBR pair in the message. Value of the IPC-1 field shall be identical in all IPC segments.</p><p class="v2 v2-normalindented">Considering the preceding example of X-ray examinations on subsequent days with two different steps identified for the last Requested Procedure and examinations to be performed at the site, &quot;RADIOLOGY&quot;, the communication of the information using OMI message may look like the following:</p><p class="v2 v2-example">MSH|...&#60;cr&#62;</p><p class="v2 v2-example">PID|...&#60;cr&#62;</p><p class="v2 v2-example">ORC|NW|...&#60;cr&#62;</p><p class="v2 v2-example">OBR|1|X1234^HIS|R578^RIS|56782^X-Ray Chest|...|XPA^X-Ray Chest PA|...&#60;cr&#62;</p><p class="v2 v2-example">IPC|A345^RIS|P1234^RIS|1.2.840.1234567890.3456786.1^RIS|SPS1^RIS|CR|SXPA^Chest PA||RADIOLOGY|&#60;cr&#62;</p><p class="v2 v2-example">ORC|NW|...&#60;cr&#62;</p><p class="v2 v2-example">OBR|2|X1234^HIS|R578^RIS|56782^X-Ray Chest|...|XPA^X-Ray Chest PA|...&#60;cr&#62;</p><p class="v2 v2-example">IPC|A345^RIS|P1235^RIS|1.2.840.1234567890.3456786.2^RIS|SPS1^RIS|CR|SXPA^Chest PA||RADIOLOGY|&#60;cr&#62;</p><p class="v2 v2-example">ORC|NW|...&#60;cr&#62;</p><p class="v2 v2-example">OBR|3|X1234^HIS|R578^RIS|56782^X-Ray Chest|...|XPALAT^X-Ray Chest PA and Lateral|...&#60;cr&#62;</p><p class="v2 v2-example">IPC|A345^RIS|P1236^RIS|1.2.840.1234567890.3456786.3^RIS|SPS1^RIS|CR|SXPA^Chest PA||RADIOLOGY|&#60;cr&#62;</p><p class="v2 v2-example">IPC|A345^RIS|P1236^RIS|1.2.840.1234567890.3456786.3^RIS|SPS2^RIS|CR|SXLAT^Chest Lat||RADIOLOGY|&#60;cr&#62;</p>
 
 <h4 class='v2' id='IPC-2'>
-IPC-2: Requested Procedure ID (<a href='/data-type/EI.html'>EI</a>) 01658
+IPC-2: Requested Procedure ID (<a href='./data-type/EI.html'>EI</a>) 01658
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field is the identifier of the Requested Procedure that the workflow management IDIS selected to perform as a part of the order for the imaging service.  It is a case of the Entity Identifier data type (section 2.A.28).  The first component of this field is a string that identifies the Requested Procedure.  A limit of sixteen (16) characters is required to allow compatibility with DICOM. This string must uniquely identify the Requested Procedure within the scope of the order (as specified by accession number).  This uniqueness must persist over time. See DICOM Standard Part 3 for further details on DICOM Attribute (0040,0001) that conveys information identical to the component one of this field.</p><p class="v2 v2-normalindented">The second through fourth components contain the ID of the workflow management IDIS, in the form of the HD data type (see section 2.A.36, &quot;HD - hierarchic designator&quot;). The second component is a user-defined coded value that uniquely defines the application from other applications on the network.  A limit of five (5) characters is suggested but not required.  The second component of the Requested Procedure number always identifies the actual filler of an order.</p><p class="v2 v2-normalindented">A Requested Procedure is an instance of a Procedure of a given Procedure Type. An instance of a Requested Procedure includes all of the items of information that are specified by an instance of a Procedure Plan that is selected for the Requested Procedure by the imaging service provider. This Procedure Plan is defined by the imaging service provider on the basis of the Procedure Plan templates associated with the considered Procedure Type. An Imaging Service Request may include requests for several different Requested Procedures. The purpose of this entity is to establish the association between Imaging Service Requests and Procedure Types, to convey the information that belongs to this association and to establish the relationships between Requested Procedures and the other entities that are needed to describe them. A single Requested Procedure of one Procedure Type is the smallest unit of service that can be requested, reported, coded and billed. Performance of one instance of a Requested Procedure is specified by exactly one Procedure Plan. A Requested Procedure leads to one or more Scheduled Procedure Steps involving Protocols as specified by a Procedure Plan. A Requested Procedure may involve one or more pieces of equipment.</p><p class="v2 v2-normalindented">Each OMI message shall convey information about Requested Procedure(s) pertaining to one order. Pair of Segments ORC/OBR shall correspond to each requested procedure. If the Requested Procedure is comprised of multiple Procedure Steps, multiple IPC segments shall be included for each ORC/OBR pair in the message. In this case, the value of the IPC-2 field shall be identical in all IPC segments related to the same Requested Procedure.</p>
 
 <h4 class='v2' id='IPC-3'>
-IPC-3: Study Instance UID (<a href='/data-type/EI.html'>EI</a>) 01659
+IPC-3: Study Instance UID (<a href='./data-type/EI.html'>EI</a>) 01659
 </h4>
 <p class="v2 v2-normalindented">Definition:  Globally unique identifier assigned by the workflow management IDIS to the Imaging Study under which all images and other DICOM objects produced in the course of the Requested Procedure shall be collected. It is a case of the Entity Identifier data type (section 2.A.28).  Its first component is a string that identifies the Study.  A limit of sixty-four (64) characters is required to allow compatibility with DICOM. See DICOM Standard Part 3 for further details on DICOM Attribute (0020,000D) that conveys information identical to component one of this field. The second through fourth components contain the ID of the workflow management IDIS, in the form of the HD data type (see section 2.A.36, &quot;HD - hierarchic designator&quot;). The second component is a user-defined coded value that uniquely defines the application from other applications on the network.  A limit of five (5) characters is suggested but not required.  The second component of the Study Instance UID always identifies the actual filler of an order.</p><p class="v2 v2-normalindented">Each OMI message shall convey information about Requested Procedure(s) pertaining to one order. Pair of Segments ORC/OBR shall correspond to each requested procedure. If the Requested Procedure is comprised of multiple Procedure Steps, multiple IPC segments shall be included for each ORC/OBR pair in the message. In this case, the value of the IPC-3 field shall be identical in all IPC segments related to the same Requested Procedure.</p>
 
 <h4 class='v2' id='IPC-4'>
-IPC-4: Scheduled Procedure Step ID (<a href='/data-type/EI.html'>EI</a>) 01660
+IPC-4: Scheduled Procedure Step ID (<a href='./data-type/EI.html'>EI</a>) 01660
 </h4>
 <p class="v2 v2-normalindented">Definition: This field is the identifier of a particular Procedure Step (sub-procedure) of the Requested Procedure that the workflow management IDIS selected to perform as a part of the order for imaging service.  It is a case of the Entity Identifier data type (section 2.A.28).  Its first component is a string that identifies the Procedure Step.  A limit of sixteen (16) characters is required to allow compatibility with DICOM. This string must uniquely identify the Procedure Step within the scope of the Requested Procedure.  This uniqueness must persist over time. See DICOM Standard Part 3 for further details on DICOM Attribute (0040,0009) that conveys information identical to the component one of this field.</p><p class="v2 v2-normalindented">The second through fourth components contain the ID of the workflow management IDIS, in the form of the HD data type (see section 2.A.36, &quot;HD - hierarchic designator&quot;). The second component is a user-defined coded value that uniquely defines the application from other applications on the network.  A limit of five (5) characters is suggested but not required.  The second component of the Requested Procedure number always identifies the actual filler of an order.</p><p class="v2 v2-normalindented">A Procedure Step is an arbitrarily defined scheduled unit of service, which is specified by the Procedure Plan for a Requested Procedure. A Procedure Step prescribes Protocol that may be identified by one or more protocol codes. A Procedure Step involves equipment (e.g., imaging Modality equipment, anesthesia equipment, surgical equipment, transportation equipment), human resources, consumable supplies, location, and time (e.g., start time, stop time, duration). While in the context of Imaging Service request the scheduling of a Procedure Step might include only a general designation of imaging Modality that could be satisfied by multiple pieces of the same equipment type, the performance of one instance of a Procedure Step involves one and only one piece of imaging Modality equipment.</p>
 
 <h4 class='v2' id='IPC-5'>
-IPC-5: Modality (<a href='/data-type/CWE.html'>CWE</a>) 01661
+IPC-5: Modality (<a href='./data-type/CWE.html'>CWE</a>) 01661
 </h4>
 <p class="v2 v2-normalindented">Definition:  The type of equipment requested to acquire data during performance of a Procedure Step. The acquired data will be used to create the images for the Imaging Study corresponding to the Requested Procedure. </p><p class="v2 v2-normalindented">This field is a case of the CE data type. Refer to <a href="https://www.hl7.org/fhir/v2//index.html">External Table 0910 – Acquisition Modality</a> in Chapter 2C, Code Tables, for valid values, and to DICOM Standard Part 3 for further details on DICOM Attribute (0008,0060) that conveys information identical to component one of this field.</p><p class="v2 v2-normalindented">A limit of sixteen (16) characters for the first component is required to allow compatibility with DICOM. The third component of this field, if present, shall have the value of &quot;DCM&quot; (see <a href="https://www.hl7.org/fhir/v2/0396/index.html">HL7 Table 0396 – Coding Systems</a> in Chapter 2C, Code Tables).</p>
 
 <h4 class='v2' id='IPC-6'>
-IPC-6: Protocol Code (<a href='/data-type/CWE.html'>CWE</a>) 01662
+IPC-6: Protocol Code (<a href='./data-type/CWE.html'>CWE</a>) 01662
 </h4>
 <p class="v2 v2-normalindented">Definition:  One or more coded entries identifying the protocol according to which the Scheduled Procedure Step shall be performed. Protocol Code(s) may identify particular equipment settings as well as operator&#39;s manipulations. Refer to Table 0605 - Protocol Code in Chapter 2C for valid values.</p><p class="v2 v2-normalindented">A Protocol is a specification of actions prescribed by a Procedure Plan to perform a specific Procedure Step. A Scheduled Procedure Step contains only one Protocol that may be conveyed by one or more Protocol Codes. Typically, the code or codes identifying Protocol instance would be selected from a catalog of protocols established locally or provided by equipment manufacturers or professional organizations. Multiple Protocols may not exist in one Scheduled Procedure Step. See DICOM Standard Part 3 for further details on DICOM Attribute (0040,0008) that conveys information identical to components one through three of this field.</p><p class="v2 v2-normalindented">A limit of sixteen (16) characters for the first component and sixty-four (64) characters for the second component is required to allow compatibility with DICOM. </p>
 
 <h4 class='v2' id='IPC-7'>
-IPC-7: Scheduled Station Name (<a href='/data-type/EI.html'>EI</a>) 01663
+IPC-7: Scheduled Station Name (<a href='./data-type/EI.html'>EI</a>) 01663
 </h4>
-<p class="v2 v2-normalindented">Definition:  This field identifies the instance of the modality resource being requested for the performance of a particular Scheduled Procedure Step. It is a case of the Entity Identifier data type (section 2.A.28).  The first component of this field is a string that identifies the particular piece of equipment.  A limit of sixteen (16) characters is required to allow compatibility with DICOM. See DICOM Standard Part 3 for further details on DICOM Attribute (0040,0010) that conveys information identical to the component one of this field.</p><p class="v2 v2-normalindented">The second through fourth components identify the organization, in the form of the HD data type (see section 2.A.36, &quot;HD - hierarchic designator&quot;).</p><p class="v2 v2-normalindented">If the Scheduled Procedure Step is to be performed by an unspecified member of a pool of resources, this field shall be empty and <a href="/segment-definition/IPC.html#IPC-8">IPC-8 Scheduled Procedure Step Location</a> is used to identify the site-specific resource pool. See section <a href="/composition/Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion.html#Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion-5-6-8">4.5.6.8</a>, &quot;<a href="/segment-definition/IPC.html#IPC-8">IPC-8   Scheduled Procedure Step</a> Location   (CWE)   01664,&quot; for explanation of the resource pool.</p>
+<p class="v2 v2-normalindented">Definition:  This field identifies the instance of the modality resource being requested for the performance of a particular Scheduled Procedure Step. It is a case of the Entity Identifier data type (section 2.A.28).  The first component of this field is a string that identifies the particular piece of equipment.  A limit of sixteen (16) characters is required to allow compatibility with DICOM. See DICOM Standard Part 3 for further details on DICOM Attribute (0040,0010) that conveys information identical to the component one of this field.</p><p class="v2 v2-normalindented">The second through fourth components identify the organization, in the form of the HD data type (see section 2.A.36, &quot;HD - hierarchic designator&quot;).</p><p class="v2 v2-normalindented">If the Scheduled Procedure Step is to be performed by an unspecified member of a pool of resources, this field shall be empty and <a href="./segment-definition/IPC.html#IPC-8">IPC-8 Scheduled Procedure Step Location</a> is used to identify the site-specific resource pool. See section <a href="./composition/Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion.html#Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion-5-6-8">4.5.6.8</a>, &quot;<a href="./segment-definition/IPC.html#IPC-8">IPC-8   Scheduled Procedure Step</a> Location   (CWE)   01664,&quot; for explanation of the resource pool.</p>
 
 <h4 class='v2' id='IPC-8'>
-IPC-8: Scheduled Procedure Step Location (<a href='/data-type/CWE.html'>CWE</a>) 01664
+IPC-8: Scheduled Procedure Step Location (<a href='./data-type/CWE.html'>CWE</a>) 01664
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field specifies a locally defined physical location of the modality resource being requested for performance of particular Scheduled Procedure Step. Although location is usually defined geographically (such as identification of a campus, building, floor, etc.) it may be used for identification of a pool of equipment (resources) formed by any other means. Values for the field shall be drawn from a locally defined coding scheme. Refer to Table 0606 - Scheduled Procedure Step Location in Chapter 2C for valid values.</p><p class="v2 v2-normalindented">For example, the pool may be defined as a set of three CT scanners belonging to an imaging center within a hospital. Two of these scanners may also be grouped into another pool based on their location at a building A, whereas the third scanner may be in a pool by itself due to its location in a building B.</p><p class="v2 v2-normalindented">If this field contains more than one location code, the equipment may be drawn from several resource pools.</p><p class="v2 v2-normalindented">If this field is empty and the fields IPC-7 and IPC-9 are also empty, it is assumed that a particular Procedure Step may be performed by any instance of equipment of a particular type within an organization.</p><p class="v2 v2-normalindented">See DICOM Standard Part 3 for further details on DICOM Attribute (0040,0011) that conveys information identical to component one of this field. A limit of sixteen (16) characters for the first component is required to allow compatibility with DICOM.</p>
 
 <h4 class='v2' id='IPC-9'>
-IPC-9: Scheduled Station AE Title (<a href='/data-type/ST.html'>ST</a>) 01665
+IPC-9: Scheduled Station AE Title (<a href='./data-type/ST.html'>ST</a>) 01665
 </h4>
-<p class="v2 v2-normalindented">Definition: This field contains the Application Entity Title of the modality resource being requested for performance of a particular Scheduled Procedure Step. Application Entity Title is the identifier that identifies an instance of DICOM-compatible equipment for the purpose of addressing during communication. See DICOM Standard, Part 3 for further details on the DICOM Attribute (0040,0001) that conveys equivalent information. A limit of sixteen (16) characters is required to allow compatibility with DICOM.</p><p class="v2 v2-normalindented">If the Scheduled Procedure Step is to be performed by an unspecified member of a pool of resources, this field shall be empty and IPC-8 Scheduled Procedure Step Location is used to identify the site-specific resource pool. See section <a href="/composition/Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion.html#Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion-5-6-8">4.5.6.8</a> for explanation of the resource pool.</p>
+<p class="v2 v2-normalindented">Definition: This field contains the Application Entity Title of the modality resource being requested for performance of a particular Scheduled Procedure Step. Application Entity Title is the identifier that identifies an instance of DICOM-compatible equipment for the purpose of addressing during communication. See DICOM Standard, Part 3 for further details on the DICOM Attribute (0040,0001) that conveys equivalent information. A limit of sixteen (16) characters is required to allow compatibility with DICOM.</p><p class="v2 v2-normalindented">If the Scheduled Procedure Step is to be performed by an unspecified member of a pool of resources, this field shall be empty and IPC-8 Scheduled Procedure Step Location is used to identify the site-specific resource pool. See section <a href="./composition/Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion.html#Order-Entry-General-Laboratory-Dietary-Supply-Blood-Transfusion-5-6-8">4.5.6.8</a> for explanation of the resource pool.</p>
 
 <h4 class='v2' id='IPC-10'>
-IPC-10: Action Code (<a href='/data-type/ID.html'>ID</a>) 00816
+IPC-10: Action Code (<a href='./data-type/ID.html'>ID</a>) 00816
 </h4>
 <p class="v2 v2-normalindented">Definition:  This field reveals the intent of the message.  Refer to <a href="https://www.hl7.org/fhir/v2/0206/index.html">HL7 Table 0206 - Segment Action Code</a> for valid values.</p><p class="v2 v2-normalindented">The action code can only be used when the combination of IPC-1, IPC-2, IPC-3, and IPC-4 represents a unique identifier according to Chapter 2, Section 2.10.4.2.</p>
 
@@ -2766,16 +2766,16 @@ March 23, 2022
 </p>
 <p>
 <span style='color: #FFFF77'>Links:</span>
-<a href='/history.html' style='color: #b8dcf9'>
+<a href='./history.html' style='color: #b8dcf9'>
 Version History
 </a>
 |
 <a href='https://jira.hl7.org/projects/V2/issues' style='color: #b8dcf9' target='_blank'>
 Propose a change
-<img src='/images/external.png' style='text-align: baseline'>
+<img src='./images/external.png' style='text-align: baseline'>
 </a>
 |
-<a href='/license.html' rel='license' style='color: #b8dcf9'>
+<a href='./license.html' rel='license' style='color: #b8dcf9'>
 License
 <!-- %img{:alt => "CC0", :src => "images/cc0.png", :style => "border-style: none;"} -->
 </a>

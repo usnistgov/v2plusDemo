@@ -9,43 +9,43 @@ HL7 - REFACTORED
 <base href="https://usnistgov.github.io/v2plusDemo/">
 
 <style type='text/css'>
-@import "/css/bootstrap.css";
-@import "/css/codemirror.css";
-@import "/css/hl7.css";
-@import "/css/fhir.css";
-<!-- @import "/css/bootstrap-fhir.css"; -->
-@import "/css/bootstrap-v2.css";
-@import "/css/project.css";
-@import "/css/pygments-manni.css";
-@import "/css/jquery-ui.css";
-@import "/css/modules.css";
-@import "/css/v2.css";
+@import "./css/bootstrap.css";
+@import "./css/codemirror.css";
+@import "./css/hl7.css";
+@import "./css/fhir.css";
+<!-- @import "./css/bootstrap-fhir.css"; -->
+@import "./css/bootstrap-v2.css";
+@import "./css/project.css";
+@import "./css/pygments-manni.css";
+@import "./css/jquery-ui.css";
+@import "./css/modules.css";
+@import "./css/v2.css";
 </style>
-<script src='/js/jquery.js'></script>
-<script src='/js/jquery-ui.min.js'></script>
-<script src='/js/bootstrap.min.js'></script>
-<script src='/js/respond.min.js'></script>
-<script src='/js/codemirror/codemirror.js'></script>
-<script src='/js/codemirror/mode/xml.js'></script>
-<script src='/js/v2.js'></script>
-<script src='/js/fhir-table-scripts.js' type='text/javascript'></script>
-<script src='/js/format_xml.js' type='text/javascript'></script>
-<link href='/images/hl7.ico' rel='shortcut icon'>
+<script src='./js/jquery.js'></script>
+<script src='./js/jquery-ui.min.js'></script>
+<script src='./js/bootstrap.min.js'></script>
+<script src='./js/respond.min.js'></script>
+<script src='./js/codemirror/codemirror.js'></script>
+<script src='./js/codemirror/mode/xml.js'></script>
+<script src='./js/v2.js'></script>
+<script src='./js/fhir-table-scripts.js' type='text/javascript'></script>
+<script src='./js/format_xml.js' type='text/javascript'></script>
+<link href='./images/hl7.ico' rel='shortcut icon'>
 </head>
 <body>
 <div class='segment' id='segment-header'>
 <div class='container'>
 <a href='http://www.hl7.org/hl7v2+' id='logo' no-external='true'></a>
 <div id='hl7-status'>
-<img alt='visit the hl7 website' height='50' id='v2-logo' src='/images/hl7-v2-logo.png'>
-<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='/images/hl7-v2plus.gif'>
+<img alt='visit the hl7 website' height='50' id='v2-logo' src='./images/hl7-v2-logo.png'>
+<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='./images/hl7-v2plus.gif'>
 <b>
 The Demo site for our new HL7 Version 2+ (plus) Standard
 </b>
 </div>
 <div id='hl7-nav'>
 <a href='http://www.hl7.org' id='hl7-logo' no-external='true'></a>
-<img alt='visit the hl7 website' src='/images/hl7-logo.png'>
+<img alt='visit the hl7 website' src='./images/hl7-logo.png'>
 </div>
 </div>
 </div>
@@ -60,33 +60,33 @@ The Demo site for our new HL7 Version 2+ (plus) Standard
 <span class='icon-bar'></span>
 </button>
 </div>
-<a class='navbar-brand hidden' href='/index.html'>
+<a class='navbar-brand hidden' href='./index.html'>
 FHIR
 </a>
 <div class='nav-collapse collapse navbar-inverse-collapse'>
 <ul class='nav navbar-nav'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
 <li>
-<a href='/domains.html'>
+<a href='./domains.html'>
 Domains
 </a>
 </li>
 <li>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Message Structures
 </a>
 </li>
 <li>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Segments
 </a>
 </li>
 <li>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Data Types
 </a>
 </li>
@@ -96,12 +96,12 @@ Data Type Flavors
 </a>
 </li>
 <li>
-<a href='/vocab.html'>
+<a href='./vocab.html'>
 Vocabulary
 </a>
 </li>
 <li>
-<a href='/domain/Control.html'>
+<a href='./domain/Control.html'>
 Control
 </a>
 </li>
@@ -111,7 +111,7 @@ Conformance
 </a>
 </li>
 <li>
-<a href='/domain/Control.html#Control-12'>
+<a href='./domain/Control.html#Control-12'>
 Encoding
 </a>
 </li>
@@ -121,7 +121,7 @@ Transport
 </a>
 </li>
 <li>
-<a href='/history.html'>
+<a href='./history.html'>
 v2.x
 </a>
 </li>
@@ -141,7 +141,7 @@ Draft Website - For Review Purposes Only
 <div class='container'>
 <ul class='breadcrumb'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
@@ -156,28 +156,28 @@ Mapping between HL7 v2.9 and v2+
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html'>
+<a href='./domain/Data-Type.html'>
 Chapter 2A - AControl (continued)
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1'>
+<a href='./domain/Data-Type.html#Data-Type-1'>
     2A.1  Data types
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-1'>
         2A.1.1  AD - address
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-1-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-1-1'>
             2A.1.1.1  Street Address (ST)
 </a>
 </h3>
@@ -185,7 +185,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-1-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-1-2'>
             2A.1.1.2  Other Designation (ST)
 </a>
 </h3>
@@ -193,7 +193,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-1-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-1-3'>
             2A.1.1.3  City (ST)
 </a>
 </h3>
@@ -201,7 +201,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-1-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-1-4'>
             2A.1.1.4  State or Province (ST)
 </a>
 </h3>
@@ -209,7 +209,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-1-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-1-5'>
             2A.1.1.5  Zip or Postal Code (ST)
 </a>
 </h3>
@@ -217,7 +217,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-1-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-1-6'>
             2A.1.1.6  Country (ID)
 </a>
 </h3>
@@ -225,7 +225,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-1-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-1-7'>
             2A.1.1.7  Address Type (ID)
 </a>
 </h3>
@@ -233,7 +233,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-1-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-1-8'>
             2A.1.1.8  Other Geographic Designation (ST)
 </a>
 </h3>
@@ -244,14 +244,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-2'>
         2A.1.2  AUI - authorization information
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-2-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-2-1'>
             2A.1.2.1  Authorization Number (ST)
 </a>
 </h3>
@@ -259,7 +259,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-2-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-2-2'>
             2A.1.2.2  Date (DT)
 </a>
 </h3>
@@ -267,7 +267,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-2-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-2-3'>
             2A.1.2.3  Source (ST)
 </a>
 </h3>
@@ -278,14 +278,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-3'>
         2A.1.3  CCD - charge code and date
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-3-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-3-1'>
             2A.1.3.1  Invocation Event (ID)
 </a>
 </h3>
@@ -293,7 +293,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-3-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-3-2'>
             2A.1.3.2  Date/time (DTM)
 </a>
 </h3>
@@ -304,14 +304,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-4'>
         2A.1.4  CCP - channel calibration parameters
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-4-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-4-1'>
             2A.1.4.1  Channel Calibration Sensitivity Correction Factor (NM)
 </a>
 </h3>
@@ -319,7 +319,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-4-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-4-2'>
             2A.1.4.2  Channel Calibration Baseline (NM)
 </a>
 </h3>
@@ -327,7 +327,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-4-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-4-3'>
             2A.1.4.3  Channel Calibration Time Skew (NM)
 </a>
 </h3>
@@ -338,14 +338,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-5'>
         2A.1.5  CD - channel definition
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-5-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-5-1'>
             2A.1.5.1  Channel Identifier (WVI)
 </a>
 </h3>
@@ -353,7 +353,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-5-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-5-2'>
             2A.1.5.2  Waveform Source (WVS)
 </a>
 </h3>
@@ -361,7 +361,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-5-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-5-3'>
             2A.1.5.3  Channel Sensitivity and Units (CSU)
 </a>
 </h3>
@@ -369,7 +369,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-5-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-5-4'>
             2A.1.5.4  Channel Calibration Parameters (CCP)
 </a>
 </h3>
@@ -377,7 +377,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-5-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-5-5'>
             2A.1.5.5  Channel Sampling Frequency (NM)
 </a>
 </h3>
@@ -385,7 +385,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-5-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-5-6'>
             2A.1.5.6  Minimum and Maximum Data Values (NR)
 </a>
 </h3>
@@ -396,7 +396,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-6'>
         2A.1.6  WITHDRAWN (CE – coded entry)
 </a>
 </h3>
@@ -404,14 +404,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-7'>
         2A.1.7  CF - coded element with formatted values
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-1'>
             2A.1.7.1  Identifier (ST)
 </a>
 </h3>
@@ -419,7 +419,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-2'>
             2A.1.7.2  Formatted Text (FT)
 </a>
 </h3>
@@ -427,7 +427,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-3'>
             2A.1.7.3  Name of Coding System (ID)
 </a>
 </h3>
@@ -435,7 +435,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-4'>
             2A.1.7.4  Alternate Identifier (ST)
 </a>
 </h3>
@@ -443,7 +443,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-5'>
             2A.1.7.5  Alternate Formatted Text (FT)
 </a>
 </h3>
@@ -451,7 +451,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-6'>
             2A.1.7.6  Name of Alternate Coding System (ID)
 </a>
 </h3>
@@ -459,7 +459,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-7'>
             2A.1.7.7  Coding System Version ID (ST)
 </a>
 </h3>
@@ -467,7 +467,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-8'>
             2A.1.7.8  Alternate Coding System Version ID (ST)
 </a>
 </h3>
@@ -475,7 +475,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-9'>
             2A.1.7.9  Original Text (ST)
 </a>
 </h3>
@@ -483,7 +483,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-10'>
             2A.1.7.10  Second Alternate Identifier (ST)
 </a>
 </h3>
@@ -491,7 +491,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-11'>
             2A.1.7.11  Second Alternate FormattedText (FT)
 </a>
 </h3>
@@ -499,7 +499,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-12'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-12'>
             2A.1.7.12  Name of Second Alternate Coding System (ID)
 </a>
 </h3>
@@ -507,7 +507,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-13'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-13'>
             2A.1.7.13  Second Alternate Coding System Version ID (ST)
 </a>
 </h3>
@@ -515,7 +515,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-14'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-14'>
             2A.1.7.14  Coding System OID (ST)
 </a>
 </h3>
@@ -523,7 +523,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-15'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-15'>
             2A.1.7.15  Value Set OID (ST)
 </a>
 </h3>
@@ -531,7 +531,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-16'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-16'>
             2A.1.7.16  Value Set Version ID (DTM)
 </a>
 </h3>
@@ -539,7 +539,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-17'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-17'>
             2A.1.7.17  Alternate Coding System OID (ST)
 </a>
 </h3>
@@ -547,7 +547,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-18'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-18'>
             2A.1.7.18  Alternate Value Set OID (ST)
 </a>
 </h3>
@@ -555,7 +555,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-19'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-19'>
             2A.1.7.19  Alternate Value Set Version ID (DTM)
 </a>
 </h3>
@@ -563,7 +563,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-20'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-20'>
             2A.1.7.20  Second Alternate Coding System OID (ST)
 </a>
 </h3>
@@ -571,7 +571,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-21'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-21'>
             2A.1.7.21  Second Alternate Value Set OID (ST)
 </a>
 </h3>
@@ -579,7 +579,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-7-22'>
+<a href='./domain/Data-Type.html#Data-Type-1-7-22'>
             2A.1.7.22  Second Alternate Value Set Version ID (DTM)
 </a>
 </h3>
@@ -590,14 +590,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-8'>
         2A.1.8  CNE – coded with no exceptions
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-1'>
             2A.1.8.1  Identifier (ST)
 </a>
 </h3>
@@ -605,7 +605,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-2'>
             2A.1.8.2  Text (ST)
 </a>
 </h3>
@@ -613,7 +613,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-3'>
             2A.1.8.3  Name of Coding System (ID)
 </a>
 </h3>
@@ -621,7 +621,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-4'>
             2A.1.8.4  Alternate Identifier (ST)
 </a>
 </h3>
@@ -629,7 +629,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-5'>
             2A.1.8.5  Alternate Text (ST)
 </a>
 </h3>
@@ -637,7 +637,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-6'>
             2A.1.8.6  Name of Alternate Coding System (ID)
 </a>
 </h3>
@@ -645,7 +645,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-7'>
             2A.1.8.7  Coding System Version ID (ST)
 </a>
 </h3>
@@ -653,7 +653,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-8'>
             2A.1.8.8  Alternate Coding System Version ID (ST)
 </a>
 </h3>
@@ -661,7 +661,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-9'>
             2A.1.8.9  Original Text (ST)
 </a>
 </h3>
@@ -669,7 +669,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-10'>
             2A.1.8.10  Second Alternate Identifier (ST)
 </a>
 </h3>
@@ -677,7 +677,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-11'>
             2A.1.8.11  Second Alternate Text (ST)
 </a>
 </h3>
@@ -685,7 +685,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-12'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-12'>
             2A.1.8.12  Name of Second Alternate Coding System (ID)
 </a>
 </h3>
@@ -693,7 +693,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-13'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-13'>
             2A.1.8.13  Second Alternate Coding System Version ID (ST)
 </a>
 </h3>
@@ -701,7 +701,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-14'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-14'>
             2A.1.8.14  Coding System OID (ST)
 </a>
 </h3>
@@ -709,7 +709,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-15'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-15'>
             2A.1.8.15  Value Set OID (ST)
 </a>
 </h3>
@@ -717,7 +717,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-16'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-16'>
             2A.1.8.16  Value Set Version ID (DTM)
 </a>
 </h3>
@@ -725,7 +725,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-17'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-17'>
             2A.1.8.17  Alternate Coding System OID (ST)
 </a>
 </h3>
@@ -733,7 +733,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-18'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-18'>
             2A.1.8.18  Alternate Value Set OID (ST)
 </a>
 </h3>
@@ -741,7 +741,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-19'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-19'>
             2A.1.8.19  Alternate Value Set Version ID (DTM)
 </a>
 </h3>
@@ -749,7 +749,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-20'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-20'>
             2A.1.8.20  Second Alternate Coding System OID (ST)
 </a>
 </h3>
@@ -757,7 +757,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-21'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-21'>
             2A.1.8.21  Second Alternate Value Set OID (ST)
 </a>
 </h3>
@@ -765,7 +765,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-8-22'>
+<a href='./domain/Data-Type.html#Data-Type-1-8-22'>
             2A.1.8.22  Second Alternate Value Set Version ID (DTM)
 </a>
 </h3>
@@ -776,14 +776,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-9'>
         2A.1.9  CNN - composite ID number and name simplified
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-9-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-9-1'>
             2A.1.9.1  ID Number (ST)
 </a>
 </h3>
@@ -791,7 +791,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-9-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-9-2'>
             2A.1.9.2  Family Name (ST)
 </a>
 </h3>
@@ -799,7 +799,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-9-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-9-3'>
             2A.1.9.3  Given Name (ST)
 </a>
 </h3>
@@ -807,7 +807,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-9-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-9-4'>
             2A.1.9.4  Second and Further Given Names or Initials Thereof (ST)
 </a>
 </h3>
@@ -815,7 +815,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-9-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-9-5'>
             2A.1.9.5  Suffix (ST)
 </a>
 </h3>
@@ -823,7 +823,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-9-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-9-6'>
             2A.1.9.6  Prefix (ST)
 </a>
 </h3>
@@ -831,7 +831,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-9-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-9-7'>
             2A.1.9.7  Degree (IS)
 </a>
 </h3>
@@ -839,7 +839,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-9-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-9-8'>
             2A.1.9.8  Source Table (IS)
 </a>
 </h3>
@@ -847,7 +847,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-9-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-9-9'>
             2A.1.9.9  Assigning Authority - Namespace ID (IS)
 </a>
 </h3>
@@ -855,7 +855,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-9-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-9-10'>
             2A.1.9.10  Assigning Authority - Universal ID (ST)
 </a>
 </h3>
@@ -863,7 +863,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-9-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-9-11'>
             2A.1.9.11  Assigning Authority - Universal ID Type (ID)
 </a>
 </h3>
@@ -874,14 +874,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-10'>
         2A.1.10  CP - composite price
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-10-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-10-1'>
             2A.1.10.1  Price (MO)
 </a>
 </h3>
@@ -889,7 +889,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-10-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-10-2'>
             2A.1.10.2  Price Type (ID)
 </a>
 </h3>
@@ -897,7 +897,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-10-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-10-3'>
             2A.1.10.3  From Value (NM)
 </a>
 </h3>
@@ -905,7 +905,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-10-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-10-4'>
             2A.1.10.4  To Value (NM)
 </a>
 </h3>
@@ -913,7 +913,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-10-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-10-5'>
             2A.1.10.5  Range Units (CWE)
 </a>
 </h3>
@@ -921,7 +921,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-10-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-10-6'>
             2A.1.10.6  Range Type (ID)
 </a>
 </h3>
@@ -932,14 +932,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-11'>
         2A.1.11  CQ - composite quantity with units
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-11-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-11-1'>
             2A.1.11.1  Quantity (NM)
 </a>
 </h3>
@@ -947,7 +947,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-11-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-11-2'>
             2A.1.11.2  Units (CWE)
 </a>
 </h3>
@@ -958,14 +958,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12'>
+<a href='./domain/Data-Type.html#Data-Type-1-12'>
         2A.1.12  CSU - channel sensitivity and units
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-1'>
             2A.1.12.1  Channel Sensitivity (NM)
 </a>
 </h3>
@@ -973,7 +973,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-2'>
             2A.1.12.2  Unit of Measure Identifier (ST)
 </a>
 </h3>
@@ -981,7 +981,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-3'>
             2A.1.12.3  Unit of Measure Description (ST)
 </a>
 </h3>
@@ -989,7 +989,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-4'>
             2A.1.12.4  Unit of Measure Coding System (ID)
 </a>
 </h3>
@@ -997,7 +997,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-5'>
             2A.1.12.5  Alternate Unit of Measure Identifier (ST)
 </a>
 </h3>
@@ -1005,7 +1005,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-6'>
             2A.1.12.6  Alternate Unit of Measure Description (ST)
 </a>
 </h3>
@@ -1013,7 +1013,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-7'>
             2A.1.12.7  Alternate Unit of Measure Coding System (ID)
 </a>
 </h3>
@@ -1021,7 +1021,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-8'>
             2A.1.12.8  Unit of Measure Coding System Version ID (ST)
 </a>
 </h3>
@@ -1029,7 +1029,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-9'>
             2A.1.12.9  Alternate Unit of Measure Coding System Version ID (ST)
 </a>
 </h3>
@@ -1037,7 +1037,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-10'>
             2A.1.12.10  Original Text (ST)
 </a>
 </h3>
@@ -1045,7 +1045,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-11'>
             2A.1.12.11  Second Alternate Unit of Measure Identifier (ST)
 </a>
 </h3>
@@ -1053,7 +1053,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-12'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-12'>
             2A.1.12.12  Second Alternate Unit of Measure Text (ST)
 </a>
 </h3>
@@ -1061,7 +1061,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-13'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-13'>
             2A.1.12.13  Name of Second Alternate Unit of Measure Coding System (ID)
 </a>
 </h3>
@@ -1069,7 +1069,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-14'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-14'>
             2A.1.12.14  Second Alternate Unit of Measure Coding System Version ID (ST)
 </a>
 </h3>
@@ -1077,7 +1077,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-15'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-15'>
             2A.1.12.15  Unit of Measure Coding System OID (ST)
 </a>
 </h3>
@@ -1085,7 +1085,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-16'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-16'>
             2A.1.12.16  Unit of Measure Value Set OID (ST)
 </a>
 </h3>
@@ -1093,7 +1093,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-17'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-17'>
             2A.1.12.17  Unit of Measure Value Set Version ID (DTM)
 </a>
 </h3>
@@ -1101,7 +1101,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-18'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-18'>
             2A.1.12.18  Alternate Unit of Measure Coding System OID (ST)
 </a>
 </h3>
@@ -1109,7 +1109,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-19'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-19'>
             2A.1.12.19  Alternate Unit of Measure Value Set OID (ST)
 </a>
 </h3>
@@ -1117,7 +1117,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-20'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-20'>
             2A.1.12.20  Alternate Unit of Measure Value Set Version ID (DTM)
 </a>
 </h3>
@@ -1125,7 +1125,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-21'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-21'>
             2A.1.12.21  Second Alternate Unit of Measure Coding System OID (ST)
 </a>
 </h3>
@@ -1133,7 +1133,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-22'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-22'>
             2A.1.12.22  Second Alternate Unit of Measure Value Set OID (ST)
 </a>
 </h3>
@@ -1141,7 +1141,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-12-23'>
+<a href='./domain/Data-Type.html#Data-Type-1-12-23'>
             2A.1.12.23  Second Alternate Unit of Measure Value   Set Version ID (ST)
 </a>
 </h3>
@@ -1152,14 +1152,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13'>
+<a href='./domain/Data-Type.html#Data-Type-1-13'>
         2A.1.13  CWE – coded with exceptions
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-1'>
             2A.1.13.1  Identifier (ST)
 </a>
 </h3>
@@ -1167,7 +1167,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-2'>
             2A.1.13.2  Text (ST)
 </a>
 </h3>
@@ -1175,7 +1175,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-3'>
             2A.1.13.3  Name of Coding System (ID)
 </a>
 </h3>
@@ -1183,7 +1183,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-4'>
             2A.1.13.4  Alternate Identifier (ST)
 </a>
 </h3>
@@ -1191,7 +1191,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-5'>
             2A.1.13.5  Alternate Text (ST)
 </a>
 </h3>
@@ -1199,7 +1199,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-6'>
             2A.1.13.6  Name of Alternate Coding System (ID)
 </a>
 </h3>
@@ -1207,7 +1207,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-7'>
             2A.1.13.7  Coding System Version ID (ST)
 </a>
 </h3>
@@ -1215,7 +1215,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-8'>
             2A.1.13.8  Alternate Coding System Version ID (ST)
 </a>
 </h3>
@@ -1223,7 +1223,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-9'>
             2A.1.13.9  Original Text (ST)
 </a>
 </h3>
@@ -1231,7 +1231,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-10'>
             2A.1.13.10  Second Alternate Identifier (ST)
 </a>
 </h3>
@@ -1239,7 +1239,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-11'>
             2A.1.13.11  Second Alternate Text (ST)
 </a>
 </h3>
@@ -1247,7 +1247,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-12'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-12'>
             2A.1.13.12  Name of Second Alternate Coding System (ID)
 </a>
 </h3>
@@ -1255,7 +1255,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-13'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-13'>
             2A.1.13.13  Second Alternate Coding System Version ID (ST)
 </a>
 </h3>
@@ -1263,7 +1263,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-14'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-14'>
             2A.1.13.14  Coding System OID (ST)
 </a>
 </h3>
@@ -1271,7 +1271,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-15'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-15'>
             2A.1.13.15  Value Set OID (ST)
 </a>
 </h3>
@@ -1279,7 +1279,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-16'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-16'>
             2A.1.13.16  Value Set Version ID (DTM)
 </a>
 </h3>
@@ -1287,7 +1287,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-17'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-17'>
             2A.1.13.17  Alternate Coding System OID (ST)
 </a>
 </h3>
@@ -1295,7 +1295,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-18'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-18'>
             2A.1.13.18  Alternate Value Set OID (ST)
 </a>
 </h3>
@@ -1303,7 +1303,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-19'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-19'>
             2A.1.13.19  Alternate Value Set Version ID (DTM)
 </a>
 </h3>
@@ -1311,7 +1311,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-20'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-20'>
             2A.1.13.20  Second Alternate Coding System OID (ST)
 </a>
 </h3>
@@ -1319,7 +1319,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-21'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-21'>
             2A.1.13.21  Second Alternate Value Set OID (ST)
 </a>
 </h3>
@@ -1327,7 +1327,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-13-22'>
+<a href='./domain/Data-Type.html#Data-Type-1-13-22'>
             2A.1.13.22  Second Alternate Value Set Version ID (DTM)
 </a>
 </h3>
@@ -1338,14 +1338,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-14'>
+<a href='./domain/Data-Type.html#Data-Type-1-14'>
         2A.1.14  CX - extended composite ID with check digit
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-14-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-14-1'>
             2A.1.14.1  ID Number (ST)
 </a>
 </h3>
@@ -1353,7 +1353,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-14-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-14-2'>
             2A.1.14.2  Identifier Check Digit (ST)
 </a>
 </h3>
@@ -1361,7 +1361,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-14-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-14-3'>
             2A.1.14.3  Check Digit Scheme (ID)
 </a>
 </h3>
@@ -1369,7 +1369,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-14-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-14-4'>
             2A.1.14.4  Assigning Authority (HD)
 </a>
 </h3>
@@ -1377,7 +1377,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-14-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-14-5'>
             2A.1.14.5  Identifier Type Code (ID)
 </a>
 </h3>
@@ -1385,7 +1385,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-14-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-14-6'>
             2A.1.14.6  Assigning Facility (HD)
 </a>
 </h3>
@@ -1393,7 +1393,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-14-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-14-7'>
             2A.1.14.7  Effective Date (DT)
 </a>
 </h3>
@@ -1401,7 +1401,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-14-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-14-8'>
             2A.1.14.8  Expiration Date (DT)
 </a>
 </h3>
@@ -1409,7 +1409,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-14-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-14-9'>
             2A.1.14.9  Assigning Jurisdiction (CWE)
 </a>
 </h3>
@@ -1417,7 +1417,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-14-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-14-10'>
             2A.1.14.10  Assigning Agency or Department (CWE)
 </a>
 </h3>
@@ -1425,7 +1425,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-14-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-14-11'>
             2A.1.14.11  Security Check (ST)
 </a>
 </h3>
@@ -1433,7 +1433,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-14-12'>
+<a href='./domain/Data-Type.html#Data-Type-1-14-12'>
             2A.1.14.12  Security Check Scheme (ID)
 </a>
 </h3>
@@ -1444,14 +1444,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-15'>
+<a href='./domain/Data-Type.html#Data-Type-1-15'>
         2A.1.15  DDI - daily deductible information
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-15-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-15-1'>
             2A.1.15.1  Delay Days (NM)
 </a>
 </h3>
@@ -1459,7 +1459,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-15-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-15-2'>
             2A.1.15.2  Monetary Amount (MO)
 </a>
 </h3>
@@ -1467,7 +1467,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-15-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-15-3'>
             2A.1.15.3  Number of Days (NM)
 </a>
 </h3>
@@ -1478,14 +1478,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-16'>
+<a href='./domain/Data-Type.html#Data-Type-1-16'>
         2A.1.16  DIN - date and institution name
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-16-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-16-1'>
             2A.1.16.1  Date (DTM)
 </a>
 </h3>
@@ -1493,7 +1493,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-16-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-16-2'>
             2A.1.16.2  Institution Name (CWE)
 </a>
 </h3>
@@ -1504,14 +1504,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-17'>
+<a href='./domain/Data-Type.html#Data-Type-1-17'>
         2A.1.17  DLD – discharge to location and date
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-17-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-17-1'>
             2A.1.17.1  Discharge to Location (CWE)
 </a>
 </h3>
@@ -1519,7 +1519,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-17-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-17-2'>
             2A.1.17.2  Effective Date (DTM)
 </a>
 </h3>
@@ -1530,14 +1530,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-18'>
+<a href='./domain/Data-Type.html#Data-Type-1-18'>
         2A.1.18  DLN - driver’s license number
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-18-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-18-1'>
             2A.1.18.1  Driver’s License Number (ST)
 </a>
 </h3>
@@ -1545,7 +1545,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-18-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-18-2'>
             2A.1.18.2  Issuing State, Province, Country (CWE)
 </a>
 </h3>
@@ -1553,7 +1553,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-18-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-18-3'>
             2A.1.18.3  Expiration Date (DT)
 </a>
 </h3>
@@ -1564,14 +1564,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-19'>
+<a href='./domain/Data-Type.html#Data-Type-1-19'>
         2A.1.19  DLT - delta
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-19-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-19-1'>
             2A.1.19.1  Normal Range (NR)
 </a>
 </h3>
@@ -1579,7 +1579,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-19-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-19-2'>
             2A.1.19.2  Numeric Threshold (NM)
 </a>
 </h3>
@@ -1587,7 +1587,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-19-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-19-3'>
             2A.1.19.3  Change Computation (ID)
 </a>
 </h3>
@@ -1595,7 +1595,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-19-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-19-4'>
             2A.1.19.4  Days Retained (NM)
 </a>
 </h3>
@@ -1606,14 +1606,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-20'>
+<a href='./domain/Data-Type.html#Data-Type-1-20'>
         2A.1.20  DR - date/time range
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-20-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-20-1'>
             2A.1.20.1  Range Start Date/Time (DTM)
 </a>
 </h3>
@@ -1621,7 +1621,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-20-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-20-2'>
             2A.1.20.2  Range End Date/Time (DTM)
 </a>
 </h3>
@@ -1632,7 +1632,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-21'>
+<a href='./domain/Data-Type.html#Data-Type-1-21'>
         2A.1.21  DT - date
 </a>
 </h3>
@@ -1640,7 +1640,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-22'>
+<a href='./domain/Data-Type.html#Data-Type-1-22'>
         2A.1.22  DTM - date/time
 </a>
 </h3>
@@ -1648,14 +1648,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-23'>
+<a href='./domain/Data-Type.html#Data-Type-1-23'>
         2A.1.23  DTN - day type and number
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-23-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-23-1'>
             2A.1.23.1  Day Type (CWE)
 </a>
 </h3>
@@ -1663,7 +1663,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-23-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-23-2'>
             2A.1.23.2  Number of Days (NM)
 </a>
 </h3>
@@ -1674,14 +1674,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-24'>
+<a href='./domain/Data-Type.html#Data-Type-1-24'>
         2A.1.24  ED - encapsulated data
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-24-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-24-1'>
             2A.1.24.1  Source Application (HD)
 </a>
 </h3>
@@ -1689,7 +1689,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-24-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-24-2'>
             2A.1.24.2  Type of Data (ID)
 </a>
 </h3>
@@ -1697,7 +1697,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-24-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-24-3'>
             2A.1.24.3  Data Subtype (ID)
 </a>
 </h3>
@@ -1705,7 +1705,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-24-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-24-4'>
             2A.1.24.4  Encoding (ID)
 </a>
 </h3>
@@ -1713,7 +1713,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-24-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-24-5'>
             2A.1.24.5  Data (TX)
 </a>
 </h3>
@@ -1724,14 +1724,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-25'>
+<a href='./domain/Data-Type.html#Data-Type-1-25'>
         2A.1.25  EI - entity identifier
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-25-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-25-1'>
             2A.1.25.1  Entity Identifier (ST)
 </a>
 </h3>
@@ -1739,7 +1739,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-25-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-25-2'>
             2A.1.25.2  Namespace ID (IS)
 </a>
 </h3>
@@ -1747,7 +1747,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-25-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-25-3'>
             2A.1.25.3  Universal ID (ST)
 </a>
 </h3>
@@ -1755,7 +1755,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-25-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-25-4'>
             2A.1.25.4  Universal ID Type (ID)
 </a>
 </h3>
@@ -1766,14 +1766,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-26'>
+<a href='./domain/Data-Type.html#Data-Type-1-26'>
         2A.1.26  EIP - entity identifier pair
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-26-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-26-1'>
             2A.1.26.1  Placer Assigned Identifier (EI)
 </a>
 </h3>
@@ -1781,7 +1781,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-26-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-26-2'>
             2A.1.26.2  Filler Assigned Identifier (EI)
 </a>
 </h3>
@@ -1792,7 +1792,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-27'>
+<a href='./domain/Data-Type.html#Data-Type-1-27'>
         2A.1.27  WITHDRAWN (ELD – error location and description)
 </a>
 </h3>
@@ -1800,14 +1800,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-28'>
+<a href='./domain/Data-Type.html#Data-Type-1-28'>
         2A.1.28  ERL - Message location
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-28-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-28-1'>
             2A.1.28.1  Segment ID (ST)
 </a>
 </h3>
@@ -1815,7 +1815,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-28-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-28-2'>
             2A.1.28.2  Segment Sequence (SI)
 </a>
 </h3>
@@ -1823,7 +1823,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-28-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-28-3'>
             2A.1.28.3  Field Position (SI)
 </a>
 </h3>
@@ -1831,7 +1831,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-28-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-28-4'>
             2A.1.28.4  Field Repetition (SI)
 </a>
 </h3>
@@ -1839,7 +1839,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-28-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-28-5'>
             2A.1.28.5  Component Number (SI)
 </a>
 </h3>
@@ -1847,7 +1847,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-28-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-28-6'>
             2A.1.28.6  Sub-Component Number (SI)
 </a>
 </h3>
@@ -1858,14 +1858,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-29'>
+<a href='./domain/Data-Type.html#Data-Type-1-29'>
         2A.1.29  FC - financial class
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-29-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-29-1'>
             2A.1.29.1  Financial Class Code (CWE)
 </a>
 </h3>
@@ -1873,7 +1873,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-29-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-29-2'>
             2A.1.29.2  Effective Date (DTM)
 </a>
 </h3>
@@ -1884,14 +1884,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-30'>
+<a href='./domain/Data-Type.html#Data-Type-1-30'>
         2A.1.30  FN - family name
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-30-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-30-1'>
             2A.1.30.1  Surname (ST)
 </a>
 </h3>
@@ -1899,7 +1899,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-30-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-30-2'>
             2A.1.30.2  Own Surname Prefix (ST)
 </a>
 </h3>
@@ -1907,7 +1907,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-30-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-30-3'>
             2A.1.30.3  Own Surname (ST)
 </a>
 </h3>
@@ -1915,7 +1915,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-30-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-30-4'>
             2A.1.30.4  Surname Prefix from Partner/Spouse (ST)
 </a>
 </h3>
@@ -1923,7 +1923,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-30-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-30-5'>
             2A.1.30.5  Surname from Partner/Spouse (ST)
 </a>
 </h3>
@@ -1934,7 +1934,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-31'>
+<a href='./domain/Data-Type.html#Data-Type-1-31'>
         2A.1.31  FT - formatted text data
 </a>
 </h3>
@@ -1942,7 +1942,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-32'>
+<a href='./domain/Data-Type.html#Data-Type-1-32'>
         2A.1.32  GTS – general timing specification
 </a>
 </h3>
@@ -1950,14 +1950,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-33'>
+<a href='./domain/Data-Type.html#Data-Type-1-33'>
         2A.1.33  HD - hierarchic designator
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-33-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-33-1'>
             2A.1.33.1  Namespace ID (IS)
 </a>
 </h3>
@@ -1965,7 +1965,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-33-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-33-2'>
             2A.1.33.2  Universal ID (ST)
 </a>
 </h3>
@@ -1973,7 +1973,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-33-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-33-3'>
             2A.1.33.3  Universal ID Type (ID)
 </a>
 </h3>
@@ -1984,14 +1984,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-34'>
+<a href='./domain/Data-Type.html#Data-Type-1-34'>
         2A.1.34  ICD - insurance certification definition
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-34-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-34-1'>
             2A.1.34.1  Certification Patient Type (CWE)
 </a>
 </h3>
@@ -1999,7 +1999,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-34-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-34-2'>
             2A.1.34.2  Certification Required (ID)
 </a>
 </h3>
@@ -2007,7 +2007,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-34-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-34-3'>
             2A.1.34.3  Date/Time Certification Required (DTM)
 </a>
 </h3>
@@ -2018,7 +2018,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-35'>
+<a href='./domain/Data-Type.html#Data-Type-1-35'>
         2A.1.35  ID - coded value for HL7 defined tables
 </a>
 </h3>
@@ -2026,7 +2026,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-36'>
+<a href='./domain/Data-Type.html#Data-Type-1-36'>
         2A.1.36  IS - coded value for user-defined tables
 </a>
 </h3>
@@ -2034,14 +2034,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-37'>
+<a href='./domain/Data-Type.html#Data-Type-1-37'>
         2A.1.37  JCC - job code/class
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-37-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-37-1'>
             2A.1.37.1  Job Code (CWE)
 </a>
 </h3>
@@ -2049,7 +2049,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-37-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-37-2'>
             2A.1.37.2  Job Class (CWE)
 </a>
 </h3>
@@ -2057,7 +2057,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-37-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-37-3'>
             2A.1.37.3  Job Description Text (TX)
 </a>
 </h3>
@@ -2068,7 +2068,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-38'>
+<a href='./domain/Data-Type.html#Data-Type-1-38'>
         2A.1.38  WITHDRAWN (LA1 - location with address variation 1)
 </a>
 </h3>
@@ -2076,7 +2076,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-39'>
+<a href='./domain/Data-Type.html#Data-Type-1-39'>
         2A.1.39  WITHDRAWN (LA2 - location with address variation 2)
 </a>
 </h3>
@@ -2084,7 +2084,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-40'>
+<a href='./domain/Data-Type.html#Data-Type-1-40'>
         2A.1.40  MA - multiplexed array
 </a>
 </h3>
@@ -2092,14 +2092,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-41'>
+<a href='./domain/Data-Type.html#Data-Type-1-41'>
         2A.1.41  MO - money
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-41-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-41-1'>
             2A.1.41.1  Quantity (NM)
 </a>
 </h3>
@@ -2107,7 +2107,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-41-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-41-2'>
             2A.1.41.2  Denomination (ID)
 </a>
 </h3>
@@ -2118,14 +2118,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-42'>
+<a href='./domain/Data-Type.html#Data-Type-1-42'>
         2A.1.42  MOC - money and charge code
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-42-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-42-1'>
             2A.1.42.1  Monetary Amount (MO)
 </a>
 </h3>
@@ -2133,7 +2133,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-42-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-42-2'>
             2A.1.42.2  Charge Code (CWE)
 </a>
 </h3>
@@ -2144,14 +2144,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-43'>
+<a href='./domain/Data-Type.html#Data-Type-1-43'>
         2A.1.43  MOP - money or percentage
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-43-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-43-1'>
             2A.1.43.1  Money or Percentage Indicator (ID)
 </a>
 </h3>
@@ -2159,7 +2159,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-43-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-43-2'>
             2A.1.43.2  Money or Percentage Quantity (NM)
 </a>
 </h3>
@@ -2167,7 +2167,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-43-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-43-3'>
             2A.1.43.3  Monetary Denomination (ID)
 </a>
 </h3>
@@ -2178,14 +2178,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-44'>
+<a href='./domain/Data-Type.html#Data-Type-1-44'>
         2A.1.44  MSG - message type
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-44-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-44-1'>
             2A.1.44.1  Message Code (ID)
 </a>
 </h3>
@@ -2193,7 +2193,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-44-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-44-2'>
             2A.1.44.2  Trigger Event (ID)
 </a>
 </h3>
@@ -2201,7 +2201,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-44-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-44-3'>
             2A.1.44.3  Message Structure (ID)
 </a>
 </h3>
@@ -2212,7 +2212,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-45'>
+<a href='./domain/Data-Type.html#Data-Type-1-45'>
         2A.1.45  NA - numeric array
 </a>
 </h3>
@@ -2220,14 +2220,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-46'>
+<a href='./domain/Data-Type.html#Data-Type-1-46'>
         2A.1.46  NDL – name with date and location
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-46-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-46-1'>
             2A.1.46.1  Name (CNN)
 </a>
 </h3>
@@ -2235,7 +2235,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-46-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-46-2'>
             2A.1.46.2  Start Date/Time (DTM)
 </a>
 </h3>
@@ -2243,7 +2243,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-46-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-46-3'>
             2A.1.46.3  End Date/Time (DTM)
 </a>
 </h3>
@@ -2251,7 +2251,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-46-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-46-4'>
             2A.1.46.4  Point of Care (IS)
 </a>
 </h3>
@@ -2259,7 +2259,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-46-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-46-5'>
             2A.1.46.5  Room (IS)
 </a>
 </h3>
@@ -2267,7 +2267,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-46-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-46-6'>
             2A.1.46.6  Bed (IS)
 </a>
 </h3>
@@ -2275,7 +2275,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-46-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-46-7'>
             2A.1.46.7  Facility (HD)
 </a>
 </h3>
@@ -2283,7 +2283,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-46-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-46-8'>
             2A.1.46.8  Location Status (IS)
 </a>
 </h3>
@@ -2291,7 +2291,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-46-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-46-9'>
             2A.1.46.9  Patient Location Type (IS)
 </a>
 </h3>
@@ -2299,7 +2299,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-46-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-46-10'>
             2A.1.46.10  Building (IS)
 </a>
 </h3>
@@ -2307,7 +2307,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-46-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-46-11'>
             2A.1.46.11  Floor (IS)
 </a>
 </h3>
@@ -2318,7 +2318,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-47'>
+<a href='./domain/Data-Type.html#Data-Type-1-47'>
         2A.1.47  NM - numeric
 </a>
 </h3>
@@ -2326,14 +2326,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-48'>
+<a href='./domain/Data-Type.html#Data-Type-1-48'>
         2A.1.48  NR - numeric range
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-48-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-48-1'>
             2A.1.48.1  Low Value (NM)
 </a>
 </h3>
@@ -2341,7 +2341,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-48-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-48-2'>
             2A.1.48.2  High Value (NM)
 </a>
 </h3>
@@ -2352,14 +2352,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-49'>
+<a href='./domain/Data-Type.html#Data-Type-1-49'>
         2A.1.49  OCD - occurrence code and date
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-49-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-49-1'>
             2A.1.49.1  Occurrence Code (CNE)
 </a>
 </h3>
@@ -2367,7 +2367,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-49-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-49-2'>
             2A.1.49.2  Occurrence Date (DT)
 </a>
 </h3>
@@ -2378,14 +2378,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-50'>
+<a href='./domain/Data-Type.html#Data-Type-1-50'>
         2A.1.50  OG – observation grouper
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-50-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-50-1'>
             2A.1.50.1  Original Sub-Identifier (ST)
 </a>
 </h3>
@@ -2393,7 +2393,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-50-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-50-2'>
             2A.1.50.2  Group (NM)
 </a>
 </h3>
@@ -2401,7 +2401,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-50-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-50-3'>
             2A.1.50.3  Sequence (NM)
 </a>
 </h3>
@@ -2409,7 +2409,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-50-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-50-4'>
             2A.1.50.4  Identifier (ST)
 </a>
 </h3>
@@ -2420,7 +2420,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-51'>
+<a href='./domain/Data-Type.html#Data-Type-1-51'>
         2A.1.51  WITHDRAWN (OSD – order sequence definition)
 </a>
 </h3>
@@ -2428,14 +2428,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-52'>
+<a href='./domain/Data-Type.html#Data-Type-1-52'>
         2A.1.52  OSP - occurrence span code and date
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-52-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-52-1'>
             2A.1.52.1  Occurrence Span Code (CNE)
 </a>
 </h3>
@@ -2443,7 +2443,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-52-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-52-2'>
             2A.1.52.2  Occurrence Span Start Date (DT)
 </a>
 </h3>
@@ -2451,7 +2451,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-52-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-52-3'>
             2A.1.52.3  Occurrence Span Stop Date (DT)
 </a>
 </h3>
@@ -2462,14 +2462,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-53'>
+<a href='./domain/Data-Type.html#Data-Type-1-53'>
         2A.1.53  PIP – practitioner institutional privileges
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-53-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-53-1'>
             2A.1.53.1  Privilege (CWE)
 </a>
 </h3>
@@ -2477,7 +2477,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-53-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-53-2'>
             2A.1.53.2  Privilege Class (CWE)
 </a>
 </h3>
@@ -2485,7 +2485,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-53-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-53-3'>
             2A.1.53.3  Expiration Date (DT)
 </a>
 </h3>
@@ -2493,7 +2493,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-53-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-53-4'>
             2A.1.53.4  Activation Date (DT)
 </a>
 </h3>
@@ -2501,7 +2501,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-53-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-53-5'>
             2A.1.53.5  Facility (EI)
 </a>
 </h3>
@@ -2512,14 +2512,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-54'>
+<a href='./domain/Data-Type.html#Data-Type-1-54'>
         2A.1.54  PL - person location
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-54-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-54-1'>
             2A.1.54.1  Point of Care (HD)
 </a>
 </h3>
@@ -2527,7 +2527,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-54-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-54-2'>
             2A.1.54.2  Room (HD)
 </a>
 </h3>
@@ -2535,7 +2535,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-54-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-54-3'>
             2A.1.54.3  Bed (HD)
 </a>
 </h3>
@@ -2543,7 +2543,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-54-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-54-4'>
             2A.1.54.4  Facility (HD)
 </a>
 </h3>
@@ -2551,7 +2551,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-54-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-54-5'>
             2A.1.54.5  Location Status (IS)
 </a>
 </h3>
@@ -2559,7 +2559,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-54-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-54-6'>
             2A.1.54.6  Person Location Type (IS)
 </a>
 </h3>
@@ -2567,7 +2567,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-54-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-54-7'>
             2A.1.54.7  Building (HD)
 </a>
 </h3>
@@ -2575,7 +2575,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-54-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-54-8'>
             2A.1.54.8  Floor (HD)
 </a>
 </h3>
@@ -2583,7 +2583,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-54-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-54-9'>
             2A.1.54.9  Location Description (ST)
 </a>
 </h3>
@@ -2591,7 +2591,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-54-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-54-10'>
             2A.1.54.10  Comprehensive Location Identifier (EI)
 </a>
 </h3>
@@ -2599,7 +2599,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-54-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-54-11'>
             2A.1.54.11  Assigning Authority for Location (HD)
 </a>
 </h3>
@@ -2610,14 +2610,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-55'>
+<a href='./domain/Data-Type.html#Data-Type-1-55'>
         2A.1.55  PLN – practitioner license or other Id number
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-55-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-55-1'>
             2A.1.55.1  ID Number (ST)
 </a>
 </h3>
@@ -2625,7 +2625,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-55-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-55-2'>
             2A.1.55.2  Type of ID Number (CWE)
 </a>
 </h3>
@@ -2633,7 +2633,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-55-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-55-3'>
             2A.1.55.3  State/other Qualifying Information (ST)
 </a>
 </h3>
@@ -2641,7 +2641,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-55-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-55-4'>
             2A.1.55.4  Expiration Date (DT)
 </a>
 </h3>
@@ -2652,14 +2652,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56'>
+<a href='./domain/Data-Type.html#Data-Type-1-56'>
         2A.1.56  PPN - performing person time stamp
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-1'>
             2A.1.56.1  Person Identifier (ST)
 </a>
 </h3>
@@ -2667,7 +2667,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-2'>
             2A.1.56.2  Family Name (FN)
 </a>
 </h3>
@@ -2675,7 +2675,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-3'>
             2A.1.56.3  Given Name (ST)
 </a>
 </h3>
@@ -2683,7 +2683,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-4'>
             2A.1.56.4  Second and Further Given Names or Initials Thereof (ST)
 </a>
 </h3>
@@ -2691,7 +2691,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-5'>
             2A.1.56.5  Suffix (ST)
 </a>
 </h3>
@@ -2699,7 +2699,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-6'>
             2A.1.56.6  Prefix (ST)
 </a>
 </h3>
@@ -2707,7 +2707,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-7'>
             2A.1.56.7  Degree
 </a>
 </h3>
@@ -2715,7 +2715,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-8'>
             2A.1.56.8  Source Table (CWE)
 </a>
 </h3>
@@ -2723,7 +2723,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-9'>
             2A.1.56.9  Assigning Authority (HD)
 </a>
 </h3>
@@ -2731,7 +2731,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-10'>
             2A.1.56.10  Name Type Code (ID)
 </a>
 </h3>
@@ -2739,7 +2739,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-11'>
             2A.1.56.11  Identifier Check Digit (ST)
 </a>
 </h3>
@@ -2747,7 +2747,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-12'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-12'>
             2A.1.56.12  Check Digit Scheme (ID)
 </a>
 </h3>
@@ -2755,7 +2755,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-13'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-13'>
             2A.1.56.13  Identifier Type Code (ID)
 </a>
 </h3>
@@ -2763,7 +2763,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-14'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-14'>
             2A.1.56.14  Assigning Facility (HD)
 </a>
 </h3>
@@ -2771,7 +2771,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-15'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-15'>
             2A.1.56.15  Date/Time Action Performed (DTM)
 </a>
 </h3>
@@ -2779,7 +2779,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-16'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-16'>
             2A.1.56.16  Name Representation Code (ID)
 </a>
 </h3>
@@ -2787,7 +2787,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-17'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-17'>
             2A.1.56.17  Name Context (CWE)
 </a>
 </h3>
@@ -2795,7 +2795,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-18'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-18'>
             2A.1.56.18  Name Validity Range
 </a>
 </h3>
@@ -2803,7 +2803,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-19'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-19'>
             2A.1.56.19  Name Assembly Order (ID)
 </a>
 </h3>
@@ -2811,7 +2811,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-20'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-20'>
             2A.1.56.20  Effective Date (DTM)
 </a>
 </h3>
@@ -2819,7 +2819,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-21'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-21'>
             2A.1.56.21  Expiration Date (DTM)
 </a>
 </h3>
@@ -2827,7 +2827,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-22'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-22'>
             2A.1.56.22  Professional Suffix (ST)
 </a>
 </h3>
@@ -2835,7 +2835,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-23'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-23'>
             2A.1.56.23  Assigning Jurisdiction (CWE)
 </a>
 </h3>
@@ -2843,7 +2843,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-24'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-24'>
             2A.1.56.24  Assigning Agency or Department (CWE)
 </a>
 </h3>
@@ -2851,7 +2851,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-25'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-25'>
             2A.1.56.25  Security Check (ST)
 </a>
 </h3>
@@ -2859,7 +2859,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-56-26'>
+<a href='./domain/Data-Type.html#Data-Type-1-56-26'>
             2A.1.56.26  Security Check Scheme (ID)
 </a>
 </h3>
@@ -2870,14 +2870,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-57'>
+<a href='./domain/Data-Type.html#Data-Type-1-57'>
         2A.1.57  PRL - parent result link
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-57-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-57-1'>
             2A.1.57.1  Parent Observation Identifier (CWE)
 </a>
 </h3>
@@ -2885,7 +2885,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-57-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-57-2'>
             2A.1.57.2  Parent Observation Sub-identifier (ST)
 </a>
 </h3>
@@ -2893,7 +2893,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-57-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-57-3'>
             2A.1.57.3  Parent Observation Value Descriptor (TX)
 </a>
 </h3>
@@ -2904,14 +2904,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-58'>
+<a href='./domain/Data-Type.html#Data-Type-1-58'>
         2A.1.58  PT - processing type
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-58-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-58-1'>
             2A.1.58.1  Processing ID (ID)
 </a>
 </h3>
@@ -2919,7 +2919,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-58-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-58-2'>
             2A.1.58.2  Processing Mode (ID)
 </a>
 </h3>
@@ -2930,14 +2930,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-59'>
+<a href='./domain/Data-Type.html#Data-Type-1-59'>
         2A.1.59  PTA - policy type and amount
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-59-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-59-1'>
             2A.1.59.1  Policy Type (CWE)
 </a>
 </h3>
@@ -2945,7 +2945,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-59-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-59-2'>
             2A.1.59.2  Amount Class (CWE)
 </a>
 </h3>
@@ -2953,7 +2953,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-59-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-59-3'>
             2A.1.59.3  Money or Percentage Quantity
 </a>
 </h3>
@@ -2961,7 +2961,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-59-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-59-4'>
             2A.1.59.4  Money or Percentage (MOP)
 </a>
 </h3>
@@ -2972,14 +2972,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-60'>
+<a href='./domain/Data-Type.html#Data-Type-1-60'>
         2A.1.60  QIP - query input parameter list
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-60-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-60-1'>
             2A.1.60.1  Segment Field Name (ST)
 </a>
 </h3>
@@ -2987,7 +2987,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-60-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-60-2'>
             2A.1.60.2  Values (ST)
 </a>
 </h3>
@@ -2998,14 +2998,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-61'>
+<a href='./domain/Data-Type.html#Data-Type-1-61'>
         2A.1.61  QSC - query selection criteria
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-61-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-61-1'>
             2A.1.61.1  Segment Field Name (ST)
 </a>
 </h3>
@@ -3013,7 +3013,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-61-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-61-2'>
             2A.1.61.2  Relational Operator (ID)
 </a>
 </h3>
@@ -3021,7 +3021,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-61-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-61-3'>
             2A.1.61.3  Value (ST)
 </a>
 </h3>
@@ -3029,7 +3029,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-61-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-61-4'>
             2A.1.61.4  Relational Conjunction (ID)
 </a>
 </h3>
@@ -3040,14 +3040,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-62'>
+<a href='./domain/Data-Type.html#Data-Type-1-62'>
         2A.1.62  RCD - row column definition
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-62-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-62-1'>
             2A.1.62.1  Segment Field Name (ST)
 </a>
 </h3>
@@ -3055,7 +3055,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-62-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-62-2'>
             2A.1.62.2  HL7 Data Type (ID)
 </a>
 </h3>
@@ -3063,7 +3063,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-62-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-62-3'>
             2A.1.62.3  Maximum Column Width (NM)
 </a>
 </h3>
@@ -3074,14 +3074,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-63'>
+<a href='./domain/Data-Type.html#Data-Type-1-63'>
         2A.1.63  RFR - reference range
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-63-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-63-1'>
             2A.1.63.1  Numeric Range (NR)
 </a>
 </h3>
@@ -3089,7 +3089,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-63-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-63-2'>
             2A.1.63.2  Administrative Sex (CWE)
 </a>
 </h3>
@@ -3097,7 +3097,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-63-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-63-3'>
             2A.1.63.3  Age Range (NR)
 </a>
 </h3>
@@ -3105,7 +3105,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-63-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-63-4'>
             2A.1.63.4  Gestational Age Range (NR)
 </a>
 </h3>
@@ -3113,7 +3113,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-63-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-63-5'>
             2A.1.63.5  Species (TX)
 </a>
 </h3>
@@ -3121,7 +3121,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-63-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-63-6'>
             2A.1.63.6  Race/subspecies (ST)
 </a>
 </h3>
@@ -3129,7 +3129,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-63-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-63-7'>
             2A.1.63.7  Conditions (TX)
 </a>
 </h3>
@@ -3140,14 +3140,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-64'>
+<a href='./domain/Data-Type.html#Data-Type-1-64'>
         2A.1.64  RI - repeat interval
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-64-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-64-1'>
             2A.1.64.1  Repeat Pattern (CWE)
 </a>
 </h3>
@@ -3155,7 +3155,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-64-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-64-2'>
             2A.1.64.2  Explicit Time Interval (ST)
 </a>
 </h3>
@@ -3166,14 +3166,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-65'>
+<a href='./domain/Data-Type.html#Data-Type-1-65'>
         2A.1.65  RMC - room coverage
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-65-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-65-1'>
             2A.1.65.1  Room Type (CWE)
 </a>
 </h3>
@@ -3181,7 +3181,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-65-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-65-2'>
             2A.1.65.2  Amount Type (CWE)
 </a>
 </h3>
@@ -3189,7 +3189,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-65-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-65-3'>
             2A.1.65.3  Coverage Amount (NM)
 </a>
 </h3>
@@ -3197,7 +3197,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-65-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-65-4'>
             2A.1.65.4  Money or Percentage (MOP)
 </a>
 </h3>
@@ -3208,14 +3208,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-66'>
+<a href='./domain/Data-Type.html#Data-Type-1-66'>
         2A.1.66  RP - reference pointer
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-66-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-66-1'>
             2A.1.66.1  Pointer (ST)
 </a>
 </h3>
@@ -3223,7 +3223,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-66-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-66-2'>
             2A.1.66.2  Application ID (HD)
 </a>
 </h3>
@@ -3231,7 +3231,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-66-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-66-3'>
             2A.1.66.3  Type of Data (ID)
 </a>
 </h3>
@@ -3239,7 +3239,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-66-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-66-4'>
             2A.1.66.4  Subtype (ID)
 </a>
 </h3>
@@ -3250,14 +3250,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-67'>
+<a href='./domain/Data-Type.html#Data-Type-1-67'>
         2A.1.67  RPT – repeat pattern
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-67-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-67-1'>
             2A.1.67.1  Repeat Pattern Code (CWE)
 </a>
 </h3>
@@ -3265,7 +3265,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-67-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-67-2'>
             2A.1.67.2  Calendar Alignment (ID)
 </a>
 </h3>
@@ -3273,7 +3273,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-67-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-67-3'>
             2A.1.67.3  Phase Range Begin Value (NM)
 </a>
 </h3>
@@ -3281,7 +3281,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-67-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-67-4'>
             2A.1.67.4  Phase Range End Value (NM)
 </a>
 </h3>
@@ -3289,7 +3289,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-67-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-67-5'>
             2A.1.67.5  Period Quantity (NM)
 </a>
 </h3>
@@ -3297,7 +3297,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-67-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-67-6'>
             2A.1.67.6  Period Units (CWE)
 </a>
 </h3>
@@ -3305,7 +3305,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-67-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-67-7'>
             2A.1.67.7  Institution Specified Time (ID)
 </a>
 </h3>
@@ -3313,7 +3313,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-67-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-67-8'>
             2A.1.67.8  Event (ID)
 </a>
 </h3>
@@ -3321,7 +3321,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-67-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-67-9'>
             2A.1.67.9  Event Offset Quantity (NM)
 </a>
 </h3>
@@ -3329,7 +3329,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-67-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-67-10'>
             2A.1.67.10  Event Offset Units (CWE)
 </a>
 </h3>
@@ -3337,7 +3337,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-67-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-67-11'>
             2A.1.67.11  General Timing Specification (GTS)
 </a>
 </h3>
@@ -3348,14 +3348,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-68'>
+<a href='./domain/Data-Type.html#Data-Type-1-68'>
         2A.1.68  SAD – street address
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-68-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-68-1'>
             2A.1.68.1  Street or Mailing Address (ST)
 </a>
 </h3>
@@ -3363,7 +3363,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-68-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-68-2'>
             2A.1.68.2  Street Name (ST)
 </a>
 </h3>
@@ -3371,7 +3371,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-68-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-68-3'>
             2A.1.68.3  Dwelling Number (ST)
 </a>
 </h3>
@@ -3382,14 +3382,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-69'>
+<a href='./domain/Data-Type.html#Data-Type-1-69'>
         2A.1.69  SCV - scheduling class value pair
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-69-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-69-1'>
             2A.1.69.1  Parameter Class (CWE)
 </a>
 </h3>
@@ -3397,7 +3397,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-69-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-69-2'>
             2A.1.69.2  Parameter Value (ST)
 </a>
 </h3>
@@ -3408,7 +3408,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-70'>
+<a href='./domain/Data-Type.html#Data-Type-1-70'>
         2A.1.70  SI - sequence ID
 </a>
 </h3>
@@ -3416,14 +3416,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-71'>
+<a href='./domain/Data-Type.html#Data-Type-1-71'>
         2A.1.71  SN - structured numeric
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-71-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-71-1'>
             2A.1.71.1  Comparator (ST)
 </a>
 </h3>
@@ -3431,7 +3431,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-71-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-71-2'>
             2A.1.71.2  Num1 (NM)
 </a>
 </h3>
@@ -3439,7 +3439,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-71-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-71-3'>
             2A.1.71.3  Separator/Suffix (ST)
 </a>
 </h3>
@@ -3447,7 +3447,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-71-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-71-4'>
             2A.1.71.4  Num2 (NM)
 </a>
 </h3>
@@ -3458,7 +3458,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-72'>
+<a href='./domain/Data-Type.html#Data-Type-1-72'>
         2A.1.72  SNM - string of telephone number digits
 </a>
 </h3>
@@ -3466,14 +3466,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-73'>
+<a href='./domain/Data-Type.html#Data-Type-1-73'>
         2A.1.73  SPD – specialty description
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-73-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-73-1'>
             2A.1.73.1  Specialty Name (ST)
 </a>
 </h3>
@@ -3481,7 +3481,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-73-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-73-2'>
             2A.1.73.2  Governing Board (ST)
 </a>
 </h3>
@@ -3489,7 +3489,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-73-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-73-3'>
             2A.1.73.3  Eligible or Certified (ID)
 </a>
 </h3>
@@ -3497,7 +3497,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-73-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-73-4'>
             2A.1.73.4  Date of Certification (DT)
 </a>
 </h3>
@@ -3508,7 +3508,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-74'>
+<a href='./domain/Data-Type.html#Data-Type-1-74'>
         2A.1.74  WITHDRAWN (SPS – specimen source)
 </a>
 </h3>
@@ -3516,14 +3516,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-75'>
+<a href='./domain/Data-Type.html#Data-Type-1-75'>
         2A.1.75  SRT – sort order
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-75-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-75-1'>
             2A.1.75.1  Sort-by Field (ST)
 </a>
 </h3>
@@ -3531,7 +3531,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-75-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-75-2'>
             2A.1.75.2  Sequencing (ID)
 </a>
 </h3>
@@ -3542,7 +3542,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-76'>
+<a href='./domain/Data-Type.html#Data-Type-1-76'>
         2A.1.76  ST - string data
 </a>
 </h3>
@@ -3550,7 +3550,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-77'>
+<a href='./domain/Data-Type.html#Data-Type-1-77'>
         2A.1.77  TM – time
 </a>
 </h3>
@@ -3558,7 +3558,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-78'>
+<a href='./domain/Data-Type.html#Data-Type-1-78'>
         2A.1.78  WITHDRAWN (TQ – timing/quantity)
 </a>
 </h3>
@@ -3566,7 +3566,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-79'>
+<a href='./domain/Data-Type.html#Data-Type-1-79'>
         2A.1.79  WITHDRAWN (TS – timestamp)
 </a>
 </h3>
@@ -3574,7 +3574,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-80'>
+<a href='./domain/Data-Type.html#Data-Type-1-80'>
         2A.1.80  TX - text data
 </a>
 </h3>
@@ -3582,14 +3582,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-81'>
+<a href='./domain/Data-Type.html#Data-Type-1-81'>
         2A.1.81  UVC - UB value code and amount
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-81-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-81-1'>
             2A.1.81.1  Value Code (CWE)
 </a>
 </h3>
@@ -3597,7 +3597,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-81-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-81-2'>
             2A.1.81.2  Value Amount (MO)
 </a>
 </h3>
@@ -3605,7 +3605,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-81-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-81-3'>
             2A.1.81.3  Non-Monetary Value Amount / Quantity (NM)
 </a>
 </h3>
@@ -3613,7 +3613,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-81-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-81-4'>
             2A.1.81.4  Non-Monetary Value Amount / Units (CWE)
 </a>
 </h3>
@@ -3624,14 +3624,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-82'>
+<a href='./domain/Data-Type.html#Data-Type-1-82'>
         2A.1.82  VH - visiting hours
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-82-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-82-1'>
             2A.1.82.1  Start Day Range (ID)
 </a>
 </h3>
@@ -3639,7 +3639,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-82-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-82-2'>
             2A.1.82.2  End Day Range (ID)
 </a>
 </h3>
@@ -3647,7 +3647,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-82-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-82-3'>
             2A.1.82.3  Start Hour Range (TM)
 </a>
 </h3>
@@ -3655,7 +3655,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-82-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-82-4'>
             2A.1.82.4  End Hour Range (TM)
 </a>
 </h3>
@@ -3666,14 +3666,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-83'>
+<a href='./domain/Data-Type.html#Data-Type-1-83'>
         2A.1.83  VID – version identifier
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-83-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-83-1'>
             2A.1.83.1  Version ID (ID)
 </a>
 </h3>
@@ -3681,7 +3681,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-83-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-83-2'>
             2A.1.83.2  Internationalization Code (CWE)
 </a>
 </h3>
@@ -3689,7 +3689,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-83-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-83-3'>
             2A.1.83.3  International Version ID (CWE)
 </a>
 </h3>
@@ -3700,14 +3700,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-84'>
+<a href='./domain/Data-Type.html#Data-Type-1-84'>
         2A.1.84  VR - value range
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-84-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-84-1'>
             2A.1.84.1  First Data Code Value (ST)
 </a>
 </h3>
@@ -3715,7 +3715,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-84-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-84-2'>
             2A.1.84.2  Last Data Code Value (ST)
 </a>
 </h3>
@@ -3726,14 +3726,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-85'>
+<a href='./domain/Data-Type.html#Data-Type-1-85'>
         2A.1.85  WVI - channel identifier
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-85-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-85-1'>
             2A.1.85.1  Channel Number (NM)
 </a>
 </h3>
@@ -3741,7 +3741,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-85-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-85-2'>
             2A.1.85.2  Channel Name (ST)
 </a>
 </h3>
@@ -3752,14 +3752,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-86'>
+<a href='./domain/Data-Type.html#Data-Type-1-86'>
         2A.1.86  WVS - waveform source
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-86-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-86-1'>
             2A.1.86.1  Source One Name (ST)
 </a>
 </h3>
@@ -3767,7 +3767,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-86-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-86-2'>
             2A.1.86.2  Source Two Name (ST)
 </a>
 </h3>
@@ -3778,14 +3778,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87'>
+<a href='./domain/Data-Type.html#Data-Type-1-87'>
         2A.1.87  XAD - extended address
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-1'>
             2A.1.87.1  Street Address (SAD)
 </a>
 </h3>
@@ -3793,7 +3793,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-2'>
             2A.1.87.2  Other Designation (ST)
 </a>
 </h3>
@@ -3801,7 +3801,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-3'>
             2A.1.87.3  City (ST)
 </a>
 </h3>
@@ -3809,7 +3809,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-4'>
             2A.1.87.4  State or Province (ST)
 </a>
 </h3>
@@ -3817,7 +3817,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-5'>
             2A.1.87.5  Zip or Postal Code (ST)
 </a>
 </h3>
@@ -3825,7 +3825,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-6'>
             2A.1.87.6  Country (ID)
 </a>
 </h3>
@@ -3833,7 +3833,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-7'>
             2A.1.87.7  Address Type (ID)
 </a>
 </h3>
@@ -3841,7 +3841,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-8'>
             2A.1.87.8  Other Geographic Designation (ST)
 </a>
 </h3>
@@ -3849,7 +3849,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-9'>
             2A.1.87.9  County/Parish Code (CWE)
 </a>
 </h3>
@@ -3857,7 +3857,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-10'>
             2A.1.87.10  Census Tract (CWE)
 </a>
 </h3>
@@ -3865,7 +3865,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-11'>
             2A.1.87.11  Address Representation Code (ID)
 </a>
 </h3>
@@ -3873,7 +3873,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-12'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-12'>
             2A.1.87.12  Address Validity Range (DR)
 </a>
 </h3>
@@ -3881,7 +3881,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-13'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-13'>
             2A.1.87.13  Effective Date (DTM)
 </a>
 </h3>
@@ -3889,7 +3889,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-14'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-14'>
             2A.1.87.14  Expiration Date (DTM)
 </a>
 </h3>
@@ -3897,7 +3897,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-15'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-15'>
             2A.1.87.15  Expiration Reason (CWE)
 </a>
 </h3>
@@ -3905,7 +3905,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-16'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-16'>
             2A.1.87.16  Temporary Indicator (ID)
 </a>
 </h3>
@@ -3913,7 +3913,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-17'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-17'>
             2A.1.87.17  Bad Address Indicator (ID)
 </a>
 </h3>
@@ -3921,7 +3921,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-18'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-18'>
             2A.1.87.18  Address Usage (ID)
 </a>
 </h3>
@@ -3929,7 +3929,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-19'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-19'>
             2A.1.87.19  Addressee (ST)
 </a>
 </h3>
@@ -3937,7 +3937,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-20'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-20'>
             2A.1.87.20  Comment (ST)
 </a>
 </h3>
@@ -3945,7 +3945,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-21'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-21'>
             2A.1.87.21  Preference Order (NM)
 </a>
 </h3>
@@ -3953,7 +3953,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-22'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-22'>
             2A.1.87.22  Protection Code (CWE)
 </a>
 </h3>
@@ -3961,7 +3961,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-87-23'>
+<a href='./domain/Data-Type.html#Data-Type-1-87-23'>
             2A.1.87.23  Address Identifier (EI)
 </a>
 </h3>
@@ -3972,14 +3972,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88'>
+<a href='./domain/Data-Type.html#Data-Type-1-88'>
         2A.1.88  XCN - extended composite ID number and name for persons
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-1'>
             2A.1.88.1  Person Identifier (ST)
 </a>
 </h3>
@@ -3987,7 +3987,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-2'>
             2A.1.88.2  Family Name (FN)
 </a>
 </h3>
@@ -3995,7 +3995,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-3'>
             2A.1.88.3  Given Name (ST)
 </a>
 </h3>
@@ -4003,7 +4003,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-4'>
             2A.1.88.4  Second and Further Given Names or Initials Thereof (ST)
 </a>
 </h3>
@@ -4011,7 +4011,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-5'>
             2A.1.88.5  Suffix (ST)
 </a>
 </h3>
@@ -4019,7 +4019,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-6'>
             2A.1.88.6  Prefix (ST)
 </a>
 </h3>
@@ -4027,7 +4027,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-7'>
             2A.1.88.7  Degree
 </a>
 </h3>
@@ -4035,7 +4035,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-8'>
             2A.1.88.8  Source Table (CWE)
 </a>
 </h3>
@@ -4043,7 +4043,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-9'>
             2A.1.88.9  Assigning Authority (HD)
 </a>
 </h3>
@@ -4051,7 +4051,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-10'>
             2A.1.88.10  Name Type Code (ID)
 </a>
 </h3>
@@ -4059,7 +4059,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-11'>
             2A.1.88.11  Identifier Check Digit (ST)
 </a>
 </h3>
@@ -4067,7 +4067,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-12'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-12'>
             2A.1.88.12  Check Digit Scheme (ID)
 </a>
 </h3>
@@ -4075,7 +4075,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-13'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-13'>
             2A.1.88.13  Identifier Type Code (ID)
 </a>
 </h3>
@@ -4083,7 +4083,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-14'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-14'>
             2A.1.88.14  Assigning Facility (HD)
 </a>
 </h3>
@@ -4091,7 +4091,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-15'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-15'>
             2A.1.88.15  Name Representation Code (ID)
 </a>
 </h3>
@@ -4099,7 +4099,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-16'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-16'>
             2A.1.88.16  Name Context (CWE)
 </a>
 </h3>
@@ -4107,7 +4107,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-17'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-17'>
             2A.1.88.17  Name Validity Range
 </a>
 </h3>
@@ -4115,7 +4115,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-18'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-18'>
             2A.1.88.18  Name Assembly Order (ID)
 </a>
 </h3>
@@ -4123,7 +4123,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-19'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-19'>
             2A.1.88.19  Effective Date (DTM)
 </a>
 </h3>
@@ -4131,7 +4131,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-20'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-20'>
             2A.1.88.20  Expiration Date (DTM)
 </a>
 </h3>
@@ -4139,7 +4139,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-21'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-21'>
             2A.1.88.21  Professional Suffix (ST)
 </a>
 </h3>
@@ -4147,7 +4147,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-22'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-22'>
             2A.1.88.22  Assigning Jurisdiction (CWE)
 </a>
 </h3>
@@ -4155,7 +4155,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-23'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-23'>
             2A.1.88.23  Assigning Agency or Department (CWE)
 </a>
 </h3>
@@ -4163,7 +4163,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-24'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-24'>
             2A.1.88.24  Security Check (ST)
 </a>
 </h3>
@@ -4171,7 +4171,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-88-25'>
+<a href='./domain/Data-Type.html#Data-Type-1-88-25'>
             2A.1.88.25  Security Check Scheme (ID)
 </a>
 </h3>
@@ -4182,14 +4182,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-89'>
+<a href='./domain/Data-Type.html#Data-Type-1-89'>
         2A.1.89  XON - extended composite name and identification number for organizations
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-89-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-89-1'>
             2A.1.89.1  Organization Name (ST)
 </a>
 </h3>
@@ -4197,7 +4197,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-89-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-89-2'>
             2A.1.89.2  Organization Name Type Code (CWE)
 </a>
 </h3>
@@ -4205,7 +4205,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-89-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-89-3'>
             2A.1.89.3  ID Number
 </a>
 </h3>
@@ -4213,7 +4213,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-89-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-89-4'>
             2A.1.89.4  Identifier Check Digit (NM)
 </a>
 </h3>
@@ -4221,7 +4221,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-89-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-89-5'>
             2A.1.89.5  Check Digit Scheme (ID)
 </a>
 </h3>
@@ -4229,7 +4229,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-89-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-89-6'>
             2A.1.89.6  Assigning Authority (HD)
 </a>
 </h3>
@@ -4237,7 +4237,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-89-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-89-7'>
             2A.1.89.7  Identifier Type Code (ID)
 </a>
 </h3>
@@ -4245,7 +4245,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-89-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-89-8'>
             2A.1.89.8  Assigning Facility (HD)
 </a>
 </h3>
@@ -4253,7 +4253,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-89-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-89-9'>
             2A.1.89.9  Name Representation Code (ID)
 </a>
 </h3>
@@ -4261,7 +4261,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-89-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-89-10'>
             2A.1.89.10  Organization Identifier (ST)
 </a>
 </h3>
@@ -4272,14 +4272,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90'>
+<a href='./domain/Data-Type.html#Data-Type-1-90'>
         2A.1.90  XPN - extended person name
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-1'>
             2A.1.90.1  Family Name (FN)
 </a>
 </h3>
@@ -4287,7 +4287,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-2'>
             2A.1.90.2  Given Name (ST)
 </a>
 </h3>
@@ -4295,7 +4295,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-3'>
             2A.1.90.3  Second and Further Given Names or Initials Thereof (ST)
 </a>
 </h3>
@@ -4303,7 +4303,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-4'>
             2A.1.90.4  Suffix (ST)
 </a>
 </h3>
@@ -4311,7 +4311,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-5'>
             2A.1.90.5  Prefix (ST)
 </a>
 </h3>
@@ -4319,7 +4319,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-6'>
             2A.1.90.6  Degree
 </a>
 </h3>
@@ -4327,7 +4327,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-7'>
             2A.1.90.7  Name Type Code (ID)
 </a>
 </h3>
@@ -4335,7 +4335,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-8'>
             2A.1.90.8  Name Representation Code (ID)
 </a>
 </h3>
@@ -4343,7 +4343,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-9'>
             2A.1.90.9  Name Context (CWE)
 </a>
 </h3>
@@ -4351,7 +4351,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-10'>
             2A.1.90.10  Name Validity Range
 </a>
 </h3>
@@ -4359,7 +4359,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-11'>
             2A.1.90.11  Name Assembly Order (ID)
 </a>
 </h3>
@@ -4367,7 +4367,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-12'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-12'>
             2A.1.90.12  Effective Date (DTM)
 </a>
 </h3>
@@ -4375,7 +4375,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-13'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-13'>
             2A.1.90.13  Expiration Date (DTM)
 </a>
 </h3>
@@ -4383,7 +4383,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-14'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-14'>
             2A.1.90.14  Professional Suffix (ST)
 </a>
 </h3>
@@ -4391,7 +4391,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-90-15'>
+<a href='./domain/Data-Type.html#Data-Type-1-90-15'>
             2A.1.90.15  Called By (ST)
 </a>
 </h3>
@@ -4402,14 +4402,14 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91'>
+<a href='./domain/Data-Type.html#Data-Type-1-91'>
         2A.1.91  XTN - extended telecommunication number
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-1'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-1'>
             2A.1.91.1  Telephone Number
 </a>
 </h3>
@@ -4417,7 +4417,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-2'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-2'>
             2A.1.91.2  Telecommunication Use Code (ID)
 </a>
 </h3>
@@ -4425,7 +4425,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-3'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-3'>
             2A.1.91.3  Telecommunication Equipment Type (ID)
 </a>
 </h3>
@@ -4433,7 +4433,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-4'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-4'>
             2A.1.91.4  Communication Address (ST)
 </a>
 </h3>
@@ -4441,7 +4441,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-5'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-5'>
             2A.1.91.5  Country Code (SNM)
 </a>
 </h3>
@@ -4449,7 +4449,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-6'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-6'>
             2A.1.91.6  Area/City Code (SNM)
 </a>
 </h3>
@@ -4457,7 +4457,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-7'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-7'>
             2A.1.91.7  Local Number (SNM)
 </a>
 </h3>
@@ -4465,7 +4465,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-8'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-8'>
             2A.1.91.8  Extension (SNM)
 </a>
 </h3>
@@ -4473,7 +4473,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-9'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-9'>
             2A.1.91.9  Any Text (ST)
 </a>
 </h3>
@@ -4481,7 +4481,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-10'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-10'>
             2A.1.91.10  Extension Prefix (ST)
 </a>
 </h3>
@@ -4489,7 +4489,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-11'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-11'>
             2A.1.91.11  Speed Dial Code (ST)
 </a>
 </h3>
@@ -4497,7 +4497,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-12'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-12'>
             2A.1.91.12  Unformatted Telephone Number (ST)
 </a>
 </h3>
@@ -4505,7 +4505,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-13'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-13'>
             2A.1.91.13  Effective Start Date (DTM)
 </a>
 </h3>
@@ -4513,7 +4513,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-14'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-14'>
             2A.1.91.14  Expiration Date (DTM)
 </a>
 </h3>
@@ -4521,7 +4521,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-15'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-15'>
             2A.1.91.15  Expiration Reason (CWE)
 </a>
 </h3>
@@ -4529,7 +4529,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-16'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-16'>
             2A.1.91.16  Protection Code (CWE)
 </a>
 </h3>
@@ -4537,7 +4537,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-17'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-17'>
             2A.1.91.17  Shared Telecommunication Identifier (EI)
 </a>
 </h3>
@@ -4545,7 +4545,7 @@ Chapter 2A - AControl (continued)
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Data-Type.html#Data-Type-1-91-18'>
+<a href='./domain/Data-Type.html#Data-Type-1-91-18'>
             2A.1.91.18  Preference Order (NM)
 </a>
 </h3>
@@ -4573,16 +4573,16 @@ March 15, 2022
 </p>
 <p>
 <span style='color: #FFFF77'>Links:</span>
-<a href='/history.html' style='color: #b8dcf9'>
+<a href='./history.html' style='color: #b8dcf9'>
 Version History
 </a>
 |
 <a href='https://jira.hl7.org/projects/V2/issues' style='color: #b8dcf9' target='_blank'>
 Propose a change
-<img src='/images/external.png' style='text-align: baseline'>
+<img src='./images/external.png' style='text-align: baseline'>
 </a>
 |
-<a href='/license.html' rel='license' style='color: #b8dcf9'>
+<a href='./license.html' rel='license' style='color: #b8dcf9'>
 License
 <!-- %img{:alt => "CC0", :src => "images/cc0.png", :style => "border-style: none;"} -->
 </a>

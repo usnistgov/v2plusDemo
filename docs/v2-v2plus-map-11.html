@@ -9,43 +9,43 @@ HL7 - REFACTORED
 <base href="https://usnistgov.github.io/v2plusDemo/">
 
 <style type='text/css'>
-@import "/css/bootstrap.css";
-@import "/css/codemirror.css";
-@import "/css/hl7.css";
-@import "/css/fhir.css";
-<!-- @import "/css/bootstrap-fhir.css"; -->
-@import "/css/bootstrap-v2.css";
-@import "/css/project.css";
-@import "/css/pygments-manni.css";
-@import "/css/jquery-ui.css";
-@import "/css/modules.css";
-@import "/css/v2.css";
+@import "./css/bootstrap.css";
+@import "./css/codemirror.css";
+@import "./css/hl7.css";
+@import "./css/fhir.css";
+<!-- @import "./css/bootstrap-fhir.css"; -->
+@import "./css/bootstrap-v2.css";
+@import "./css/project.css";
+@import "./css/pygments-manni.css";
+@import "./css/jquery-ui.css";
+@import "./css/modules.css";
+@import "./css/v2.css";
 </style>
-<script src='/js/jquery.js'></script>
-<script src='/js/jquery-ui.min.js'></script>
-<script src='/js/bootstrap.min.js'></script>
-<script src='/js/respond.min.js'></script>
-<script src='/js/codemirror/codemirror.js'></script>
-<script src='/js/codemirror/mode/xml.js'></script>
-<script src='/js/v2.js'></script>
-<script src='/js/fhir-table-scripts.js' type='text/javascript'></script>
-<script src='/js/format_xml.js' type='text/javascript'></script>
-<link href='/images/hl7.ico' rel='shortcut icon'>
+<script src='./js/jquery.js'></script>
+<script src='./js/jquery-ui.min.js'></script>
+<script src='./js/bootstrap.min.js'></script>
+<script src='./js/respond.min.js'></script>
+<script src='./js/codemirror/codemirror.js'></script>
+<script src='./js/codemirror/mode/xml.js'></script>
+<script src='./js/v2.js'></script>
+<script src='./js/fhir-table-scripts.js' type='text/javascript'></script>
+<script src='./js/format_xml.js' type='text/javascript'></script>
+<link href='./images/hl7.ico' rel='shortcut icon'>
 </head>
 <body>
 <div class='segment' id='segment-header'>
 <div class='container'>
 <a href='http://www.hl7.org/hl7v2+' id='logo' no-external='true'></a>
 <div id='hl7-status'>
-<img alt='visit the hl7 website' height='50' id='v2-logo' src='/images/hl7-v2-logo.png'>
-<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='/images/hl7-v2plus.gif'>
+<img alt='visit the hl7 website' height='50' id='v2-logo' src='./images/hl7-v2-logo.png'>
+<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='./images/hl7-v2plus.gif'>
 <b>
 The Demo site for our new HL7 Version 2+ (plus) Standard
 </b>
 </div>
 <div id='hl7-nav'>
 <a href='http://www.hl7.org' id='hl7-logo' no-external='true'></a>
-<img alt='visit the hl7 website' src='/images/hl7-logo.png'>
+<img alt='visit the hl7 website' src='./images/hl7-logo.png'>
 </div>
 </div>
 </div>
@@ -60,33 +60,33 @@ The Demo site for our new HL7 Version 2+ (plus) Standard
 <span class='icon-bar'></span>
 </button>
 </div>
-<a class='navbar-brand hidden' href='/index.html'>
+<a class='navbar-brand hidden' href='./index.html'>
 FHIR
 </a>
 <div class='nav-collapse collapse navbar-inverse-collapse'>
 <ul class='nav navbar-nav'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
 <li>
-<a href='/domains.html'>
+<a href='./domains.html'>
 Domains
 </a>
 </li>
 <li>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Message Structures
 </a>
 </li>
 <li>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Segments
 </a>
 </li>
 <li>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Data Types
 </a>
 </li>
@@ -96,12 +96,12 @@ Data Type Flavors
 </a>
 </li>
 <li>
-<a href='/vocab.html'>
+<a href='./vocab.html'>
 Vocabulary
 </a>
 </li>
 <li>
-<a href='/domain/Control.html'>
+<a href='./domain/Control.html'>
 Control
 </a>
 </li>
@@ -111,7 +111,7 @@ Conformance
 </a>
 </li>
 <li>
-<a href='/domain/Control.html#Control-12'>
+<a href='./domain/Control.html#Control-12'>
 Encoding
 </a>
 </li>
@@ -121,7 +121,7 @@ Transport
 </a>
 </li>
 <li>
-<a href='/history.html'>
+<a href='./history.html'>
 v2.x
 </a>
 </li>
@@ -141,7 +141,7 @@ Draft Website - For Review Purposes Only
 <div class='container'>
 <ul class='breadcrumb'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
@@ -156,14 +156,14 @@ Mapping between HL7 v2.9 and v2+
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html'>
+<a href='./domain/Patient-Referral.html'>
 Chapter 11 - Patient Referral
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-1'>
     11.1  CHAPTER 11 CONTENTS
 </a>
 </h3>
@@ -171,21 +171,21 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2'>
     11.2  PURPOSE
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-1'>
         11.2.1  Patient Referral and Responses
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-1-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-1-1'>
             11.2.1.1  Patient referral
 </a>
 </h3>
@@ -193,7 +193,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-1-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-1-2'>
             11.2.1.2  Responding to a patient referral
 </a>
 </h3>
@@ -201,7 +201,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-1-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-1-3'>
             11.2.1.3  Communicating Collaborative Care of a Patient
 </a>
 </h3>
@@ -212,14 +212,14 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-2'>
         11.2.2  Application Roles and Data Process
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-2-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-2-1'>
             11.2.2.1  Application roles
 </a>
 </h3>
@@ -227,7 +227,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-2-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-2-2'>
             11.2.2.2  The referring provider application role
 </a>
 </h3>
@@ -235,7 +235,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-2-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-2-3'>
             11.2.2.3  The referred-to provider application role
 </a>
 </h3>
@@ -243,7 +243,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-2-4'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-2-4'>
             11.2.2.4  The querying application role
 </a>
 </h3>
@@ -251,7 +251,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-2-5'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-2-5'>
             11.2.2.5  The auxiliary application role
 </a>
 </h3>
@@ -259,7 +259,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-2-6'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-2-6'>
             11.2.2.6  Application roles in a messaging environment
 </a>
 </h3>
@@ -270,7 +270,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-3'>
         11.2.3  Acknowledgment Choreography
 </a>
 </h3>
@@ -278,14 +278,14 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4'>
         11.2.4  Glossary
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-1'>
             11.2.4.1  Benefits:
 </a>
 </h3>
@@ -293,7 +293,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-2'>
             11.2.4.2  Clinical information:
 </a>
 </h3>
@@ -301,7 +301,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-3'>
             11.2.4.3  Dependent:
 </a>
 </h3>
@@ -309,7 +309,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-4'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-4'>
             11.2.4.4  Eligibility/coverage:
 </a>
 </h3>
@@ -317,7 +317,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-5'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-5'>
             11.2.4.5  Encounter:
 </a>
 </h3>
@@ -325,7 +325,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-6'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-6'>
             11.2.4.6  Guarantor:
 </a>
 </h3>
@@ -333,7 +333,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-7'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-7'>
             11.2.4.7  Healthcare provider:
 </a>
 </h3>
@@ -341,7 +341,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-8'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-8'>
             11.2.4.8  Payor:
 </a>
 </h3>
@@ -349,7 +349,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-9'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-9'>
             11.2.4.9  Pre-authorization:
 </a>
 </h3>
@@ -357,7 +357,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-10'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-10'>
             11.2.4.10  Primary care provider:
 </a>
 </h3>
@@ -365,7 +365,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-11'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-11'>
             11.2.4.11  Referral:
 </a>
 </h3>
@@ -373,7 +373,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-12'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-12'>
             11.2.4.12  Referring provider:
 </a>
 </h3>
@@ -381,7 +381,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-13'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-13'>
             11.2.4.13  Referred-to-provider:
 </a>
 </h3>
@@ -389,7 +389,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-14'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-14'>
             11.2.4.14  Specialist:
 </a>
 </h3>
@@ -397,7 +397,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-2-4-15'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-2-4-15'>
             11.2.4.15  Subscriber:
 </a>
 </h3>
@@ -411,14 +411,14 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-3'>
     11.3  PATIENT INFORMATION REQUEST MESSAGES AND TRIGGER EVENTS
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-3-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-3-1'>
         11.3.1  RQI/RPI - Request for Insurance Information (Event I01)
 </a>
 </h3>
@@ -426,7 +426,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-3-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-3-2'>
         11.3.2  RQI/RPL - Request/Receipt of Patient Selection Display List (Event I02)
 </a>
 </h3>
@@ -434,7 +434,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-3-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-3-3'>
         11.3.3  RQI/RPR - Request/Receipt of Patient Selection List (Event I03)
 </a>
 </h3>
@@ -442,7 +442,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-3-4'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-3-4'>
         11.3.4  RQP/RPI - request for patient demographic data (Event I04)
 </a>
 </h3>
@@ -450,7 +450,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-3-5'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-3-5'>
         11.3.5  RQC/RCI - Request for Patient Clinical Information (Event I05)
 </a>
 </h3>
@@ -458,7 +458,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-3-6'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-3-6'>
         11.3.6  RQC/RCL - Request/Receipt of Clinical Data Listing (Event I06)
 </a>
 </h3>
@@ -466,7 +466,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-3-7'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-3-7'>
         11.3.7  PIN/ACK - Unsolicited Insurance Information (Event I07)
 </a>
 </h3>
@@ -477,14 +477,14 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-4'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-4'>
     11.4  PATIENT TREATMENT AUTHORIZATION REQUESTS
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-4-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-4-1'>
         11.4.1  RQA/RPA – Request for Treatment Authorization Information (Event I08)
 </a>
 </h3>
@@ -492,7 +492,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-4-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-4-2'>
         11.4.2  RQA/RPA - Request for Modification to an Authorization (Event I09)
 </a>
 </h3>
@@ -500,7 +500,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-4-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-4-3'>
         11.4.3  RQA/RPA - Request for Resubmission of an Authorization (Event I10)
 </a>
 </h3>
@@ -508,7 +508,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-4-4'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-4-4'>
         11.4.4  RQA/RPA - Request for Cancellation of an Authorization (Event I11)
 </a>
 </h3>
@@ -519,14 +519,14 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-5'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-5'>
     11.5  PATIENT REFERRAL MESSAGES AND TRIGGER EVENTS
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-5-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-5-1'>
         11.5.1  REF/RRI - Patient Referral Message
 </a>
 </h3>
@@ -534,7 +534,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-5-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-5-2'>
         11.5.2  REF/RRI - Patient Referral (Event I12)
 </a>
 </h3>
@@ -542,7 +542,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-5-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-5-3'>
         11.5.3  REF/RRI - Modify Patient Referral (Event I13)
 </a>
 </h3>
@@ -550,7 +550,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-5-4'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-5-4'>
         11.5.4  REF/RRI - Cancel Patient Referral (Event I14)
 </a>
 </h3>
@@ -558,7 +558,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-5-5'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-5-5'>
         11.5.5  REF/RRI - Request Patient Referral Status (Event I15)
 </a>
 </h3>
@@ -569,14 +569,14 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-6'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-6'>
     11.6  COLLABORATIVE CARE MESSAGES AND TRIGGER EVENTS
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-6-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-6-1'>
         11.6.1  CCM/ACK – Collaborative Care Message (Event I21)
 </a>
 </h3>
@@ -584,7 +584,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-6-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-6-2'>
         11.6.2  CCR/ACK – Collaborative Care Referral (Events I16-I18)
 </a>
 </h3>
@@ -592,7 +592,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-6-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-6-3'>
         11.6.3  CCR/ACK – Collaborative Care Referral (Event I16)
 </a>
 </h3>
@@ -600,7 +600,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-6-4'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-6-4'>
         11.6.4  CCR/ACK – Modify Collaborative Care Referral (Event I17)
 </a>
 </h3>
@@ -608,7 +608,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-6-5'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-6-5'>
         11.6.5  CCR/ACK – Cancel Collaborative Care Referral (Event I18)
 </a>
 </h3>
@@ -616,7 +616,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-6-6'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-6-6'>
         11.6.6  CCU/ACK – Asynchronous Collaborative Care Update (Event I20)
 </a>
 </h3>
@@ -627,14 +627,14 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-7'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-7'>
     11.7  COLLABORATIVE CARE INFORMATION REQUEST MESSAGES AND TRIGGER EVENTS
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-7-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-7-1'>
         11.7.1  CCQ/CQU – Collaborative Care Query/Collaborative Care Query Update (Event I19)
 </a>
 </h3>
@@ -642,7 +642,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-7-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-7-2'>
         11.7.2  CCF/CCI – Collaborative Care Fetch / Collaborative Care Information (Event I22)
 </a>
 </h3>
@@ -653,21 +653,21 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8'>
     11.8  SEGMENTS
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1'>
         11.8.1  RF1 - Referral Information Segment
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-1'>
             11.8.1.1  RF1-1   Referral Status   (CWE)   01137
 </a>
 </h3>
@@ -675,7 +675,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-2'>
             11.8.1.2  RF1-2   Referral Priority   (CWE)   01138
 </a>
 </h3>
@@ -683,7 +683,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-3'>
             11.8.1.3  RF1-3   Referral Type   (CWE)   01139
 </a>
 </h3>
@@ -691,7 +691,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-4'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-4'>
             11.8.1.4  RF1-4   Referral Disposition   (CWE)   01140
 </a>
 </h3>
@@ -699,7 +699,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-5'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-5'>
             11.8.1.5  RF1-5   Referral Category   (CWE)   01141
 </a>
 </h3>
@@ -707,7 +707,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-6'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-6'>
             11.8.1.6  RF1-6   Originating Referral Identifier   (EI)   01142
 </a>
 </h3>
@@ -715,7 +715,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-7'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-7'>
             11.8.1.7  RF1-7   Effective Date   (DTM)   01143
 </a>
 </h3>
@@ -723,7 +723,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-8'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-8'>
             11.8.1.8  RF1-8   Expiration Date   (DTM)   01144
 </a>
 </h3>
@@ -731,7 +731,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-9'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-9'>
             11.8.1.9  RF1-9   Process Date   (DTM)   01145
 </a>
 </h3>
@@ -739,7 +739,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-10'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-10'>
             11.8.1.10  RF1-10   Referral Reason   (CWE)   01228
 </a>
 </h3>
@@ -747,7 +747,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-11'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-11'>
             11.8.1.11  RF1-11   External Referral Identifier   (EI)   01300
 </a>
 </h3>
@@ -755,7 +755,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-12'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-12'>
             11.8.1.12  RF1-12   Referral Documentation Completion Status   (CWE)   02262
 </a>
 </h3>
@@ -763,7 +763,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-13'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-13'>
             11.8.1.13  RF1-13   Planned Treatment Stop Date   (DTM)   03400
 </a>
 </h3>
@@ -771,7 +771,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-14'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-14'>
             11.8.1.14  RF1-14   Referral Reason Text   (ST)   03401
 </a>
 </h3>
@@ -779,7 +779,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-15'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-15'>
             11.8.1.15  RF1-15   Number of Authorized Treatments/Units   (CQ)   03402
 </a>
 </h3>
@@ -787,7 +787,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-16'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-16'>
             11.8.1.16  RF1-16   Number of Used Treatments/Units  (CQ)   03403
 </a>
 </h3>
@@ -795,7 +795,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-17'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-17'>
             11.8.1.17  RF1-17   Number of Scheduled Treatments/Units   (CQ)   03404
 </a>
 </h3>
@@ -803,7 +803,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-18'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-18'>
             11.8.1.18  RF1-18   Remaining Benefit Amount   (MO)   03405
 </a>
 </h3>
@@ -811,7 +811,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-19'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-19'>
             11.8.1.19  RF1-19   Authorized Provider   (XON)   03406
 </a>
 </h3>
@@ -819,7 +819,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-20'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-20'>
             11.8.1.20  RF1-20   Authorized Health Professional   (XCN)   03407
 </a>
 </h3>
@@ -827,7 +827,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-21'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-21'>
             11.8.1.21  RF1-21   Source Text   (ST)   03408
 </a>
 </h3>
@@ -835,7 +835,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-22'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-22'>
             11.8.1.22  RF1-22   Source Date   (DTM)   03409
 </a>
 </h3>
@@ -843,7 +843,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-23'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-23'>
             11.8.1.23  RF1-23   Source Phone   (XTN)   03410
 </a>
 </h3>
@@ -851,7 +851,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-24'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-24'>
             11.8.1.24  RF1-24   Comment   (TX)   03411
 </a>
 </h3>
@@ -859,7 +859,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-1-25'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-1-25'>
             11.8.1.25  RF1-25   Action Code   (ID)   03412
 </a>
 </h3>
@@ -870,14 +870,14 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2'>
         11.8.2  AUT - Authorization Information Segment
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-1'>
             11.8.2.1  AUT-1   Authorizing Payor, Plan ID   (CWE)   01146
 </a>
 </h3>
@@ -885,7 +885,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-2'>
             11.8.2.2  AUT-2   Authorizing Payor, Company ID   (CWE)   01147
 </a>
 </h3>
@@ -893,7 +893,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-3'>
             11.8.2.3  AUT-3   Authorizing Payor, Company Name   (ST)   01148
 </a>
 </h3>
@@ -901,7 +901,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-4'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-4'>
             11.8.2.4  AUT-4   Authorization Effective Date   (DTM)   01149
 </a>
 </h3>
@@ -909,7 +909,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-5'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-5'>
             11.8.2.5  AUT-5   Authorization Expiration Date   (DTM)   01150
 </a>
 </h3>
@@ -917,7 +917,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-6'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-6'>
             11.8.2.6  AUT-6   Authorization Identifier   (EI)   01151
 </a>
 </h3>
@@ -925,7 +925,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-7'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-7'>
             11.8.2.7  AUT-7   Reimbursement Limit   (CP)   01152
 </a>
 </h3>
@@ -933,7 +933,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-8'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-8'>
             11.8.2.8  AUT-8   Requested Number of Treatments   (CQ)   01153
 </a>
 </h3>
@@ -941,7 +941,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-9'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-9'>
             11.8.2.9  AUT-9   Authorized Number of Treatments   (CQ)   01154
 </a>
 </h3>
@@ -949,7 +949,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-10'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-10'>
             11.8.2.10  AUT-10   Process Date   (DTM)   01145
 </a>
 </h3>
@@ -957,7 +957,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-11'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-11'>
             11.8.2.11  AUT-11   Requested Discipline(s)   (CWE)   02375
 </a>
 </h3>
@@ -965,7 +965,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-12'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-12'>
             11.8.2.12  AUT-12   Authorized Discipline(s)   (CWE)   02376
 </a>
 </h3>
@@ -973,7 +973,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-13'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-13'>
             11.8.2.13  AUT-13   Authorization Referral Type   (CWE)   03413
 </a>
 </h3>
@@ -981,7 +981,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-14'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-14'>
             11.8.2.14  AUT-14   Approval Status   (CWE)   03414
 </a>
 </h3>
@@ -989,7 +989,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-15'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-15'>
             11.8.2.15  AUT-15   Planned Treatment Stop Date   (DTM)   03415
 </a>
 </h3>
@@ -997,7 +997,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-16'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-16'>
             11.8.2.16  AUT-16   Clinical Service   (CWE)   03416
 </a>
 </h3>
@@ -1005,7 +1005,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-17'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-17'>
             11.8.2.17  AUT-17   Reason Text   (ST)   03417
 </a>
 </h3>
@@ -1013,7 +1013,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-18'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-18'>
             11.8.2.18  AUT-18   Number of Authorized Treatments/Units   (CQ)   03418
 </a>
 </h3>
@@ -1021,7 +1021,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-19'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-19'>
             11.8.2.19  AUT-19   Number of Used Treatments/Units   (CQ)   03419
 </a>
 </h3>
@@ -1029,7 +1029,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-20'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-20'>
             11.8.2.20  AUT-20  Number of Scheduled Treatments/Units   (CQ)   03420
 </a>
 </h3>
@@ -1037,7 +1037,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-21'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-21'>
             11.8.2.21  AUT-21   Encounter Type   (CWE)   03421
 </a>
 </h3>
@@ -1045,7 +1045,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-22'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-22'>
             11.8.2.22  AUT-22   Remaining Benefit Amount   (MO)   03422
 </a>
 </h3>
@@ -1053,7 +1053,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-23'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-23'>
             11.8.2.23  AUT-23   Authorized Provider   (XON)   03423
 </a>
 </h3>
@@ -1061,7 +1061,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-24'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-24'>
             11.8.2.24  AUT-24   Authorized Health Professional   (XCN)   03424
 </a>
 </h3>
@@ -1069,7 +1069,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-25'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-25'>
             11.8.2.25  AUT-25   Source Text   (ST)   03425
 </a>
 </h3>
@@ -1077,7 +1077,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-26'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-26'>
             11.8.2.26  AUT-26   Source Date   (DTM)   03426
 </a>
 </h3>
@@ -1085,7 +1085,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-27'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-27'>
             11.8.2.27  AUT-27   Source Phone   (XTN)   03427
 </a>
 </h3>
@@ -1093,7 +1093,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-28'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-28'>
             11.8.2.28  AUT-28   Comment   (TX)   03428
 </a>
 </h3>
@@ -1101,7 +1101,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-2-29'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-2-29'>
             11.8.2.29  AUT-29   Action Code   (ID)   03429
 </a>
 </h3>
@@ -1112,14 +1112,14 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3'>
         11.8.3  PRD - Provider Data Segment
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3-1'>
             11.8.3.1  PRD-1   Provider Role   (CWE)   01155
 </a>
 </h3>
@@ -1127,7 +1127,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3-2'>
             11.8.3.2  PRD-2   Provider Name   (XPN)   01156
 </a>
 </h3>
@@ -1135,7 +1135,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3-3'>
             11.8.3.3  PRD-3   Provider Address   (XAD)   01157
 </a>
 </h3>
@@ -1143,7 +1143,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3-4'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3-4'>
             11.8.3.4  PRD-4   Provider Location   (PL)   01158
 </a>
 </h3>
@@ -1151,7 +1151,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3-5'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3-5'>
             11.8.3.5  PRD-5   Provider Communication Information   (XTN)   01159
 </a>
 </h3>
@@ -1159,7 +1159,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3-6'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3-6'>
             11.8.3.6  PRD-6   Preferred Method of Contact   (CWE)   00684
 </a>
 </h3>
@@ -1167,7 +1167,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3-7'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3-7'>
             11.8.3.7  PRD-7   Provider Identifiers   (PLN)   01162
 </a>
 </h3>
@@ -1175,7 +1175,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3-8'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3-8'>
             11.8.3.8  PRD-8   Effective Start Date of Provider Role   (DTM)   01163
 </a>
 </h3>
@@ -1183,7 +1183,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3-9'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3-9'>
             11.8.3.9  PRD-9   Effective End Date of Provider Role   (DTM)   01164
 </a>
 </h3>
@@ -1191,7 +1191,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3-10'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3-10'>
             11.8.3.10  PRD-10   Provider Organization Name and Identifier   (XON)   02256
 </a>
 </h3>
@@ -1199,7 +1199,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3-11'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3-11'>
             11.8.3.11  PRD-11   Provider Organization Address   (XAD)   02257
 </a>
 </h3>
@@ -1207,7 +1207,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3-12'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3-12'>
             11.8.3.12  PRD-12   Provider Organization Location Information   (PL)   02258
 </a>
 </h3>
@@ -1215,7 +1215,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3-13'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3-13'>
             11.8.3.13  PRD-13   Provider Organization Communication Information   (XTN)   02259
 </a>
 </h3>
@@ -1223,7 +1223,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-3-14'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-3-14'>
             11.8.3.14  PRD-14   Provider Organization Method of Contact   (CWE)   02260
 </a>
 </h3>
@@ -1234,14 +1234,14 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-4'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-4'>
         11.8.4  CTD - Contact Data Segment
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-4-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-4-1'>
             11.8.4.1  CTD-1   Contact Role   (CWE)   00196
 </a>
 </h3>
@@ -1249,7 +1249,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-4-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-4-2'>
             11.8.4.2  CTD-2   Contact Name   (XPN)   01165
 </a>
 </h3>
@@ -1257,7 +1257,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-4-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-4-3'>
             11.8.4.3  CTD-3   Contact Address   (XAD)   01166
 </a>
 </h3>
@@ -1265,7 +1265,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-4-4'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-4-4'>
             11.8.4.4  CTD-4   Contact Location   (PL)   01167
 </a>
 </h3>
@@ -1273,7 +1273,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-4-5'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-4-5'>
             11.8.4.5  CTD-5   Contact Communication Information   (XTN)   01168
 </a>
 </h3>
@@ -1281,7 +1281,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-4-6'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-4-6'>
             11.8.4.6  CTD-6   Preferred Method of Contact   (CWE)   00684
 </a>
 </h3>
@@ -1289,7 +1289,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-8-4-7'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-8-4-7'>
             11.8.4.7  CTD-7   Contact Identifiers   (PLN)   01171
 </a>
 </h3>
@@ -1303,14 +1303,14 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-9'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-9'>
     11.9  EXAMPLES
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-9-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-9-1'>
         11.9.1  RQI Message Using an I01 Event with an Immediate Response
 </a>
 </h3>
@@ -1318,7 +1318,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-9-2'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-9-2'>
         11.9.2  RQA Message Using an I08 Event with an Immediate Response
 </a>
 </h3>
@@ -1326,7 +1326,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-9-3'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-9-3'>
         11.9.3  RQA Message Using an I08 Event with a Deferred Response
 </a>
 </h3>
@@ -1334,7 +1334,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-9-4'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-9-4'>
         11.9.4  REF Message Using an I11 Event with an Immediate Response
 </a>
 </h3>
@@ -1342,7 +1342,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-9-5'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-9-5'>
         11.9.5  REF Message Using an I11 Event with a Deferred Response
 </a>
 </h3>
@@ -1350,7 +1350,7 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-9-6'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-9-6'>
         11.9.6  RQC Inquiry Message Using an I05 Event with an Immediate Response
 </a>
 </h3>
@@ -1361,14 +1361,14 @@ Chapter 11 - Patient Referral
 
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-10'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-10'>
     11.10  OUTSTANDING ISSUES
 </a>
 </h3>
 <ul class='v2-v2plus-map-entries'>
 <li class='v2-v2plus-map-entry'>
 <h3>
-<a href='/domain/Patient-Referral.html#Patient-Referral-10-1'>
+<a href='./domain/Patient-Referral.html#Patient-Referral-10-1'>
         11.10.1  HL7 Overlapping With ASC X12N
 </a>
 </h3>
@@ -1393,16 +1393,16 @@ March 15, 2022
 </p>
 <p>
 <span style='color: #FFFF77'>Links:</span>
-<a href='/history.html' style='color: #b8dcf9'>
+<a href='./history.html' style='color: #b8dcf9'>
 Version History
 </a>
 |
 <a href='https://jira.hl7.org/projects/V2/issues' style='color: #b8dcf9' target='_blank'>
 Propose a change
-<img src='/images/external.png' style='text-align: baseline'>
+<img src='./images/external.png' style='text-align: baseline'>
 </a>
 |
-<a href='/license.html' rel='license' style='color: #b8dcf9'>
+<a href='./license.html' rel='license' style='color: #b8dcf9'>
 License
 <!-- %img{:alt => "CC0", :src => "images/cc0.png", :style => "border-style: none;"} -->
 </a>

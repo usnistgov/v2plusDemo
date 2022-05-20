@@ -9,43 +9,43 @@ HL7 - REFACTORED
 <base href="https://usnistgov.github.io/v2plusDemo/">
 
 <style type='text/css'>
-@import "/css/bootstrap.css";
-@import "/css/codemirror.css";
-@import "/css/hl7.css";
-@import "/css/fhir.css";
-<!-- @import "/css/bootstrap-fhir.css"; -->
-@import "/css/bootstrap-v2.css";
-@import "/css/project.css";
-@import "/css/pygments-manni.css";
-@import "/css/jquery-ui.css";
-@import "/css/modules.css";
-@import "/css/v2.css";
+@import "./css/bootstrap.css";
+@import "./css/codemirror.css";
+@import "./css/hl7.css";
+@import "./css/fhir.css";
+<!-- @import "./css/bootstrap-fhir.css"; -->
+@import "./css/bootstrap-v2.css";
+@import "./css/project.css";
+@import "./css/pygments-manni.css";
+@import "./css/jquery-ui.css";
+@import "./css/modules.css";
+@import "./css/v2.css";
 </style>
-<script src='/js/jquery.js'></script>
-<script src='/js/jquery-ui.min.js'></script>
-<script src='/js/bootstrap.min.js'></script>
-<script src='/js/respond.min.js'></script>
-<script src='/js/codemirror/codemirror.js'></script>
-<script src='/js/codemirror/mode/xml.js'></script>
-<script src='/js/v2.js'></script>
-<script src='/js/fhir-table-scripts.js' type='text/javascript'></script>
-<script src='/js/format_xml.js' type='text/javascript'></script>
-<link href='/images/hl7.ico' rel='shortcut icon'>
+<script src='./js/jquery.js'></script>
+<script src='./js/jquery-ui.min.js'></script>
+<script src='./js/bootstrap.min.js'></script>
+<script src='./js/respond.min.js'></script>
+<script src='./js/codemirror/codemirror.js'></script>
+<script src='./js/codemirror/mode/xml.js'></script>
+<script src='./js/v2.js'></script>
+<script src='./js/fhir-table-scripts.js' type='text/javascript'></script>
+<script src='./js/format_xml.js' type='text/javascript'></script>
+<link href='./images/hl7.ico' rel='shortcut icon'>
 </head>
 <body>
 <div class='segment' id='segment-header'>
 <div class='container'>
 <a href='http://www.hl7.org/hl7v2+' id='logo' no-external='true'></a>
 <div id='hl7-status'>
-<img alt='visit the hl7 website' height='50' id='v2-logo' src='/images/hl7-v2-logo.png'>
-<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='/images/hl7-v2plus.gif'>
+<img alt='visit the hl7 website' height='50' id='v2-logo' src='./images/hl7-v2-logo.png'>
+<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='./images/hl7-v2plus.gif'>
 <b>
 The Demo site for our new HL7 Version 2+ (plus) Standard
 </b>
 </div>
 <div id='hl7-nav'>
 <a href='http://www.hl7.org' id='hl7-logo' no-external='true'></a>
-<img alt='visit the hl7 website' src='/images/hl7-logo.png'>
+<img alt='visit the hl7 website' src='./images/hl7-logo.png'>
 </div>
 </div>
 </div>
@@ -60,33 +60,33 @@ The Demo site for our new HL7 Version 2+ (plus) Standard
 <span class='icon-bar'></span>
 </button>
 </div>
-<a class='navbar-brand hidden' href='/index.html'>
+<a class='navbar-brand hidden' href='./index.html'>
 FHIR
 </a>
 <div class='nav-collapse collapse navbar-inverse-collapse'>
 <ul class='nav navbar-nav'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
 <li>
-<a href='/domains.html'>
+<a href='./domains.html'>
 Domains
 </a>
 </li>
 <li>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Message Structures
 </a>
 </li>
 <li>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Segments
 </a>
 </li>
 <li>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Data Types
 </a>
 </li>
@@ -96,12 +96,12 @@ Data Type Flavors
 </a>
 </li>
 <li>
-<a href='/vocab.html'>
+<a href='./vocab.html'>
 Vocabulary
 </a>
 </li>
 <li>
-<a href='/domain/Control.html'>
+<a href='./domain/Control.html'>
 Control
 </a>
 </li>
@@ -111,7 +111,7 @@ Conformance
 </a>
 </li>
 <li>
-<a href='/domain/Control.html#Control-12'>
+<a href='./domain/Control.html#Control-12'>
 Encoding
 </a>
 </li>
@@ -121,7 +121,7 @@ Transport
 </a>
 </li>
 <li>
-<a href='/history.html'>
+<a href='./history.html'>
 v2.x
 </a>
 </li>
@@ -141,7 +141,7 @@ Draft Website - For Review Purposes Only
 <div class='container'>
 <ul class='breadcrumb'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
@@ -722,10 +722,10 @@ TRIGGER EVENTS AND MESSAGE DEFINITIONS
             <p class="v2 v2-normallistbullets">The filler order number may exist in the ORC, OBR and TXA.  If valued in the ORC or OBR and the TXA is present, it should not be valued. If TXA is valued it should be ignored.</p>
           </li>
           <li class="v2 v2-li">
-            <p class="v2 v2-normallistbullets">Generally the <a href="/segment-definition/OBR.html#OBR-32">OBR-32 Principal interpreter</a> and the <a href="/segment-definition/TXA.html#TXA-22">TXA–22.1 Authentication person</a> are conceptually the same.  Normally only the <a href="/segment-definition/TXA.html#TXA-22">TXA-22.1</a> should be valued. If both are valued, the <a href="/segment-definition/TXA.html#TXA-22">TXA-22.1</a> takes precedence.  </p>
+            <p class="v2 v2-normallistbullets">Generally the <a href="./segment-definition/OBR.html#OBR-32">OBR-32 Principal interpreter</a> and the <a href="./segment-definition/TXA.html#TXA-22">TXA–22.1 Authentication person</a> are conceptually the same.  Normally only the <a href="./segment-definition/TXA.html#TXA-22">TXA-22.1</a> should be valued. If both are valued, the <a href="./segment-definition/TXA.html#TXA-22">TXA-22.1</a> takes precedence.  </p>
           </li>
           <li class="v2 v2-li">
-            <p class="v2 v2-normallistbullets">The <a href="/segment-definition/OBR.html#OBR-35">OBR-35 Transcriptionist</a> and the <a href="/segment-definition/TXA.html#TXA-11">TXA–11 Transcriptionist</a> are conceptually the same.  Normally only the <a href="/segment-definition/TXA.html#TXA-11">TXA-11</a> should be valued. If both are valued, the <a href="/segment-definition/TXA.html#TXA-11">TXA-11 </a>takes precedence.  </p>
+            <p class="v2 v2-normallistbullets">The <a href="./segment-definition/OBR.html#OBR-35">OBR-35 Transcriptionist</a> and the <a href="./segment-definition/TXA.html#TXA-11">TXA–11 Transcriptionist</a> are conceptually the same.  Normally only the <a href="./segment-definition/TXA.html#TXA-11">TXA-11</a> should be valued. If both are valued, the <a href="./segment-definition/TXA.html#TXA-11">TXA-11 </a>takes precedence.  </p>
           </li>
         </ul>
 <div class='v2-composition-section-2-subsections'>
@@ -779,29 +779,29 @@ HL7 MessageStructure Table - MDM_T01
 <tbody>
 <tr>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Segment
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Must Implement
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Status
 </a>
 </th>
 </tr>
 <tr>
 <td colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 MDM_T01
 </b>
@@ -809,9 +809,9 @@ MDM_T01
 </tr>
 <tr class='segment' id='mdm_t01-1'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/MSH.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/MSH.html'>
 MSH
 </a>
 </td>
@@ -828,9 +828,9 @@ additional
 
 <tr class='segment' id='mdm_t01-2'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/SFT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/SFT.html'>
 SFT
 </a>
 </td>
@@ -847,9 +847,9 @@ additional
 
 <tr class='segment' id='mdm_t01-3'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/UAC.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/UAC.html'>
 UAC
 </a>
 </td>
@@ -866,9 +866,9 @@ additional
 
 <tr class='segment' id='mdm_t01-4'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/EVN.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/EVN.html'>
 EVN
 </a>
 </td>
@@ -885,9 +885,9 @@ B, v2.5
 
 <tr class='segment' id='mdm_t01-5'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PID.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PID.html'>
 PID
 </a>
 </td>
@@ -904,9 +904,9 @@ additional
 
 <tr class='segment' id='mdm_t01-6'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -923,9 +923,9 @@ additional
 
 <tr class='segment' id='mdm_t01-7'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PV1.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PV1.html'>
 PV1
 </a>
 </td>
@@ -942,9 +942,9 @@ additional
 
 <tr class='segment' id='mdm_t01-8'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -961,8 +961,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t01-9'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 COMMON_ORDER
 </b>
@@ -980,10 +980,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t01-9-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/ORC.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/ORC.html'>
 ORC
 </a>
 </td>
@@ -1000,10 +1000,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -1020,10 +1020,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-3'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBR.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBR.html'>
 OBR
 </a>
 </td>
@@ -1040,10 +1040,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-4'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -1060,10 +1060,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-5'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -1080,9 +1080,9 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t01-9-6'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_vline.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 TIMING
 </b>
@@ -1100,11 +1100,11 @@ additional
 </tr>
 <tr class='segment' id='mdm_t01-9-6-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ1.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ1.html'>
 TQ1
 </a>
 </td>
@@ -1121,11 +1121,11 @@ additional
 
 <tr class='segment' id='mdm_t01-9-6-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ2.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ2.html'>
 TQ2
 </a>
 </td>
@@ -1144,9 +1144,9 @@ additional
 
 <tr class='segment' id='mdm_t01-10'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TXA.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TXA.html'>
 TXA
 </a>
 </td>
@@ -1163,9 +1163,9 @@ additional
 
 <tr class='segment' id='mdm_t01-11'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/CON.html'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/CON.html'>
 CON
 </a>
 </td>
@@ -1357,7 +1357,7 @@ targetNamespace="urn:hl7-org:v2xml" version="1.1">
 </xsd:schema>
 </textarea>
 <div>
-<a download='v2xsd/MDM_T01.xsd' href='/v2xsd/MDM_T01.xsd' target='_blank' title='Download'>
+<a download='v2xsd/MDM_T01.xsd' href='./v2xsd/MDM_T01.xsd' target='_blank' title='Download'>
 Download
 </a>
 </div>
@@ -1421,29 +1421,29 @@ HL7 MessageStructure Table - MDM_T02
 <tbody>
 <tr>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Segment
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Must Implement
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Status
 </a>
 </th>
 </tr>
 <tr>
 <td colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 MDM_T02
 </b>
@@ -1451,9 +1451,9 @@ MDM_T02
 </tr>
 <tr class='segment' id='mdm_t02-1'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/MSH.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/MSH.html'>
 MSH
 </a>
 </td>
@@ -1470,9 +1470,9 @@ additional
 
 <tr class='segment' id='mdm_t02-2'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/SFT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/SFT.html'>
 SFT
 </a>
 </td>
@@ -1489,9 +1489,9 @@ additional
 
 <tr class='segment' id='mdm_t02-3'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/UAC.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/UAC.html'>
 UAC
 </a>
 </td>
@@ -1508,9 +1508,9 @@ additional
 
 <tr class='segment' id='mdm_t02-4'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/EVN.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/EVN.html'>
 EVN
 </a>
 </td>
@@ -1527,9 +1527,9 @@ B, v2.5
 
 <tr class='segment' id='mdm_t02-5'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PID.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PID.html'>
 PID
 </a>
 </td>
@@ -1546,9 +1546,9 @@ additional
 
 <tr class='segment' id='mdm_t02-6'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -1565,9 +1565,9 @@ additional
 
 <tr class='segment' id='mdm_t02-7'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PV1.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PV1.html'>
 PV1
 </a>
 </td>
@@ -1584,9 +1584,9 @@ additional
 
 <tr class='segment' id='mdm_t02-8'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -1603,8 +1603,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-9'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 COMMON_ORDER
 </b>
@@ -1622,10 +1622,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-9-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/ORC.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/ORC.html'>
 ORC
 </a>
 </td>
@@ -1642,10 +1642,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -1662,10 +1662,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-3'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBR.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBR.html'>
 OBR
 </a>
 </td>
@@ -1682,10 +1682,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-4'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -1702,10 +1702,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-5'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -1722,9 +1722,9 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-9-6'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_vline.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 TIMING
 </b>
@@ -1742,11 +1742,11 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-9-6-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ1.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ1.html'>
 TQ1
 </a>
 </td>
@@ -1763,11 +1763,11 @@ additional
 
 <tr class='segment' id='mdm_t02-9-6-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ2.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ2.html'>
 TQ2
 </a>
 </td>
@@ -1786,9 +1786,9 @@ additional
 
 <tr class='segment' id='mdm_t02-10'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TXA.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TXA.html'>
 TXA
 </a>
 </td>
@@ -1805,9 +1805,9 @@ additional
 
 <tr class='segment' id='mdm_t02-11'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/CON.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/CON.html'>
 CON
 </a>
 </td>
@@ -1824,8 +1824,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-12'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 
 </b>
@@ -1843,10 +1843,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-12-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBX.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBX.html'>
 OBX
 </a>
 </td>
@@ -1863,10 +1863,10 @@ additional
 
 <tr class='segment' id='mdm_t02-12-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -1883,10 +1883,10 @@ additional
 
 <tr class='segment' id='mdm_t02-12-3'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -2089,7 +2089,7 @@ targetNamespace="urn:hl7-org:v2xml" version="1.1">
 </xsd:schema>
 </textarea>
 <div>
-<a download='v2xsd/MDM_T02.xsd' href='/v2xsd/MDM_T02.xsd' target='_blank' title='Download'>
+<a download='v2xsd/MDM_T02.xsd' href='./v2xsd/MDM_T02.xsd' target='_blank' title='Download'>
 Download
 </a>
 </div>
@@ -2166,29 +2166,29 @@ HL7 MessageStructure Table - MDM_T01
 <tbody>
 <tr>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Segment
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Must Implement
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Status
 </a>
 </th>
 </tr>
 <tr>
 <td colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 MDM_T01
 </b>
@@ -2196,9 +2196,9 @@ MDM_T01
 </tr>
 <tr class='segment' id='mdm_t01-1'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/MSH.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/MSH.html'>
 MSH
 </a>
 </td>
@@ -2215,9 +2215,9 @@ additional
 
 <tr class='segment' id='mdm_t01-2'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/SFT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/SFT.html'>
 SFT
 </a>
 </td>
@@ -2234,9 +2234,9 @@ additional
 
 <tr class='segment' id='mdm_t01-3'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/UAC.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/UAC.html'>
 UAC
 </a>
 </td>
@@ -2253,9 +2253,9 @@ additional
 
 <tr class='segment' id='mdm_t01-4'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/EVN.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/EVN.html'>
 EVN
 </a>
 </td>
@@ -2272,9 +2272,9 @@ B, v2.5
 
 <tr class='segment' id='mdm_t01-5'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PID.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PID.html'>
 PID
 </a>
 </td>
@@ -2291,9 +2291,9 @@ additional
 
 <tr class='segment' id='mdm_t01-6'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -2310,9 +2310,9 @@ additional
 
 <tr class='segment' id='mdm_t01-7'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PV1.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PV1.html'>
 PV1
 </a>
 </td>
@@ -2329,9 +2329,9 @@ additional
 
 <tr class='segment' id='mdm_t01-8'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -2348,8 +2348,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t01-9'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 COMMON_ORDER
 </b>
@@ -2367,10 +2367,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t01-9-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/ORC.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/ORC.html'>
 ORC
 </a>
 </td>
@@ -2387,10 +2387,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -2407,10 +2407,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-3'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBR.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBR.html'>
 OBR
 </a>
 </td>
@@ -2427,10 +2427,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-4'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -2447,10 +2447,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-5'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -2467,9 +2467,9 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t01-9-6'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_vline.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 TIMING
 </b>
@@ -2487,11 +2487,11 @@ additional
 </tr>
 <tr class='segment' id='mdm_t01-9-6-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ1.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ1.html'>
 TQ1
 </a>
 </td>
@@ -2508,11 +2508,11 @@ additional
 
 <tr class='segment' id='mdm_t01-9-6-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ2.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ2.html'>
 TQ2
 </a>
 </td>
@@ -2531,9 +2531,9 @@ additional
 
 <tr class='segment' id='mdm_t01-10'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TXA.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TXA.html'>
 TXA
 </a>
 </td>
@@ -2550,9 +2550,9 @@ additional
 
 <tr class='segment' id='mdm_t01-11'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/CON.html'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/CON.html'>
 CON
 </a>
 </td>
@@ -2744,7 +2744,7 @@ targetNamespace="urn:hl7-org:v2xml" version="1.1">
 </xsd:schema>
 </textarea>
 <div>
-<a download='v2xsd/MDM_T01.xsd' href='/v2xsd/MDM_T01.xsd' target='_blank' title='Download'>
+<a download='v2xsd/MDM_T01.xsd' href='./v2xsd/MDM_T01.xsd' target='_blank' title='Download'>
 Download
 </a>
 </div>
@@ -2806,29 +2806,29 @@ HL7 MessageStructure Table - MDM_T02
 <tbody>
 <tr>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Segment
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Must Implement
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Status
 </a>
 </th>
 </tr>
 <tr>
 <td colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 MDM_T02
 </b>
@@ -2836,9 +2836,9 @@ MDM_T02
 </tr>
 <tr class='segment' id='mdm_t02-1'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/MSH.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/MSH.html'>
 MSH
 </a>
 </td>
@@ -2855,9 +2855,9 @@ additional
 
 <tr class='segment' id='mdm_t02-2'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/SFT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/SFT.html'>
 SFT
 </a>
 </td>
@@ -2874,9 +2874,9 @@ additional
 
 <tr class='segment' id='mdm_t02-3'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/UAC.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/UAC.html'>
 UAC
 </a>
 </td>
@@ -2893,9 +2893,9 @@ additional
 
 <tr class='segment' id='mdm_t02-4'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/EVN.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/EVN.html'>
 EVN
 </a>
 </td>
@@ -2912,9 +2912,9 @@ B, v2.5
 
 <tr class='segment' id='mdm_t02-5'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PID.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PID.html'>
 PID
 </a>
 </td>
@@ -2931,9 +2931,9 @@ additional
 
 <tr class='segment' id='mdm_t02-6'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -2950,9 +2950,9 @@ additional
 
 <tr class='segment' id='mdm_t02-7'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PV1.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PV1.html'>
 PV1
 </a>
 </td>
@@ -2969,9 +2969,9 @@ additional
 
 <tr class='segment' id='mdm_t02-8'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -2988,8 +2988,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-9'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 COMMON_ORDER
 </b>
@@ -3007,10 +3007,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-9-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/ORC.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/ORC.html'>
 ORC
 </a>
 </td>
@@ -3027,10 +3027,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -3047,10 +3047,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-3'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBR.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBR.html'>
 OBR
 </a>
 </td>
@@ -3067,10 +3067,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-4'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -3087,10 +3087,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-5'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -3107,9 +3107,9 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-9-6'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_vline.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 TIMING
 </b>
@@ -3127,11 +3127,11 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-9-6-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ1.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ1.html'>
 TQ1
 </a>
 </td>
@@ -3148,11 +3148,11 @@ additional
 
 <tr class='segment' id='mdm_t02-9-6-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ2.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ2.html'>
 TQ2
 </a>
 </td>
@@ -3171,9 +3171,9 @@ additional
 
 <tr class='segment' id='mdm_t02-10'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TXA.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TXA.html'>
 TXA
 </a>
 </td>
@@ -3190,9 +3190,9 @@ additional
 
 <tr class='segment' id='mdm_t02-11'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/CON.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/CON.html'>
 CON
 </a>
 </td>
@@ -3209,8 +3209,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-12'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 
 </b>
@@ -3228,10 +3228,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-12-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBX.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBX.html'>
 OBX
 </a>
 </td>
@@ -3248,10 +3248,10 @@ additional
 
 <tr class='segment' id='mdm_t02-12-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -3268,10 +3268,10 @@ additional
 
 <tr class='segment' id='mdm_t02-12-3'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -3474,7 +3474,7 @@ targetNamespace="urn:hl7-org:v2xml" version="1.1">
 </xsd:schema>
 </textarea>
 <div>
-<a download='v2xsd/MDM_T02.xsd' href='/v2xsd/MDM_T02.xsd' target='_blank' title='Download'>
+<a download='v2xsd/MDM_T02.xsd' href='./v2xsd/MDM_T02.xsd' target='_blank' title='Download'>
 Download
 </a>
 </div>
@@ -3536,29 +3536,29 @@ HL7 MessageStructure Table - MDM_T01
 <tbody>
 <tr>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Segment
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Must Implement
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Status
 </a>
 </th>
 </tr>
 <tr>
 <td colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 MDM_T01
 </b>
@@ -3566,9 +3566,9 @@ MDM_T01
 </tr>
 <tr class='segment' id='mdm_t01-1'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/MSH.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/MSH.html'>
 MSH
 </a>
 </td>
@@ -3585,9 +3585,9 @@ additional
 
 <tr class='segment' id='mdm_t01-2'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/SFT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/SFT.html'>
 SFT
 </a>
 </td>
@@ -3604,9 +3604,9 @@ additional
 
 <tr class='segment' id='mdm_t01-3'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/UAC.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/UAC.html'>
 UAC
 </a>
 </td>
@@ -3623,9 +3623,9 @@ additional
 
 <tr class='segment' id='mdm_t01-4'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/EVN.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/EVN.html'>
 EVN
 </a>
 </td>
@@ -3642,9 +3642,9 @@ B, v2.5
 
 <tr class='segment' id='mdm_t01-5'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PID.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PID.html'>
 PID
 </a>
 </td>
@@ -3661,9 +3661,9 @@ additional
 
 <tr class='segment' id='mdm_t01-6'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -3680,9 +3680,9 @@ additional
 
 <tr class='segment' id='mdm_t01-7'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PV1.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PV1.html'>
 PV1
 </a>
 </td>
@@ -3699,9 +3699,9 @@ additional
 
 <tr class='segment' id='mdm_t01-8'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -3718,8 +3718,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t01-9'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 COMMON_ORDER
 </b>
@@ -3737,10 +3737,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t01-9-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/ORC.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/ORC.html'>
 ORC
 </a>
 </td>
@@ -3757,10 +3757,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -3777,10 +3777,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-3'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBR.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBR.html'>
 OBR
 </a>
 </td>
@@ -3797,10 +3797,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-4'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -3817,10 +3817,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-5'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -3837,9 +3837,9 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t01-9-6'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_vline.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 TIMING
 </b>
@@ -3857,11 +3857,11 @@ additional
 </tr>
 <tr class='segment' id='mdm_t01-9-6-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ1.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ1.html'>
 TQ1
 </a>
 </td>
@@ -3878,11 +3878,11 @@ additional
 
 <tr class='segment' id='mdm_t01-9-6-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ2.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ2.html'>
 TQ2
 </a>
 </td>
@@ -3901,9 +3901,9 @@ additional
 
 <tr class='segment' id='mdm_t01-10'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TXA.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TXA.html'>
 TXA
 </a>
 </td>
@@ -3920,9 +3920,9 @@ additional
 
 <tr class='segment' id='mdm_t01-11'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/CON.html'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/CON.html'>
 CON
 </a>
 </td>
@@ -4114,7 +4114,7 @@ targetNamespace="urn:hl7-org:v2xml" version="1.1">
 </xsd:schema>
 </textarea>
 <div>
-<a download='v2xsd/MDM_T01.xsd' href='/v2xsd/MDM_T01.xsd' target='_blank' title='Download'>
+<a download='v2xsd/MDM_T01.xsd' href='./v2xsd/MDM_T01.xsd' target='_blank' title='Download'>
 Download
 </a>
 </div>
@@ -4176,29 +4176,29 @@ HL7 MessageStructure Table - MDM_T02
 <tbody>
 <tr>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Segment
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Must Implement
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Status
 </a>
 </th>
 </tr>
 <tr>
 <td colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 MDM_T02
 </b>
@@ -4206,9 +4206,9 @@ MDM_T02
 </tr>
 <tr class='segment' id='mdm_t02-1'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/MSH.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/MSH.html'>
 MSH
 </a>
 </td>
@@ -4225,9 +4225,9 @@ additional
 
 <tr class='segment' id='mdm_t02-2'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/SFT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/SFT.html'>
 SFT
 </a>
 </td>
@@ -4244,9 +4244,9 @@ additional
 
 <tr class='segment' id='mdm_t02-3'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/UAC.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/UAC.html'>
 UAC
 </a>
 </td>
@@ -4263,9 +4263,9 @@ additional
 
 <tr class='segment' id='mdm_t02-4'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/EVN.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/EVN.html'>
 EVN
 </a>
 </td>
@@ -4282,9 +4282,9 @@ B, v2.5
 
 <tr class='segment' id='mdm_t02-5'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PID.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PID.html'>
 PID
 </a>
 </td>
@@ -4301,9 +4301,9 @@ additional
 
 <tr class='segment' id='mdm_t02-6'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -4320,9 +4320,9 @@ additional
 
 <tr class='segment' id='mdm_t02-7'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PV1.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PV1.html'>
 PV1
 </a>
 </td>
@@ -4339,9 +4339,9 @@ additional
 
 <tr class='segment' id='mdm_t02-8'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -4358,8 +4358,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-9'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 COMMON_ORDER
 </b>
@@ -4377,10 +4377,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-9-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/ORC.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/ORC.html'>
 ORC
 </a>
 </td>
@@ -4397,10 +4397,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -4417,10 +4417,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-3'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBR.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBR.html'>
 OBR
 </a>
 </td>
@@ -4437,10 +4437,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-4'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -4457,10 +4457,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-5'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -4477,9 +4477,9 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-9-6'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_vline.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 TIMING
 </b>
@@ -4497,11 +4497,11 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-9-6-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ1.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ1.html'>
 TQ1
 </a>
 </td>
@@ -4518,11 +4518,11 @@ additional
 
 <tr class='segment' id='mdm_t02-9-6-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ2.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ2.html'>
 TQ2
 </a>
 </td>
@@ -4541,9 +4541,9 @@ additional
 
 <tr class='segment' id='mdm_t02-10'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TXA.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TXA.html'>
 TXA
 </a>
 </td>
@@ -4560,9 +4560,9 @@ additional
 
 <tr class='segment' id='mdm_t02-11'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/CON.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/CON.html'>
 CON
 </a>
 </td>
@@ -4579,8 +4579,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-12'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 
 </b>
@@ -4598,10 +4598,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-12-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBX.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBX.html'>
 OBX
 </a>
 </td>
@@ -4618,10 +4618,10 @@ additional
 
 <tr class='segment' id='mdm_t02-12-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -4638,10 +4638,10 @@ additional
 
 <tr class='segment' id='mdm_t02-12-3'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -4844,7 +4844,7 @@ targetNamespace="urn:hl7-org:v2xml" version="1.1">
 </xsd:schema>
 </textarea>
 <div>
-<a download='v2xsd/MDM_T02.xsd' href='/v2xsd/MDM_T02.xsd' target='_blank' title='Download'>
+<a download='v2xsd/MDM_T02.xsd' href='./v2xsd/MDM_T02.xsd' target='_blank' title='Download'>
 Download
 </a>
 </div>
@@ -4912,29 +4912,29 @@ HL7 MessageStructure Table - MDM_T01
 <tbody>
 <tr>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Segment
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Must Implement
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Status
 </a>
 </th>
 </tr>
 <tr>
 <td colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 MDM_T01
 </b>
@@ -4942,9 +4942,9 @@ MDM_T01
 </tr>
 <tr class='segment' id='mdm_t01-1'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/MSH.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/MSH.html'>
 MSH
 </a>
 </td>
@@ -4961,9 +4961,9 @@ additional
 
 <tr class='segment' id='mdm_t01-2'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/SFT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/SFT.html'>
 SFT
 </a>
 </td>
@@ -4980,9 +4980,9 @@ additional
 
 <tr class='segment' id='mdm_t01-3'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/UAC.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/UAC.html'>
 UAC
 </a>
 </td>
@@ -4999,9 +4999,9 @@ additional
 
 <tr class='segment' id='mdm_t01-4'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/EVN.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/EVN.html'>
 EVN
 </a>
 </td>
@@ -5018,9 +5018,9 @@ B, v2.5
 
 <tr class='segment' id='mdm_t01-5'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PID.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PID.html'>
 PID
 </a>
 </td>
@@ -5037,9 +5037,9 @@ additional
 
 <tr class='segment' id='mdm_t01-6'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -5056,9 +5056,9 @@ additional
 
 <tr class='segment' id='mdm_t01-7'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PV1.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PV1.html'>
 PV1
 </a>
 </td>
@@ -5075,9 +5075,9 @@ additional
 
 <tr class='segment' id='mdm_t01-8'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -5094,8 +5094,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t01-9'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 COMMON_ORDER
 </b>
@@ -5113,10 +5113,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t01-9-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/ORC.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/ORC.html'>
 ORC
 </a>
 </td>
@@ -5133,10 +5133,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -5153,10 +5153,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-3'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBR.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBR.html'>
 OBR
 </a>
 </td>
@@ -5173,10 +5173,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-4'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -5193,10 +5193,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-5'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -5213,9 +5213,9 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t01-9-6'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_vline.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 TIMING
 </b>
@@ -5233,11 +5233,11 @@ additional
 </tr>
 <tr class='segment' id='mdm_t01-9-6-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ1.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ1.html'>
 TQ1
 </a>
 </td>
@@ -5254,11 +5254,11 @@ additional
 
 <tr class='segment' id='mdm_t01-9-6-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ2.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ2.html'>
 TQ2
 </a>
 </td>
@@ -5277,9 +5277,9 @@ additional
 
 <tr class='segment' id='mdm_t01-10'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TXA.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TXA.html'>
 TXA
 </a>
 </td>
@@ -5296,9 +5296,9 @@ additional
 
 <tr class='segment' id='mdm_t01-11'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/CON.html'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/CON.html'>
 CON
 </a>
 </td>
@@ -5490,7 +5490,7 @@ targetNamespace="urn:hl7-org:v2xml" version="1.1">
 </xsd:schema>
 </textarea>
 <div>
-<a download='v2xsd/MDM_T01.xsd' href='/v2xsd/MDM_T01.xsd' target='_blank' title='Download'>
+<a download='v2xsd/MDM_T01.xsd' href='./v2xsd/MDM_T01.xsd' target='_blank' title='Download'>
 Download
 </a>
 </div>
@@ -5558,29 +5558,29 @@ HL7 MessageStructure Table - MDM_T02
 <tbody>
 <tr>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Segment
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Must Implement
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Status
 </a>
 </th>
 </tr>
 <tr>
 <td colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 MDM_T02
 </b>
@@ -5588,9 +5588,9 @@ MDM_T02
 </tr>
 <tr class='segment' id='mdm_t02-1'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/MSH.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/MSH.html'>
 MSH
 </a>
 </td>
@@ -5607,9 +5607,9 @@ additional
 
 <tr class='segment' id='mdm_t02-2'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/SFT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/SFT.html'>
 SFT
 </a>
 </td>
@@ -5626,9 +5626,9 @@ additional
 
 <tr class='segment' id='mdm_t02-3'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/UAC.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/UAC.html'>
 UAC
 </a>
 </td>
@@ -5645,9 +5645,9 @@ additional
 
 <tr class='segment' id='mdm_t02-4'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/EVN.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/EVN.html'>
 EVN
 </a>
 </td>
@@ -5664,9 +5664,9 @@ B, v2.5
 
 <tr class='segment' id='mdm_t02-5'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PID.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PID.html'>
 PID
 </a>
 </td>
@@ -5683,9 +5683,9 @@ additional
 
 <tr class='segment' id='mdm_t02-6'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -5702,9 +5702,9 @@ additional
 
 <tr class='segment' id='mdm_t02-7'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PV1.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PV1.html'>
 PV1
 </a>
 </td>
@@ -5721,9 +5721,9 @@ additional
 
 <tr class='segment' id='mdm_t02-8'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -5740,8 +5740,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-9'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 COMMON_ORDER
 </b>
@@ -5759,10 +5759,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-9-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/ORC.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/ORC.html'>
 ORC
 </a>
 </td>
@@ -5779,10 +5779,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -5799,10 +5799,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-3'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBR.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBR.html'>
 OBR
 </a>
 </td>
@@ -5819,10 +5819,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-4'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -5839,10 +5839,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-5'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -5859,9 +5859,9 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-9-6'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_vline.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 TIMING
 </b>
@@ -5879,11 +5879,11 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-9-6-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ1.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ1.html'>
 TQ1
 </a>
 </td>
@@ -5900,11 +5900,11 @@ additional
 
 <tr class='segment' id='mdm_t02-9-6-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ2.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ2.html'>
 TQ2
 </a>
 </td>
@@ -5923,9 +5923,9 @@ additional
 
 <tr class='segment' id='mdm_t02-10'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TXA.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TXA.html'>
 TXA
 </a>
 </td>
@@ -5942,9 +5942,9 @@ additional
 
 <tr class='segment' id='mdm_t02-11'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/CON.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/CON.html'>
 CON
 </a>
 </td>
@@ -5961,8 +5961,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-12'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 
 </b>
@@ -5980,10 +5980,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-12-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBX.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBX.html'>
 OBX
 </a>
 </td>
@@ -6000,10 +6000,10 @@ additional
 
 <tr class='segment' id='mdm_t02-12-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -6020,10 +6020,10 @@ additional
 
 <tr class='segment' id='mdm_t02-12-3'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -6226,7 +6226,7 @@ targetNamespace="urn:hl7-org:v2xml" version="1.1">
 </xsd:schema>
 </textarea>
 <div>
-<a download='v2xsd/MDM_T02.xsd' href='/v2xsd/MDM_T02.xsd' target='_blank' title='Download'>
+<a download='v2xsd/MDM_T02.xsd' href='./v2xsd/MDM_T02.xsd' target='_blank' title='Download'>
 Download
 </a>
 </div>
@@ -6294,29 +6294,29 @@ HL7 MessageStructure Table - MDM_T01
 <tbody>
 <tr>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Segment
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Must Implement
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Status
 </a>
 </th>
 </tr>
 <tr>
 <td colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 MDM_T01
 </b>
@@ -6324,9 +6324,9 @@ MDM_T01
 </tr>
 <tr class='segment' id='mdm_t01-1'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/MSH.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/MSH.html'>
 MSH
 </a>
 </td>
@@ -6343,9 +6343,9 @@ additional
 
 <tr class='segment' id='mdm_t01-2'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/SFT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/SFT.html'>
 SFT
 </a>
 </td>
@@ -6362,9 +6362,9 @@ additional
 
 <tr class='segment' id='mdm_t01-3'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/UAC.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/UAC.html'>
 UAC
 </a>
 </td>
@@ -6381,9 +6381,9 @@ additional
 
 <tr class='segment' id='mdm_t01-4'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/EVN.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/EVN.html'>
 EVN
 </a>
 </td>
@@ -6400,9 +6400,9 @@ B, v2.5
 
 <tr class='segment' id='mdm_t01-5'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PID.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PID.html'>
 PID
 </a>
 </td>
@@ -6419,9 +6419,9 @@ additional
 
 <tr class='segment' id='mdm_t01-6'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -6438,9 +6438,9 @@ additional
 
 <tr class='segment' id='mdm_t01-7'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PV1.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PV1.html'>
 PV1
 </a>
 </td>
@@ -6457,9 +6457,9 @@ additional
 
 <tr class='segment' id='mdm_t01-8'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -6476,8 +6476,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t01-9'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 COMMON_ORDER
 </b>
@@ -6495,10 +6495,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t01-9-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/ORC.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/ORC.html'>
 ORC
 </a>
 </td>
@@ -6515,10 +6515,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -6535,10 +6535,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-3'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBR.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBR.html'>
 OBR
 </a>
 </td>
@@ -6555,10 +6555,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-4'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -6575,10 +6575,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-5'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -6595,9 +6595,9 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t01-9-6'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_vline.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 TIMING
 </b>
@@ -6615,11 +6615,11 @@ additional
 </tr>
 <tr class='segment' id='mdm_t01-9-6-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ1.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ1.html'>
 TQ1
 </a>
 </td>
@@ -6636,11 +6636,11 @@ additional
 
 <tr class='segment' id='mdm_t01-9-6-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ2.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ2.html'>
 TQ2
 </a>
 </td>
@@ -6659,9 +6659,9 @@ additional
 
 <tr class='segment' id='mdm_t01-10'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TXA.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TXA.html'>
 TXA
 </a>
 </td>
@@ -6678,9 +6678,9 @@ additional
 
 <tr class='segment' id='mdm_t01-11'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/CON.html'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/CON.html'>
 CON
 </a>
 </td>
@@ -6872,7 +6872,7 @@ targetNamespace="urn:hl7-org:v2xml" version="1.1">
 </xsd:schema>
 </textarea>
 <div>
-<a download='v2xsd/MDM_T01.xsd' href='/v2xsd/MDM_T01.xsd' target='_blank' title='Download'>
+<a download='v2xsd/MDM_T01.xsd' href='./v2xsd/MDM_T01.xsd' target='_blank' title='Download'>
 Download
 </a>
 </div>
@@ -6933,29 +6933,29 @@ HL7 MessageStructure Table - MDM_T02
 <tbody>
 <tr>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Segment
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Must Implement
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Status
 </a>
 </th>
 </tr>
 <tr>
 <td colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 MDM_T02
 </b>
@@ -6963,9 +6963,9 @@ MDM_T02
 </tr>
 <tr class='segment' id='mdm_t02-1'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/MSH.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/MSH.html'>
 MSH
 </a>
 </td>
@@ -6982,9 +6982,9 @@ additional
 
 <tr class='segment' id='mdm_t02-2'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/SFT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/SFT.html'>
 SFT
 </a>
 </td>
@@ -7001,9 +7001,9 @@ additional
 
 <tr class='segment' id='mdm_t02-3'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/UAC.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/UAC.html'>
 UAC
 </a>
 </td>
@@ -7020,9 +7020,9 @@ additional
 
 <tr class='segment' id='mdm_t02-4'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/EVN.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/EVN.html'>
 EVN
 </a>
 </td>
@@ -7039,9 +7039,9 @@ B, v2.5
 
 <tr class='segment' id='mdm_t02-5'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PID.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PID.html'>
 PID
 </a>
 </td>
@@ -7058,9 +7058,9 @@ additional
 
 <tr class='segment' id='mdm_t02-6'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -7077,9 +7077,9 @@ additional
 
 <tr class='segment' id='mdm_t02-7'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PV1.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PV1.html'>
 PV1
 </a>
 </td>
@@ -7096,9 +7096,9 @@ additional
 
 <tr class='segment' id='mdm_t02-8'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -7115,8 +7115,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-9'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 COMMON_ORDER
 </b>
@@ -7134,10 +7134,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-9-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/ORC.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/ORC.html'>
 ORC
 </a>
 </td>
@@ -7154,10 +7154,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -7174,10 +7174,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-3'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBR.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBR.html'>
 OBR
 </a>
 </td>
@@ -7194,10 +7194,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-4'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -7214,10 +7214,10 @@ additional
 
 <tr class='segment' id='mdm_t02-9-5'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -7234,9 +7234,9 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-9-6'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_vline.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 TIMING
 </b>
@@ -7254,11 +7254,11 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-9-6-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ1.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ1.html'>
 TQ1
 </a>
 </td>
@@ -7275,11 +7275,11 @@ additional
 
 <tr class='segment' id='mdm_t02-9-6-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ2.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ2.html'>
 TQ2
 </a>
 </td>
@@ -7298,9 +7298,9 @@ additional
 
 <tr class='segment' id='mdm_t02-10'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TXA.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TXA.html'>
 TXA
 </a>
 </td>
@@ -7317,9 +7317,9 @@ additional
 
 <tr class='segment' id='mdm_t02-11'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/CON.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/CON.html'>
 CON
 </a>
 </td>
@@ -7336,8 +7336,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t02-12'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 
 </b>
@@ -7355,10 +7355,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t02-12-1'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBX.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBX.html'>
 OBX
 </a>
 </td>
@@ -7375,10 +7375,10 @@ additional
 
 <tr class='segment' id='mdm_t02-12-2'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -7395,10 +7395,10 @@ additional
 
 <tr class='segment' id='mdm_t02-12-3'>
 <td>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -7601,7 +7601,7 @@ targetNamespace="urn:hl7-org:v2xml" version="1.1">
 </xsd:schema>
 </textarea>
 <div>
-<a download='v2xsd/MDM_T02.xsd' href='/v2xsd/MDM_T02.xsd' target='_blank' title='Download'>
+<a download='v2xsd/MDM_T02.xsd' href='./v2xsd/MDM_T02.xsd' target='_blank' title='Download'>
 Download
 </a>
 </div>
@@ -7663,29 +7663,29 @@ HL7 MessageStructure Table - MDM_T01
 <tbody>
 <tr>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Segment
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Must Implement
 </a>
 </th>
 <th>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Status
 </a>
 </th>
 </tr>
 <tr>
 <td colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 MDM_T01
 </b>
@@ -7693,9 +7693,9 @@ MDM_T01
 </tr>
 <tr class='segment' id='mdm_t01-1'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/MSH.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/MSH.html'>
 MSH
 </a>
 </td>
@@ -7712,9 +7712,9 @@ additional
 
 <tr class='segment' id='mdm_t01-2'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/SFT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/SFT.html'>
 SFT
 </a>
 </td>
@@ -7731,9 +7731,9 @@ additional
 
 <tr class='segment' id='mdm_t01-3'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/UAC.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/UAC.html'>
 UAC
 </a>
 </td>
@@ -7750,9 +7750,9 @@ additional
 
 <tr class='segment' id='mdm_t01-4'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/EVN.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/EVN.html'>
 EVN
 </a>
 </td>
@@ -7769,9 +7769,9 @@ B, v2.5
 
 <tr class='segment' id='mdm_t01-5'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PID.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PID.html'>
 PID
 </a>
 </td>
@@ -7788,9 +7788,9 @@ additional
 
 <tr class='segment' id='mdm_t01-6'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -7807,9 +7807,9 @@ additional
 
 <tr class='segment' id='mdm_t01-7'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PV1.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PV1.html'>
 PV1
 </a>
 </td>
@@ -7826,9 +7826,9 @@ additional
 
 <tr class='segment' id='mdm_t01-8'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -7845,8 +7845,8 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t01-9'>
 <td>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin-open.png'>
-<img src='/images/folder_icon.gif'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 COMMON_ORDER
 </b>
@@ -7864,10 +7864,10 @@ additional
 </tr>
 <tr class='segment' id='mdm_t01-9-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/ORC.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/ORC.html'>
 ORC
 </a>
 </td>
@@ -7884,10 +7884,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -7904,10 +7904,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-3'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/OBR.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/OBR.html'>
 OBR
 </a>
 </td>
@@ -7924,10 +7924,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-4'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/PRT.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/PRT.html'>
 PRT
 </a>
 </td>
@@ -7944,10 +7944,10 @@ additional
 
 <tr class='segment' id='mdm_t01-9-5'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/NTE.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/NTE.html'>
 NTE
 </a>
 </td>
@@ -7964,9 +7964,9 @@ additional
 
 <tr class='segment segment_sequence' id='mdm_t01-9-6'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img onclick='tableRowAction(this)' src='/images/tbl_vjoin_end-open.png'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/tbl_vline.png'>
+<img onclick='tableRowAction(this)' src='./images/tbl_vjoin_end-open.png'>
+<img src='./images/folder_icon.gif'>
 <b>
 TIMING
 </b>
@@ -7984,11 +7984,11 @@ additional
 </tr>
 <tr class='segment' id='mdm_t01-9-6-1'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ1.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ1.html'>
 TQ1
 </a>
 </td>
@@ -8005,11 +8005,11 @@ additional
 
 <tr class='segment' id='mdm_t01-9-6-2'>
 <td>
-<img src='/images/tbl_vline.png'>
-<img src='/images/tbl_blank.png'>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TQ2.html'>
+<img src='./images/tbl_vline.png'>
+<img src='./images/tbl_blank.png'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TQ2.html'>
 TQ2
 </a>
 </td>
@@ -8028,9 +8028,9 @@ additional
 
 <tr class='segment' id='mdm_t01-10'>
 <td>
-<img src='/images/tbl_vjoin.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/TXA.html'>
+<img src='./images/tbl_vjoin.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/TXA.html'>
 TXA
 </a>
 </td>
@@ -8047,9 +8047,9 @@ additional
 
 <tr class='segment' id='mdm_t01-11'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
-<img src='/images/icon_reference.png'>
-<a href='/segment-definition/CON.html'>
+<img src='./images/tbl_vjoin_end.png'>
+<img src='./images/icon_reference.png'>
+<a href='./segment-definition/CON.html'>
 CON
 </a>
 </td>
@@ -8241,7 +8241,7 @@ targetNamespace="urn:hl7-org:v2xml" version="1.1">
 </xsd:schema>
 </textarea>
 <div>
-<a download='v2xsd/MDM_T01.xsd' href='/v2xsd/MDM_T01.xsd' target='_blank' title='Download'>
+<a download='v2xsd/MDM_T01.xsd' href='./v2xsd/MDM_T01.xsd' target='_blank' title='Download'>
 Download
 </a>
 </div>
@@ -8279,38 +8279,38 @@ HL7 Attribute Table - CON - Consent Segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -8321,24 +8321,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 CON
 </b>
@@ -8346,14 +8346,14 @@ CON
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Set ID - CON
 </td>
 <td class='centered'>
-<a href='/data-type/SI.html'>
+<a href='./data-type/SI.html'>
 SI
 </a>
 </td>
@@ -8362,7 +8362,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -8391,14 +8391,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 Consent Type
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -8407,7 +8407,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0496-Consent-Type.html' title='Consent Type(Suggested)'>
+<a href='./vocab/0496-Consent-Type.html' title='Consent Type(Suggested)'>
 0496(S)
 <span class='vocab-link-text'>Consent Type(Suggested)</span>
 </a>
@@ -8436,14 +8436,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 3
 </td>
 <td>
 Consent Form ID and Version
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -8452,7 +8452,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -8481,14 +8481,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 4
 </td>
 <td>
 Consent Form Number
 </td>
 <td class='centered'>
-<a href='/data-type/EI.html'>
+<a href='./data-type/EI.html'>
 EI
 </a>
 </td>
@@ -8497,7 +8497,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -8526,14 +8526,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 5
 </td>
 <td>
 Consent Text
 </td>
 <td class='centered'>
-<a href='/data-type/FT.html'>
+<a href='./data-type/FT.html'>
 FT
 </a>
 </td>
@@ -8542,7 +8542,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -8571,14 +8571,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 6
 </td>
 <td>
 Subject-specific Consent Text
 </td>
 <td class='centered'>
-<a href='/data-type/FT.html'>
+<a href='./data-type/FT.html'>
 FT
 </a>
 </td>
@@ -8587,7 +8587,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -8616,14 +8616,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 7
 </td>
 <td>
 Consent Background Information
 </td>
 <td class='centered'>
-<a href='/data-type/FT.html'>
+<a href='./data-type/FT.html'>
 FT
 </a>
 </td>
@@ -8632,7 +8632,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -8661,14 +8661,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 8
 </td>
 <td>
 Subject-specific Consent Background Text
 </td>
 <td class='centered'>
-<a href='/data-type/FT.html'>
+<a href='./data-type/FT.html'>
 FT
 </a>
 </td>
@@ -8677,7 +8677,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -8706,14 +8706,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 9
 </td>
 <td>
 Consenter-imposed limitations
 </td>
 <td class='centered'>
-<a href='/data-type/FT.html'>
+<a href='./data-type/FT.html'>
 FT
 </a>
 </td>
@@ -8722,7 +8722,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -8751,14 +8751,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 10
 </td>
 <td>
 Consent Mode
 </td>
 <td class='centered'>
-<a href='/data-type/CNE.html'>
+<a href='./data-type/CNE.html'>
 CNE
 </a>
 </td>
@@ -8767,7 +8767,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0497-Consent-Mode.html' title='Consent Mode(Required)'>
+<a href='./vocab/0497-Consent-Mode.html' title='Consent Mode(Required)'>
 0497(R)
 <span class='vocab-link-text'>Consent Mode(Required)</span>
 </a>
@@ -8796,14 +8796,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 11
 </td>
 <td>
 Consent Status
 </td>
 <td class='centered'>
-<a href='/data-type/CNE.html'>
+<a href='./data-type/CNE.html'>
 CNE
 </a>
 </td>
@@ -8812,7 +8812,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0498-Consent-Status.html' title='Consent Status(Required)'>
+<a href='./vocab/0498-Consent-Status.html' title='Consent Status(Required)'>
 0498(R)
 <span class='vocab-link-text'>Consent Status(Required)</span>
 </a>
@@ -8841,14 +8841,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 12
 </td>
 <td>
 Consent Discussion Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -8857,7 +8857,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -8886,14 +8886,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 13
 </td>
 <td>
 Consent Decision Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -8902,7 +8902,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -8931,14 +8931,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 14
 </td>
 <td>
 Consent Effective Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -8947,7 +8947,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -8976,14 +8976,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 15
 </td>
 <td>
 Consent End Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -8992,7 +8992,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -9021,14 +9021,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 16
 </td>
 <td>
 Subject Competence Indicator
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -9037,7 +9037,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
+<a href='./vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
 0136(R)
 <span class='vocab-link-text'>Yes/no Indicator(Required)</span>
 </a>
@@ -9066,14 +9066,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 17
 </td>
 <td>
 Translator Assistance Indicator
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -9082,7 +9082,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
+<a href='./vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
 0136(R)
 <span class='vocab-link-text'>Yes/no Indicator(Required)</span>
 </a>
@@ -9111,14 +9111,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 18
 </td>
 <td>
 Language Translated To
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -9127,7 +9127,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0296-Primary-Language.html' title='Primary Language'>
+<a href='./vocab/0296-Primary-Language.html' title='Primary Language'>
 0296
 <span class='vocab-link-text'>Primary Language</span>
 </a>
@@ -9156,14 +9156,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 19
 </td>
 <td>
 Informational Material Supplied Indicator
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -9172,7 +9172,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
+<a href='./vocab/0136-Yes/no-Indicator.html' title='Yes/no Indicator(Required)'>
 0136(R)
 <span class='vocab-link-text'>Yes/no Indicator(Required)</span>
 </a>
@@ -9201,14 +9201,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 20
 </td>
 <td>
 Consent Bypass Reason
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -9217,7 +9217,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0499-Consent-Bypass-Reason.html' title='Consent Bypass Reason'>
+<a href='./vocab/0499-Consent-Bypass-Reason.html' title='Consent Bypass Reason'>
 0499
 <span class='vocab-link-text'>Consent Bypass Reason</span>
 </a>
@@ -9246,14 +9246,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 21
 </td>
 <td>
 Consent Disclosure Level
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -9262,7 +9262,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0500-Consent-Disclosure-Level.html' title='Consent Disclosure Level(Required)'>
+<a href='./vocab/0500-Consent-Disclosure-Level.html' title='Consent Disclosure Level(Required)'>
 0500(R)
 <span class='vocab-link-text'>Consent Disclosure Level(Required)</span>
 </a>
@@ -9291,14 +9291,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 22
 </td>
 <td>
 Consent Non-disclosure Reason
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -9307,7 +9307,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0501-Consent-Non-Disclosure-Reason.html' title='Consent Non-Disclosure Reason'>
+<a href='./vocab/0501-Consent-Non-Disclosure-Reason.html' title='Consent Non-Disclosure Reason'>
 0501
 <span class='vocab-link-text'>Consent Non-Disclosure Reason</span>
 </a>
@@ -9336,14 +9336,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 23
 </td>
 <td>
 Non-subject Consenter Reason
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -9352,7 +9352,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0502-Non-Subject-Consenter-Reason.html' title='Non-Subject Consenter Reason(Suggested)'>
+<a href='./vocab/0502-Non-Subject-Consenter-Reason.html' title='Non-Subject Consenter Reason(Suggested)'>
 0502(S)
 <span class='vocab-link-text'>Non-Subject Consenter Reason(Suggested)</span>
 </a>
@@ -9381,14 +9381,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 24
 </td>
 <td>
 Consenter ID
 </td>
 <td class='centered'>
-<a href='/data-type/XPN.html'>
+<a href='./data-type/XPN.html'>
 XPN
 </a>
 </td>
@@ -9397,7 +9397,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -9426,14 +9426,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 25
 </td>
 <td>
 Relationship to Subject
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -9442,7 +9442,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0548-Signatory&#39;s-Relationship-to-Subject.html' title='Signatory&#39;s Relationship to Subject(Suggested)'>
+<a href='./vocab/0548-Signatory&#39;s-Relationship-to-Subject.html' title='Signatory&#39;s Relationship to Subject(Suggested)'>
 0548(S)
 <span class='vocab-link-text'>Signatory's Relationship to Subject(Suggested)</span>
 </a>
@@ -9473,127 +9473,127 @@ R
 </table>
 
 <h4 class='v2' id='CON-1'>
-CON-1: Set ID - CON (<a href='/data-type/SI.html'>SI</a>) 01776
+CON-1: Set ID - CON (<a href='./data-type/SI.html'>SI</a>) 01776
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-2'>
-CON-2: Consent Type (<a href='/data-type/CWE.html'>CWE</a>) 01777
+CON-2: Consent Type (<a href='./data-type/CWE.html'>CWE</a>) 01777
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-3'>
-CON-3: Consent Form ID and Version (<a href='/data-type/ST.html'>ST</a>) 01778
+CON-3: Consent Form ID and Version (<a href='./data-type/ST.html'>ST</a>) 01778
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-4'>
-CON-4: Consent Form Number (<a href='/data-type/EI.html'>EI</a>) 01779
+CON-4: Consent Form Number (<a href='./data-type/EI.html'>EI</a>) 01779
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-5'>
-CON-5: Consent Text (<a href='/data-type/FT.html'>FT</a>) 01780
+CON-5: Consent Text (<a href='./data-type/FT.html'>FT</a>) 01780
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-6'>
-CON-6: Subject-specific Consent Text (<a href='/data-type/FT.html'>FT</a>) 01781
+CON-6: Subject-specific Consent Text (<a href='./data-type/FT.html'>FT</a>) 01781
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-7'>
-CON-7: Consent Background Information (<a href='/data-type/FT.html'>FT</a>) 01782
+CON-7: Consent Background Information (<a href='./data-type/FT.html'>FT</a>) 01782
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-8'>
-CON-8: Subject-specific Consent Background Text (<a href='/data-type/FT.html'>FT</a>) 01783
+CON-8: Subject-specific Consent Background Text (<a href='./data-type/FT.html'>FT</a>) 01783
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-9'>
-CON-9: Consenter-imposed limitations (<a href='/data-type/FT.html'>FT</a>) 01784
+CON-9: Consenter-imposed limitations (<a href='./data-type/FT.html'>FT</a>) 01784
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-10'>
-CON-10: Consent Mode (<a href='/data-type/CNE.html'>CNE</a>) 01785
+CON-10: Consent Mode (<a href='./data-type/CNE.html'>CNE</a>) 01785
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-11'>
-CON-11: Consent Status (<a href='/data-type/CNE.html'>CNE</a>) 01786
+CON-11: Consent Status (<a href='./data-type/CNE.html'>CNE</a>) 01786
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-12'>
-CON-12: Consent Discussion Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 01787
+CON-12: Consent Discussion Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 01787
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-13'>
-CON-13: Consent Decision Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 01788
+CON-13: Consent Decision Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 01788
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-14'>
-CON-14: Consent Effective Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 01789
+CON-14: Consent Effective Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 01789
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-15'>
-CON-15: Consent End Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 01790
+CON-15: Consent End Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 01790
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-16'>
-CON-16: Subject Competence Indicator (<a href='/data-type/ID.html'>ID</a>) 01791
+CON-16: Subject Competence Indicator (<a href='./data-type/ID.html'>ID</a>) 01791
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-17'>
-CON-17: Translator Assistance Indicator (<a href='/data-type/ID.html'>ID</a>) 01792
+CON-17: Translator Assistance Indicator (<a href='./data-type/ID.html'>ID</a>) 01792
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-18'>
-CON-18: Language Translated To (<a href='/data-type/CWE.html'>CWE</a>) 01793
+CON-18: Language Translated To (<a href='./data-type/CWE.html'>CWE</a>) 01793
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-19'>
-CON-19: Informational Material Supplied Indicator (<a href='/data-type/ID.html'>ID</a>) 01794
+CON-19: Informational Material Supplied Indicator (<a href='./data-type/ID.html'>ID</a>) 01794
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-20'>
-CON-20: Consent Bypass Reason (<a href='/data-type/CWE.html'>CWE</a>) 01795
+CON-20: Consent Bypass Reason (<a href='./data-type/CWE.html'>CWE</a>) 01795
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-21'>
-CON-21: Consent Disclosure Level (<a href='/data-type/ID.html'>ID</a>) 01796
+CON-21: Consent Disclosure Level (<a href='./data-type/ID.html'>ID</a>) 01796
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-22'>
-CON-22: Consent Non-disclosure Reason (<a href='/data-type/CWE.html'>CWE</a>) 01797
+CON-22: Consent Non-disclosure Reason (<a href='./data-type/CWE.html'>CWE</a>) 01797
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-23'>
-CON-23: Non-subject Consenter Reason (<a href='/data-type/CWE.html'>CWE</a>) 01798
+CON-23: Non-subject Consenter Reason (<a href='./data-type/CWE.html'>CWE</a>) 01798
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-24'>
-CON-24: Consenter ID (<a href='/data-type/XPN.html'>XPN</a>) 01909
+CON-24: Consenter ID (<a href='./data-type/XPN.html'>XPN</a>) 01909
 </h4>
 FIXME
 
 <h4 class='v2' id='CON-25'>
-CON-25: Relationship to Subject (<a href='/data-type/CWE.html'>CWE</a>) 01898
+CON-25: Relationship to Subject (<a href='./data-type/CWE.html'>CWE</a>) 01898
 </h4>
 FIXME
 
@@ -9630,38 +9630,38 @@ HL7 Attribute Table - TXA - Transcription Document Header Segment
 <tbody>
 <tr>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 <!-- DataElement -->
 Data Element Name
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 DataType
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Cardinality
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Item #
 </a>
 </th>
@@ -9672,24 +9672,24 @@ Item #
 <!-- %a{:href => segment_list_page} -->
 <!-- Must Implement -->
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td class='hierarchy' colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 TXA
 </b>
@@ -9697,14 +9697,14 @@ TXA
 </tr>
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 1
 </td>
 <td>
 Set ID- TXA
 </td>
 <td class='centered'>
-<a href='/data-type/SI.html'>
+<a href='./data-type/SI.html'>
 SI
 </a>
 </td>
@@ -9713,7 +9713,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -9742,14 +9742,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 2
 </td>
 <td>
 Document Type
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -9758,7 +9758,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0270-Document-Type.html' title='Document Type'>
+<a href='./vocab/0270-Document-Type.html' title='Document Type'>
 0270
 <span class='vocab-link-text'>Document Type</span>
 </a>
@@ -9787,14 +9787,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 3
 </td>
 <td>
 Document Content Presentation
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -9803,7 +9803,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0191-Type-of-Referenced-Data.html' title='Type of Referenced Data(Required)'>
+<a href='./vocab/0191-Type-of-Referenced-Data.html' title='Type of Referenced Data(Required)'>
 0191(R)
 <span class='vocab-link-text'>Type of Referenced Data(Required)</span>
 </a>
@@ -9832,14 +9832,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 4
 </td>
 <td>
 Activity Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -9848,7 +9848,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -9877,14 +9877,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 5
 </td>
 <td>
 Primary Activity Provider Code/Name
 </td>
 <td class='centered'>
-<a href='/data-type/XCN.html'>
+<a href='./data-type/XCN.html'>
 XCN
 </a>
 </td>
@@ -9893,7 +9893,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -9922,14 +9922,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 6
 </td>
 <td>
 Origination Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -9938,7 +9938,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -9967,14 +9967,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 7
 </td>
 <td>
 Transcription Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -9983,7 +9983,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10012,14 +10012,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 8
 </td>
 <td>
 Edit Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -10028,7 +10028,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10057,14 +10057,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 9
 </td>
 <td>
 Originator Code/Name
 </td>
 <td class='centered'>
-<a href='/data-type/XCN.html'>
+<a href='./data-type/XCN.html'>
 XCN
 </a>
 </td>
@@ -10073,7 +10073,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10102,14 +10102,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 10
 </td>
 <td>
 Assigned Document Authenticator
 </td>
 <td class='centered'>
-<a href='/data-type/XCN.html'>
+<a href='./data-type/XCN.html'>
 XCN
 </a>
 </td>
@@ -10118,7 +10118,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10147,14 +10147,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 11
 </td>
 <td>
 Transcriptionist Code/Name
 </td>
 <td class='centered'>
-<a href='/data-type/XCN.html'>
+<a href='./data-type/XCN.html'>
 XCN
 </a>
 </td>
@@ -10163,7 +10163,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10192,14 +10192,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 12
 </td>
 <td>
 Unique Document Number
 </td>
 <td class='centered'>
-<a href='/data-type/EI.html'>
+<a href='./data-type/EI.html'>
 EI
 </a>
 </td>
@@ -10208,7 +10208,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10237,14 +10237,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 13
 </td>
 <td>
 Parent Document Number
 </td>
 <td class='centered'>
-<a href='/data-type/EI.html'>
+<a href='./data-type/EI.html'>
 EI
 </a>
 </td>
@@ -10253,7 +10253,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10282,14 +10282,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 14
 </td>
 <td>
 Placer Order Number
 </td>
 <td class='centered'>
-<a href='/data-type/EI.html'>
+<a href='./data-type/EI.html'>
 EI
 </a>
 </td>
@@ -10298,7 +10298,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10327,14 +10327,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 15
 </td>
 <td>
 Filler Order Number
 </td>
 <td class='centered'>
-<a href='/data-type/EI.html'>
+<a href='./data-type/EI.html'>
 EI
 </a>
 </td>
@@ -10343,7 +10343,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10372,14 +10372,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 16
 </td>
 <td>
 Unique Document File Name
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -10388,7 +10388,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10417,14 +10417,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 17
 </td>
 <td>
 Document Completion Status
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -10433,7 +10433,7 @@ R
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10462,14 +10462,14 @@ R
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 18
 </td>
 <td>
 Document Confidentiality Status
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -10478,7 +10478,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0272-Document-Confidentiality-Status.html' title='Document Confidentiality Status(Required)'>
+<a href='./vocab/0272-Document-Confidentiality-Status.html' title='Document Confidentiality Status(Required)'>
 0272(R)
 <span class='vocab-link-text'>Document Confidentiality Status(Required)</span>
 </a>
@@ -10507,14 +10507,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 19
 </td>
 <td>
 Document Availability Status
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -10523,7 +10523,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10552,14 +10552,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 20
 </td>
 <td>
 Document Storage Status
 </td>
 <td class='centered'>
-<a href='/data-type/ID.html'>
+<a href='./data-type/ID.html'>
 ID
 </a>
 </td>
@@ -10568,7 +10568,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0275-Document-Storage-Status.html' title='Document Storage Status(Required)'>
+<a href='./vocab/0275-Document-Storage-Status.html' title='Document Storage Status(Required)'>
 0275(R)
 <span class='vocab-link-text'>Document Storage Status(Required)</span>
 </a>
@@ -10597,14 +10597,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 21
 </td>
 <td>
 Document Change Reason
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -10613,7 +10613,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10642,14 +10642,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 22
 </td>
 <td>
 Authentication Person, Time Stamp
 </td>
 <td class='centered'>
-<a href='/data-type/PPN.html'>
+<a href='./data-type/PPN.html'>
 PPN
 </a>
 </td>
@@ -10658,7 +10658,7 @@ C
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10687,14 +10687,14 @@ C
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 23
 </td>
 <td>
 Distributed Copies
 </td>
 <td class='centered'>
-<a href='/data-type/XCN.html'>
+<a href='./data-type/XCN.html'>
 XCN
 </a>
 </td>
@@ -10703,7 +10703,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10732,14 +10732,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 24
 </td>
 <td>
 Folder Assignment
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -10748,7 +10748,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0791-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0791-ERROR! Bad Data! FIXME.html'>
 0791
 <span class='vocab-link-text'></span>
 </a>
@@ -10777,14 +10777,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 25
 </td>
 <td>
 Document Title
 </td>
 <td class='centered'>
-<a href='/data-type/ST.html'>
+<a href='./data-type/ST.html'>
 ST
 </a>
 </td>
@@ -10793,7 +10793,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10822,14 +10822,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 26
 </td>
 <td>
 Agreed Due Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -10838,7 +10838,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10867,14 +10867,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 27
 </td>
 <td>
 Creating Facility
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -10883,7 +10883,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/' title=''>
+<a href='./' title=''>
 
 <span class='vocab-link-text'></span>
 </a>
@@ -10912,14 +10912,14 @@ O
 
 <tr class='segment_definition_field'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 28
 </td>
 <td>
 Creating Specialty
 </td>
 <td class='centered'>
-<a href='/data-type/CWE.html'>
+<a href='./data-type/CWE.html'>
 CWE
 </a>
 </td>
@@ -10928,7 +10928,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0792-ERROR! Bad Data! FIXME.html'>
+<a href='./vocab/0792-ERROR! Bad Data! FIXME.html'>
 0792
 <span class='vocab-link-text'></span>
 </a>
@@ -10959,142 +10959,142 @@ O
 </table>
 
 <h4 class='v2' id='TXA-1'>
-TXA-1: Set ID- TXA (<a href='/data-type/SI.html'>SI</a>) 00914
+TXA-1: Set ID- TXA (<a href='./data-type/SI.html'>SI</a>) 00914
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-2'>
-TXA-2: Document Type (<a href='/data-type/CWE.html'>CWE</a>) 00915
+TXA-2: Document Type (<a href='./data-type/CWE.html'>CWE</a>) 00915
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-3'>
-TXA-3: Document Content Presentation (<a href='/data-type/ID.html'>ID</a>) 00916
+TXA-3: Document Content Presentation (<a href='./data-type/ID.html'>ID</a>) 00916
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-4'>
-TXA-4: Activity Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 00917
+TXA-4: Activity Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 00917
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-5'>
-TXA-5: Primary Activity Provider Code/Name (<a href='/data-type/XCN.html'>XCN</a>) 00918
+TXA-5: Primary Activity Provider Code/Name (<a href='./data-type/XCN.html'>XCN</a>) 00918
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-6'>
-TXA-6: Origination Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 00919
+TXA-6: Origination Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 00919
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-7'>
-TXA-7: Transcription Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 00920
+TXA-7: Transcription Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 00920
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-8'>
-TXA-8: Edit Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 00921
+TXA-8: Edit Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 00921
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-9'>
-TXA-9: Originator Code/Name (<a href='/data-type/XCN.html'>XCN</a>) 00922
+TXA-9: Originator Code/Name (<a href='./data-type/XCN.html'>XCN</a>) 00922
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-10'>
-TXA-10: Assigned Document Authenticator (<a href='/data-type/XCN.html'>XCN</a>) 00923
+TXA-10: Assigned Document Authenticator (<a href='./data-type/XCN.html'>XCN</a>) 00923
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-11'>
-TXA-11: Transcriptionist Code/Name (<a href='/data-type/XCN.html'>XCN</a>) 00924
+TXA-11: Transcriptionist Code/Name (<a href='./data-type/XCN.html'>XCN</a>) 00924
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-12'>
-TXA-12: Unique Document Number (<a href='/data-type/EI.html'>EI</a>) 00925
+TXA-12: Unique Document Number (<a href='./data-type/EI.html'>EI</a>) 00925
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-13'>
-TXA-13: Parent Document Number (<a href='/data-type/EI.html'>EI</a>) 00926
+TXA-13: Parent Document Number (<a href='./data-type/EI.html'>EI</a>) 00926
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-14'>
-TXA-14: Placer Order Number (<a href='/data-type/EI.html'>EI</a>) 00216
+TXA-14: Placer Order Number (<a href='./data-type/EI.html'>EI</a>) 00216
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-15'>
-TXA-15: Filler Order Number (<a href='/data-type/EI.html'>EI</a>) 00217
+TXA-15: Filler Order Number (<a href='./data-type/EI.html'>EI</a>) 00217
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-16'>
-TXA-16: Unique Document File Name (<a href='/data-type/ST.html'>ST</a>) 00927
+TXA-16: Unique Document File Name (<a href='./data-type/ST.html'>ST</a>) 00927
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-17'>
-TXA-17: Document Completion Status (<a href='/data-type/ID.html'>ID</a>) 00928
+TXA-17: Document Completion Status (<a href='./data-type/ID.html'>ID</a>) 00928
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-18'>
-TXA-18: Document Confidentiality Status (<a href='/data-type/ID.html'>ID</a>) 00929
+TXA-18: Document Confidentiality Status (<a href='./data-type/ID.html'>ID</a>) 00929
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-19'>
-TXA-19: Document Availability Status (<a href='/data-type/ID.html'>ID</a>) 00930
+TXA-19: Document Availability Status (<a href='./data-type/ID.html'>ID</a>) 00930
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-20'>
-TXA-20: Document Storage Status (<a href='/data-type/ID.html'>ID</a>) 00932
+TXA-20: Document Storage Status (<a href='./data-type/ID.html'>ID</a>) 00932
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-21'>
-TXA-21: Document Change Reason (<a href='/data-type/ST.html'>ST</a>) 00933
+TXA-21: Document Change Reason (<a href='./data-type/ST.html'>ST</a>) 00933
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-22'>
-TXA-22: Authentication Person, Time Stamp (<a href='/data-type/PPN.html'>PPN</a>) 00934
+TXA-22: Authentication Person, Time Stamp (<a href='./data-type/PPN.html'>PPN</a>) 00934
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-23'>
-TXA-23: Distributed Copies (<a href='/data-type/XCN.html'>XCN</a>) 00935
+TXA-23: Distributed Copies (<a href='./data-type/XCN.html'>XCN</a>) 00935
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-24'>
-TXA-24: Folder Assignment (<a href='/data-type/CWE.html'>CWE</a>) 02378
+TXA-24: Folder Assignment (<a href='./data-type/CWE.html'>CWE</a>) 02378
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-25'>
-TXA-25: Document Title (<a href='/data-type/ST.html'>ST</a>) 03301
+TXA-25: Document Title (<a href='./data-type/ST.html'>ST</a>) 03301
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-26'>
-TXA-26: Agreed Due Date/Time (<a href='/data-type/DTM.html'>DTM</a>) 03302
+TXA-26: Agreed Due Date/Time (<a href='./data-type/DTM.html'>DTM</a>) 03302
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-27'>
-TXA-27: Creating Facility (<a href='/data-type/HD.html'>HD</a>) 02413
+TXA-27: Creating Facility (<a href='./data-type/HD.html'>HD</a>) 02413
 </h4>
 FIXME
 
 <h4 class='v2' id='TXA-28'>
-TXA-28: Creating Specialty (<a href='/data-type/CWE.html'>CWE</a>) 02414
+TXA-28: Creating Specialty (<a href='./data-type/CWE.html'>CWE</a>) 02414
 </h4>
 FIXME
 
@@ -11185,16 +11185,16 @@ March 14, 2022
 </p>
 <p>
 <span style='color: #FFFF77'>Links:</span>
-<a href='/history.html' style='color: #b8dcf9'>
+<a href='./history.html' style='color: #b8dcf9'>
 Version History
 </a>
 |
 <a href='https://jira.hl7.org/projects/V2/issues' style='color: #b8dcf9' target='_blank'>
 Propose a change
-<img src='/images/external.png' style='text-align: baseline'>
+<img src='./images/external.png' style='text-align: baseline'>
 </a>
 |
-<a href='/license.html' rel='license' style='color: #b8dcf9'>
+<a href='./license.html' rel='license' style='color: #b8dcf9'>
 License
 <!-- %img{:alt => "CC0", :src => "images/cc0.png", :style => "border-style: none;"} -->
 </a>

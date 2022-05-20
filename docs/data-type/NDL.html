@@ -9,43 +9,43 @@ HL7 - REFACTORED
 <base href="https://usnistgov.github.io/v2plusDemo/">
 
 <style type='text/css'>
-@import "/css/bootstrap.css";
-@import "/css/codemirror.css";
-@import "/css/hl7.css";
-@import "/css/fhir.css";
-<!-- @import "/css/bootstrap-fhir.css"; -->
-@import "/css/bootstrap-v2.css";
-@import "/css/project.css";
-@import "/css/pygments-manni.css";
-@import "/css/jquery-ui.css";
-@import "/css/modules.css";
-@import "/css/v2.css";
+@import "./css/bootstrap.css";
+@import "./css/codemirror.css";
+@import "./css/hl7.css";
+@import "./css/fhir.css";
+<!-- @import "./css/bootstrap-fhir.css"; -->
+@import "./css/bootstrap-v2.css";
+@import "./css/project.css";
+@import "./css/pygments-manni.css";
+@import "./css/jquery-ui.css";
+@import "./css/modules.css";
+@import "./css/v2.css";
 </style>
-<script src='/js/jquery.js'></script>
-<script src='/js/jquery-ui.min.js'></script>
-<script src='/js/bootstrap.min.js'></script>
-<script src='/js/respond.min.js'></script>
-<script src='/js/codemirror/codemirror.js'></script>
-<script src='/js/codemirror/mode/xml.js'></script>
-<script src='/js/v2.js'></script>
-<script src='/js/fhir-table-scripts.js' type='text/javascript'></script>
-<script src='/js/format_xml.js' type='text/javascript'></script>
-<link href='/images/hl7.ico' rel='shortcut icon'>
+<script src='./js/jquery.js'></script>
+<script src='./js/jquery-ui.min.js'></script>
+<script src='./js/bootstrap.min.js'></script>
+<script src='./js/respond.min.js'></script>
+<script src='./js/codemirror/codemirror.js'></script>
+<script src='./js/codemirror/mode/xml.js'></script>
+<script src='./js/v2.js'></script>
+<script src='./js/fhir-table-scripts.js' type='text/javascript'></script>
+<script src='./js/format_xml.js' type='text/javascript'></script>
+<link href='./images/hl7.ico' rel='shortcut icon'>
 </head>
 <body>
 <div class='segment' id='segment-header'>
 <div class='container'>
 <a href='http://www.hl7.org/hl7v2+' id='logo' no-external='true'></a>
 <div id='hl7-status'>
-<img alt='visit the hl7 website' height='50' id='v2-logo' src='/images/hl7-v2-logo.png'>
-<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='/images/hl7-v2plus.gif'>
+<img alt='visit the hl7 website' height='50' id='v2-logo' src='./images/hl7-v2-logo.png'>
+<img alt='visit the hl7 website' height='50' id='v2plus-logo' src='./images/hl7-v2plus.gif'>
 <b>
 The Demo site for our new HL7 Version 2+ (plus) Standard
 </b>
 </div>
 <div id='hl7-nav'>
 <a href='http://www.hl7.org' id='hl7-logo' no-external='true'></a>
-<img alt='visit the hl7 website' src='/images/hl7-logo.png'>
+<img alt='visit the hl7 website' src='./images/hl7-logo.png'>
 </div>
 </div>
 </div>
@@ -60,33 +60,33 @@ The Demo site for our new HL7 Version 2+ (plus) Standard
 <span class='icon-bar'></span>
 </button>
 </div>
-<a class='navbar-brand hidden' href='/index.html'>
+<a class='navbar-brand hidden' href='./index.html'>
 FHIR
 </a>
 <div class='nav-collapse collapse navbar-inverse-collapse'>
 <ul class='nav navbar-nav'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
 <li>
-<a href='/domains.html'>
+<a href='./domains.html'>
 Domains
 </a>
 </li>
 <li>
-<a href='/message-structures.html'>
+<a href='./message-structures.html'>
 Message Structures
 </a>
 </li>
 <li>
-<a href='/segment-definitions.html'>
+<a href='./segment-definitions.html'>
 Segments
 </a>
 </li>
 <li>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Data Types
 </a>
 </li>
@@ -96,12 +96,12 @@ Data Type Flavors
 </a>
 </li>
 <li>
-<a href='/vocab.html'>
+<a href='./vocab.html'>
 Vocabulary
 </a>
 </li>
 <li>
-<a href='/domain/Control.html'>
+<a href='./domain/Control.html'>
 Control
 </a>
 </li>
@@ -111,7 +111,7 @@ Conformance
 </a>
 </li>
 <li>
-<a href='/domain/Control.html#Control-12'>
+<a href='./domain/Control.html#Control-12'>
 Encoding
 </a>
 </li>
@@ -121,7 +121,7 @@ Transport
 </a>
 </li>
 <li>
-<a href='/history.html'>
+<a href='./history.html'>
 v2.x
 </a>
 </li>
@@ -141,7 +141,7 @@ Draft Website - For Review Purposes Only
 <div class='container'>
 <ul class='breadcrumb'>
 <li>
-<a href='/index.html'>
+<a href='./index.html'>
 Home
 </a>
 </li>
@@ -167,49 +167,49 @@ HL7 Component Table - NDL - name with date and location
 <tbody>
 <tr>
 <th>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Seq#
 </a>
 </th>
 <th>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Description
 </a>
 </th>
 <th>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Data Type
 </a>
 </th>
 <th>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Usage
 </a>
 </th>
 <th>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Vocabulary
 </a>
 </th>
 <th>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Length
 </a>
 </th>
 <th>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 C.LEN
 </a>
 </th>
 <th>
-<a href='/data-types.html'>
+<a href='./data-types.html'>
 Flags
 </a>
 </th>
 </tr>
 <tr>
 <td colspan='3'>
-<img src='/images/folder_icon.gif'>
+<img src='./images/folder_icon.gif'>
 <b>
 NDL
 </b>
@@ -217,7 +217,7 @@ NDL
 </tr>
 <tr class='datatype_component'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 <a href='#NDL-1'>
 1
 </a>
@@ -226,7 +226,7 @@ NDL
 Name
 </td>
 <td class='centered'>
-<a href='/data-type/CNN.html'>
+<a href='./data-type/CNN.html'>
 CNN
 </a>
 </td>
@@ -256,7 +256,7 @@ O
 
 <tr class='datatype_component'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 <a href='#NDL-2'>
 2
 </a>
@@ -265,7 +265,7 @@ O
 Start Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -295,7 +295,7 @@ O
 
 <tr class='datatype_component'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 <a href='#NDL-3'>
 3
 </a>
@@ -304,7 +304,7 @@ O
 End Date/Time
 </td>
 <td class='centered'>
-<a href='/data-type/DTM.html'>
+<a href='./data-type/DTM.html'>
 DTM
 </a>
 </td>
@@ -334,7 +334,7 @@ O
 
 <tr class='datatype_component'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 <a href='#NDL-4'>
 4
 </a>
@@ -343,7 +343,7 @@ O
 Point of Care 
 </td>
 <td class='centered'>
-<a href='/data-type/IS.html'>
+<a href='./data-type/IS.html'>
 IS
 </a>
 </td>
@@ -352,7 +352,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0302-Point-of-Care.html' title='Point of Care'>
+<a href='./vocab/0302-Point-of-Care.html' title='Point of Care'>
 0302
 <span class='vocab-link-text'>Point of Care</span>
 </a>
@@ -373,7 +373,7 @@ O
 
 <tr class='datatype_component'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 <a href='#NDL-5'>
 5
 </a>
@@ -382,7 +382,7 @@ O
 Room 
 </td>
 <td class='centered'>
-<a href='/data-type/IS.html'>
+<a href='./data-type/IS.html'>
 IS
 </a>
 </td>
@@ -391,7 +391,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0303-Room.html' title='Room'>
+<a href='./vocab/0303-Room.html' title='Room'>
 0303
 <span class='vocab-link-text'>Room</span>
 </a>
@@ -412,7 +412,7 @@ O
 
 <tr class='datatype_component'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 <a href='#NDL-6'>
 6
 </a>
@@ -421,7 +421,7 @@ O
 Bed
 </td>
 <td class='centered'>
-<a href='/data-type/IS.html'>
+<a href='./data-type/IS.html'>
 IS
 </a>
 </td>
@@ -430,7 +430,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0304-Bed.html' title='Bed'>
+<a href='./vocab/0304-Bed.html' title='Bed'>
 0304
 <span class='vocab-link-text'>Bed</span>
 </a>
@@ -451,7 +451,7 @@ O
 
 <tr class='datatype_component'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 <a href='#NDL-7'>
 7
 </a>
@@ -460,7 +460,7 @@ O
 Facility
 </td>
 <td class='centered'>
-<a href='/data-type/HD.html'>
+<a href='./data-type/HD.html'>
 HD
 </a>
 </td>
@@ -490,7 +490,7 @@ O
 
 <tr class='datatype_component'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 <a href='#NDL-8'>
 8
 </a>
@@ -499,7 +499,7 @@ O
 Location Status 
 </td>
 <td class='centered'>
-<a href='/data-type/IS.html'>
+<a href='./data-type/IS.html'>
 IS
 </a>
 </td>
@@ -508,7 +508,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0306-Location-Status.html' title='Location Status'>
+<a href='./vocab/0306-Location-Status.html' title='Location Status'>
 0306
 <span class='vocab-link-text'>Location Status</span>
 </a>
@@ -529,7 +529,7 @@ O
 
 <tr class='datatype_component'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 <a href='#NDL-9'>
 9
 </a>
@@ -538,7 +538,7 @@ O
 Patient Location Type
 </td>
 <td class='centered'>
-<a href='/data-type/IS.html'>
+<a href='./data-type/IS.html'>
 IS
 </a>
 </td>
@@ -547,7 +547,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0305-Person-Location-Type.html' title='Person Location Type'>
+<a href='./vocab/0305-Person-Location-Type.html' title='Person Location Type'>
 0305
 <span class='vocab-link-text'>Person Location Type</span>
 </a>
@@ -568,7 +568,7 @@ O
 
 <tr class='datatype_component'>
 <td>
-<img src='/images/tbl_vjoin.png'>
+<img src='./images/tbl_vjoin.png'>
 <a href='#NDL-10'>
 10
 </a>
@@ -577,7 +577,7 @@ O
 Building 
 </td>
 <td class='centered'>
-<a href='/data-type/IS.html'>
+<a href='./data-type/IS.html'>
 IS
 </a>
 </td>
@@ -586,7 +586,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0307-Building.html' title='Building'>
+<a href='./vocab/0307-Building.html' title='Building'>
 0307
 <span class='vocab-link-text'>Building</span>
 </a>
@@ -607,7 +607,7 @@ O
 
 <tr class='datatype_component'>
 <td>
-<img src='/images/tbl_vjoin_end.png'>
+<img src='./images/tbl_vjoin_end.png'>
 <a href='#NDL-11'>
 11
 </a>
@@ -616,7 +616,7 @@ O
 Floor
 </td>
 <td class='centered'>
-<a href='/data-type/IS.html'>
+<a href='./data-type/IS.html'>
 IS
 </a>
 </td>
@@ -625,7 +625,7 @@ O
 </td>
 <td class='centered'>
 <div class='vocab-link'>
-<a href='/vocab/0308-Floor.html' title='Floor'>
+<a href='./vocab/0308-Floor.html' title='Floor'>
 0308
 <span class='vocab-link-text'>Floor</span>
 </a>
@@ -655,57 +655,57 @@ O
 </div>
 <div class='v2-data-type-component-definitions'>
 <h4 id='NDL-1'>
-NDL-1: Name (<a href='/data-type/CNN.html'>CNN</a>)
+NDL-1: Name (<a href='./data-type/CNN.html'>CNN</a>)
 </h4>
 <p class="v2 v2-normalindented">Definition: This component specifies the name of the person performing a service. </p>
 
 <h4 id='NDL-2'>
-NDL-2: Start Date/Time (<a href='/data-type/DTM.html'>DTM</a>)
+NDL-2: Start Date/Time (<a href='./data-type/DTM.html'>DTM</a>)
 </h4>
 <p class="v2 v2-normalindented">Definition: This component specifies the starting date and time for when the person is performing the service.</p>
 
 <h4 id='NDL-3'>
-NDL-3: End Date/Time (<a href='/data-type/DTM.html'>DTM</a>)
+NDL-3: End Date/Time (<a href='./data-type/DTM.html'>DTM</a>)
 </h4>
 <p class="v2 v2-normalindented">Definition: This component specifies the ending date and time for when the person is performing the service. </p>
 
 <h4 id='NDL-4'>
-NDL-4: Point of Care  (<a href='/data-type/IS.html'>IS</a>)
+NDL-4: Point of Care  (<a href='./data-type/IS.html'>IS</a>)
 </h4>
 <p class="v2 v2-normalindented">Definition: This component specifies the code for the point where patient care is administered. It is conditional on NDL.9 – Patient Location Type (e.g., nursing unit or department or clinic). After floor, it is the most general patient location designation. Refer to <a href="https://www.hl7.org/fhir/v2/0302/index.html">User-defined Table 0302 - Point of care</a> for suggested values.</p>
 
 <h4 id='NDL-5'>
-NDL-5: Room  (<a href='/data-type/IS.html'>IS</a>)
+NDL-5: Room  (<a href='./data-type/IS.html'>IS</a>)
 </h4>
 <p class="v2 v2-normalindented">Definition: Patient room. After point of care, it is the most general location designation. Refer to <a href="https://www.hl7.org/fhir/v2/0303/index.html">User-defined Table 0303 - Room</a> for suggested values.</p>
 
 <h4 id='NDL-6'>
-NDL-6: Bed (<a href='/data-type/IS.html'>IS</a>)
+NDL-6: Bed (<a href='./data-type/IS.html'>IS</a>)
 </h4>
 <p class="v2 v2-normalindented">Definition: This component specifies the code for the patient&#39;s bed. After room, it is the most general location designation. Refer to <a href="https://www.hl7.org/fhir/v2/0304/index.html">User-defined Table 0304 - Bed</a> for suggested values.</p>
 
 <h4 id='NDL-7'>
-NDL-7: Facility (<a href='/data-type/HD.html'>HD</a>)
+NDL-7: Facility (<a href='./data-type/HD.html'>HD</a>)
 </h4>
 <p class="v2 v2-normalindented">Definition: This component is subject to site interpretation but generally describes the highest level physical designation of an institution, medical center or enterprise. It is the most general location designation. </p>
 
 <h4 id='NDL-8'>
-NDL-8: Location Status  (<a href='/data-type/IS.html'>IS</a>)
+NDL-8: Location Status  (<a href='./data-type/IS.html'>IS</a>)
 </h4>
 <p class="v2 v2-normalindented">Definition: This component specifies the code for the status or availability of the location. For example, it may convey bed status. Refer to <a href="https://www.hl7.org/fhir/v2/0306/index.html">User-defined Table 0306 - Location Status</a> for suggested values.</p>
 
 <h4 id='NDL-9'>
-NDL-9: Patient Location Type (<a href='/data-type/IS.html'>IS</a>)
+NDL-9: Patient Location Type (<a href='./data-type/IS.html'>IS</a>)
 </h4>
 <p class="v2 v2-normalindented">Definition: Location type is the categorization of the location defined by facility, building, floor, point of care, room or bed. Although not a required field, when used, it may be the only populated field. Usually includes values such as nursing unit, department, clinic, SNF, physician’s office. Refer to <a href="https://www.hl7.org/fhir/v2/0305/index.html">User-defined Table 0305 - Person Location Type</a> for suggested values.</p>
 
 <h4 id='NDL-10'>
-NDL-10: Building  (<a href='/data-type/IS.html'>IS</a>)
+NDL-10: Building  (<a href='./data-type/IS.html'>IS</a>)
 </h4>
 <p class="v2 v2-normalindented">Definition: This component specifies the code for the building where the person is located. After facility, it is the most general location designation. Refer to <a href="https://www.hl7.org/fhir/v2/0307/index.html">User-defined Table 0307 - Building</a> for suggested values.</p>
 
 <h4 id='NDL-11'>
-NDL-11: Floor (<a href='/data-type/IS.html'>IS</a>)
+NDL-11: Floor (<a href='./data-type/IS.html'>IS</a>)
 </h4>
 <p class="v2 v2-normalindented">Definition: This component specifies the code for the floor where the person is located. After building, it is the most general location designation. Refer to <a href="https://www.hl7.org/fhir/v2/0308/index.html">User-defined Table 0308 - Floor</a> for suggested values.</p>
 
@@ -721,16 +721,16 @@ March 15, 2022
 </p>
 <p>
 <span style='color: #FFFF77'>Links:</span>
-<a href='/history.html' style='color: #b8dcf9'>
+<a href='./history.html' style='color: #b8dcf9'>
 Version History
 </a>
 |
 <a href='https://jira.hl7.org/projects/V2/issues' style='color: #b8dcf9' target='_blank'>
 Propose a change
-<img src='/images/external.png' style='text-align: baseline'>
+<img src='./images/external.png' style='text-align: baseline'>
 </a>
 |
-<a href='/license.html' rel='license' style='color: #b8dcf9'>
+<a href='./license.html' rel='license' style='color: #b8dcf9'>
 License
 <!-- %img{:alt => "CC0", :src => "images/cc0.png", :style => "border-style: none;"} -->
 </a>
