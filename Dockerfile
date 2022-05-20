@@ -14,8 +14,6 @@ RUN  bundle install
 COPY ./views/ /app/views/
 COPY server.rb /app/server.rb
 
-EXPOSE 4567
-
 CMD ["ruby", "/app/server.rb"]
 
 # Note: If building on Apple M1 silicon, use the following:
